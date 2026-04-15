@@ -82,10 +82,17 @@ function extractParts(html: string): { css: string; body: string } {
 }
 
 function scopeCSS(css: string, scopeClass: string): string {
+  const s = '.' + scopeClass;
   let scoped = css;
-  scoped = scoped.replace(/\bbody\b(?=[^{]*\{)/g, '.' + scopeClass);
-  scoped = scoped.replace(/\bhtml\b(?=[^{]*\{)/g, '.' + scopeClass);
-  scoped = scoped.replace(/:root/g, '.' + scopeClass);
+  // Only replace body/html/:root when used as CSS selectors (start of line, after } or ,)
+  // This avoids breaking CSS variables like --fs-body
+  scoped = scoped.replace(/(^|[},;\s])html\s*,\s*body\s*(?=\{)/gm, `$1${s} `);
+  scoped = scoped.replace(/(^|[},;\s])body\s*(?=\{)/gm, `$1${s} `);
+  scoped = scoped.replace(/(^|[},;\s])html\s*(?=\{)/gm, `$1${s} `);
+  scoped = scoped.replace(/(^|[},;\s]):root\s*(?=\{)/gm, `$1${s} `);
+  // Prefix all other selectors with scope (e.g. .wrap{ -> .article-scoped .wrap{)
+  // Match class/element selectors at start of rules
+  scoped = scoped.replace(/(^|[},])\s*\.(?!article-scoped)/gm, `$1 ${s} .`);
   return scoped;
 }
 
