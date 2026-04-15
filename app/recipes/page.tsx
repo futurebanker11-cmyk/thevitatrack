@@ -1,39 +1,21 @@
-import { getArticlesByCategory } from '@/lib/articles';
-import Header from '@/components/Header';
-import AdUnit from '@/components/AdUnit';
-import Link from 'next/link';
+import CategoryPage from '@/components/CategoryPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Senior-Friendly Recipes | VitaTrack',
-  description: 'Nutritious, easy-to-make recipes and drinks designed for seniors.',
+  description: 'Nutritious, easy-to-make recipes designed for seniors. Low-sodium, diabetic-friendly, kidney-safe options.',
   alternates: { canonical: 'https://thevitatrack.com/recipes' },
 };
 
-export default function SeniorFriendlyRecipesPage() {
-  const articles = getArticlesByCategory('recipes');
+export default function RecipesPage() {
   return (
-    <>
-      <Header />
-      <main style={{ maxWidth: '960px', margin: '0 auto', padding: '40px 20px 60px' }}>
-        <h1 style={{ color: '#14442A', fontSize: '2rem', fontWeight: 700, marginBottom: '8px', fontFamily: 'Fraunces, serif' }}>
-          Senior-Friendly Recipes
-        </h1>
-        <p style={{ color: '#555550', marginBottom: '32px', fontSize: '1.05rem' }}>Nutritious, easy-to-make recipes and drinks designed for seniors.</p>
-
-        <AdUnit slot="8981383031" />
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px', margin: '32px 0' }}>
-          {articles.map(a => (
-            <Link key={a.slug} href={'/recipes/' + a.slug} className="article-card">
-              <h2>{a.title}</h2>
-              {a.excerpt && <p>{a.excerpt.substring(0, 100)}...</p>}
-            </Link>
-          ))}
-        </div>
-
-        <AdUnit slot="3333737430" />
-      </main>
-    </>
+    <CategoryPage
+      category="recipes"
+      title="Senior-Friendly Recipes"
+      subtitle="Nutritious, easy-to-make meals and drinks designed for adults over 60. Low-sodium, diabetic-friendly options."
+      icon="🥗"
+      color="#D97706"
+      bgGradient="linear-gradient(135deg, #92400E 0%, #D97706 60%, #F59E0B 100%)"
+    />
   );
 }

@@ -1,39 +1,21 @@
-import { getArticlesByCategory } from '@/lib/articles';
-import Header from '@/components/Header';
-import AdUnit from '@/components/AdUnit';
-import Link from 'next/link';
+import CategoryPage from '@/components/CategoryPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Symptoms Guide | VitaTrack',
-  description: 'Understand common symptoms in older adults and when to seek help.',
+  title: 'Symptom Guides for Seniors | VitaTrack',
+  description: 'Clear symptom guides for seniors. Understand what your symptoms mean, when to see a doctor, and what to do at home.',
   alternates: { canonical: 'https://thevitatrack.com/symptoms' },
 };
 
-export default function SymptomsGuidePage() {
-  const articles = getArticlesByCategory('symptoms');
+export default function SymptomsPage() {
   return (
-    <>
-      <Header />
-      <main style={{ maxWidth: '960px', margin: '0 auto', padding: '40px 20px 60px' }}>
-        <h1 style={{ color: '#14442A', fontSize: '2rem', fontWeight: 700, marginBottom: '8px', fontFamily: 'Fraunces, serif' }}>
-          Symptoms Guide
-        </h1>
-        <p style={{ color: '#555550', marginBottom: '32px', fontSize: '1.05rem' }}>Understand common symptoms in older adults and when to seek help.</p>
-
-        <AdUnit slot="8981383031" />
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px', margin: '32px 0' }}>
-          {articles.map(a => (
-            <Link key={a.slug} href={'/symptoms/' + a.slug} className="article-card">
-              <h2>{a.title}</h2>
-              {a.excerpt && <p>{a.excerpt.substring(0, 100)}...</p>}
-            </Link>
-          ))}
-        </div>
-
-        <AdUnit slot="3333737430" />
-      </main>
-    </>
+    <CategoryPage
+      category="symptoms"
+      title="Symptom Guides"
+      subtitle="Understand what your symptoms mean, when to see a doctor, and safe first steps you can take at home."
+      icon="🔍"
+      color="#0B6B5C"
+      bgGradient="linear-gradient(135deg, #064E3B 0%, #0B6B5C 60%, #10B981 100%)"
+    />
   );
 }

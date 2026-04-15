@@ -1,39 +1,21 @@
-import { getArticlesByCategory } from '@/lib/articles';
-import Header from '@/components/Header';
-import AdUnit from '@/components/AdUnit';
-import Link from 'next/link';
+import CategoryPage from '@/components/CategoryPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Daily Living Tips | VitaTrack',
-  description: 'Practical daily routines and safety tips for healthy senior living.',
+  title: 'Daily Living Tips for Seniors | VitaTrack',
+  description: 'Practical daily routines and safety tips for healthy senior living. Morning routines, medication management, home safety.',
   alternates: { canonical: 'https://thevitatrack.com/daily-living' },
 };
 
-export default function DailyLivingTipsPage() {
-  const articles = getArticlesByCategory('daily-living');
+export default function DailyLivingPage() {
   return (
-    <>
-      <Header />
-      <main style={{ maxWidth: '960px', margin: '0 auto', padding: '40px 20px 60px' }}>
-        <h1 style={{ color: '#14442A', fontSize: '2rem', fontWeight: 700, marginBottom: '8px', fontFamily: 'Fraunces, serif' }}>
-          Daily Living Tips
-        </h1>
-        <p style={{ color: '#555550', marginBottom: '32px', fontSize: '1.05rem' }}>Practical daily routines and safety tips for healthy senior living.</p>
-
-        <AdUnit slot="8981383031" />
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px', margin: '32px 0' }}>
-          {articles.map(a => (
-            <Link key={a.slug} href={'/daily-living/' + a.slug} className="article-card">
-              <h2>{a.title}</h2>
-              {a.excerpt && <p>{a.excerpt.substring(0, 100)}...</p>}
-            </Link>
-          ))}
-        </div>
-
-        <AdUnit slot="3333737430" />
-      </main>
-    </>
+    <CategoryPage
+      category="daily-living"
+      title="Daily Living Tips"
+      subtitle="Practical routines, safety tips, and daily habits that make a real difference in quality of life after 60."
+      icon="🏠"
+      color="#7C3AED"
+      bgGradient="linear-gradient(135deg, #4C1D95 0%, #7C3AED 60%, #A78BFA 100%)"
+    />
   );
 }

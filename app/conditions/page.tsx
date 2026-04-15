@@ -1,39 +1,21 @@
-import { getArticlesByCategory } from '@/lib/articles';
-import Header from '@/components/Header';
-import AdUnit from '@/components/AdUnit';
-import Link from 'next/link';
+import CategoryPage from '@/components/CategoryPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Health Conditions | VitaTrack',
-  description: 'Evidence-based guides for seniors on managing common health conditions.',
+  title: 'Health Conditions — Senior Guides | VitaTrack',
+  description: 'Evidence-based guides for seniors on managing common health conditions. Diabetes, heart disease, arthritis, kidney health, and more.',
   alternates: { canonical: 'https://thevitatrack.com/conditions' },
 };
 
-export default function HealthConditionsPage() {
-  const articles = getArticlesByCategory('conditions');
+export default function ConditionsPage() {
   return (
-    <>
-      <Header />
-      <main style={{ maxWidth: '960px', margin: '0 auto', padding: '40px 20px 60px' }}>
-        <h1 style={{ color: '#14442A', fontSize: '2rem', fontWeight: 700, marginBottom: '8px', fontFamily: 'Fraunces, serif' }}>
-          Health Conditions
-        </h1>
-        <p style={{ color: '#555550', marginBottom: '32px', fontSize: '1.05rem' }}>Evidence-based guides for seniors on managing common health conditions.</p>
-
-        <AdUnit slot="8981383031" />
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px', margin: '32px 0' }}>
-          {articles.map(a => (
-            <Link key={a.slug} href={'/conditions/' + a.slug} className="article-card">
-              <h2>{a.title}</h2>
-              {a.excerpt && <p>{a.excerpt.substring(0, 100)}...</p>}
-            </Link>
-          ))}
-        </div>
-
-        <AdUnit slot="3333737430" />
-      </main>
-    </>
+    <CategoryPage
+      category="conditions"
+      title="Health Conditions"
+      subtitle="Evidence-based guides on managing common health conditions after 60. Written in plain language with action steps."
+      icon="🩺"
+      color="#1A5632"
+      bgGradient="linear-gradient(135deg, #14442A 0%, #1E6B3E 60%, #22874a 100%)"
+    />
   );
 }
