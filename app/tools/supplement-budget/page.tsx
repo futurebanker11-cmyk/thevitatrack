@@ -6,10 +6,7 @@ export default function SupplementBudgetPage() {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.textContent = `(adsbygoogle = window.adsbygoogle || []).push({});
-(adsbygoogle = window.adsbygoogle || []).push({});
-document.write(new Date().getFullYear())
-function toggleGoal(btn){btn.classList.toggle('selected');}
+    script.textContent = `function toggleGoal(btn){btn.classList.toggle('selected');}
 
 function buildStack(){
   var goals=[];

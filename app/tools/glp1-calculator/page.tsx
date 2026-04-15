@@ -6,10 +6,7 @@ export default function Glp1CalculatorPage() {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.textContent = `(adsbygoogle = window.adsbygoogle || []).push({});
-(adsbygoogle = window.adsbygoogle || []).push({});
-document.write(new Date().getFullYear())
-var weightUnit='lbs', heightUnit='imperial';
+    script.textContent = `var weightUnit='lbs', heightUnit='imperial';
 var ws=document.getElementById('weight'), gs=document.getElementById('goal');
 var wd=document.getElementById('wt-display'), gd=document.getElementById('goal-display');
 

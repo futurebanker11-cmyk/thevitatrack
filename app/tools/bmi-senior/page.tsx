@@ -6,10 +6,7 @@ export default function BmiSeniorPage() {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.textContent = `(adsbygoogle = window.adsbygoogle || []).push({});
-(adsbygoogle = window.adsbygoogle || []).push({});
-document.write(new Date().getFullYear())
-var hUnit='imp',wUnit='lbs';
+    script.textContent = `var hUnit='imp',wUnit='lbs';
 function setHU(u){hUnit=u;document.querySelectorAll('#ht-toggle .unit-btn').forEach(function(b){b.classList.remove('active')});event.target.classList.add('active');document.getElementById('ht-imp').style.display=u==='imp'?'grid':'none';document.getElementById('ht-met').style.display=u==='met'?'block':'none';}
 function setWU(u){wUnit=u;document.querySelectorAll('#wt-toggle .unit-btn').forEach(function(b){b.classList.remove('active')});event.target.classList.add('active');var w=document.getElementById('weight');if(u==='kg'){w.value=Math.round(parseFloat(w.value)*0.4536);w.min=30;w.max=230;document.getElementById('wt-hint').textContent='Enter weight in kilograms';}else{w.value=Math.round(parseFloat(w.value)*2.205);w.min=60;w.max=500;document.getElementById('wt-hint').textContent='Enter weight in pounds';}}
 

@@ -6,10 +6,7 @@ export default function HeartAgePage() {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.textContent = `(adsbygoogle = window.adsbygoogle || []).push({});
-(adsbygoogle = window.adsbygoogle || []).push({});
-document.write(new Date().getFullYear())
-function calcHeartAge(){
+    script.textContent = `function calcHeartAge(){
   var realAge=parseInt(document.getElementById('age').value);
   var sex=document.getElementById('sex').value;
   var bp=parseInt(document.getElementById('bp').value);

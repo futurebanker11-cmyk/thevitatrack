@@ -6,10 +6,7 @@ export default function DigestionCheckPage() {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.textContent = `(adsbygoogle = window.adsbygoogle || []).push({});
-(adsbygoogle = window.adsbygoogle || []).push({});
-document.write(new Date().getFullYear())
-function sel(el){
+    script.textContent = `function sel(el){
   el.closest('.q-options').querySelectorAll('.q-opt').forEach(function(o){o.classList.remove('selected')});
   el.classList.add('selected');
   el.querySelector('input').checked=true;

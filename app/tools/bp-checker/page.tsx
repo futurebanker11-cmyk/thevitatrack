@@ -6,10 +6,7 @@ export default function BpCheckerPage() {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.textContent = `(adsbygoogle = window.adsbygoogle || []).push({});
-(adsbygoogle = window.adsbygoogle || []).push({});
-document.write(new Date().getFullYear())
-function checkBP(){
+    script.textContent = `function checkBP(){
   var sys=parseInt(document.getElementById('systolic').value);
   var dia=parseInt(document.getElementById('diastolic').value);
   var age=parseInt(document.getElementById('age').value);
