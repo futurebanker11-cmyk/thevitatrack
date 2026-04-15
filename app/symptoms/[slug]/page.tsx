@@ -13,9 +13,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const article = getArticle('symptoms', slug);
   return {
-    title: article ? article.title + ' | VitaTrack' : 'VitaTrack',
+    title: article ? article.title : 'VitaTrack',
     description: article?.excerpt || '',
     alternates: { canonical: 'https://thevitatrack.com/symptoms/' + slug },
+    openGraph: {
+      title: article?.title,
+      description: article?.excerpt || '',
+      url: 'https://thevitatrack.com/symptoms/' + slug,
+    },
   };
 }
 
