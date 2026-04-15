@@ -15,6 +15,11 @@ export interface Article extends ArticleMeta {
   content: string;
 }
 
+function cleanSlug(raw: string): string {
+  try { raw = decodeURIComponent(raw); } catch {}
+  return raw;
+}
+
 export function getArticlesByCategory(category: string): ArticleMeta[] {
   const dir = path.join(contentDir, category);
   if (!fs.existsSync(dir)) return [];
@@ -25,7 +30,7 @@ export function getArticlesByCategory(category: string): ArticleMeta[] {
       const { data } = matter(raw);
       return {
         title: data.title || filename,
-        slug: data.slug || filename.replace('.mdx', ''),
+        slug: cleanSlug(data.slug || filename.replace('.mdx', '')),
         category: data.category || category,
         excerpt: data.excerpt || '',
       };
@@ -36,11 +41,12 @@ export function getArticlesByCategory(category: string): ArticleMeta[] {
 export function getArticle(category: string, slug: string): Article | null {
   const dir = path.join(contentDir, category);
   if (!fs.existsSync(dir)) return null;
+  const decodedSlug = cleanSlug(slug);
   for (const filename of fs.readdirSync(dir).filter(f => f.endsWith('.mdx'))) {
     const raw = fs.readFileSync(path.join(dir, filename), 'utf8');
     const { data, content } = matter(raw);
-    const fileSlug = data.slug || filename.replace('.mdx', '');
-    if (fileSlug === slug) {
+    const fileSlug = cleanSlug(data.slug || filename.replace('.mdx', ''));
+    if (fileSlug === decodedSlug) {
       return { title: data.title || slug, slug: fileSlug, category, excerpt: data.excerpt || '', content };
     }
   }
@@ -55,6 +61,6 @@ export function getAllSlugs(category: string): string[] {
     .map(f => {
       const raw = fs.readFileSync(path.join(dir, f), 'utf8');
       const { data } = matter(raw);
-      return data.slug || f.replace('.mdx', '');
+      return cleanSlug(data.slug || f.replace('.mdx', ''));
     });
 }
