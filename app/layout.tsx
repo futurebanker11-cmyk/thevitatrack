@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Source_Sans_3, Fraunces } from "next/font/google";
 import Footer from "@/components/Footer";
+import FAQActivator from "@/components/FAQActivator";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
@@ -64,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: orgSchema }} />
       </head>
-      <body>{children}<Footer /></body>
+      <body>{children}<Footer /><FAQActivator /></body>
     </html>
   );
 }
