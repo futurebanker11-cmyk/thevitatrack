@@ -1,8 +1,22 @@
 import type { Metadata } from "next";
+import { Source_Sans_3, Fraunces } from "next/font/google";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-// Static, trusted JSON-LD string (not user-generated content)
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-body",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["400", "700", "800"],
+  display: "swap",
+  variable: "--font-heading",
+});
+
 const orgSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -40,14 +54,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${sourceSans.variable} ${fraunces.variable}`}>
       <head>
         <link rel="icon" type="image/png" href="/assets/favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,800&display=swap" />
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,800&display=swap" rel="stylesheet" />
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"

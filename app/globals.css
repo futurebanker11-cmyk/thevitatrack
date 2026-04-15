@@ -33,7 +33,7 @@ html { scroll-behavior: smooth; }
 }
 
 body {
-  font-family: 'Source Sans 3', -apple-system, sans-serif;
+  font-family: var(--font-body), 'Source Sans 3', -apple-system, sans-serif;
   font-size: 18px;
   line-height: 1.6;
   color: var(--text);
