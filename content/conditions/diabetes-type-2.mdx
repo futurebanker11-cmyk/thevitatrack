@@ -1,0 +1,542 @@
+---
+title: "Diabetes (Type 2)"
+slug: "diabetes-type-2"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Type 2 Diabetes — Senior Guide • TheVitatrack</title>
+<meta name="description" content="Type 2 diabetes in older adults: symptoms, red-flags, A1C & lab checks, safe daily plate method, walking plan, hypoglycemia prevention, medicines overview (metformin, SGLT2, GLP-1, insulin), sick-day rules, foot/eye/kidney care, and when to seek help." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Type 2 Diabetes</h1>
+    <p>Symptoms, urgent concerns, A1C & lab checks, daily eating and movement plan, preventing lows, medicines overview, sick-day rules, foot/eye/kidney care, and when to seek help.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is">What is type 2 diabetes?</a></li>
+      <li><a href="#red-flags">Urgent concerns (when to act)</a></li>
+      <li><a href="#symptoms">Common symptoms</a></li>
+      <li><a href="#tests">Key tests & follow-up</a></li>
+      <li><a href="#daily">Daily care: plate method & movement</a></li>
+      <li><a href="#hypo">Avoiding hypoglycemia</a></li>
+      <li><a href="#meds">Medicines overview</a></li>
+      <li><a href="#sickday">Sick-day rules</a></li>
+      <li><a href="#checks">Foot, eye, and kidney checks</a></li>
+      <li><a href="#when-to-call">When to call your clinician</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- ===== Display AD (near top) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- What is -->
+  <section id="what-is" class="section">
+    <h2>What is type 2 diabetes?</h2>
+    <p class="lead"><span class="badge">In short</span> The body doesn’t use insulin well and may not make enough. Sugar builds up in the blood, affecting energy, nerves, eyes, kidneys, heart, and circulation over time. The goal is steady control that fits your life and other conditions.</p>
+    <div class="card small">
+      <p><strong>Why it matters:</strong> Good daily habits plus the right medicines lower complications, improve energy, and reduce hospital visits.</p>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>Urgent concerns (when to act)</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Very high sugars with vomiting, deep breathing, abdominal pain, or confusion</li>
+        <li>Severe thirst with very low urine; fever or signs of infection</li>
+        <li>Repeated low sugar episodes (shakiness, sweating, confusion) that don’t improve with fast sugar</li>
+        <li>Chest pain, shortness of breath, sudden weakness or speech trouble</li>
+      </ul>
+      <p class="small">These can be emergencies — seek urgent medical care.</p>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section id="symptoms" class="section">
+    <h2>Common symptoms</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>More thirst and urination, especially at night</li>
+          <li>Fatigue, blurry vision, slower wound healing</li>
+          <li>Tingling or numbness in feet/hands</li>
+          <li>Frequent infections (skin, urine, gums)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Often silent</p>
+        <p>Many people have no obvious symptoms. Regular checks (A1C, kidney, eyes, feet) help catch problems early.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after symptoms) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>Key tests & follow-up</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Check</th><th scope="col">Why it matters</th><th scope="col">Typical frequency</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>A1C</strong></td>
+          <td>Average blood sugar over ~3 months</td>
+          <td>Every 3–6 months (per plan)</td>
+        </tr>
+        <tr>
+          <td><strong>Kidney tests</strong> (eGFR, urine albumin)</td>
+          <td>Detect early kidney changes</td>
+          <td>Yearly or per plan</td>
+        </tr>
+        <tr>
+          <td><strong>Lipids</strong></td>
+          <td>Heart risk assessment</td>
+          <td>Yearly or per plan</td>
+        </tr>
+        <tr>
+          <td><strong>Eyes</strong> (dilated exam)</td>
+          <td>Find treatable changes early</td>
+          <td>Yearly (or as advised)</td>
+        </tr>
+        <tr>
+          <td><strong>Feet</strong> (monofilament, pulses)</td>
+          <td>Prevent sores and infections</td>
+          <td>At each visit; self-checks weekly</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">Targets are individualized based on age, other conditions, and risks. Your clinician sets your plan.</p>
+  </section>
+
+  <!-- Daily care -->
+  <section id="daily" class="section">
+    <h2>Daily care: plate method & movement</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Simple plate method</p>
+        <ul class="list">
+          <li>Half plate: non-starchy vegetables (greens, cucumber, carrots)</li>
+          <li>Quarter plate: protein (fish, chicken, tofu, dal/beans)</li>
+          <li>Quarter plate: whole-grain or starchy food (roti, brown rice, small potato)</li>
+          <li>Add healthy fats (nuts, olive/mustard oil in moderation)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Smart drink choices</p>
+        <ul class="list">
+          <li>Water, unsweetened tea/coffee; limit sweet drinks and juices</li>
+          <li>Spread fluids through the day; taper in the evening if night urination is an issue</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Movement plan</p>
+        <ul class="list">
+          <li>Short walks after meals (5–10 minutes) help post-meal sugar</li>
+          <li>Gentle strength twice weekly (sit-to-stand, light bands)</li>
+          <li>Footwear with good support; check feet after walks</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Small, repeatable steps win. Keep a simple log of meals, walks, and any symptoms to review at visits.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after daily care) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Hypoglycemia -->
+  <section id="hypo" class="section">
+    <h2>Avoiding hypoglycemia</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Know the signs</p>
+        <ul class="list">
+          <li>Shaky, sweaty, fast heartbeat, headache, sudden hunger</li>
+          <li>Irritability or confusion; in severe cases, fainting</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Quick action plan</p>
+        <ul class="list">
+          <li>Have fast sugar ready (glucose tabs/gel or sweet drink per plan)</li>
+          <li>Recheck after treatment; eat a small snack if the next meal is far away</li>
+          <li>Review triggers (missed meal, extra activity, too much medicine)</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Higher risk with some medicines (e.g., sulfonylureas, insulin). Your team will tailor safer targets and doses.
+      </div>
+    </div>
+  </section>
+
+  <!-- Medicines -->
+  <section id="meds" class="section">
+    <h2>Medicines overview</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Metformin</p>
+        <ul class="list">
+          <li>Often first choice; helps the body use insulin better</li>
+          <li>Common stomach side effects improve when taken with food; kidney function is monitored</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">SGLT2 inhibitors</p>
+        <ul class="list">
+          <li>Lower sugar by helping the kidneys pass glucose</li>
+          <li>Heart and kidney benefits in many; watch for dehydration, genital infections</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">GLP-1 receptor medicines</p>
+        <ul class="list">
+          <li>Help appetite, slow stomach emptying, and improve insulin response</li>
+          <li>Often aid weight and heart risk; stomach upset is common early on</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Others</p>
+        <ul class="list">
+          <li>DPP-4 inhibitors; pioglitazone (fluid retention risk); sulfonylureas (low sugar risk); insulin when needed</li>
+        </ul>
+        <p class="small">Choice depends on your goals, kidneys/heart, weight, and cost. Never change doses without guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sick day -->
+  <section id="sickday" class="section">
+    <h2>Sick-day rules</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Check sugars more often during illness</li>
+          <li>Keep oral rehydration or low-sugar electrolyte drinks on hand</li>
+          <li>Have easy foods (soup, yogurt, khichdi/porridge) if appetite is low</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Some medicines may need pausing during severe vomiting/diarrhea or dehydration risk — follow your care team’s written plan.
+      </div>
+    </div>
+  </section>
+
+  <!-- Checks -->
+  <section id="checks" class="section">
+    <h2>Foot, eye, and kidney checks</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Feet</p>
+        <ul class="list">
+          <li>Daily quick look: between toes, heels, nails</li>
+          <li>Socks without tight bands; well-fitting shoes</li>
+          <li>Report sores, redness, or numb spots</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Eyes & kidneys</p>
+        <ul class="list">
+          <li>Dilated eye exam yearly helps prevent vision loss</li>
+          <li>Kidney tests (eGFR, urine albumin) guide protective treatment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- When to call -->
+  <section id="when-to-call" class="section">
+    <h2>When to call your clinician</h2>
+    <div class="card">
+      <ul class="list">
+        <li>Frequent lows, or sugars staying very high despite your plan</li>
+        <li>New foot sore, infection, or swelling</li>
+        <li>Vision changes, vomiting/diarrhea > 6–8 hours, or unable to keep fluids down</li>
+        <li>Before starting new medicines or supplements that might affect sugar</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Do I need to avoid all carbs?</p>
+        <p>No. Choose portion-controlled whole grains and plenty of non-starchy vegetables. Pair carbs with protein and healthy fats.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is walking enough?</p>
+        <p>Post-meal walks help a lot. Add light strength and balance work for joint and fall protection.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can I fast?</p>
+        <p>Discuss first. Fasting can change medicine needs and raise low-sugar risk, especially with insulin or sulfonylureas.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What’s a good A1C?</p>
+        <p>Targets are personalized for seniors based on health and risks. Your clinician will set a safe goal for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalCondition",
+  "name":"Type 2 diabetes mellitus",
+  "alternateName":["Type 2 diabetes","T2D"],
+  "description":"Type 2 diabetes in older adults: symptoms, urgent concerns, A1C and lab checks, daily plate method and walking plan, hypoglycemia prevention, medicines overview, sick-day rules, foot/eye/kidney care, and when to seek help.",
+  "signOrSymptom":[
+    {"@type":"MedicalSymptom","name":"Increased thirst and urination"},
+    {"@type":"MedicalSymptom","name":"Fatigue"},
+    {"@type":"MedicalSymptom","name":"Blurred vision"},
+    {"@type":"MedicalSymptom","name":"Slow wound healing"},
+    {"@type":"MedicalSymptom","name":"Numbness or tingling in feet"}
+  ],
+  "possibleComplication":[
+    {"@type":"MedicalEntity","name":"Kidney disease"},
+    {"@type":"MedicalEntity","name":"Vision loss"},
+    {"@type":"MedicalEntity","name":"Heart disease"},
+    {"@type":"MedicalEntity","name":"Nerve damage"},
+    {"@type":"MedicalEntity","name":"Foot ulcers"}
+  ],
+  "riskFactor":[
+    {"@type":"MedicalRiskFactor","name":"Older age"},
+    {"@type":"MedicalRiskFactor","name":"Family history"},
+    {"@type":"MedicalRiskFactor","name":"Overweight"},
+    {"@type":"MedicalRiskFactor","name":"Physical inactivity"}
+  ],
+  "url":"https://thevitatrack.com/type-2-diabetes"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Do I need to avoid all carbohydrates with type 2 diabetes?",
+      "acceptedAnswer":{"@type":"Answer","text":"No. Choose portion-controlled whole grains and non-starchy vegetables, and pair carbs with protein and healthy fats for steadier sugars."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is walking enough exercise for blood sugar control?",
+      "acceptedAnswer":{"@type":"Answer","text":"Post-meal walking helps a lot; adding light strength and balance work supports joints and prevents falls."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I fast if I have type 2 diabetes?",
+      "acceptedAnswer":{"@type":"Answer","text":"Discuss with your clinician. Fasting can change medicine needs and raise the risk of low sugars, especially with insulin or sulfonylureas."}
+    },
+    {
+      "@type":"Question",
+      "name":"What A1C target should I aim for as an older adult?",
+      "acceptedAnswer":{"@type":"Answer","text":"Targets are individualized based on overall health, risks, and preferences. Your clinician will set a safe goal for you."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Type 2 Diabetes","item":"https://thevitatrack.com/type-2-diabetes"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

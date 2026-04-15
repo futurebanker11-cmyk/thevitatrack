@@ -1,0 +1,506 @@
+---
+title: "Cough"
+slug: "cough"
+category: "symptoms"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Cough — Senior Symptom Guide • TheVitatrack</title>
+<meta name="description" content="Cough in older adults: red flags, what type of cough means, common causes (infections, heart/lung, reflux, medicines), safe first steps, home care, tests, and what to track. Includes guidance for blood thinners, COPD, and heart failure." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+  .ok{
+    background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Cough</h1>
+    <p>Red flags, what the sound and duration can mean, common causes (infections, COPD/asthma, heart failure, reflux, post-nasal drip, medicines), safe first steps, home care, testing, and tracking for older adults.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#about">What type of cough can mean</a></li>
+      <li><a href="#red-flags">When to call emergency</a></li>
+      <li><a href="#types">Cough types & duration</a></li>
+      <li><a href="#causes">Common causes by pattern</a></li>
+      <li><a href="#first-steps">Safe first steps & home care</a></li>
+      <li><a href="#meds">Medicine cautions</a></li>
+      <li><a href="#tests">What clinicians may do</a></li>
+      <li><a href="#tracking">What to track</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>What type of cough can mean</h2>
+    <p class="lead"><span class="badge">Overview</span> Cough protects the airways. The <strong>sound</strong> (dry vs. phlegm), <strong>duration</strong> (days vs. weeks), and <strong>pairing</strong> with fever, breathlessness, or heart symptoms help identify the cause. In seniors, new or worsening cough—especially at night or with exertion—deserves attention.</p>
+    <div class="card small">
+      <p><strong>Clues:</strong> Dry + tickle (post-nasal drip), heartburn + night cough (reflux), wheeze + chest tightness (asthma/COPD), leg swelling + orthopnea (heart failure), fever + chills (pneumonia/viral).</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to call emergency</h2>
+    <div class="danger">
+      <ul class="list">
+        <li><strong>Severe breathlessness</strong>, blue lips, confusion, or oxygen saturation &lt; 90% (if you monitor)</li>
+        <li><strong>Chest pain/pressure</strong>, especially with sweating, nausea, or radiation to arm/jaw</li>
+        <li>Coughing up <strong>large amounts of blood</strong> or pink frothy sputum</li>
+        <li>High fever with rigors and weakness, or new confusion</li>
+        <li>Known COPD/asthma with rapidly worsening wheeze not responding to your plan</li>
+      </ul>
+      <p class="small">Possible pneumonia, pulmonary embolism, heart attack, heart failure flare, or severe asthma/COPD exacerbation.</p>
+    </div>
+  </section>
+
+  <!-- Types & duration -->
+  <section id="types" class="section">
+    <h2>Cough types & duration</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Pattern</th><th scope="col">Duration</th><th scope="col">Common causes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Dry (non-productive)</strong></td>
+          <td>Days–weeks</td>
+          <td>Viral infection, post-viral cough, post-nasal drip, ACE-inhibitor, GERD, early heart failure</td>
+        </tr>
+        <tr>
+          <td><strong>Productive (phlegm)</strong></td>
+          <td>Days–weeks</td>
+          <td>Bronchitis, pneumonia, COPD/asthma flare</td>
+        </tr>
+        <tr>
+          <td><strong>Nocturnal</strong></td>
+          <td>Nights</td>
+          <td>GERD, post-nasal drip, asthma, heart failure (worse when lying flat)</td>
+        </tr>
+        <tr>
+          <td><strong>Chronic</strong></td>
+          <td>&gt;8 weeks</td>
+          <td>Post-nasal drip, asthma/COPD, GERD, ACE-inhibitor, bronchiectasis, interstitial lung disease</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD (after types) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Causes by pattern -->
+  <section id="causes" class="section">
+    <h2>Common causes by pattern</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Infections</p>
+        <ul class="list">
+          <li><strong>Viral:</strong> common cold, influenza, COVID-19 (often dry → later phlegm)</li>
+          <li><strong>Bacterial:</strong> pneumonia (fever, chest pain, shortness of breath)</li>
+          <li><strong>Post-infectious</strong> cough: lingers after colds for weeks</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Airways & lungs</p>
+        <ul class="list">
+          <li><strong>Asthma/COPD:</strong> wheeze, chest tightness, triggers, morning phlegm</li>
+          <li><strong>Bronchiectasis:</strong> chronic productive cough with recurrent infections</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Heart & fluid</p>
+        <ul class="list">
+          <li><strong>Heart failure:</strong> night cough, breathlessness when lying flat, leg swelling</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Upper airway & reflux</p>
+        <ul class="list">
+          <li><strong>Post-nasal drip</strong> (allergies/sinus): throat clearing, tickle</li>
+          <li><strong>GERD:</strong> heartburn, sour taste, worse after meals or at night</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Medicines & other</p>
+        <ul class="list">
+          <li><strong>ACE-inhibitors:</strong> lisinopril/ramipril can cause dry cough</li>
+          <li>Environmental smoke/irritants; aspiration with swallowing issues</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- First steps & home care -->
+  <section id="first-steps" class="section">
+    <h2>Safe first steps & home care</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Check temperature and note <strong>onset</strong>, <strong>triggers</strong>, and <strong>night vs. day</strong> pattern.</li>
+          <li>Hydrate; warm fluids or honey-lemon (if not diabetic-restricted) may soothe.</li>
+          <li>Use a <strong>humidifier</strong> or steam cautiously; keep bedroom air not too dry.</li>
+          <li>Elevate head of bed; avoid eating within 2–3 hours of bedtime (reflux).</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        <p class="kicker">If you have COPD/asthma</p>
+        <ul class="list">
+          <li>Follow your <strong>rescue inhaler</strong> / spacer plan; check inhaler technique.</li>
+          <li>Monitor oxygen if you have a pulse oximeter; seek help if dropping or worsening.</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Call your clinician</strong> if cough lasts &gt;3 weeks, keeps you from sleeping, or you have weight loss, night sweats, blood, or repeated pneumonias.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after first steps) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Medicines -->
+  <section id="meds" class="section">
+    <h2>Medicine cautions</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">For symptom relief</p>
+        <ul class="list">
+          <li><strong>Acetaminophen</strong> for fever/aches within safe daily limits (watch combination products).</li>
+          <li><strong>Dextromethorphan</strong> may reduce cough; avoid with certain antidepressants (risk of interactions).</li>
+          <li><strong>Guaifenesin</strong> can loosen phlegm with fluids.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Use with care / avoid unless advised</p>
+        <ul class="list">
+          <li><strong>Codeine / opioid syrups:</strong> sedation, fall risk, constipation; avoid driving.</li>
+          <li><strong>NSAIDs</strong> can affect kidneys/BP and irritate stomach; check if on blood thinners.</li>
+          <li><strong>ACE-inhibitor cough:</strong> ask about switching class (e.g., to ARB) if persistent.</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <strong>Antibiotics aren’t needed for most viral coughs.</strong> Seek guidance if high fever, chest pain, shortness of breath, or symptoms persist.
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>What clinicians may do</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Step</th><th scope="col">Purpose</th><th scope="col">Examples</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>History & exam</strong></td>
+          <td>Identify pattern/severity</td>
+          <td>Vitals, oxygen level, lung sounds, edema, reflux/ENT exam, med review</td>
+        </tr>
+        <tr>
+          <td><strong>Targeted tests</strong></td>
+          <td>Confirm/inform treatment</td>
+          <td>COVID-19/flu tests; chest X-ray; CBC; BNP if heart failure suspected; spirometry</td>
+        </tr>
+        <tr>
+          <td><strong>Further workup</strong></td>
+          <td>Chronic/unexplained</td>
+          <td>CT chest, echocardiogram, swallow/aspiration studies, allergy/ENT eval</td>
+        </tr>
+        <tr>
+          <td><strong>Treatment</strong></td>
+          <td>Cause-directed</td>
+          <td>Bronchodilators/steroids for asthma/COPD exacerbation; diuretics for heart failure; antibiotics if bacterial pneumonia; reflux/post-nasal drip therapy</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Onset & duration (days/weeks), day vs. night pattern</li>
+          <li>Dry vs. phlegm (color/amount), any blood</li>
+          <li>Fever, breathlessness, chest pain, heartburn, wheeze</li>
+          <li>Exposures (sick contacts, smoke), new medicines (ACE-inhibitors)</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        A simple diary (including response to inhalers or cough remedies) helps speed diagnosis.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">How long does a viral cough last?</p>
+        <p>Often 2–3 weeks. If it’s getting worse after week one, brings high fever, or you’re short of breath, seek care.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Night cough but no fever?</p>
+        <p>Think reflux, post-nasal drip, asthma, or heart failure (if you also have leg swelling and need more pillows).</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Cough with pink frothy sputum?</p>
+        <p>Concerning for acute heart failure—seek emergency care.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">ACE-inhibitor and new dry cough?</p>
+        <p>Common side effect—ask your clinician about alternatives (e.g., ARB).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card small">
+      <ul class="list">
+        <li><a href="#">Breathlessness (Dyspnea)</a></li>
+        <li><a href="#">COPD</a></li>
+        <li><a href="#">Asthma</a></li>
+        <li><a href="#">GERD / Acid Reflux</a></li>
+        <li><a href="#">Colds, Flu & COVID-19</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Cough",
+  "description":"Cough in older adults: red flags, cough types, common causes, home care, medicine cautions, clinician evaluation, and tracking.",
+  "about":{"@type":"MedicalSymptom","name":"Cough"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/cough"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How long does a viral cough last?","acceptedAnswer":{"@type":"Answer","text":"Often 2–3 weeks. Worsening after week one, high fever, or shortness of breath warrants medical review."}},
+    {"@type":"Question","name":"What causes night cough without fever?","acceptedAnswer":{"@type":"Answer","text":"Common causes are reflux, post-nasal drip, asthma, or heart failure."}},
+    {"@type":"Question","name":"What does pink frothy sputum suggest?","acceptedAnswer":{"@type":"Answer","text":"It can indicate acute heart failure and needs emergency care."}},
+    {"@type":"Question","name":"Can ACE-inhibitors cause cough?","acceptedAnswer":{"@type":"Answer","text":"Yes; a dry persistent cough is a known side effect. Ask about alternative medicines such as an ARB."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Symptoms (A–Z)","item":"https://thevitatrack.com/symptoms/"},
+    {"@type":"ListItem","position":3,"name":"Cough","item":"https://thevitatrack.com/cough"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

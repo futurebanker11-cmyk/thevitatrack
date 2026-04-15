@@ -1,0 +1,554 @@
+---
+title: "Chronic Kidney Disease (CKD)"
+slug: "chronic-kidney-disease-ckd"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Chronic Kidney Disease (CKD) — Senior-Friendly Guide • TheVitatrack</title>
+<meta name="description" content="CKD made simple for seniors: stages & eGFR, red-flags, symptoms, common causes, key tests, safe medicines, kidney-smart diet (salt, protein, potassium, phosphorus), hydration, sick-day rules, and when to see a kidney specialist." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (consistent) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Chronic Kidney Disease (CKD)</h1>
+    <p>Stages & eGFR, red-flags, symptoms, common causes, key tests and targets, kidney-smart medicines, salt & potassium tips, safe hydration, sick-day rules, and when to see a kidney specialist.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is-ckd">What is CKD?</a></li>
+      <li><a href="#red-flags">When to seek urgent help</a></li>
+      <li><a href="#symptoms">Common symptoms</a></li>
+      <li><a href="#stages">CKD stages & eGFR</a></li>
+      <li><a href="#causes">Common causes</a></li>
+      <li><a href="#tests">Key tests & monitoring</a></li>
+      <li><a href="#meds">Medicine safety & kidney-protective meds</a></li>
+      <li><a href="#diet">Kidney-smart diet (salt, protein, potassium, phosphorus)</a></li>
+      <li><a href="#fluids">Hydration & sick-day rules</a></li>
+      <li><a href="#specialist">When to see a nephrologist</a></li>
+      <li><a href="#daily">Daily tips & home setup</a></li>
+      <li><a href="#questions">Questions for your clinician</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- ===== Display AD (near top) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- What is CKD -->
+  <section id="what-is-ckd" class="section">
+    <h2>What is CKD?</h2>
+    <p class="lead"><span class="badge">In short</span> Chronic Kidney Disease means the kidneys are not filtering blood as well as they should for <strong>3 months or longer</strong> — often shown by a lower <strong>eGFR</strong> or protein/leakage in urine (<strong>albumin</strong>). Goals: protect kidney function, control blood pressure & diabetes, and prevent heart problems.</p>
+    <div class="card small">
+      <p><strong>Good to know:</strong> Many people live well with early CKD by following steady routines: low-salt eating, movement, safe medicines, and regular checks.</p>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent help</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Severe shortness of breath, chest pain, or confusion</li>
+        <li>Very little urine, sudden leg/face swelling, or rapid weight gain</li>
+        <li>High potassium symptoms: muscle weakness, palpitations</li>
+        <li>Blood in urine, severe flank pain with fever (possible infection/stone)</li>
+      </ul>
+      <p class="small">These may be emergencies. Seek care immediately.</p>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section id="symptoms" class="section">
+    <h2>Common symptoms</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Tiredness, low appetite, morning nausea</li>
+          <li>Swelling in feet/ankles, puffiness around eyes</li>
+          <li>Night urination, foamy urine (protein)</li>
+          <li>Itching, muscle cramps, trouble concentrating (later stages)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">High Blood Pressure</a></li>
+          <li><a href="#">Type 2 Diabetes</a></li>
+          <li><a href="#">Swollen Feet</a></li>
+          <li><a href="#">Hydration & Drinks</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after symptoms) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Stages -->
+  <section id="stages" class="section">
+    <h2>CKD stages & eGFR</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Stage</th><th scope="col">eGFR (mL/min/1.73m²)</th><th scope="col">Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>G1</strong></td><td>≥ 90</td><td>Normal eGFR with other kidney markers (e.g., albumin) abnormal</td></tr>
+        <tr><td><strong>G2</strong></td><td>60–89</td><td>Mildly reduced; protect with BP, sugar, and salt control</td></tr>
+        <tr><td><strong>G3a</strong></td><td>45–59</td><td>Moderate; check medicines, labs, and albumin regularly</td></tr>
+        <tr><td><strong>G3b</strong></td><td>30–44</td><td>Moderate-to-severe; plan ahead and review diet/minerals</td></tr>
+        <tr><td><strong>G4</strong></td><td>15–29</td><td>Severe; close follow-up, discuss advanced planning</td></tr>
+        <tr><td><strong>G5</strong></td><td>&lt; 15</td><td>Kidney failure; dialysis or transplant planning if appropriate</td></tr>
+      </tbody>
+    </table>
+    <p class="small">Albumin in urine (A1/A2/A3) adds risk information; both G and A categories guide care.</p>
+  </section>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Common causes</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Diabetes (high blood sugar damages filters)</li>
+          <li>High blood pressure (long-term strain on kidneys)</li>
+          <li>Glomerular diseases, polycystic kidney disease</li>
+          <li>Repeated kidney infections, stones, obstruction (prostate)</li>
+          <li>Long-term high-dose painkillers/NSAIDs or certain medicines</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Tip:</strong> Treating the cause slows decline. Glucose & blood pressure control are the biggest wins for many people.
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests & monitoring -->
+  <section id="tests" class="section">
+    <h2>Key tests & monitoring</h2>
+    <div class="card">
+      <ul class="list">
+        <li><strong>Blood:</strong> eGFR/creatinine, electrolytes (especially potassium), bicarbonate, HbA1c if diabetic</li>
+        <li><strong>Urine:</strong> albumin-creatinine ratio (ACR) to measure leak</li>
+        <li><strong>BP checks:</strong> home BP log; share averages</li>
+        <li><strong>Mineral & bone:</strong> calcium, phosphate, vitamin D, parathyroid hormone (later stages)</li>
+        <li><strong>Medication review:</strong> avoid kidney-straining drugs when possible</li>
+      </ul>
+      <p class="small">Frequency depends on stage and albumin level (often every 3–6 months, closer in advanced CKD).</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after tests) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Medicines -->
+  <section id="meds" class="section">
+    <h2>Medicine safety & kidney-protective meds</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Often protective (ask your clinician)</p>
+        <ul class="list">
+          <li>BP control (targets individualized); medicines may include ACE-inhibitor/ARB</li>
+          <li>For diabetes with CKD: selected options that can protect kidneys (ask about eligibility)</li>
+          <li>Statins for heart protection in many older adults with CKD</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Use carefully / avoid unless advised</p>
+        <ul class="list">
+          <li>NSAIDs (ibuprofen, diclofenac) — can reduce kidney blood flow</li>
+          <li>Certain antibiotics and contrast dyes — dose/choice may change</li>
+          <li>Herbal supplements of unknown content</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small note" style="margin-top:12px">Always check doses against kidney function and review all OTC/supplements with your clinician.</p>
+  </section>
+
+  <!-- Diet -->
+  <section id="diet" class="section">
+    <h2>Kidney-smart diet (salt, protein, potassium, phosphorus)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Salt (sodium)</p>
+        <ul class="list">
+          <li>Aim for lower-salt choices to help BP and swelling</li>
+          <li>Rinse canned foods; choose fresh or low-salt versions</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Protein</p>
+        <ul class="list">
+          <li>Moderate portion sizes; lean proteins (fish, poultry, tofu)</li>
+          <li>Adjustments may be needed in advanced CKD under dietitian guidance</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Potassium</p>
+        <ul class="list">
+          <li>Some CKD stages run high potassium — ask if you need limits</li>
+          <li>Favor lower-potassium choices if advised; learn smart swaps</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Phosphorus</p>
+        <ul class="list">
+          <li>Limit cola drinks and processed foods with “phos-” additives</li>
+          <li>Dairy portions may need review in later stages</li>
+        </ul>
+      </div>
+    </div>
+    <div class="small" style="margin-top:8px">
+      Related: <a href="#">Senior-Friendly Recipes & Drinks</a> · <a href="#">Hydration & Drinks</a> · <a href="#">Type 2 Diabetes</a>
+    </div>
+  </section>
+
+  <!-- Fluids -->
+  <section id="fluids" class="section">
+    <h2>Hydration & sick-day rules</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Hydration</p>
+        <ul class="list">
+          <li>Steady small sips through the day unless on a fluid limit</li>
+          <li>Evening cut-down if night urination is troublesome</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Sick-day rules (ask for a written plan)</p>
+        <ul class="list">
+          <li>During vomiting/diarrhea, some medicines may be paused — confirm which</li>
+          <li>Re-start when eating/drinking normally and approved by your clinician</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small calm" style="margin-top:10px">If you cannot keep fluids down or feel faint, seek medical advice promptly.</p>
+  </section>
+
+  <!-- Specialist -->
+  <section id="specialist" class="section">
+    <h2>When to see a nephrologist</h2>
+    <div class="card">
+      <ul class="list">
+        <li>eGFR persistently &lt; 30 (G4–G5) or fast decline</li>
+        <li>Heavy albumin in urine or difficult-to-control BP</li>
+        <li>Frequent high potassium, acid-base issues, or anemia of CKD</li>
+        <li>Planning for advanced CKD and education about options</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Daily tips -->
+  <section id="daily" class="section">
+    <h2>Daily tips & home setup</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Home BP & weight log</p>
+        <ul class="list">
+          <li>Measure BP the same way each time; bring averages</li>
+          <li>Daily weights can catch fluid changes early</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Movement & energy</p>
+        <ul class="list">
+          <li>Gentle walks most days; pace activities</li>
+          <li>Manage swelling with leg-up breaks if advised</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Medication list</p>
+        <ul class="list">
+          <li>Keep an updated list; include doses and reasons</li>
+          <li>Check for drug interactions and kidney dosing</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Kidney care is a marathon — small, steady habits protect kidneys and the heart.
+      </div>
+    </div>
+  </section>
+
+  <!-- Questions -->
+  <section id="questions" class="section">
+    <h2>Questions for your clinician</h2>
+    <div class="card">
+      <ul class="list">
+        <li>What is my current stage and urine albumin level?</li>
+        <li>What BP and A1c targets should I aim for?</li>
+        <li>Which medicines protect my kidneys and which should I avoid?</li>
+        <li>Do I need diet changes for potassium or phosphorus?</li>
+        <li>How often should I repeat blood/urine tests?</li>
+        <li>When should I see a kidney specialist?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Can CKD improve?</p>
+        <p>Early CKD can stabilize or improve when the cause is treated and blood pressure, sugar, and salt are well controlled.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is high potassium dangerous?</p>
+        <p>Yes — it can affect the heart. Your team will guide diet and medicines to keep levels safe.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do I need to stop all painkillers?</p>
+        <p>Not always. Many avoid routine NSAIDs; safer options and doses depend on your kidney function — ask for a personalized plan.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">How often should I check labs?</p>
+        <p>Varies by stage and albumin. Commonly every 3–6 months in mild/moderate CKD and more often in advanced stages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalCondition",
+  "name":"Chronic Kidney Disease",
+  "alternateName":["CKD","Chronic renal disease"],
+  "description":"Senior-focused CKD guide: stages & eGFR, symptoms, red-flags, causes, tests, kidney-protective medicines, kidney-smart diet, hydration, sick-day rules, and when to see a nephrologist.",
+  "signOrSymptom":[
+    {"@type":"MedicalSymptom","name":"Fatigue"},
+    {"@type":"MedicalSymptom","name":"Swelling (edema)"},
+    {"@type":"MedicalSymptom","name":"Foamy urine"},
+    {"@type":"MedicalSymptom","name":"Night urination"}
+  ],
+  "possibleComplication":[
+    {"@type":"MedicalEntity","name":"High potassium"},
+    {"@type":"MedicalEntity","name":"Fluid overload"},
+    {"@type":"MedicalEntity","name":"Anemia of CKD"},
+    {"@type":"MedicalEntity","name":"Bone and mineral disorder"}
+  ],
+  "riskFactor":[
+    {"@type":"MedicalRiskFactor","name":"Diabetes"},
+    {"@type":"MedicalRiskFactor","name":"Hypertension"},
+    {"@type":"MedicalRiskFactor","name":"Older age"},
+    {"@type":"MedicalRiskFactor","name":"Family history of kidney disease"}
+  ],
+  "url":"https://thevitatrack.com/chronic-kidney-disease"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Can chronic kidney disease improve?",
+      "acceptedAnswer":{"@type":"Answer","text":"Early CKD can stabilize or improve when the cause is treated and blood pressure, blood sugar, and salt intake are well controlled."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is high potassium dangerous in CKD?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. High potassium can affect the heart. Your care team can guide diet and medicines to keep levels safe."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do I need to stop all painkillers with CKD?",
+      "acceptedAnswer":{"@type":"Answer","text":"Not necessarily. Many avoid routine NSAIDs; safer options and dosing depend on kidney function. Ask for a personalized plan."}
+    },
+    {
+      "@type":"Question",
+      "name":"How often should labs be checked in CKD?",
+      "acceptedAnswer":{"@type":"Answer","text":"Frequency depends on stage and urine albumin. Many need checks every 3–6 months in mild/moderate CKD and more often in advanced stages."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Chronic Kidney Disease (CKD)","item":"https://thevitatrack.com/chronic-kidney-disease"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

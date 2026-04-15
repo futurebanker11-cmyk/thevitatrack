@@ -1,0 +1,493 @@
+---
+title: "Insomnia"
+slug: "insomnia"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Insomnia — Senior Guide • TheVitatrack</title>
+<meta name="description" content="Insomnia in older adults: causes, red flags, sleep hygiene, daytime habits, safe medicines, CBT-I, when to see a specialist, and practical routines that actually help." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Insomnia</h1>
+    <p>Trouble falling asleep, staying asleep, or waking too early—daytime fatigue, low mood, and falls risk can follow. Here’s how to find causes and build a safer sleep plan.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is">What counts as insomnia?</a></li>
+      <li><a href="#red-flags">When to seek urgent care</a></li>
+      <li><a href="#causes">Common causes in older adults</a></li>
+      <li><a href="#sleep-hygiene">Sleep hygiene that actually works</a></li>
+      <li><a href="#daytime">Daytime habits that improve sleep</a></li>
+      <li><a href="#cbti">CBT-I (gold standard)</a></li>
+      <li><a href="#meds">Medicines: safer choices & cautions</a></li>
+      <li><a href="#screen">What to screen for</a></li>
+      <li><a href="#routines">Wind-down & bedroom setup</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- What is -->
+  <section id="what-is" class="section">
+    <h2>What counts as insomnia?</h2>
+    <p class="lead"><span class="badge">In short</span> Sleep difficulty at least 3 nights per week for 3 months or more, with daytime impact (fatigue, concentration, mood, balance). Short-term insomnia can follow stress or illness; chronic insomnia often needs structured therapy.</p>
+    <div class="card small">
+      <p><strong>Why it matters:</strong> Poor sleep worsens memory, blood pressure, blood sugar, and fall risk. Good sleep protects mood, immunity, and heart health.</p>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent care</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>New chest pain, severe shortness of breath at night</li>
+        <li>Confusion, new weakness, fainting, or falls</li>
+        <li>Severe depression, suicidal thoughts, or hallucinations</li>
+        <li>Dangerous sleep behaviors (e.g., leaving home, cooking while asleep)</li>
+      </ul>
+      <p class="small">These may signal medical emergencies or unsafe sleep disorders.</p>
+    </div>
+  </section>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Common causes in older adults</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Medical & mental health</p>
+        <ul class="list">
+          <li>Pain (arthritis, neuropathy), breathlessness (COPD/CHF), reflux</li>
+          <li>Depression, anxiety, grief, loneliness</li>
+          <li>Thyroid issues, nocturia (BPH/overactive bladder)</li>
+          <li>Sleep apnea, restless legs, periodic limb movements</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Lifestyle & environment</p>
+        <ul class="list">
+          <li>Late caffeine, alcohol at night, heavy evening meals</li>
+          <li>Irregular sleep schedule, long daytime naps</li>
+          <li>Noise, light, room temperature, uncomfortable bedding</li>
+          <li>Screen time in the hour before bed</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Causes) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Sleep hygiene -->
+  <section id="sleep-hygiene" class="section">
+    <h2>Sleep hygiene that actually works</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Timing rules</p>
+        <ul class="list">
+          <li>Fixed wake-up time daily (set an alarm—even on weekends)</li>
+          <li>Bedtime only when sleepy; if awake >20 minutes, get up to a dim-light calm activity, then return to bed when sleepy</li>
+          <li>Naps: keep to ≤20–30 minutes and before 2 pm</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Evening habits</p>
+        <ul class="list">
+          <li>Stop caffeine after mid-afternoon; limit alcohol (disrupts sleep later)</li>
+          <li>Light snack if hungry; avoid large or spicy meals within 3 hours of bed</li>
+          <li>Screen “sunset”: dim lights and screens 60 minutes before bed</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Bedroom environment</p>
+        <ul class="list">
+          <li>Cool, dark, quiet room; consider eye mask/earplugs/white-noise</li>
+          <li>Comfortable mattress/pillows; clear paths and nightlights for safety</li>
+          <li>Use the bed only for sleep and intimacy (no TV or phone scrolling)</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Build a short pre-sleep routine: warm shower, gentle stretches, slow breathing (inhale 4, exhale 6), then lights out.
+      </div>
+    </div>
+  </section>
+
+  <!-- Daytime -->
+  <section id="daytime" class="section">
+    <h2>Daytime habits that improve sleep</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Light & movement</p>
+        <ul class="list">
+          <li>Morning daylight for 15–30 minutes anchors the body clock</li>
+          <li>Daily activity: a walk after breakfast or lunch helps nighttime sleep</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Fluids & bathroom</p>
+        <ul class="list">
+          <li>Hydrate earlier; taper fluids 2–3 hours before bed</li>
+          <li>Limit evening caffeine and diuretics; review bladder meds with your clinician</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Daytime) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- CBT-I -->
+  <section id="cbti" class="section">
+    <h2>CBT-I (gold standard)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">What it is</p>
+        <p>Structured program (usually 4–8 weeks) that uses stimulus control, sleep restriction, relaxation, and cognitive skills to retrain sleep.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Why it’s first-line</p>
+        <ul class="list">
+          <li>Works as well as or better than medicines—benefits last</li>
+          <li>Safe for older adults; no morning grogginess or falls from sedation</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Ask for a CBT-I referral or a reputable digital CBT-I program if a local therapist isn’t available.
+      </div>
+    </div>
+  </section>
+
+  <!-- Medicines -->
+  <section id="meds" class="section">
+    <h2>Medicines: safer choices & cautions</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Often preferred (discuss with your clinician)</p>
+        <ul class="list">
+          <li><strong>Doxepin (low-dose)</strong> for sleep maintenance</li>
+          <li><strong>Melatonin</strong> 1–3 mg 1–2 hours before bed for timing issues</li>
+          <li><strong>Ramelteon</strong> (melatonin-receptor agonist)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Use with caution or avoid</p>
+        <ul class="list">
+          <li>Benzodiazepines and “Z-drugs” (falls, confusion, dependence)</li>
+          <li>Diphenhydramine/“PM” products (anticholinergic side effects)</li>
+          <li>Alcohol to sleep—fragments sleep and raises fall risk</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Medicines are most helpful short-term while CBT-I and habits take hold. Review interactions (e.g., other sedatives, opioids, alcohol).
+      </div>
+    </div>
+  </section>
+
+  <!-- Screen -->
+  <section id="screen" class="section">
+    <h2>What to screen for</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Sleep disorders</p>
+        <ul class="list">
+          <li>Obstructive sleep apnea (snoring, pauses, waking gasping)</li>
+          <li>Restless legs/limb movements (urge to move, evening worse)</li>
+          <li>REM behavior disorder (acting out dreams)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Medical triggers</p>
+        <ul class="list">
+          <li>Thyroid imbalance, pain, reflux, COPD/CHF</li>
+          <li>Nocturia from BPH/overactive bladder; diuretic timing</li>
+          <li>Medicines: steroids, stimulants, late-day caffeine, decongestants</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routines -->
+  <section id="routines" class="section">
+    <h2>Wind-down & bedroom setup</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">30–60 minutes before bed</p>
+        <ul class="list">
+          <li>Dim lights → warm shower → gentle stretches → breathing 4-6</li>
+          <li>Write tomorrow’s to-dos to quiet mental chatter</li>
+          <li>Set phone on Do Not Disturb; charge outside the bedroom if possible</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Bed safety</p>
+        <ul class="list">
+          <li>Nightlights along the path to the bathroom</li>
+          <li>Clear floors; supportive shoes if you rise at night</li>
+          <li>Keep water and glasses within reach to avoid searching in the dark</li>
+        </ul>
+      </div>
+      <div class="card small">
+        Related: <a href="#">GERD / Acid Reflux</a> · <a href="#">Depression (Late Life)</a> · <a href="#">BPH / Night Urination</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">How much sleep do older adults need?</p>
+        <p>Most do well with 7–8 hours. Quality and consistency matter more than exact number.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is melatonin safe?</p>
+        <p>Often well-tolerated at low doses (1–3 mg). Higher doses can cause grogginess—start low and review with your clinician.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Why do I wake at 3 am?</p>
+        <p>Common with early bedtimes, stress, pain, reflux, or sleep apnea. Use the 20-minute rule: quiet activity in dim light until sleepy again.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">When to see a sleep specialist?</p>
+        <p>Snoring with pauses, acting out dreams, persistent insomnia despite CBT-I, or if medicines are needed beyond short-term.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Insomnia",
+  "description":"Older-adult guide to insomnia: causes, red flags, sleep hygiene, daytime habits, CBT-I, safer medication options, and bedroom setup.",
+  "about":{"@type":"MedicalCondition","name":"Insomnia"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/insomnia"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"How much sleep do older adults need?",
+      "acceptedAnswer":{"@type":"Answer","text":"Most older adults do well with 7–8 hours of sleep. Regular schedules and good sleep quality are key."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is melatonin safe for insomnia?",
+      "acceptedAnswer":{"@type":"Answer","text":"Low-dose melatonin (1–3 mg) can help with sleep timing and is often well-tolerated. Discuss dosing and timing with your clinician."}
+    },
+    {
+      "@type":"Question",
+      "name":"Why do I wake in the early morning hours?",
+      "acceptedAnswer":{"@type":"Answer","text":"Early awakenings can follow early bedtimes, stress, pain, reflux, or sleep apnea. Use stimulus control—leave bed if awake over 20 minutes and return when sleepy."}
+    },
+    {
+      "@type":"Question",
+      "name":"When should I see a sleep specialist?",
+      "acceptedAnswer":{"@type":"Answer","text":"If you have snoring with gasps, act out dreams, persistent insomnia despite CBT-I, or need ongoing sleep medicines, a specialist evaluation is helpful."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Insomnia","item":"https://thevitatrack.com/insomnia"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

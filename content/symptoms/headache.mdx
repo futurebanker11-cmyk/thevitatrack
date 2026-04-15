@@ -1,0 +1,492 @@
+---
+title: "Headache"
+slug: "headache"
+category: "symptoms"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Headache — Senior Symptom Guide • TheVitatrack</title>
+<meta name="description" content="Headache in older adults: emergency red flags (sudden worst-ever, stroke signs, fever/stiff neck, new after age 50), common causes, safe first steps, medicine cautions, clinician tests, and what to track." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+  .ok{
+    background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Headache</h1>
+    <p>Emergency signs, common causes in older adults, safe first steps, medicine cautions, clinician evaluation, and what to track.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#about">What headache can mean</a></li>
+      <li><a href="#red-flags">When to call emergency</a></li>
+      <li><a href="#causes">Common causes by pattern</a></li>
+      <li><a href="#first-steps">Safe first steps & home care</a></li>
+      <li><a href="#meds">Medicine cautions</a></li>
+      <li><a href="#tests">What clinicians may do</a></li>
+      <li><a href="#tracking">What to track</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>What headache can mean</h2>
+    <p class="lead"><span class="badge">Overview</span> Many headaches are benign (tension-type, migraine), but in older adults new or different headaches deserve attention. The pattern, suddenness, associated symptoms, medicines, hydration, sleep, and vision changes help find the cause.</p>
+    <div class="card small">
+      <p><strong>New after age 50</strong>, rapidly worsening, or different from your usual pattern needs medical review even if pain is moderate.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to call emergency</h2>
+    <div class="danger">
+      <ul class="list">
+        <li><strong>“Worst-ever” sudden headache</strong> (peaks within seconds)</li>
+        <li><strong>Stroke signs:</strong> face droop, arm weakness, speech trouble, new confusion</li>
+        <li><strong>Fever</strong> with stiff neck or rash</li>
+        <li><strong>New headache after head injury</strong> or with fainting</li>
+        <li><strong>New visual loss</strong>, double vision, jaw pain when chewing, or scalp tenderness (possible temporal arteritis)</li>
+        <li>Severe headache with <strong>eye pain/halos, nausea</strong> (possible acute glaucoma)</li>
+        <li>Headache with <strong>cancer, immune suppression, or anticoagulants</strong></li>
+      </ul>
+      <p class="small">These may threaten life or vision. Seek urgent care.</p>
+    </div>
+  </section>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Common causes by pattern</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Pattern</th><th scope="col">Clues</th><th scope="col">Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Tension-type</strong></td>
+          <td>Band-like pressure, mild–moderate, no nausea, activity okay</td>
+          <td>Stress, posture, neck strain; simple measures often help</td>
+        </tr>
+        <tr>
+          <td><strong>Migraine (± aura)</strong></td>
+          <td>Pulsing, moderate–severe, worse with activity, ± nausea/light-sound sensitivity</td>
+          <td>May start later in life; aura = visual/zap sensations before pain</td>
+        </tr>
+        <tr>
+          <td><strong>Medication-overuse</strong></td>
+          <td>Near-daily headaches; frequent painkiller use</td>
+          <td>Risk if simple pain meds ≥15 d/mo or combos/triptans ≥10 d/mo</td>
+        </tr>
+        <tr>
+          <td><strong>Dehydration / missed meals</strong></td>
+          <td>Thirst, darker urine, better after fluids/food</td>
+          <td>Common in hot weather, illness, diuretics</td>
+        </tr>
+        <tr>
+          <td><strong>Sinus-related</strong></td>
+          <td>Facial pressure, worse bending forward, nasal congestion</td>
+          <td>True sinus infection is less common than assumed</td>
+        </tr>
+        <tr>
+          <td><strong>Neck/cervicogenic</strong></td>
+          <td>Pain begins in neck, reduced neck motion</td>
+          <td>Posture, arthritis; responds to physio/ergonomics</td>
+        </tr>
+        <tr>
+          <td><strong>Temporal arteritis (GCA)</strong></td>
+          <td>New headache >50, scalp tender, jaw pain chewing, vision change</td>
+          <td>Urgent tests (ESR/CRP); early treatment protects vision</td>
+        </tr>
+        <tr>
+          <td><strong>Acute angle-closure glaucoma</strong></td>
+          <td>Severe eye pain, halos, nausea, hard eye</td>
+          <td>Emergency eye pressure treatment needed</td>
+        </tr>
+        <tr>
+          <td><strong>Sleep apnea / poor sleep</strong></td>
+          <td>Morning headaches, loud snoring, daytime sleepiness</td>
+          <td>Sleep study may help; treatable</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD (after Causes) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- First steps -->
+  <section id="first-steps" class="section">
+    <h2>Safe first steps & home care</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Comfort & routine</p>
+        <ul class="list">
+          <li>Hydrate (water or oral rehydration); small frequent sips if nauseated.</li>
+          <li>Regular meals; add a protein snack if meals were delayed.</li>
+          <li>Dim, quiet room; gentle neck/shoulder stretches; heat for tension, cool pack for throbbing.</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        <p class="kicker">Caffeine & triggers</p>
+        <ul class="list">
+          <li>A small amount of caffeine <em>early in the day</em> can help some migraines; avoid late-day caffeine.</li>
+          <li>Check triggers: poor sleep, bright screens, skipped meals, dehydration, strong smells.</li>
+          <li>Practice 20-20-20 for screens and improve posture setup.</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Call your clinician</strong> for new or changing headaches, headaches on ≥15 days/month, or if over-the-counter medicines are needed more than a few days per week.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after First steps) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Medicine cautions -->
+  <section id="meds" class="section">
+    <h2>Medicine cautions</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Use carefully</p>
+        <ul class="list">
+          <li><strong>Acetaminophen</strong> — keep total daily dose within your clinician’s advice (often ≤3,000 mg/day for older adults). Watch for duplicate ingredients in cold/flu products.</li>
+          <li><strong>NSAIDs</strong> (ibuprofen, naproxen) — may irritate stomach and kidneys or raise BP; avoid if kidney disease, ulcers, heart failure, or on certain blood thinners.</li>
+          <li><strong>Triptans</strong> — migraine-specific; not for some heart/vascular conditions; needs clinician guidance.</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <ul class="list">
+          <li><strong>Avoid opioids</strong> and barbiturate combinations for headache—higher risk and drive medication-overuse.</li>
+          <li>Medication-overuse headache: simple pain meds ≥15 days/month or combos/triptans ≥10 days/month can perpetuate headaches.</li>
+          <li>Ask about preventive options if headaches are frequent (sleep, BP meds, anti-CGRP, etc.).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>What clinicians may do</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Step</th><th scope="col">Purpose</th><th scope="col">Examples</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>History & exam</strong></td>
+          <td>Identify pattern and risk</td>
+          <td>Neurologic exam, BP, neck/jaw/temporal arteries, vision check</td>
+        </tr>
+        <tr>
+          <td><strong>Targeted labs</strong></td>
+          <td>Rule out contributors</td>
+          <td>CBC (anemia), electrolytes, thyroid, ESR/CRP if GCA suspected</td>
+        </tr>
+        <tr>
+          <td><strong>Imaging</strong></td>
+          <td>Red flags or atypical</td>
+          <td>CT/MRI for sudden severe, new neuro deficits, new onset >50, cancer/immunosuppression, trauma</td>
+        </tr>
+        <tr>
+          <td><strong>Eye pressure</strong></td>
+          <td>Rule out acute glaucoma</td>
+          <td>Tonometer if severe eye pain/halos</td>
+        </tr>
+        <tr>
+          <td><strong>Plan</strong></td>
+          <td>Relief & prevention</td>
+          <td>Acute treatment, trigger management, sleep and hydration plan, preventive meds if frequent</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Start time, duration, location (one/both sides), severity (0–10)</li>
+          <li>Associated symptoms: nausea, light/sound sensitivity, visual changes, neck pain</li>
+          <li>Sleep, meals, fluids, caffeine; medicines used and effect</li>
+          <li>BP readings (if advised), and any new stressors or illnesses</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        A 2–4 week diary helps identify triggers and whether preventive options are needed.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Does high blood pressure cause headaches?</p>
+        <p>Most routine headaches are <em>not</em> from mildly elevated BP. Headache with very high BP and other symptoms needs urgent evaluation.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is a new daily headache serious?</p>
+        <p>New persistent headaches—especially after age 50—should be assessed. Many causes are treatable.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">How often can I use pain relievers?</p>
+        <p>Limit to the fewest days per week. Frequent use can cause medication-overuse headaches. Ask about prevention if headaches are common.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">When should I see an eye doctor?</p>
+        <p>Headache with eye pain, halos, or vision change; or if you haven’t had a recent eye exam—especially with glaucoma/cataract history.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card small">
+      <ul class="list">
+        <li><a href="#">Dizziness on Standing (Orthostatic)</a></li>
+        <li><a href="#">Dehydration</a></li>
+        <li><a href="#">Insomnia</a></li>
+        <li><a href="#">Eye Redness / Irritation</a></li>
+        <li><a href="#">Daily Living — Screen & Posture Tips</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Headache",
+  "description":"Headache in older adults: emergencies, common causes, safe first steps, medicine cautions, clinician evaluation, and tracking.",
+  "about":{"@type":"MedicalSymptom","name":"Headache"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/headache"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Does high blood pressure cause headaches?","acceptedAnswer":{"@type":"Answer","text":"Most routine headaches are not from mildly elevated blood pressure. Headache with very high BP and other symptoms needs urgent evaluation."}},
+    {"@type":"Question","name":"Is a new daily headache serious?","acceptedAnswer":{"@type":"Answer","text":"New persistent headaches, especially after age 50, should be assessed to look for treatable causes."}},
+    {"@type":"Question","name":"How often can I use pain relievers for headache?","acceptedAnswer":{"@type":"Answer","text":"Limit use to the fewest days per week. Frequent use can cause medication-overuse headaches. Discuss prevention if headaches are common."}},
+    {"@type":"Question","name":"When should I see an eye doctor for headache?","acceptedAnswer":{"@type":"Answer","text":"Seek eye care for headache with eye pain, halos, or vision change, or if you're due for an eye exam—especially with glaucoma or cataracts."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Symptoms (A–Z)","item":"https://thevitatrack.com/symptoms/"},
+    {"@type":"ListItem","position":3,"name":"Headache","item":"https://thevitatrack.com/headache"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

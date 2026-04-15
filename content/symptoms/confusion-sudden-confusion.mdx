@@ -1,0 +1,519 @@
+---
+title: "Confusion / Sudden Confusion"
+slug: "confusion-sudden-confusion"
+category: "symptoms"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Confusion / Sudden Confusion — Senior Symptom Guide • TheVitatrack</title>
+<meta name="description" content="Sudden confusion in older adults: stroke/sepsis red flags, common causes (delirium vs dementia), what to do now, safe home steps, medication cautions, when to call a clinician, tests, and caregiver checklist." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+  .ok{
+    background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Confusion / Sudden Confusion</h1>
+    <p>Know stroke/sepsis red flags, the difference between delirium and dementia, what to do right now, safe home steps, medication cautions, and the tests clinicians may use.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#about">What confusion can mean</a></li>
+      <li><a href="#red-flags">When to call emergency</a></li>
+      <li><a href="#now">What to do <em>now</em></a></li>
+      <li><a href="#causes">Common causes & clues</a></li>
+      <li><a href="#self-care">Safe steps at home</a></li>
+      <li><a href="#meds">Medication cautions</a></li>
+      <li><a href="#environment">Calm environment tips</a></li>
+      <li><a href="#tests">What clinicians may do</a></li>
+      <li><a href="#tracking">What to track</a></li>
+      <li><a href="#caregivers">For caregivers</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>What confusion can mean</h2>
+    <p class="lead"><span class="badge">Overview</span> <strong>Sudden confusion (delirium)</strong> is a rapid change in attention, thinking, or awareness. It’s common in older adults and often triggered by illness, pain, dehydration, or medicines. <strong>Dementia</strong> develops slowly over months to years. Any <em>new or sudden</em> confusion should be treated as <strong>urgent</strong> until serious causes are ruled out.</p>
+    <div class="card small">
+      <p><strong>Typical signs:</strong> not knowing where you are, misplacing time/day, waxing/waning alertness, agitation or sleepiness, hallucinations, reversed sleep-wake cycle.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to call emergency</h2>
+    <div class="danger">
+      <ul class="list">
+        <li><strong>FAST stroke signs:</strong> face droop, arm weakness, speech trouble, sudden severe headache</li>
+        <li>Fever with shaking chills, very high/low heart rate or blood pressure, fast breathing, or oxygen saturation low</li>
+        <li>Head injury or fall, especially if on <strong>blood thinners</strong></li>
+        <li>Very <strong>low or high blood sugar</strong>, or known diabetes with confusion</li>
+        <li>Severe dehydration: minimal urine, dizziness, new confusion</li>
+        <li>New severe headache, neck stiffness, seizure, or repeated vomiting</li>
+        <li>Overdose or suspected medication mix-up</li>
+      </ul>
+      <p class="small">These may signal stroke/TIA, sepsis, low oxygen, brain bleed, significant metabolic problem, or drug toxicity.</p>
+    </div>
+  </section>
+
+  <!-- What to do now -->
+  <section id="now" class="section">
+    <h2>What to do <em>now</em></h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Immediate steps (if safe and while seeking help)</p>
+        <ul class="list">
+          <li>Check <strong>blood sugar</strong> if available; treat low sugar per plan (glucose tablets/juice) and recheck</li>
+          <li>Measure <strong>temperature</strong> and <strong>oxygen</strong> if a home oximeter is available</li>
+          <li>Offer <strong>fluids</strong> unless choking risk; avoid alcohol/sedatives</li>
+          <li>Gather a <strong>medication list</strong> (include OTCs/herbals) and recent dose changes</li>
+          <li>Stay with the person, keep the environment <strong>calm and well lit</strong>, remove hazards</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <strong>Call a clinician promptly</strong> for any new confusion, even if mild. If red flags are present or confusion worsens rapidly, seek emergency care.
+      </div>
+    </div>
+  </section>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Common causes & clues</h2>
+    <table class="table" role="table" aria-label="Causes of sudden confusion">
+      <thead>
+        <tr><th>Category</th><th>Examples</th><th>Clues</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Infections</td>
+          <td>UTI, pneumonia, skin infections, COVID/flu</td>
+          <td>Fever/chills, cough, burning urination, new weakness</td>
+        </tr>
+        <tr>
+          <td>Metabolic/organ</td>
+          <td>Low/high blood sugar, low sodium, kidney/liver failure, low oxygen</td>
+          <td>Thirst, swelling, jaundice, shortness of breath</td>
+        </tr>
+        <tr>
+          <td>Medications/toxins</td>
+          <td>Sedatives, sleep aids, opioids, anticholinergics, antihistamines, steroids, alcohol; <em>polypharmacy</em></td>
+          <td>Recent new drug or dose change; daytime sleepiness or agitation</td>
+        </tr>
+        <tr>
+          <td>Neurologic</td>
+          <td>Stroke/TIA, seizure/post-ictal, head injury, subdural bleed</td>
+          <td>Focal weakness, slurred speech, headache after fall, on blood thinners</td>
+        </tr>
+        <tr>
+          <td>Pain & retention</td>
+          <td>Uncontrolled pain, urinary retention, severe constipation/fecal impaction</td>
+          <td>Restlessness, abdominal discomfort, no bowel movement for days</td>
+        </tr>
+        <tr>
+          <td>Sleep & environment</td>
+          <td>Sleep deprivation, sensory overload, poor lighting/hearing/vision</td>
+          <td>Worse at night (“sundowning”), improved with familiar cues</td>
+        </tr>
+        <tr>
+          <td>Mood & withdrawal</td>
+          <td>Severe depression, alcohol/benzodiazepine withdrawal</td>
+          <td>Anxiety, tremors, sweating, recent stopping of sedatives</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Self-care -->
+  <section id="self-care" class="section">
+    <h2>Safe steps at home</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">If no emergency signs</p>
+        <ul class="list">
+          <li>Hydrate (water, oral rehydration, soups) and offer small, frequent foods</li>
+          <li>Ensure glasses/hearing aids are on and working</li>
+          <li>Regular bathroom schedule; watch for constipation or urinary retention</li>
+          <li>Keep a day/night routine: blinds open by day, quiet and dim at night</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        <strong>Communication:</strong> Speak slowly, one step at a time, offer choices (“tea or water?”), and reassure—avoid arguing about facts.
+      </div>
+    </div>
+  </section>
+
+  <!-- Meds -->
+  <section id="meds" class="section">
+    <h2>Medication cautions</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>Do not</strong> stop prescription medicines without guidance—ask for a rapid <em>medication review</em></li>
+          <li>Avoid or minimize <strong>anticholinergics</strong> (e.g., diphenhydramine), <strong>sedatives</strong> (benzodiazepines, “Z-drugs”), and daytime opioids where possible</li>
+          <li>Check for duplicates (e.g., multiple sleep aids) and interactions (OTCs/herbals)</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Alcohol & dehydration</strong> commonly worsen confusion—limit alcohol and encourage fluids unless on fluid restriction.
+      </div>
+    </div>
+  </section>
+
+  <!-- Environment -->
+  <section id="environment" class="section">
+    <h2>Calm environment tips</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Good lighting with minimal glare; night-lights for bathroom path</li>
+          <li>Large-face clock and calendar in view; family photos; simple signs on doors</li>
+          <li>Reduce noise (TV/radio off if not watched), limit visitors to one or two at a time</li>
+          <li>Keep pathways clear; remove throw rugs; lock up hazardous items</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Gentle music, a familiar blanket, or a brief walk can reduce agitation.
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>What clinicians may do</h2>
+    <table class="table" role="table" aria-label="Clinical workup for confusion">
+      <thead>
+        <tr><th>Step</th><th>Purpose</th><th>Examples</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>History & exam</strong></td>
+          <td>Confirm delirium, find triggers</td>
+          <td>Onset/time course, meds, vitals, hydration, pain, CAM screen</td>
+        </tr>
+        <tr>
+          <td><strong>Point-of-care</strong></td>
+          <td>Immediate threats</td>
+          <td>Glucose check, pulse oximetry, ECG</td>
+        </tr>
+        <tr>
+          <td><strong>Labs</strong></td>
+          <td>Identify metabolic/infectious causes</td>
+          <td>CBC, CMP/electrolytes, kidney/liver, TSH, B12, urinalysis/urine culture; +/- drug levels</td>
+        </tr>
+        <tr>
+          <td><strong>Imaging</strong></td>
+          <td>Structural causes</td>
+          <td>Chest X-ray (pneumonia), CT/MRI head for stroke/bleed (esp. after fall or neuro deficits)</td>
+        </tr>
+        <tr>
+          <td><strong>Other</strong></td>
+          <td>Targeted tests</td>
+          <td>Blood gases, infection testing (e.g., COVID/flu), bladder scan for retention</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">Treatment targets the cause—fluids, antibiotics for infection, oxygen, medication adjustments, pain/constipation relief, or stroke care pathways.</p>
+  </section>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Start time and pattern (sudden vs gradual, better/worse at night)</li>
+          <li>Fever, blood sugar readings, oxygen numbers if available</li>
+          <li>Fluid intake, urine output, bowel movements</li>
+          <li>Medication changes (including OTCs/herbals) in past 2 weeks</li>
+          <li>Recent illnesses, pain, falls, or travel/hospital stays</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Bring this log to appointments—it speeds diagnosis and safer treatment.
+      </div>
+    </div>
+  </section>
+
+  <!-- Caregivers -->
+  <section id="caregivers" class="section">
+    <h2>For caregivers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Support with dignity</p>
+        <ul class="list">
+          <li>Stay calm, introduce yourself each time, offer simple choices</li>
+          <li>Prevent wandering: door alarms, supervised walks, remove car keys</li>
+          <li>Ensure nutrition: small snacks/fluids every 1–2 hours if safe</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <strong>Call the clinician for:</strong> any new confusion, fever, oxygen <90–92% at rest, low blood sugar not improving, head injury on blood thinners, or rapidly worsening symptoms.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Delirium vs dementia?</p>
+        <p><strong>Delirium</strong> is sudden and fluctuating, often from illness or meds; <strong>dementia</strong> is gradual and progressive. New confusion needs urgent evaluation.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is UTI a common cause?</p>
+        <p>Yes—especially in frail adults. But not all confusion is UTI; clinicians will check other causes and avoid unnecessary antibiotics.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do sleeping pills help?</p>
+        <p>Most make confusion worse. Prioritize sleep routine, light/daytime activity, and address pain/constipation before medications.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">When is hospital care needed?</p>
+        <p>Any red flags, rapidly worsening confusion, inability to hydrate safely, very abnormal vitals, or suspected stroke/serious infection.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card small">
+      <ul class="list">
+        <li><a href="#">Urinary Tract Infection (UTI)</a></li>
+        <li><a href="#">Pneumonia (Older Adults)</a></li>
+        <li><a href="#">Medication Safety (Polypharmacy)</a></li>
+        <li><a href="#">Balance Trouble / Unsteadiness</a></li>
+        <li><a href="#">Appetite Loss</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Confusion / Sudden Confusion",
+  "description":"Sudden confusion in older adults: emergency warning signs, common causes, immediate steps, safe home care, medication cautions, clinician tests, and caregiver guidance.",
+  "about":{"@type":"MedicalSymptom","name":"Acute confusion (delirium)"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/confusion-sudden-confusion"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"What is the difference between delirium and dementia?","acceptedAnswer":{"@type":"Answer","text":"Delirium is sudden, fluctuating confusion often caused by illness, dehydration, or medications and is usually reversible. Dementia is a gradual decline in memory and thinking over months to years."}},
+    {"@type":"Question","name":"What should I do right now for new confusion?","acceptedAnswer":{"@type":"Answer","text":"Check blood sugar if possible, measure temperature and oxygen if available, offer fluids, gather the medication list, keep the environment calm and safe, and contact a clinician promptly. Go to emergency care if red flags are present."}},
+    {"@type":"Question","name":"Which medications can worsen confusion?","acceptedAnswer":{"@type":"Answer","text":"Sedatives (benzodiazepines, Z-drugs), opioids, anticholinergics (e.g., diphenhydramine), some antihistamines, and corticosteroids. Alcohol and dehydration also worsen confusion."}},
+    {"@type":"Question","name":"What tests might be done?","acceptedAnswer":{"@type":"Answer","text":"After exam and delirium screening, clinicians often check glucose, oxygen, ECG, blood/urine tests, and may order chest X-ray or head CT/MRI depending on symptoms."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Symptoms (A–Z)","item":"https://thevitatrack.com/symptoms/"},
+    {"@type":"ListItem","position":3,"name":"Confusion / Sudden Confusion","item":"https://thevitatrack.com/confusion-sudden-confusion"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

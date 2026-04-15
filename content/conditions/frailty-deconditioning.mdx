@@ -1,0 +1,572 @@
+---
+title: "Frailty / Deconditioning"
+slug: "frailty-deconditioning"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Frailty / Deconditioning — Senior Guide • TheVitatrack</title>
+<meta name="description" content="Frailty and deconditioning in older adults: signs, red flags, home assessment, protein & hydration targets, strength & balance plan, safe progression, aids, when to seek care, and recovery tips." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --tip:#FFF1D9; --tip-border:#F5A623;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+  .tip{
+    background:var(--tip); border:1.5px solid var(--tip-border); border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Frailty / Deconditioning</h1>
+    <p>Recognize, reverse, and prevent decline: signs to watch for, a safe strength & balance plan, protein and hydration targets, and when to seek help.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is">What it is</a></li>
+      <li><a href="#red-flags">Urgent red flags</a></li>
+      <li><a href="#signs">Common signs</a></li>
+      <li><a href="#causes">Why it happens</a></li>
+      <li><a href="#self-check">Quick self-checks</a></li>
+      <li><a href="#plan">4-part daily plan</a></li>
+      <li><a href="#progression">Safe progression</a></li>
+      <li><a href="#safety">Safety & aids</a></li>
+      <li><a href="#see-clinician">When to see a clinician</a></li>
+      <li><a href="#tests">What clinicians check</a></li>
+      <li><a href="#caregiver">Caregiver tips</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- What it is -->
+  <section id="what-is" class="section">
+    <h2>What it is</h2>
+    <p class="lead"><span class="badge">In short</span> Frailty and deconditioning mean <strong>lower strength, endurance, and reserve</strong> — often after illness, inactivity, or poor nutrition. The result: slower walking, weak grip, weight loss, and higher fall risk. The good news: a steady plan can <strong>reverse</strong> much of it.</p>
+    <div class="card small">
+      <p><strong>Goal:</strong> Regain function for daily life — transfers, stairs, shopping, and social activities — while staying safe.</p>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>Urgent red flags</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Rapid unintentional <strong>weight loss</strong> (≥5% in 6–12 months)</li>
+        <li>New <strong>confusion</strong>, chest pain, severe breathlessness, or fainting</li>
+        <li>Repeated <strong>falls</strong> or head injury on blood thinners</li>
+        <li>Inability to stand from a chair even with arms, or new inability to walk household distances</li>
+      </ul>
+      <p class="small">Seek urgent assessment if any of these are present.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Red flags) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Signs -->
+  <section id="signs" class="section">
+    <h2>Common signs</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Slow walking, shuffling, narrow steps, or stopping to rest</li>
+          <li>Weak grip; trouble opening jars or carrying groceries</li>
+          <li>Fatigue after short activity; daytime napping</li>
+          <li>Weight loss or loose clothing; reduced appetite</li>
+          <li>Difficulty with stairs, getting up from low chairs or the toilet</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related pages</p>
+        <ul class="list">
+          <li><a href="#">Falls (Injury Prevention)</a></li>
+          <li><a href="#">Dizziness on Standing</a></li>
+          <li><a href="#">Heart &amp; BP</a></li>
+          <li><a href="#">Nutrition &amp; Hydration</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Why it happens</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Common drivers</p>
+        <ul class="list">
+          <li>Recent illness, hospitalization, or long bed rest</li>
+          <li>Low protein intake, poor appetite, dehydration</li>
+          <li>Pain, depression, or social isolation lowering activity</li>
+          <li>Uncontrolled chronic conditions (heart, lung, diabetes, kidney)</li>
+          <li>Medicines causing drowsiness, dizziness, or low blood pressure</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Fixing <strong>root causes</strong> (nutrition, medicines, pain, mood) + a <strong>graded movement plan</strong> is the fastest route back.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Causes) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Self-checks -->
+  <section id="self-check" class="section">
+    <h2>Quick self-checks</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Chair stand (30-second)</p>
+        <ul class="list">
+          <li>From a chair with arms, stand up and sit down as many times as safe in <strong>30 seconds</strong></li>
+          <li>Use arms if needed at first; note your number and improve weekly</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Gait & balance</p>
+        <ul class="list">
+          <li>Time your usual walk for <strong>4 meters</strong> (or one room length)</li>
+          <li>Practice <strong>tandem stand</strong> (heel-to-toe) near a counter, 10–20 seconds</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Nutrition & hydration</p>
+        <ul class="list">
+          <li>Daily protein target: about <strong>1.0–1.2 g/kg</strong> body weight (ask your clinician for kidney-safe goals)</li>
+          <li>Hydration: pale yellow urine goal unless fluid-restricted</li>
+        </ul>
+      </div>
+      <div class="card tip">
+        Track in a notebook: chair stands, minutes walked, protein portions, and water glasses. Small wins add up.
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan -->
+  <section id="plan" class="section">
+    <h2>4-part daily plan</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">1) Protein at each meal</p>
+        <ul class="list">
+          <li>Options: eggs, yogurt/curd, milk, tofu/paneer, fish, chicken, beans/lentils, nut butters</li>
+          <li>Distribute across breakfast, lunch, dinner for best muscle response</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">2) Hydration routine</p>
+        <ul class="list">
+          <li>Small, frequent sips; keep a bottle within reach</li>
+          <li>Limit evening fluids if nocturia; discuss with clinician if on fluid restriction</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">3) Strength & balance (5–15 min)</p>
+        <ul class="list">
+          <li><strong>Sit-to-stands</strong>, <strong>heel/toe raises</strong>, <strong>counter marches</strong></li>
+          <li><strong>Tandem stand</strong> and gentle <strong>side steps</strong></li>
+          <li>2–3 non-consecutive days add light <strong>resistance band</strong> work</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">4) Walking plan</p>
+        <ul class="list">
+          <li>Start with <strong>5 minutes</strong> twice daily; add 1–2 minutes every few days</li>
+          <li>Break after meals helps blood sugar and digestion</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Plan) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Progression -->
+  <section id="progression" class="section">
+    <h2>Safe progression</h2>
+    <table class="table" role="table" aria-describedby="progress-note">
+      <thead>
+        <tr><th scope="col">Week</th><th scope="col">Strength</th><th scope="col">Balance</th><th scope="col">Walking</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>5–8 sit-to-stands (use arms)</td>
+          <td>Tandem stand 10 s × 2</td>
+          <td>5 min × 2/day</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>8–12 sit-to-stands (light arms)</td>
+          <td>Tandem 15 s × 2; side steps</td>
+          <td>7–8 min × 2/day</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>12–15 sit-to-stands (no arms)</td>
+          <td>Single-leg stand 5–10 s each</td>
+          <td>10–12 min × 2/day</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Add band rows/curls (1–2 sets)</td>
+          <td>Head turns while standing</td>
+          <td>15 min × 2/day</td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="progress-note" class="small">Move up only if activities feel steady and pain-free the next day. Scale back after illness or poor sleep.</p>
+  </section>
+
+  <!-- Safety -->
+  <section id="safety" class="section">
+    <h2>Safety & aids</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Environment</p>
+        <ul class="list">
+          <li>Clear rugs/clutter; night lights to bathroom</li>
+          <li>Grab bars in bath; sturdy chair with arms</li>
+          <li>Rise slowly; pause 3 breaths before walking</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Devices</p>
+        <ul class="list">
+          <li>Canes/walkers fitted to wrist height</li>
+          <li>Non-slip shoes with closed heel</li>
+          <li>Consider alert button if living alone</li>
+        </ul>
+      </div>
+      <div class="card small">
+        Related: <a href="#">Falls (Injury Prevention)</a> · <a href="#">Balance Problems</a> · <a href="#">Hydration & Drinks</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- See a clinician -->
+  <section id="see-clinician" class="section">
+    <h2>When to see a clinician</h2>
+    <div class="card">
+      <ul class="list">
+        <li>Unintentional weight loss or poor appetite</li>
+        <li>Multiple falls, dizziness on standing, or near-falls</li>
+        <li>Breathlessness, chest pain, or new swelling</li>
+        <li>Concern for depression, memory changes, or medication side effects</li>
+        <li>No improvement after 3–4 weeks of steady effort</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>What clinicians check</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Assessment</p>
+        <ul class="list">
+          <li>Vitals, weight, orthostatic blood pressure</li>
+          <li>Gait speed, chair stand test, grip strength</li>
+          <li>Vision, hearing, feet/footwear, nutrition screen</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Tests (as needed)</p>
+        <ul class="list">
+          <li>Blood tests (anemia, thyroid, vitamin D/B12, kidney)</li>
+          <li>Medication review for sedating or blood-pressure-lowering effects</li>
+          <li>Referral to physical therapy, dietitian, or social support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Caregiver -->
+  <section id="caregiver" class="section">
+    <h2>Caregiver tips</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Set a <strong>daily routine</strong> with short walks and a simple exercise block</li>
+          <li>Prepare easy protein foods; keep water visible and within reach</li>
+          <li>Celebrate small wins; track progress on a fridge chart</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Ask for a <strong>home safety evaluation</strong> and PT-guided program after any hospitalization.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">How fast can I improve?</p>
+        <p>Many notice better stamina in 2–4 weeks with daily practice; strength and confidence build over months.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do I need protein shakes?</p>
+        <p>Food first is fine; shakes help if appetite is low. Choose options aligned with kidney/diabetes plans.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is it safe to exercise with pain?</p>
+        <p>Mild muscle soreness is okay; sharp or joint pain means modify or rest. Ask PT for alternates.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What if I’m scared of falling?</p>
+        <p>Start seated/at a counter with supervision. Build balance with support, then step away gradually.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Frailty / Deconditioning",
+  "description":"Frailty and deconditioning in older adults: signs, red flags, home assessment, protein and hydration targets, strength and balance plan, safe progression, mobility aids, when to seek care, and recovery tips.",
+  "about":{"@type":"MedicalEntity","name":"Frailty"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/frailty-deconditioning"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"How fast can I improve from deconditioning?",
+      "acceptedAnswer":{"@type":"Answer","text":"With a daily program and adequate nutrition, many older adults notice better stamina in 2–4 weeks. Strength and balance continue to improve over months."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do I need protein shakes to treat frailty?",
+      "acceptedAnswer":{"@type":"Answer","text":"Not always. Food sources often suffice. Shakes can be useful when appetite is low; they should align with kidney and diabetes plans set by your clinician."}
+    },
+    {
+      "@type":"Question",
+      "name":"How can I exercise safely if I'm afraid of falling?",
+      "acceptedAnswer":{"@type":"Answer","text":"Begin with seated or counter-supported exercises, progress slowly, and consider a physical therapist to design a personalized program and recommend mobility aids."}
+    },
+    {
+      "@type":"Question",
+      "name":"When should I see a clinician about frailty?",
+      "acceptedAnswer":{"@type":"Answer","text":"If there's rapid weight loss, multiple falls, dizziness on standing, breathlessness or chest pain, or if there's no improvement after 3–4 weeks of steady effort."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Frailty / Deconditioning","item":"https://thevitatrack.com/frailty-deconditioning"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

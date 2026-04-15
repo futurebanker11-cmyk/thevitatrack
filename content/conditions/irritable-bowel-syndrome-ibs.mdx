@@ -1,0 +1,569 @@
+---
+title: "Irritable Bowel Syndrome (IBS)"
+slug: "irritable-bowel-syndrome-ibs"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Irritable Bowel Syndrome (IBS) — Senior Guide • TheVitatrack</title>
+<meta name="description" content="IBS in older adults: symptoms, red flags, IBS subtypes (IBS-C/IBS-D/mixed), triggers, tests to rule out other causes, low-FODMAP and fiber tips, medicines, stress tools, and a step-by-step flare plan." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Irritable Bowel Syndrome (IBS)</h1>
+    <p>Abdominal pain with bowel habit changes (constipation, diarrhea, or both) without structural disease. Learn red flags, triggers, tests, and a step-by-step plan for flares—built for older adults.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is">What is IBS?</a></li>
+      <li><a href="#subtypes">IBS subtypes</a></li>
+      <li><a href="#red-flags">When to seek urgent care</a></li>
+      <li><a href="#symptoms">Common symptoms & patterns</a></li>
+      <li><a href="#triggers">Typical triggers</a></li>
+      <li><a href="#ruleout">Ruling out other conditions</a></li>
+      <li><a href="#diet">Diet & fiber (how to do it safely)</a></li>
+      <li><a href="#meds">Medicines: options & cautions</a></li>
+      <li><a href="#mind-gut">Mind–gut tools</a></li>
+      <li><a href="#pelvic">Pelvic floor & constipation</a></li>
+      <li><a href="#flare">Your flare plan (stepwise)</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- What is -->
+  <section id="what-is" class="section">
+    <h2>What is IBS?</h2>
+    <p class="lead"><span class="badge">In short</span> IBS is a long-term pattern of <strong>recurrent abdominal pain</strong> related to bowel movements plus changes in stool frequency or form. It’s a disorder of <strong>gut–brain interaction</strong>, not damage—symptoms are real and treatable.</p>
+    <div class="card small">
+      <p><strong>Good to know:</strong> Many older adults labeled with “IBS for years” benefit from a fresh review for anemia, celiac disease, inflammatory bowel disease, medication side effects, and bile acid problems—especially if symptoms changed recently.</p>
+    </div>
+  </section>
+
+  <!-- Subtypes -->
+  <section id="subtypes" class="section">
+    <h2>IBS subtypes</h2>
+    <table class="table" role="table" aria-label="IBS subtypes">
+      <thead>
+        <tr><th>Subtype</th><th>Stool pattern (Rome-style)</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>IBS-C</strong> (constipation-predominant)</td>
+          <td>Hard/lumpy stools ≥25% of BMs, loose <25%</td>
+          <td>Ensure fiber and fluids; avoid constipating meds; consider osmotic laxatives</td>
+        </tr>
+        <tr>
+          <td><strong>IBS-D</strong> (diarrhea-predominant)</td>
+          <td>Loose/watery stools ≥25% of BMs, hard <25%</td>
+          <td>Rule out bile acid diarrhea, lactose/fructose malabsorption; consider loperamide or rifaximin</td>
+        </tr>
+        <tr>
+          <td><strong>IBS-M</strong> (mixed)</td>
+          <td>Both hard and loose stools ≥25%</td>
+          <td>Target pain + regulate rhythm; gentle fiber, peppermint oil, mind–gut tools</td>
+        </tr>
+        <tr>
+          <td><strong>IBS-U</strong></td>
+          <td>Doesn’t neatly fit above</td>
+          <td>Track diary to define pattern; personalize plan</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD (after Subtypes) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent care</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Rectal bleeding or black stools</li>
+        <li>Unintentional weight loss, fever, or night sweats</li>
+        <li>New anemia, vomiting, or persistent severe pain</li>
+        <li>Sudden change in bowel habit after age 60</li>
+        <li>Family history of colon cancer, IBD, or celiac disease</li>
+      </ul>
+      <p class="small">These signs are not typical for IBS and need urgent evaluation.</p>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section id="symptoms" class="section">
+    <h2>Common symptoms & patterns</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Cramping belly pain that eases after a bowel movement</li>
+          <li>Bloating, gas, sense of incomplete emptying</li>
+          <li>Alternating constipation and diarrhea (IBS-M)</li>
+          <li>Mucus in stool without blood</li>
+          <li>Worse with stress, certain foods, or poor sleep</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">Constipation</a> · <a href="#">Diarrhea</a> · <a href="#">GERD / Acid Reflux</a></li>
+          <li><a href="#">Hydration & Drinks</a> · <a href="#">Daily Living</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Triggers -->
+  <section id="triggers" class="section">
+    <h2>Typical triggers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Food & drink</p>
+        <ul class="list">
+          <li>High-FODMAP foods: onions/garlic, beans, apples, pears, wheat, certain sweeteners (sorbitol)</li>
+          <li>Fatty or spicy meals; very large portions</li>
+          <li>Caffeine, alcohol, and fizzy drinks</li>
+          <li>Lactose (if intolerant); excess fructose</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Other</p>
+        <ul class="list">
+          <li>Stress, anxiety, poor sleep</li>
+          <li>Recent gut infection or antibiotics</li>
+          <li>Medications: iron pills, opioids, anticholinergics (constipation); metformin, magnesium (diarrhea)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Triggers) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Rule out -->
+  <section id="ruleout" class="section">
+    <h2>Ruling out other conditions</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Basic evaluation</p>
+        <ul class="list">
+          <li>History, exam, and medication review</li>
+          <li>Blood tests: CBC (anemia), CRP, thyroid, celiac screen if diarrhea</li>
+          <li>Stool tests in diarrhea (calprotectin for inflammation, infectious panel as needed)</li>
+          <li>Colonoscopy based on age/screening schedule or alarm features</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <strong>IBS vs IBD:</strong> IBS causes symptoms without gut damage; IBD (Crohn’s/UC) causes inflammation, bleeding, fever, and weight loss. Tests help tell them apart.
+      </div>
+    </div>
+  </section>
+
+  <!-- Diet & fiber -->
+  <section id="diet" class="section">
+    <h2>Diet & fiber (how to do it safely)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Low-FODMAP—simple start</p>
+        <ul class="list">
+          <li>Try a <strong>4–6 week</strong> trial with a dietitian or reliable guide</li>
+          <li>Limit high-FODMAP foods; choose low-FODMAP swaps (e.g., oats, rice, potatoes, carrots, berries, lactose-free dairy)</li>
+          <li>Re-introduce foods slowly to find your personal triggers</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Fiber tips (senior-safe)</p>
+        <ul class="list">
+          <li><strong>Psyllium husk</strong> (soluble) can help pain and stool form—start small (½–1 tsp/day) and increase weekly with fluids</li>
+          <li>Avoid large sudden increases—bloating can worsen</li>
+          <li>For IBS-D, soluble fiber may thicken stools; avoid wheat bran (can irritate)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Hydration & meals</p>
+        <ul class="list">
+          <li>Regular small meals; don’t skip breakfast (gastro-colic reflex helps rhythm)</li>
+          <li>Water first; limit fizzy drinks and late caffeine</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        <strong>Peppermint oil</strong> enteric-coated capsules may ease cramping for some; check interactions (e.g., with antacids).
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Diet) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Medicines -->
+  <section id="meds" class="section">
+    <h2>Medicines: options & cautions</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">For pain & cramps</p>
+        <ul class="list">
+          <li>Antispasmodics (e.g., dicyclomine) for short-term cramps—watch for dry mouth, constipation, confusion in seniors</li>
+          <li>Peppermint oil (enteric-coated)</li>
+          <li>Low-dose <strong>TCAs</strong> (e.g., amitriptyline) for pain-predominant IBS—monitor anticholinergic effects and falls</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">For IBS-C</p>
+        <ul class="list">
+          <li>Osmotic laxatives (PEG) first-line; titrate slowly</li>
+          <li>Secretagogues (linaclotide, plecanatide) if needed—watch dehydration</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">For IBS-D</p>
+        <ul class="list">
+          <li>Loperamide for urgency/loose stools (symptom control)</li>
+          <li><strong>Rifaximin</strong> course for some with bloating/diarrhea</li>
+          <li>Bile acid binders if bile acid diarrhea suspected (discuss timing with other meds)</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Avoid routine opioids for IBS pain—they worsen constipation, tolerance, and sensitivity. Review all medicines with your clinician for side effects on bowel habits.
+      </div>
+    </div>
+  </section>
+
+  <!-- Mind–gut -->
+  <section id="mind-gut" class="section">
+    <h2>Mind–gut tools</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Stress & sleep</p>
+        <ul class="list">
+          <li>10–15 minutes daily of paced breathing, gentle yoga, or tai chi</li>
+          <li>Set a regular sleep–wake time; reduce late caffeine</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Therapies</p>
+        <ul class="list">
+          <li>Gut-directed hypnotherapy or CBT can reduce pain and urgency</li>
+          <li>Brief programs (6–8 weeks) help build durable skills</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pelvic floor -->
+  <section id="pelvic" class="section">
+    <h2>Pelvic floor & constipation</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Clues</p>
+        <ul class="list">
+          <li>Straining, prolonged time on toilet, feeling of blockage</li>
+          <li>Need for manual support to pass stool</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Help</p>
+        <ul class="list">
+          <li>Referral for pelvic floor physical therapy/biofeedback</li>
+          <li>Toilet posture: feet on a small stool, lean forward, relax belly</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flare plan -->
+  <section id="flare" class="section">
+    <h2>Your flare plan (stepwise)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Step 1 — settle the gut</p>
+        <ul class="list">
+          <li>Switch to <strong>low-FODMAP bland</strong> choices for 24–48 hours (rice, oats, eggs, banana, chicken, carrots)</li>
+          <li>Small sips of water or oral rehydration; avoid fizzy drinks</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Step 2 — symptom relief</p>
+        <ul class="list">
+          <li>IBS-D: loperamide for urgency (per label)</li>
+          <li>IBS-C: gentle PEG as discussed with clinician</li>
+          <li>Cramps: peppermint oil or prescribed antispasmodic</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Step 3 — reset & track</p>
+        <ul class="list">
+          <li>Note food, stress, sleep, and medicines in a 1-week diary</li>
+          <li>Re-introduce usual meals gradually; keep effective habits</li>
+        </ul>
+      </div>
+      <div class="card small">
+        If severe pain, fever, bleeding, black stools, persistent vomiting, or dehydration → seek urgent care.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Is IBS dangerous?</p>
+        <p>IBS affects quality of life but doesn’t damage the bowel. New red-flag symptoms need medical review.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do probiotics help?</p>
+        <p>Some people improve with specific strains; results vary. Try one product for 4–6 weeks and stop if no benefit.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can IBS start later in life?</p>
+        <p>Yes, but late onset requires careful evaluation to rule out other causes before confirming IBS.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Does exercise help?</p>
+        <p>Regular gentle activity supports bowel rhythm and stress control—aim for most days of the week.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Irritable Bowel Syndrome (IBS)",
+  "description":"Older-adult guide to IBS: symptoms, subtypes, red flags, triggers, tests to rule out other causes, low-FODMAP and fiber tips, medicines, mind–gut therapies, pelvic floor care, and a practical flare plan.",
+  "about":{"@type":"MedicalCondition","name":"Irritable Bowel Syndrome"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/irritable-bowel-syndrome"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Is IBS dangerous?",
+      "acceptedAnswer":{"@type":"Answer","text":"IBS impacts quality of life but does not damage the bowel. New red-flag features like bleeding or weight loss require medical evaluation."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do probiotics help IBS?",
+      "acceptedAnswer":{"@type":"Answer","text":"Some people benefit from specific probiotic strains. Trial one product for 4–6 weeks; stop if there is no improvement."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can IBS begin in older age?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, but new-onset symptoms in later life should be assessed to exclude other conditions before confirming IBS."}
+    },
+    {
+      "@type":"Question",
+      "name":"Does exercise help IBS?",
+      "acceptedAnswer":{"@type":"Answer","text":"Regular gentle activity can improve bowel rhythm and reduce stress, which often lessens IBS symptoms."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Irritable Bowel Syndrome (IBS)","item":"https://thevitatrack.com/irritable-bowel-syndrome"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

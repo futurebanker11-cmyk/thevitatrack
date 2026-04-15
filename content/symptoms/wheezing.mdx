@@ -1,0 +1,510 @@
+---
+title: "Wheezing"
+slug: "wheezing"
+category: "symptoms"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Wheezing — Senior Symptom Guide • TheVitatrack</title>
+<meta name="description" content="Wheezing in older adults: urgent red flags (severe breathing trouble, anaphylaxis), common causes (asthma, COPD, heart failure, infection, medication effects), safe home steps, inhaler/spacer tips, when to see a clinician, tests, and caregiver guidance." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid #BFDBFE;
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid #BBF7D0;
+    border-radius:14px; padding:12px;
+  }
+  .ok{
+    background:#DCFCE7; color:#166534; border:1.5px solid #BBF7D0;
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Wheezing</h1>
+    <p>Know emergency red flags, common causes—from asthma/COPD to heart failure or infection—safe home steps, inhaler & spacer tips, and what clinicians may do.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#about">What wheezing can mean</a></li>
+      <li><a href="#red-flags">When to call emergency</a></li>
+      <li><a href="#causes">Common causes & clues</a></li>
+      <li><a href="#self-care">Home steps that help</a></li>
+      <li><a href="#meds">Medication & inhaler notes</a></li>
+      <li><a href="#technique">Spacer & breathing tips</a></li>
+      <li><a href="#tests">What clinicians may do</a></li>
+      <li><a href="#tracking">What to track at home</a></li>
+      <li><a href="#caregivers">For caregivers</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>What wheezing can mean</h2>
+    <p class="lead"><span class="badge">Overview</span> <strong>Wheezing</strong> is a high-pitched whistling sound when breathing—usually from narrowed airways. In older adults, common causes include <strong>asthma</strong>, <strong>COPD</strong>, <strong>infections</strong> (bronchitis, pneumonia, flu/COVID), <strong>heart failure</strong> (“cardiac asthma”), <strong>allergic reactions</strong>, <strong>aspiration</strong> (food/liquid into lungs), and <strong>medication effects</strong> (beta-blockers, NSAID/aspirin sensitivity).</p>
+    <div class="card small">
+      <p><strong>Describe:</strong> onset, triggers (cold air, exertion, perfumes), cough/phlegm, fever, chest tightness, leg swelling, exposure to allergens, new medicines, and oxygen/peak-flow readings if you use them.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to call emergency</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Severe shortness of breath, <strong>can’t speak full sentences</strong>, ribs/neck pulling in, or lips/fingertips turning blue</li>
+        <li>Wheezing with <strong>hives, swelling of face/tongue, or throat tightness</strong> (possible anaphylaxis)</li>
+        <li>New confusion, fainting, or oxygen saturation &lt;92% (if you monitor) despite treatment</li>
+        <li>Chest pain/pressure, fast or irregular heartbeat</li>
+        <li>High fever with shaking chills, brown/rust sputum, or coughing up blood</li>
+      </ul>
+      <p class="small">These can signal life-threatening airway narrowing, severe infection, or heart problems. Seek urgent care now.</p>
+    </div>
+  </section>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Common causes & clues</h2>
+    <table class="table" role="table" aria-label="Wheezing causes">
+      <thead>
+        <tr><th>Cause</th><th>Typical features</th><th>Clues</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Asthma (late-onset)</strong></td>
+          <td>Episodic wheeze, chest tightness, cough (often at night)</td>
+          <td>Triggers: allergens, exercise, cold air; improves with bronchodilator</td>
+        </tr>
+        <tr>
+          <td><strong>COPD (emphysema/chronic bronchitis)</strong></td>
+          <td>Daily cough/phlegm, exertional breathlessness</td>
+          <td>Smoking history; frequent winter flare-ups</td>
+        </tr>
+        <tr>
+          <td><strong>Infections</strong></td>
+          <td>Wheeze with fever, cough, sputum</td>
+          <td>Viral bronchitis/flu/COVID; pneumonia if fever + chest pain + fast breathing</td>
+        </tr>
+        <tr>
+          <td><strong>Heart failure</strong></td>
+          <td>Breathlessness when lying flat, nighttime cough</td>
+          <td>Leg swelling, rapid weight gain; crackles ± wheeze</td>
+        </tr>
+        <tr>
+          <td><strong>Allergic reaction/anaphylaxis</strong></td>
+          <td>Sudden wheeze, hives, swelling</td>
+          <td>Food, drugs, insect stings; needs epinephrine and emergency care</td>
+        </tr>
+        <tr>
+          <td><strong>Aspiration / reflux</strong></td>
+          <td>Cough/wheeze after eating or at night</td>
+          <td>Swallowing problems, heartburn; risk of pneumonia</td>
+        </tr>
+        <tr>
+          <td><strong>Medication effects</strong></td>
+          <td>New or worse wheeze after starting a drug</td>
+          <td>Non-selective beta-blockers, NSAIDs/aspirin (AERD), ACE-inhibitor cough</td>
+        </tr>
+        <tr>
+          <td><strong>Airway issues</strong></td>
+          <td>Localized wheeze or stridor</td>
+          <td>Foreign body, vocal cord dysfunction, tumors—needs evaluation</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Self-care -->
+  <section id="self-care" class="section">
+    <h2>Home steps that help</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">If no red flags</p>
+        <ul class="list">
+          <li>Sit upright, loosen tight clothing, <strong>pursed-lip breathe</strong> (inhale 2 sec, exhale 4–6 sec)</li>
+          <li>Use your <strong>quick-relief inhaler</strong> (albuterol): 2 puffs with spacer; repeat every 20 minutes up to 3 times if needed</li>
+          <li>Start your <strong>action plan</strong> if you have one (add ipratropium/nebulizer as prescribed)</li>
+          <li>Warm fluids and a <strong>humid, not hot</strong> shower can loosen mucus (avoid steam burns)</li>
+          <li>Limit smoke, perfumes, strong cleaners; keep windows shut on high-pollen or very cold days</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <strong>Call your clinician</strong> the same day if you need your rescue inhaler more than every 4 hours, if symptoms last &gt;24–48 hours, or if you have new fever, chest pain, or swelling.
+      </div>
+    </div>
+  </section>
+
+  <!-- Meds -->
+  <section id="meds" class="section">
+    <h2>Medication & inhaler notes</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>Rescue bronchodilators</strong> (albuterol, levalbuterol): relief in minutes; side-effects include tremor, jitteriness, or palpitations</li>
+          <li><strong>Controllers</strong> (inhaled corticosteroids ± LABA; LAMA): reduce flares—<em>use daily</em> as directed</li>
+          <li><strong>Ipratropium/tiotropium</strong> can help COPD and some asthma flares</li>
+          <li><strong>Oral steroids</strong> are for moderate–severe flares per plan—short course; discuss diabetes/bone/bleeding risks</li>
+          <li><strong>After ICS</strong>: rinse, gargle, and spit to prevent thrush/hoarseness</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Check interactions:</strong> non-selective beta-blockers (e.g., propranolol) and high-dose NSAIDs/aspirin may worsen wheeze in susceptible people. Never stop heart meds without medical advice—ask for safer alternatives (e.g., cardio-selective beta-blockers).
+      </div>
+    </div>
+  </section>
+
+  <!-- Technique -->
+  <section id="technique" class="section">
+    <h2>Spacer & breathing tips</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Metered-dose inhaler with spacer</p>
+        <ul class="list">
+          <li>Shake inhaler; attach to spacer; exhale fully</li>
+          <li>Press once; take a <strong>slow, deep breath</strong> over 3–5 seconds</li>
+          <li>Hold breath 10 seconds; exhale slowly. Wait 30–60 seconds before the next puff</li>
+          <li>If hand weakness or poor timing, ask about <strong>breath-actuated</strong> or <strong>nebulizer</strong> options</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        <strong>Pursed-lip breathing:</strong> Breathe in through your nose for 2 seconds, then out through pursed lips for 4–6 seconds. Practice when calm so it’s easy during flares.
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>What clinicians may do</h2>
+    <table class="table" role="table" aria-label="Clinical evaluation for wheezing">
+      <thead>
+        <tr><th>Step</th><th>Purpose</th><th>Examples</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>History & exam</strong></td>
+          <td>Assess severity & likely cause</td>
+          <td>Breathing rate/effort, pulse oximetry, chest sounds, edema</td>
+        </tr>
+        <tr>
+          <td><strong>Bronchodilator trial</strong></td>
+          <td>See response</td>
+          <td>Albuterol/ipratropium via inhaler or nebulizer</td>
+        </tr>
+        <tr>
+          <td><strong>Imaging & tests</strong></td>
+          <td>Look for infection/heart strain</td>
+          <td>Chest X-ray; viral testing; ECG/BNP if heart failure suspected</td>
+        </tr>
+        <tr>
+          <td><strong>Spirometry/peak flow</strong></td>
+          <td>Diagnose asthma/COPD</td>
+          <td>Pre-/post-bronchodilator measurements</td>
+        </tr>
+        <tr>
+          <td><strong>Labs</strong></td>
+          <td>Guide treatment</td>
+          <td>Blood gases in severe cases; eosinophils/IgE if allergic phenotype</td>
+        </tr>
+        <tr>
+          <td><strong>Treatment</strong></td>
+          <td>Relieve obstruction & treat cause</td>
+          <td>SABA/SAMA, systemic steroids, oxygen if needed, antibiotics for confirmed bacterial infection, diuretics for heart failure, epinephrine for anaphylaxis</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">Follow-up ensures inhaler technique, trigger control, and vaccine updates (flu, COVID, pneumonia).</p>
+  </section>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track at home</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Symptom scores (breathlessness, cough, sleep disruption)</li>
+          <li>Rescue inhaler use (puffs/day) and response time</li>
+          <li>Peak flow/oxygen readings if you use them; note personal best</li>
+          <li>Fever, sputum color/amount, swelling or rapid weight change</li>
+          <li>Triggers (weather, pollen, smoke, infections, meals/reflux)</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Bring your log and inhalers/spacer to visits—technique checks often improve control quickly.
+      </div>
+    </div>
+  </section>
+
+  <!-- Caregivers -->
+  <section id="caregivers" class="section">
+    <h2>For caregivers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Support with calm & readiness</p>
+        <ul class="list">
+          <li>Help position upright, cue pursed-lip breathing, and locate the rescue inhaler/spacer</li>
+          <li>Count breaths, watch ability to speak, check pulse-ox if available</li>
+          <li>Know the person’s action plan and allergies; avoid smoke/irritants at home</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <strong>Call the clinician or emergency services</strong> for: severe breathlessness, minimal response to rescue inhaler, new blue lips/fingertips, confusion, chest pain, or signs of allergic reaction.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Is wheezing always asthma?</p>
+        <p>No. COPD, infections, heart failure, allergies, reflux/aspiration, and some medicines can all cause wheeze. The pattern and tests point to the cause.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What’s the difference between wheeze and stridor?</p>
+        <p><strong>Wheeze</strong> is usually during exhalation from lower airways. <strong>Stridor</strong> is a harsh sound on inhalation from upper airway narrowing—treat as urgent.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do antibiotics help wheezing?</p>
+        <p>Only if there’s a confirmed bacterial infection (e.g., pneumonia). Most wheezy flares from asthma/COPD are treated with inhalers ± steroids.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">How often can I use my rescue inhaler?</p>
+        <p>During a flare: 2 puffs, repeat every 20 minutes up to 3 times. If you still struggle to breathe or need it again within 3–4 hours, seek medical advice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card small">
+      <ul class="list">
+        <li><a href="#">Respiratory Infections (Common)</a></li>
+        <li><a href="#">Cough</a></li>
+        <li><a href="#">Shortness of Breath</a></li>
+        <li><a href="#">Allergies (Hay Fever)</a></li>
+        <li><a href="#">Heart Failure</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Wheezing",
+  "description":"Wheezing in older adults: emergency red flags, causes (asthma, COPD, infection, heart failure, allergy), safe home steps, inhaler/spacer tips, clinician tests, and caregiver guidance.",
+  "about":{"@type":"MedicalSymptom","name":"Wheezing / expiratory whistling"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/wheezing"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Is wheezing always asthma?","acceptedAnswer":{"@type":"Answer","text":"No. COPD, infections, heart failure, allergies, reflux/aspiration, and some medicines can cause wheeze. The pattern and tests identify the cause."}},
+    {"@type":"Question","name":"What’s the difference between wheeze and stridor?","acceptedAnswer":{"@type":"Answer","text":"Wheeze is usually an expiratory musical sound from lower airways; stridor is an inspiratory harsh sound from upper airway narrowing and is urgent."}},
+    {"@type":"Question","name":"Do antibiotics help wheezing?","acceptedAnswer":{"@type":"Answer","text":"Only if a bacterial infection is present (e.g., pneumonia). Asthma/COPD flares are treated with inhalers ± steroids as directed."}},
+    {"@type":"Question","name":"How often can I use my rescue inhaler during a flare?","acceptedAnswer":{"@type":"Answer","text":"Take 2 puffs and repeat every 20 minutes up to 3 times. If still short of breath or if you need it again within 3–4 hours, seek medical advice."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Symptoms (A–Z)","item":"https://thevitatrack.com/symptoms/"},
+    {"@type":"ListItem","position":3,"name":"Wheezing","item":"https://thevitatrack.com/wheezing"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

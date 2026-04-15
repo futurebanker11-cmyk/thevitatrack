@@ -1,0 +1,566 @@
+---
+title: "🫀 Heart • Blood Pressure"
+slug: "%f0%9f%ab%80-heart-blood-pressure"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>High Blood Pressure (Hypertension) — Senior-Friendly Guide • thevitatrack.com</title>
+<meta name="description" content="Senior-friendly, accordion-style guide to high blood pressure: what numbers mean, how to measure at home, daily steps, foods & salt, medications, logs, safety warnings, caregiver tips, and FAQs." />
+<meta name="theme-color" content="#0b6b5c" />
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+<!-- AdSense (LOAD ONCE ONLY) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F8FAF9; --paper:#ffffff; --ink:#0c1526; --muted:#445062;
+    --brand:#0b6b5c; --brand-2:#0d8c74; --accent:#f59e0b; --danger:#a61b1b;
+    --ring:rgba(16,185,129,.35);
+    --fs:21px; --fs-lg:23px; --lh:1.8; --wide:860px;
+    --radius:18px; --shadow:0 1px 2px rgba(2,6,23,.08), 0 12px 28px rgba(2,6,23,.06);
+  }
+
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs); line-height:var(--lh); letter-spacing:.1px;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  html{-webkit-text-size-adjust:100%}
+
+  /* Respect notches/gesture bars */
+  @supports(padding:max(0px)){
+    .wrap-page{
+      padding-left:max(14px, env(safe-area-inset-left));
+      padding-right:max(14px, env(safe-area-inset-right));
+    }
+  }
+
+  /* Centering (works even when theme has no sidebars) */
+  .wrap-page{width:100%; display:grid; justify-items:center; padding:18px 14px}
+  .wrap-article{width:min(100%,var(--wide)); margin-inline:auto !important; float:none !important}
+  .entry-content > *, .wp-site-blocks > *, .site-main > *, .hentry > *, .post > *{
+    max-width:var(--wide); width:100%; margin-left:auto !important; margin-right:auto !important; float:none !important;
+  }
+
+  a{color:var(--brand); text-underline-offset:3px}
+  a:focus-visible, button:focus-visible, summary:focus-visible{outline:3px solid var(--brand-2); outline-offset:3px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+  /* Hero */
+  .hero{
+    background:linear-gradient(180deg,#e9fbf4,transparent 70%);
+    border-radius:24px; padding:18px; box-shadow:var(--shadow); border:1.5px solid #e3efe9;
+  }
+  .h1{margin:0 0 6px; font-size:clamp(28px,4.5vw,42px)}
+  .lead{margin:0; color:var(--muted); font-size:1.05em}
+  .byline{margin-top:8px; color:#64748b; font-size:.95em}
+
+  /* Reader controls */
+  .controls{margin-top:12px; display:flex; gap:10px; flex-wrap:wrap}
+  .chip{
+    display:inline-flex; align-items:center; gap:8px; cursor:pointer;
+    background:#fff; color:#0c1526; border:2px solid #dbe5e0;
+    border-radius:999px; padding:12px 16px; font-weight:800; box-shadow:var(--shadow);
+    min-height:48px;
+  }
+
+  /* Accordion */
+  .acc{display:grid; gap:12px; margin-top:16px}
+  details.section{
+    background:#fff; border:1.5px solid #e6e8ec; border-radius:16px;
+    box-shadow:var(--shadow); overflow:hidden;
+  }
+  summary.head{
+    list-style:none; cursor:pointer; display:flex; align-items:center; gap:12px;
+    padding:16px 14px; background:#ecfdf5; border-bottom:2px solid #c7f1e3; font-weight:800;
+    min-height:56px;
+  }
+  summary.head::-webkit-details-marker{display:none}
+  .badge{display:inline-grid; place-items:center; width:34px; height:34px; border-radius:999px; background:#0b6b5c; color:#fff; font-weight:800}
+  .chev{margin-left:auto; transition:transform .15s ease}
+  details[open] .chev{transform:rotate(180deg)}
+  .content{padding:16px}
+
+  h2{margin:0 0 8px; font-size:1.3em}
+  h3{margin:8px 0 6px; font-size:1.06em}
+  p{margin:6px 0}
+  ul,ol{margin:8px 0 0 24px}
+  li{margin:4px 0}
+  .muted{color:var(--muted)}
+
+  /* Helpful blocks */
+  .quickfacts{display:grid; gap:10px; grid-template-columns:1fr; background:#f2fbf7; border:2px solid #c8f2e3; padding:14px; border-radius:14px}
+  .note{background:#fff7ed; color:#7b4108; border-left:6px solid var(--accent); padding:12px; border-radius:12px; box-shadow:var(--shadow)}
+  .warn{background:#ffecec; color:#7a1010; border-left:6px solid var(--danger)}
+  .tip{background:#ecfdf5; color:#065f46; border-left:6px solid #0d8c74}
+  .box{background:#f8fafc; border:1.5px solid #e2e8f0; border-radius:14px; padding:12px}
+  .two{display:grid; grid-template-columns:1fr; gap:14px}
+  @media(min-width:860px){ .two{grid-template-columns:1fr 1fr} }
+  .three{display:grid; grid-template-columns:1fr; gap:12px}
+  @media(min-width:990px){ .three{grid-template-columns:1fr 1fr 1fr} }
+
+  /* Responsive tables */
+  .table-wrap{
+    position:relative; border-radius:14px; overflow:hidden; box-shadow:var(--shadow); border:2px solid #e6e8ec; background:#fff;
+  }
+  table{width:100%; border-collapse:separate; border-spacing:0; background:#fff}
+  th,td{padding:12px 12px; border-bottom:1px solid #e6e8ec; vertical-align:top}
+  th{background:#f0f5f8; text-align:left; font-weight:800}
+  tr:last-child td{border-bottom:0}
+
+  /* Horizontal scroll support + hint if needed */
+  .table-wrap.is-scrollable{overflow:auto}
+  .table-hint{
+    display:none; font-size:.95em; color:#64748b; padding:8px 12px; background:#f8fafc; border-top:1px solid #e2e8f0;
+  }
+  .table-wrap.is-scrollable .table-hint{display:block}
+
+  /* Mobile stacked table (labels inside cells) */
+  @media (max-width:540px){
+    .table-wrap{border:0; box-shadow:none; background:transparent}
+    table.responsive{border:0}
+    table.responsive thead{display:none}
+    table.responsive tr{
+      display:block; margin:0 0 12px 0; border:2px solid #e6e8ec; border-radius:14px; overflow:hidden; background:#fff;
+    }
+    table.responsive td{
+      display:grid; grid-template-columns:1fr 2fr; gap:10px;
+      padding:12px 14px; border-bottom:1px solid #e6e8ec;
+      font-size:1.02em;
+    }
+    table.responsive td:last-child{border-bottom:0}
+    table.responsive td::before{
+      content:attr(data-col);
+      font-weight:800; color:#0f172a;
+    }
+  }
+
+  /* Buttons */
+  .btn{display:inline-flex; align-items:center; gap:10px; background:var(--brand); color:#fff; text-decoration:none; padding:12px 16px; border-radius:14px; font-weight:800; border:0; min-height:48px}
+  .btn.ghost{background:#fff; color:var(--brand); border:2px solid var(--brand)}
+  .btn-row{display:flex; flex-wrap:wrap; gap:10px}
+
+  /* Ads */
+  .ad-slot{
+    display:block; margin:16px 0; padding:10px; border-radius:12px; background:#fff;
+    border:1px solid #e5e7eb; box-shadow:0 1px 0 rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.04)
+  }
+  .ad-slot .adsbygoogle{display:block; min-height:250px}
+  @media(min-width:760px){ .ad-slot .adsbygoogle{min-height:90px} }
+
+  /* Tiny mobile typography refinement */
+  @media (max-width:420px){
+    :root{ --fs:18.5px; --fs-lg:21px }
+    .chip{padding:12px 16px}
+    summary.head{padding:16px}
+  }
+
+  /* Print */
+  @media print{
+    .ad-slot, .controls{display:none!important}
+    body{background:#fff}
+    .wrap-page{padding:0}
+    .wrap-article{max-width:100%}
+    summary.head{background:#fff; border-bottom:1px solid #ddd}
+    details.section{border:1px solid #ddd; box-shadow:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap-page">
+  <main class="wrap-article" id="top">
+
+    <!-- HERO -->
+    <header class="hero" role="banner">
+      <h1 class="h1">High Blood Pressure (Hypertension)</h1>
+      <p class="lead">A calm, senior-friendly guide: what your numbers mean, how to measure at home, small daily steps that work, food & salt tips, medication basics, and safety warnings.</p>
+      <p class="byline">thevitatrack.com • Medically reviewed • <time datetime="2025-09-24">Updated Sep 24, 2025</time></p>
+
+      <div class="controls" role="group" aria-label="Reading comfort controls">
+        <button type="button" class="chip" id="fontNormal">🅽 Normal Text</button>
+        <button type="button" class="chip" id="fontLarge">🅻 Large Text</button>
+        <button type="button" class="chip" id="openAll">➕ Expand all</button>
+        <button type="button" class="chip" id="closeAll">➖ Collapse all</button>
+      </div>
+    </header>
+
+    <!-- ACCORDION -->
+    <div class="acc">
+
+      <!-- Overview / Safety -->
+      <details class="section" open>
+        <summary class="head"><span class="badge">1</span> Overview & Safety <span class="chev">▾</span></summary>
+        <div class="content">
+          <div class="note warn" aria-label="Emergency notice">
+            <strong>Emergency?</strong> Chest pain, severe shortness of breath, fainting, sudden weakness/confusion, or a very high reading with symptoms (e.g., ≥180/120) — <strong>call emergency services now.</strong>
+          </div>
+
+          <h2 style="margin-top:12px">Quick facts</h2>
+          <div class="quickfacts" style="margin-top:8px">
+            <div><strong>BP has two numbers:</strong> top (systolic) when the heart squeezes; bottom (diastolic) when it relaxes.</div>
+            <div><strong>Trends beat single checks:</strong> measure the same way, calm, and compare averages.</div>
+            <div><strong>Small habits help:</strong> after-meal walks, salt awareness, steady sleep, meds as prescribed.</div>
+            <div><strong>Targets are personal:</strong> dizziness, kidney/heart health, and age guide your safe range.</div>
+          </div>
+
+          <!-- Responsive Ad -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="3275781745"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </details>
+
+      <!-- Numbers -->
+      <details class="section">
+        <summary class="head"><span class="badge">2</span> What the numbers mean <span class="chev">▾</span></summary>
+        <div class="content">
+          <p>Lower numbers are usually safer <em>if you feel well</em>. Your clinician may set different goals if you have dizziness on standing, chronic kidney disease, diabetes, or heart failure.</p>
+
+          <!-- TABLE: desktop/tablet = normal; mobile = stacked cards -->
+          <div class="table-wrap" id="rangesTableWrap">
+            <table class="responsive" aria-label="General BP ranges in plain words">
+              <thead>
+                <tr><th scope="col">Range</th><th scope="col">Top (Systolic)</th><th scope="col">Bottom (Diastolic)</th><th scope="col">Plain words</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-col="Range">Normal (many adults)</td>
+                  <td data-col="Top (Systolic)">&lt; 120</td>
+                  <td data-col="Bottom (Diastolic)">&lt; 80</td>
+                  <td data-col="Plain words">Great if it feels safe for you</td>
+                </tr>
+                <tr>
+                  <td data-col="Range">Elevated</td>
+                  <td data-col="Top (Systolic)">120–129</td>
+                  <td data-col="Bottom (Diastolic)">&lt; 80</td>
+                  <td data-col="Plain words">Watch salt, short walks, recheck</td>
+                </tr>
+                <tr>
+                  <td data-col="Range">High BP (Stage 1)</td>
+                  <td data-col="Top (Systolic)">130–139</td>
+                  <td data-col="Bottom (Diastolic)">80–89</td>
+                  <td data-col="Plain words">Daily steps + discuss with clinician</td>
+                </tr>
+                <tr>
+                  <td data-col="Range">High BP (Stage 2)</td>
+                  <td data-col="Top (Systolic)">≥ 140</td>
+                  <td data-col="Bottom (Diastolic)">≥ 90</td>
+                  <td data-col="Plain words">Often needs medication + lifestyle</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="table-hint" aria-hidden="true">Tip: You can swipe this table sideways if it extends off the screen.</div>
+          </div>
+
+          <p class="muted">These are general ranges; your safe target should be individualized.</p>
+
+          <!-- In-article Ad -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="1548966214"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </details>
+
+      <!-- Measure -->
+      <details class="section">
+        <summary class="head"><span class="badge">3</span> Measure at home (simple routine) <span class="chev">▾</span></summary>
+        <div class="content">
+          <div class="two">
+            <div>
+              <ol>
+                <li><strong>Rest 5 minutes:</strong> back supported, feet flat, legs uncrossed, bladder empty.</li>
+                <li><strong>Arm & cuff fit:</strong> upper-arm cuff; forearm supported at heart level.</li>
+                <li><strong>Avoid for 30 minutes:</strong> caffeine, smoking, hard exercise.</li>
+                <li><strong>Take 2–3 readings 1 minute apart</strong> and write the average.</li>
+                <li><strong>Same times:</strong> morning (before pills/food) & evening; repeat for several days when adjusting your plan.</li>
+              </ol>
+              <p class="muted">Bring your home cuff to clinic yearly to compare with their device.</p>
+            </div>
+            <div class="note tip"><strong>Why it matters:</strong> Calm posture and correct cuff height can change a reading by 5–10 points. Consistency makes your trend trustworthy.</div>
+          </div>
+          <div class="btn-row" style="margin-top:8px">
+            <a class="btn" href="#monitor-log">🖨️ Print: BP Log Sheet</a>
+            <a class="btn ghost" href="#">🫀 How to Choose a Home BP Cuff</a>
+          </div>
+
+          <!-- In-article Ad -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="1548966214"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </details>
+
+      <!-- Daily Plan -->
+      <details class="section">
+        <summary class="head"><span class="badge">4</span> Daily plan (small steps that add up) <span class="chev">▾</span></summary>
+        <div class="content">
+          <div class="three">
+            <div class="box">
+              <h3>Move gently</h3>
+              <ul>
+                <li><strong>5–10 min walk after meals</strong> supports BP, sugar, digestion.</li>
+                <li><strong>Balance & strength:</strong> heel-to-toe near a counter, light hand squeezes, chair stands.</li>
+                <li><strong>Rise-slow routine:</strong> sit → feet dangle → stand slowly to avoid dizziness.</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>Salt & fluids</h3>
+              <ul>
+                <li><strong>Taste first:</strong> swap some salt for lemon, herbs, pepper.</li>
+                <li><strong>Read labels:</strong> soups, sauces, processed meats hide sodium.</li>
+                <li><strong>Hydrate earlier:</strong> small sips daytime; reduce big drinks 2–3 hrs before bed if nocturia.</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>Sleep & stress</h3>
+              <ul>
+                <li>Consistent bedtime; cool, dark room; safe night light.</li>
+                <li><strong>Breathing break:</strong> 5 minutes nose-in / pursed-lip out.</li>
+                <li>Gentle stretch in the evening to unwind.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Responsive Ad -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="3275781745"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </details>
+
+      <!-- Foods -->
+      <details class="section">
+        <summary class="head"><span class="badge">5</span> Foods & salt (realistic swaps) <span class="chev">▾</span></summary>
+        <div class="content">
+          <div class="two">
+            <div>
+              <h3>Helpful choices</h3>
+              <ul>
+                <li>Half plate veggies/fruit (fresh or frozen), plus beans, oats, or whole grains you tolerate.</li>
+                <li>Unsalted nuts/seeds; olive or canola oil for cooking.</li>
+                <li>Low-fat dairy or suitable alternatives.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Limit/avoid</h3>
+              <ul>
+                <li>Processed meats, packaged snacks, instant soups/noodles, pickles.</li>
+                <li>Restaurant/fast foods (often very high sodium).</li>
+                <li>Alcohol beyond what your clinician recommends.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="muted">Kidney disease or heart failure may change your sodium/fluid targets—ask your clinician.</p>
+          <div class="btn-row" style="margin-top:8px">
+            <a class="btn" href="#">🥗 Low-Salt Grocery List</a>
+            <a class="btn ghost" href="#">🍲 Heart-Friendly Recipes</a>
+          </div>
+
+          <!-- In-article Ad -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="1548966214"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </details>
+
+      <!-- Meds -->
+      <details class="section">
+        <summary class="head"><span class="badge">6</span> Medication basics (plain language) <span class="chev">▾</span></summary>
+        <div class="content">
+          <p>Many adults need medicine plus daily habits. Your prescriber considers other conditions and side-effect risks.</p>
+          <ul>
+            <li><strong>Diuretics</strong> (“water pills”): remove extra salt/fluid. You may urinate more—timing matters.</li>
+            <li><strong>ACE inhibitors / ARBs:</strong> relax vessels; often used if kidney disease or diabetes. Report cough, swelling, dizziness.</li>
+            <li><strong>Calcium channel blockers:</strong> relax vessel muscle; can cause ankle swelling for some.</li>
+            <li><strong>Beta-blockers:</strong> steady/slow the heart; often used when heart disease is present.</li>
+          </ul>
+          <div class="note"><strong>Don’t stop meds suddenly.</strong> Call your clinician if you feel dizzy, overly tired, or notice swelling/cough/new symptoms.</div>
+        </div>
+      </details>
+
+      <!-- Monitor / Log -->
+      <details class="section" id="monitor-log">
+        <summary class="head"><span class="badge">7</span> Make your BP log useful <span class="chev">▾</span></summary>
+        <div class="content">
+          <p>Log date/time, top & bottom numbers, pulse, arm used, and a short note (salty meal, poor sleep, missed dose). A morning/evening average for 3–7 days gives a clear snapshot for your clinician.</p>
+          <div class="btn-row" style="margin-top:8px">
+            <a class="btn" href="#">🖨️ Download Printable BP Log</a>
+            <a class="btn ghost" href="#">📱 Track BP on thevitatrack.com</a>
+          </div>
+        </div>
+      </details>
+
+      <!-- Special -->
+      <details class="section">
+        <summary class="head"><span class="badge">8</span> Special notes (65+, diabetes, kidney, HF) <span class="chev">▾</span></summary>
+        <div class="content">
+          <ul>
+            <li><strong>Age 65+:</strong> Avoid dizziness and falls. If you feel light-headed on standing, tell your clinician. Targets or dosing time may change.</li>
+            <li><strong>Diabetes:</strong> Good BP control protects eyes, kidneys, and nerves. Pair with A1C goals and foot care.</li>
+            <li><strong>Chronic kidney disease:</strong> Ask about ACEi/ARB benefits, safe pain relievers (limit NSAIDs), and potassium checks.</li>
+            <li><strong>Heart failure:</strong> Daily weight, watch swelling/breathlessness, follow fluid/salt limits if prescribed.</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Myths -->
+      <details class="section">
+        <summary class="head"><span class="badge">9</span> Common myths <span class="chev">▾</span></summary>
+        <div class="content">
+          <ul>
+            <li><strong>“I feel fine, so my BP is fine.”</strong> High BP is often silent. Home checks tell the truth.</li>
+            <li><strong>“One high reading means danger.”</strong> Single checks can be off; trends over days matter.</li>
+            <li><strong>“Salt only means the shaker.”</strong> Most sodium comes from packaged and restaurant foods.</li>
+            <li><strong>“If I need medicine, I failed.”</strong> Medicine plus daily steps protects heart and brain.</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Caregivers -->
+      <details class="section">
+        <summary class="head"><span class="badge">10</span> Caregivers & family <span class="chev">▾</span></summary>
+        <div class="content">
+          <p>Support calm, repeatable routines: pill boxes labeled by time, short walks after meals, low-salt cooking, and a quiet corner for BP checks. Keep a short question list for appointments. Celebrate small wins—consistency reduces risk.</p>
+        </div>
+      </details>
+
+      <!-- FAQ -->
+      <details class="section" itemscope itemtype="https://schema.org/FAQPage">
+        <summary class="head"><span class="badge">11</span> FAQs <span class="chev">▾</span></summary>
+        <div class="content">
+          <div class="box" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Is 140/90 dangerous at my age?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">For many adults, 140/90 is considered high. Your target should consider dizziness, kidney/heart health, and tolerance of medicines. Ask your clinician for a personal range.</p>
+            </div>
+          </div>
+          <div class="box" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Best time to check at home?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Morning before pills/food and evening before bed. Rest 5 minutes, arm at heart level, average 2–3 readings.</p>
+            </div>
+          </div>
+          <div class="box" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Can I lower BP without pills?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Daily salt awareness, short post-meal walks, better sleep, and weight/waist management help. Many still need meds—the mix is what protects you.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Related + Multiplex -->
+      <details class="section">
+        <summary class="head"><span class="badge">12</span> Related links <span class="chev">▾</span></summary>
+        <div class="content">
+          <ul>
+            <li><a href="#">How to Measure Blood Pressure (Step-by-Step)</a></li>
+            <li><a href="#">Dizziness on Standing: The 3-Breath Rule</a></li>
+            <li><a href="#">Low-Salt Grocery List (Printable)</a></li>
+          </ul>
+
+          <!-- Multiplex Ad at end -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="autorelaxed"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="7363184657"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+          <p style="text-align:right"><a class="btn ghost" href="#top">⬆️ Back to top</a></p>
+        </div>
+      </details>
+
+    </div><!-- /.acc -->
+
+  </main>
+</div>
+
+<script>
+  // Font size toggles
+  (function(){
+    const html=document.documentElement;
+    const normal=document.getElementById('fontNormal');
+    const large=document.getElementById('fontLarge');
+    function set(size){ html.style.fontSize=size; document.body.style.fontSize=size; }
+    normal && normal.addEventListener('click', ()=>set('var(--fs)'));
+    large && large.addEventListener('click', ()=>set('var(--fs-lg)'));
+  })();
+
+  // Expand/Collapse all (keep first section open when collapsing)
+  (function(){
+    const openAll=document.getElementById('openAll');
+    const closeAll=document.getElementById('closeAll');
+    const sections=[...document.querySelectorAll('details.section')];
+    openAll && openAll.addEventListener('click', ()=> sections.forEach(d=> d.open=true));
+    closeAll && closeAll.addEventListener('click', ()=>{
+      sections.forEach((d,i)=> d.open = (i===0));
+      sections[0].scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  })();
+
+  // If any table overflows, add scroll hint (desktop/tablet only)
+  (function(){
+    const wrap = document.getElementById('rangesTableWrap');
+    if(!wrap) return;
+    const check = ()=> {
+      const tbl = wrap.querySelector('table');
+      if(tbl && tbl.scrollWidth > wrap.clientWidth){
+        wrap.classList.add('is-scrollable');
+      } else {
+        wrap.classList.remove('is-scrollable');
+      }
+    };
+    check();
+    window.addEventListener('resize', check, {passive:true});
+  })();
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

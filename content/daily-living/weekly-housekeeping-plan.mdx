@@ -1,0 +1,542 @@
+---
+title: "Weekly Housekeeping Plan"
+slug: "weekly-housekeeping-plan"
+category: "daily-living"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Weekly Housekeeping Plan — Daily Living • TheVitatrack</title>
+<meta name="description" content="A light, senior-friendly housekeeping plan: a 20–40 minute task per day, 30-minute weekend reset, safe cleaning tips, laundry rhythm, decluttering, fall-risk checks, and printable checklists." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #EAF4FF, rgba(234,244,255,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .danger{background:var(--danger-bg); border:1.5px solid #FECACA; color:#7F1D1D; border-radius:14px; padding:12px}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFE7FF,#BFE3FD,#CFE7FF);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Weekly Housekeeping Plan</h1>
+    <p>A light, repeatable plan: one small task per day (20–40 minutes), a 30-minute weekend reset, and safer cleaning for older adults.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#why">Why a weekly plan helps</a></li>
+      <li><a href="#kit">Starter kit</a></li>
+      <li><a href="#weekly">Your 7-day plan</a></li>
+      <li><a href="#reset">30-minute weekend reset</a></li>
+      <li><a href="#laundry">Laundry rhythm</a></li>
+      <li><a href="#declutter">Declutter in minutes</a></li>
+      <li><a href="#safe">Safe cleaning tips</a></li>
+      <li><a href="#falls">Fall-risk & ergonomics</a></li>
+      <li><a href="#tracking">What to track</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <h2>Why a weekly plan helps</h2>
+    <p class="lead"><span class="badge">Less effort, more order</span> Small, regular tasks prevent heavy “spring cleaning.” Pair work with good light, sturdy shoes, and breaks to protect joints and balance.</p>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Benefits</p>
+        <ul class="list">
+          <li>Cleaner air and fewer dust/allergen flare-ups</li>
+          <li>Lower fall risk from clutter and cords</li>
+          <li>Predictable rhythm you can share with family or helpers</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Use a <strong>timer (20–40 min)</strong>. Stop if you feel dizzy, short of breath, or have chest pain.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Kit -->
+  <section id="kit" class="section">
+    <h2>Starter kit (keep it all in one caddy)</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Microfiber cloths (color-coded), extendable duster</li>
+          <li>All-purpose cleaner + bathroom cleaner (clearly labeled)</li>
+          <li>Dish soap, glass cleaner or vinegar mix, baking soda</li>
+          <li>Disposable gloves, trash bags, small brush & dustpan</li>
+          <li>Lightweight vacuum or broom, mop with wringer bucket</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Store <strong>off the floor</strong> at waist height to avoid bending. Keep Safety Data/labels readable (large print).
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly plan -->
+  <section id="weekly" class="section">
+    <h2>Your 7-day plan (pick any start day)</h2>
+    <table class="table" role="table" aria-label="Weekly housekeeping schedule">
+      <thead>
+        <tr><th scope="col">Day</th><th scope="col">Task (20–40 min)</th><th scope="col">Quick checklist</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Day 1 — Kitchen Surfaces</strong></td>
+          <td>Wipe counters, stove top, handles; empty old food</td>
+          <td>Clear → spray → wipe; microwave 1-min steam; sink & drain</td>
+        </tr>
+        <tr>
+          <td><strong>Day 2 — Bathrooms</strong></td>
+          <td>Toilet, sink, mirror, quick shower/tub rinse</td>
+          <td>Cleaner on → 5-min soak → brush/rinse; replace towels</td>
+        </tr>
+        <tr>
+          <td><strong>Day 3 — Dust & High-touch</strong></td>
+          <td>Dust from high to low; wipe switches/rails/remotes</td>
+          <td>Extendable duster; damp cloth on flat surfaces</td>
+        </tr>
+        <tr>
+          <td><strong>Day 4 — Floors</strong></td>
+          <td>Vacuum or sweep main paths; spot mop sticky areas</td>
+          <td>Move small items only; mind cords; non-slip shoes</td>
+        </tr>
+        <tr>
+          <td><strong>Day 5 — Laundry & Linens</strong></td>
+          <td>1–2 loads (clothes or linens); reset wardrobe</td>
+          <td>Lights/darks; mesh bag for socks; change bed sheets</td>
+        </tr>
+        <tr>
+          <td><strong>Day 6 — Paper & Clutter</strong></td>
+          <td>10-item toss/file; clear one surface (table/counter)</td>
+          <td>Keep/Donate/Trash boxes ready; label and act</td>
+        </tr>
+        <tr>
+          <td><strong>Day 7 — Rest & Review</strong></td>
+          <td>Walk-through: pick up, water plants, check supplies</td>
+          <td>Refill caddy; list items to buy; celebrate wins</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">Have help? Assign them the <em>lift/carry</em> tasks and anything requiring step stools.</p>
+  </section>
+
+  <!-- ===== In-article AD (after weekly) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- 30-minute reset -->
+  <section id="reset" class="section">
+    <h2>30-minute weekend reset (timer on!)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">5-minute sweep</p>
+        <ul class="list">
+          <li>Gather trash & recycling; empty small bins</li>
+          <li>Return dishes to kitchen; start dishwasher or soak</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">10-minute kitchen</p>
+        <ul class="list">
+          <li>Clear sink/counter; wipe stove & handles</li>
+          <li>Check fridge “use-first” bin; plan 2 simple meals</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">10-minute bathroom</p>
+        <ul class="list">
+          <li>Toilet bowl & seat; sink & mirror</li>
+          <li>Swap towels; place fresh soap</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        <p class="kicker">5-minute floors</p>
+        <ul class="list">
+          <li>Vacuum/sweep main path: entry → kitchen → bath</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Laundry -->
+  <section id="laundry" class="section">
+    <h2>Laundry rhythm (simple & gentle)</h2>
+    <table class="table" role="table" aria-label="Laundry plan">
+      <thead>
+        <tr><th scope="col">Item</th><th scope="col">How often</th><th scope="col">Tips</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Towels</strong></td>
+          <td>Every 3–4 uses</td>
+          <td>Dry fully between uses; avoid fabric softener on bath towels</td>
+        </tr>
+        <tr>
+          <td><strong>Bedsheets</strong></td>
+          <td>Every 1–2 weeks</td>
+          <td>Wash warm; dry completely to prevent musty smell</td>
+        </tr>
+        <tr>
+          <td><strong>Everyday clothes</strong></td>
+          <td>When soiled or sweaty</td>
+          <td>Mesh bag for socks/underwear; mild detergent</td>
+        </tr>
+        <tr>
+          <td><strong>Cleaning cloths</strong></td>
+          <td>After a session</td>
+          <td>Hot wash; keep a “dirty cloths” bag near caddy</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Declutter -->
+  <section id="declutter" class="section">
+    <h2>Declutter in minutes (no drama)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">The 10-10-10</p>
+        <ul class="list">
+          <li>Choose one zone. Remove 10 items: 5 trash, 3 donate, 2 keep elsewhere.</li>
+          <li>Set a 10-minute timer; stop when it rings.</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Keep a <strong>donation box</strong> near the door. When full, schedule pickup/drop-off.
+      </div>
+    </div>
+  </section>
+
+  <!-- Safe cleaning -->
+  <section id="safe" class="section">
+    <h2>Safe cleaning tips</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>No mixing</strong> bleach with ammonia/vinegar — dangerous fumes</li>
+          <li>Ventilate: open a window or run the exhaust fan</li>
+          <li>Label bottles in large print; keep in original containers</li>
+          <li>Wear <strong>gloves</strong>; rinse skin if splashed</li>
+          <li>Use step stools only with <strong>handrails</strong> — or ask for help</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Pets/grandkids at home? Store chemicals up high or in a locked cabinet. Keep floors dry to prevent slips.
+      </div>
+    </div>
+  </section>
+
+  <!-- Falls & ergonomics -->
+  <section id="falls" class="section">
+    <h2>Fall-risk & ergonomics</h2>
+    <table class="table" role="table" aria-label="Fall risk tips">
+      <thead>
+        <tr><th scope="col">Do</th><th scope="col">Avoid</th><th scope="col">Why</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Wear closed-toe, non-slip shoes</td>
+          <td>Cleaning in socks or sandals</td>
+          <td>Better grip and toe protection</td>
+        </tr>
+        <tr>
+          <td>Use long-handle tools; lift small loads</td>
+          <td>Heavy buckets or twisting with vacuum</td>
+          <td>Protects back and shoulders</td>
+        </tr>
+        <tr>
+          <td>Keep cords against walls</td>
+          <td>Loose cords across walkways</td>
+          <td>Reduces trip hazards</td>
+        </tr>
+        <tr>
+          <td>Hydrate and rest every 20–30 min</td>
+          <td>“Pushing through” dizziness or pain</td>
+          <td>Prevents overexertion and falls</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">See also: <a href="#">Bathroom Safety Setup</a> and <a href="#">Lighting for Aging Eyes</a>.</p>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Weekly tasks done (✓/✗) and time spent</li>
+          <li>Supplies to reorder (cleaners, cloths, bags)</li>
+          <li>Areas that felt unsafe or painful to reach</li>
+          <li>Help needed (lift, ladder, deep clean) — schedule it</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Take a quick photo of “problem spots” (cords, clutter). Use before/after pictures to stay motivated.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">How long should cleaning take each day?</p>
+        <p>20–40 minutes is plenty for upkeep. Use the weekend reset for anything missed.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">I have arthritis—what helps?</p>
+        <p>Lightweight tools, long handles, break tasks into 10-minute chunks, and avoid heavy lifting or wringing by hand.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Deep clean schedule?</p>
+        <p>Quarterly: fridge shelves, oven, curtains, fans. Put one on the calendar each month so it never piles up.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can I use vinegar with bleach?</p>
+        <p>No. Never mix bleach with vinegar or ammonia—creates toxic gas. Use one or the other with water only.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card">
+      <ul class="list">
+        <li><a href="#">Bathroom Safety Setup</a></li>
+        <li><a href="#">Lighting for Aging Eyes</a></li>
+        <li><a href="#">Evening Wind-Down</a></li>
+        <li><a href="#">Memory Helpers</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Weekly Housekeeping Plan (senior-friendly)",
+  "description":"A light, one-task-per-day housekeeping routine with a 30-minute weekend reset and safety tips for older adults.",
+  "totalTime":"PT40M",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"},
+  "tool":[
+    {"@type":"HowToTool","name":"Cleaning caddy with labeled sprays"},
+    {"@type":"HowToTool","name":"Microfiber cloths & extendable duster"},
+    {"@type":"HowToTool","name":"Lightweight vacuum or broom & mop"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Kitchen Surfaces","text":"Wipe counters, stove, and handles; empty old food; clean sink."},
+    {"@type":"HowToStep","name":"Bathrooms","text":"Clean toilet, sink, mirror; quick shower/tub rinse; swap towels."},
+    {"@type":"HowToStep","name":"Dust & High-touch","text":"Dust high to low; wipe switches, rails, and remotes."},
+    {"@type":"HowToStep","name":"Floors","text":"Vacuum/sweep main paths; spot mop sticky areas."},
+    {"@type":"HowToStep","name":"Laundry & Linens","text":"Run 1–2 loads; change sheets; dry fully."},
+    {"@type":"HowToStep","name":"Paper & Clutter","text":"Use keep/donate/trash boxes; clear one surface."},
+    {"@type":"HowToStep","name":"Rest & Review","text":"Walk-through, restock supplies, plan next week."}
+  ],
+  "url":"https://thevitatrack.com/daily-living/weekly-housekeeping-plan"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How long should daily cleaning take?","acceptedAnswer":{"@type":"Answer","text":"Aim for 20–40 minutes per day with a 30-minute weekend reset. Use a timer, take breaks, and stop if you feel unwell."}},
+    {"@type":"Question","name":"What are safe cleaning basics?","acceptedAnswer":{"@type":"Answer","text":"Never mix bleach with ammonia or vinegar; ventilate rooms; label products; store up high away from children and pets; wear gloves."}},
+    {"@type":"Question","name":"How often should I wash linens and towels?","acceptedAnswer":{"@type":"Answer","text":"Bedsheets every 1–2 weeks; towels every 3–4 uses; cleaning cloths after each session in a hot wash."}},
+    {"@type":"Question","name":"How do I reduce fall risk while cleaning?","acceptedAnswer":{"@type":"Answer","text":"Wear non-slip shoes, manage cords along walls, use long-handle tools, lift smaller loads, and avoid step ladders without handrails."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Weekly Housekeeping Plan","item":"https://thevitatrack.com/daily-living/weekly-housekeeping-plan"}
+  ]
+}
+</script>
+
+<script>
+  // Small QoL
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

@@ -1,0 +1,551 @@
+---
+title: "Balance Problems &amp; Falls"
+slug: "balance-problems-falls"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Balance Problems & Falls — Senior-Friendly Guide • TheVitatrack</title>
+<meta name="description" content="A clear guide for seniors on balance problems and falls: warning signs, common causes, meds that raise risk, simple home safety, strength & balance exercises, clinician assessment, and treatment options." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad helpers (consistent with other pages) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Balance Problems & Falls</h1>
+    <p>Warning signs, common causes, meds that raise risk, home safety, simple strength & balance ideas, how clinicians assess, and practical treatment options.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is-balance">What are balance problems?</a></li>
+      <li><a href="#red-flags">When to seek urgent help</a></li>
+      <li><a href="#symptoms">Common symptoms</a></li>
+      <li><a href="#causes-risks">Common causes & risk factors</a></li>
+      <li><a href="#meds">Medicines linked to falls</a></li>
+      <li><a href="#assessment">How clinicians assess risk</a></li>
+      <li><a href="#treatment">Treatment options</a></li>
+      <li><a href="#daily-care">Daily care & home safety</a></li>
+      <li><a href="#checklist">One-page prevention checklist</a></li>
+      <li><a href="#questions">Questions for your clinician</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- ===== Display AD (near top) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- What is -->
+  <section id="what-is-balance" class="section">
+    <h2>What are balance problems?</h2>
+    <p class="lead"><span class="badge">In short</span> Balance problems include unsteadiness, veering while walking, frequent tripping, or feeling “pulled” to one side. Falls happen when strength, sensation, vision, inner ear, blood pressure, or medicines aren’t in sync.</p>
+    <div class="card small">
+      <p><strong>Goal:</strong> Reduce fall risk while maintaining independence — by tuning movement, home setup, vision/hearing, hydration, and medicines.</p>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent help</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Signs of stroke: face droop, arm weakness, speech trouble, sudden severe imbalance</li>
+        <li>Head injury with confusion, vomiting, severe headache, or loss of consciousness</li>
+        <li>Severe vertigo with double vision, slurred speech, or new weakness</li>
+        <li>Black/tarry stools, chest pain, or shortness of breath after a fall</li>
+      </ul>
+      <p class="small">Call local emergency services right away for these symptoms.</p>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section id="symptoms" class="section">
+    <h2>Common symptoms</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Unsteady gait, frequent near-falls, or needing furniture to steady</li>
+          <li>Dizziness on standing; “graying out” or light-headedness</li>
+          <li>Spinning sensation (vertigo), especially with head turns</li>
+          <li>Numb feet (sensory loss), weak legs, or knee buckling</li>
+          <li>Blurred vision or poor night vision</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">Dizziness on Standing</a></li>
+          <li><a href="#">Vertigo</a></li>
+          <li><a href="#">Mobility & Balance</a></li>
+          <li><a href="#">Daily Living</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (mid-content) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Causes & risks -->
+  <section id="causes-risks" class="section">
+    <h2>Common causes & risk factors</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Body systems involved</p>
+        <ul class="list">
+          <li><strong>Inner ear (vestibular):</strong> BPPV, labyrinthitis</li>
+          <li><strong>Blood pressure:</strong> orthostatic drops, dehydration</li>
+          <li><strong>Nerves & muscles:</strong> neuropathy, weakness, arthritis pain</li>
+          <li><strong>Brain & spine:</strong> prior stroke/TIA, Parkinsonism, spinal stenosis</li>
+          <li><strong>Senses:</strong> poor vision/hearing; unsafe footwear</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Risk boosters</p>
+        <ul class="list">
+          <li>Past falls, fear of falling, or walking without aids when needed</li>
+          <li>Multiple medicines (especially sedating or BP-lowering)</li>
+          <li>Home hazards: loose rugs, poor lighting, clutter, slippery bathrooms</li>
+          <li>Alcohol, poor sleep, or acute illness</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Medicines table -->
+  <section id="meds" class="section">
+    <h2>Medicines linked to falls</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Medicine class</th><th scope="col">How it raises risk</th><th scope="col">Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sedatives/sleep pills, benzodiazepines</td>
+          <td>Drowsiness, slowed reaction, poor balance</td>
+          <td>Consider tapering/substitutions with clinician</td>
+        </tr>
+        <tr>
+          <td>Strong pain meds (opioids)</td>
+          <td>Dizziness, sedation, confusion</td>
+          <td>Use lowest effective dose; review constipation/falls plan</td>
+        </tr>
+        <tr>
+          <td>Antidepressants & antipsychotics</td>
+          <td>Sedation, orthostatic drops</td>
+          <td>Benefits vs risks should be reviewed regularly</td>
+        </tr>
+        <tr>
+          <td>Blood pressure pills (some)</td>
+          <td>Orthostatic hypotension</td>
+          <td>Adjust timing/dose if needed; hydrate as advised</td>
+        </tr>
+        <tr>
+          <td>Anticholinergics (bladder, allergy meds)</td>
+          <td>Blurred vision, confusion, dry mouth</td>
+          <td>Look for safer alternatives</td>
+        </tr>
+        <tr>
+          <td>Diabetes meds (hypoglycemia risk)</td>
+          <td>Low blood sugar → dizziness, falls</td>
+          <td>Monitor and match meals/meds; adjust plan as needed</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">Never change medicines on your own — discuss options with your clinician.</p>
+  </section>
+
+  <!-- Assessment -->
+  <section id="assessment" class="section">
+    <h2>How clinicians assess risk</h2>
+    <div class="card">
+      <ul class="list">
+        <li>History: prior falls, near-falls, dizziness, vertigo, foot numbness, vision changes, shoe type</li>
+        <li>Vitals including orthostatic BP; heart rhythm; hydration status</li>
+        <li>Gait & balance tests (e.g., Timed Up & Go, chair stand, tandem stance)</li>
+        <li>Foot exam (sensation, footwear), joint range and strength</li>
+        <li>Vision/hearing screen; medication review; labs only when indicated</li>
+        <li>Targeted tests (vestibular maneuvers, B12, imaging) when the history suggests</li>
+      </ul>
+      <p class="small">Findings guide a focused plan: exercise, meds review, home safety, and supports.</p>
+    </div>
+  </section>
+
+  <!-- Treatment options -->
+  <section id="treatment" class="section">
+    <h2>Treatment options</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">1) Exercise & therapy</p>
+        <ul class="list">
+          <li>Balance training (tandem stance, heel-to-toe, single-leg near counter)</li>
+          <li>Strength (sit-to-stand sets, calf raises, hip abductor work)</li>
+          <li>Vestibular rehab for positional vertigo; gait training with PT/OT</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">2) Medicines & hydration</p>
+        <ul class="list">
+          <li>Review and simplify fall-risk medicines where possible</li>
+          <li>Adequate daytime fluids; slow position changes; compression socks if advised</li>
+          <li>Treat reversible causes (B12 deficiency, infections, anemia)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">3) Supports & footwear</p>
+        <ul class="list">
+          <li>Proper cane or walker fit; non-slip, supportive shoes</li>
+          <li>Night-lights; reachable items at waist height</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">4) Specific inner-ear care</p>
+        <ul class="list">
+          <li>Repositioning maneuvers (for BPPV) performed by trained clinician</li>
+          <li>Short-term symptom relief only when appropriate</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small note" style="margin-top:12px">Plans are individualized to causes and goals. Safety first; build slowly and consistently.</p>
+  </section>
+
+  <!-- ===== In-article AD (after Treatment) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Daily care & home safety -->
+  <section id="daily-care" class="section">
+    <h2>Daily care & home safety</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Home setup</p>
+        <ul class="list">
+          <li>Clear walkways; remove loose rugs; tidy cords</li>
+          <li>Bright lighting in halls and stairs; night-lights to the bathroom</li>
+          <li>Bathroom: grab bars, non-slip mat, raised seat if needed</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Daily routines</p>
+        <ul class="list">
+          <li>Stand slowly; pause a moment before walking</li>
+          <li>Short walks after meals; brief balance practice twice daily</li>
+          <li>Eat enough protein for strength (as advised for kidneys/heart)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Vision & hearing</p>
+        <ul class="list">
+          <li>Update glasses; use single-vision for walking if bifocals cause missteps</li>
+          <li>Address cataracts/hearing loss — improves stability and awareness</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        If you fall: check for injury, move slowly, and call for help. Report falls to your clinician even if you feel okay — prevention plans improve after each review.
+      </div>
+    </div>
+    <div class="small" style="margin-top:8px">
+      Related: <a href="#">Dizziness on Standing</a> · <a href="#">Daily Living</a> · <a href="#">Mobility & Balance</a>
+    </div>
+  </section>
+
+  <!-- Prevention checklist -->
+  <section id="checklist" class="section">
+    <h2>One-page prevention checklist</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Item</th><th scope="col">Quick action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Hydration & meals</td><td>Daytime fluids; don’t skip meals; rise slowly</td></tr>
+        <tr><td>Footwear</td><td>Closed-back, non-slip, supportive shoes</td></tr>
+        <tr><td>Home hazards</td><td>Remove rugs/clutter; add night-lights; grab bars</td></tr>
+        <tr><td>Exercise</td><td>Sit-to-stand 2×/day, 10 reps; supported single-leg stance</td></tr>
+        <tr><td>Vision & hearing</td><td>Update lenses; hearing checked</td></tr>
+        <tr><td>Medicines</td><td>Ask for a fall-risk review and simplification</td></tr>
+        <tr><td>Assistive device</td><td>Use cane/walker correctly; get fit checked</td></tr>
+        <tr><td>Emergency plan</td><td>Phone within reach; medical info and contacts handy</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Questions -->
+  <section id="questions" class="section">
+    <h2>Questions for your clinician</h2>
+    <div class="card">
+      <ul class="list">
+        <li>What seems to be the main cause of my imbalance?</li>
+        <li>Which strength and balance program fits me best?</li>
+        <li>Can we simplify or adjust medicines to lower fall risk?</li>
+        <li>Do I need PT/OT, vestibular rehab, or a device fitting?</li>
+        <li>Which home safety changes should I do first?</li>
+        <li>When should I recheck progress, and what are warning signs?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Is it safe to exercise if I’m unsteady?</p>
+        <p>Yes — with support. Practice near a counter or with a therapist. Short, frequent sessions work best.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Why am I dizzy when I stand up?</p>
+        <p>Blood pressure can drop on standing (orthostatic). Hydration, slow rising, and medicine timing may help — ask your clinician.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do canes or walkers make me dependent?</p>
+        <p>Used correctly, they improve confidence, reduce falls, and can increase activity.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can inner-ear vertigo be fixed?</p>
+        <p>Many positional vertigo cases improve with repositioning maneuvers done by trained clinicians or therapists.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalCondition",
+  "name":"Balance problems and falls",
+  "alternateName":["Gait instability","Imbalance"],
+  "description":"Senior-friendly guide to balance problems and falls: warning signs, causes, medicines that raise risk, home safety, strength and balance strategies, clinical assessment, and treatments.",
+  "signOrSymptom":[
+    {"@type":"MedicalSymptom","name":"Unsteady gait"},
+    {"@type":"MedicalSymptom","name":"Dizziness on standing"},
+    {"@type":"MedicalSymptom","name":"Vertigo"},
+    {"@type":"MedicalSymptom","name":"Frequent falls or near-falls"}
+  ],
+  "possibleComplication":[
+    {"@type":"MedicalEntity","name":"Fractures"},
+    {"@type":"MedicalEntity","name":"Head injury"},
+    {"@type":"MedicalEntity","name":"Loss of independence"}
+  ],
+  "riskFactor":[
+    {"@type":"MedicalRiskFactor","name":"Older age"},
+    {"@type":"MedicalRiskFactor","name":"Sedating medications"},
+    {"@type":"MedicalRiskFactor","name":"Neuropathy and muscle weakness"},
+    {"@type":"MedicalRiskFactor","name":"Vision impairment"},
+    {"@type":"MedicalRiskFactor","name":"Home hazards"}
+  ],
+  "url":"https://thevitatrack.com/balance-and-falls"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Is it safe to exercise if I’m unsteady?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. Practice near a stable surface or with a therapist. Short, frequent sessions build strength and balance safely."}
+    },
+    {
+      "@type":"Question",
+      "name":"Why do I feel dizzy when I stand up?",
+      "acceptedAnswer":{"@type":"Answer","text":"Standing can lower blood pressure (orthostatic hypotension). Hydration, slow rising, and medication review may help."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do canes or walkers make me dependent?",
+      "acceptedAnswer":{"@type":"Answer","text":"No. Correctly fitted devices improve stability and confidence and can increase activity while reducing falls."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can positional vertigo be fixed?",
+      "acceptedAnswer":{"@type":"Answer","text":"Many cases respond to inner-ear repositioning maneuvers performed by trained clinicians or therapists."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Balance Problems & Falls","item":"https://thevitatrack.com/balance-and-falls"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

@@ -1,0 +1,462 @@
+---
+title: "BMI Test"
+slug: "bmi-test"
+category: "tools"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>BMI (Senior-Aware) Calculator • TheVitatrack</title>
+<meta name="description" content="Senior-aware BMI calculator with gentle guidance for older adults. Enter weight and height in kg/cm or lb/ft+in, see category, waist-to-height helper, printing, and FAQs." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.8vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+
+    --chip-bg:#ECFDF5; --chip-bd:#BBF7D0; --chip-ink:#065F46;
+  }
+
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  .vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}
+  a{color:inherit; text-decoration:none}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+  .meta{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:10px;color:var(--muted)}
+  .meta span{background:var(--chip-bg);border:2px solid var(--chip-bd);color:var(--chip-ink);border-radius:999px;padding:6px 10px;font-weight:800}
+
+  /* Container blocks */
+  .band{margin-top:var(--s5);background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:var(--s4)}
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .small{font-size:.96em;color:var(--muted)}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .danger{background:var(--danger-bg); border:1.5px solid #FECACA; border-left:6px solid var(--danger); border-radius:14px; padding:12px; color:#7F1D1D}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:880px){ .grid{grid-template-columns:1fr 1fr} }
+
+  /* Inputs */
+  .row{display:grid;grid-template-columns:1fr;gap:10px}
+  @media (min-width:560px){ .row{grid-template-columns:1fr 1fr} }
+  .field{
+    display:grid; gap:6px;
+  }
+  .label{font-weight:800; letter-spacing:.2px}
+  .input{
+    display:flex; align-items:center; gap:10px;
+    background:#fff; border:2px solid transparent; border-radius:14px;
+    padding:12px 14px; box-shadow:var(--shadow-sm);
+  }
+  .input:focus-within{border-color:var(--brand); box-shadow:0 0 0 4px var(--ring)}
+  .input input, .input select{
+    flex:1; border:0; outline:none; background:transparent; font-size:1.06em; min-height:28px;
+  }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    min-height:56px; padding:12px 18px; border-radius:14px;
+    border:2px solid var(--brand); background:var(--brand); color:#fff;
+    font-weight:800; letter-spacing:.2px; box-shadow:var(--shadow-sm); cursor:pointer;
+  }
+  .btn:hover{ background:var(--brand-hover); border-color:var(--brand-hover) }
+  .btn:active{ transform:translateY(1px) }
+
+  /* Result */
+  .result{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .result__value{font-size:clamp(24px,4vw,32px); font-weight:800; margin:0 0 4px}
+  .pill{display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; font-weight:800}
+  .pill--ok{background:#ECFDF5; border:2px solid #BBF7D0; color:#065F46}
+  .pill--warn{background:#FEF3C7; border:2px solid #FDE68A; color:#92400E}
+  .pill--danger{background:#FEE2E2; border:2px solid #FECACA; color:#991B1B}
+
+  .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border)}
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  /* Ads (CLS-conscious) */
+  .ad-wrap{margin:var(--s5) 0 0; padding:10px; background:#fff; border:1px solid var(--border); border-radius:14px; box-shadow:var(--shadow-sm)}
+  .ad-inarticle{display:block; width:100%; min-height:180px}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>📏 BMI (Senior-Aware) Calculator</h1>
+    <p>Large, easy inputs. Clear category with gentle context for older adults. Optional waist-to-height helper and printable summary.</p>
+    <div class="meta">
+      <span>🧮 kg/cm or lb/ft+in</span>
+      <span>👵 Designed for seniors</span>
+      <span>🖨️ Print result</span>
+    </div>
+  </header>
+
+  <!-- Calculator -->
+  <section class="band" aria-label="BMI calculator">
+    <form id="bmi-form" class="grid" onsubmit="return false;">
+      <div class="card-like">
+        <div class="row">
+          <div class="field">
+            <label class="label" for="unit">Units</label>
+            <div class="input">
+              <select id="unit" aria-label="Units">
+                <option value="metric" selected>Metric (kg, cm)</option>
+                <option value="imperial">US/Imperial (lb, ft+in)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field" id="age-field">
+            <label class="label" for="age">Age (years)</label>
+            <div class="input"><input id="age" type="number" inputmode="numeric" min="1" max="120" placeholder="e.g., 68" /></div>
+          </div>
+        </div>
+
+        <div id="metric-fields" class="row">
+          <div class="field">
+            <label class="label" for="kg">Weight</label>
+            <div class="input"><input id="kg" type="number" inputmode="decimal" step="0.1" placeholder="kg" /></div>
+          </div>
+          <div class="field">
+            <label class="label" for="cm">Height</label>
+            <div class="input"><input id="cm" type="number" inputmode="decimal" step="0.1" placeholder="cm" /></div>
+          </div>
+        </div>
+
+        <div id="imperial-fields" class="row" style="display:none">
+          <div class="field">
+            <label class="label" for="lb">Weight</label>
+            <div class="input"><input id="lb" type="number" inputmode="decimal" step="0.1" placeholder="lb" /></div>
+          </div>
+          <div class="field">
+            <label class="label" for="ft">Height</label>
+            <div class="input">
+              <input id="ft" type="number" inputmode="numeric" placeholder="ft" style="max-width:140px" />
+              <input id="inch" type="number" inputmode="decimal" step="0.1" placeholder="in" style="max-width:140px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label class="label" for="waist">Waist (optional)</label>
+            <div class="input"><input id="waist" type="number" inputmode="decimal" step="0.1" placeholder="cm (or in if US units)" /></div>
+            <div class="small">We’ll show waist-to-height ratio as an extra context hint.</div>
+          </div>
+          <div class="field" style="align-self:end">
+            <button id="calc" class="btn" type="button">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="result" class="result" aria-live="polite">
+        <p class="result__value" id="bmi-line">Your BMI: —</p>
+        <div id="bmi-pill" class="pill pill--ok" style="display:none"></div>
+        <p id="senior-note" class="small" style="margin-top:8px"></p>
+
+        <div id="wthr" class="ok" style="display:none; margin-top:12px"></div>
+
+        <!-- Ad slot appears here on each calculation -->
+        <div id="calc-ad-slot" class="ad-wrap" style="display:none">
+          <ins class="adsbygoogle ad-inarticle"
+               style="text-align:center;"
+               data-ad-layout="in-article"
+               data-ad-format="fluid"
+               data-ad-client="ca-pub-3496395300151813"
+               data-ad-slot="1548966214"></ins>
+        </div>
+
+        <div class="small" style="margin-top:10px">
+          <button id="print" class="btn" type="button" style="background:#fff;color:var(--brand);border-color:var(--brand);min-height:48px">Print summary</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Reference tables -->
+  <section class="section">
+    <h2>Reference ranges</h2>
+    <div class="grid">
+      <div class="band">
+        <p><strong>WHO BMI categories (adults):</strong></p>
+        <table class="table" role="table" aria-label="WHO BMI categories">
+          <thead><tr><th>Category</th><th>BMI</th></tr></thead>
+          <tbody>
+            <tr><td>Underweight</td><td>&lt; 18.5</td></tr>
+            <tr><td>Healthy weight</td><td>18.5 – 24.9</td></tr>
+            <tr><td>Overweight</td><td>25.0 – 29.9</td></tr>
+            <tr><td>Obesity (Class I)</td><td>30.0 – 34.9</td></tr>
+            <tr><td>Obesity (Class II)</td><td>35.0 – 39.9</td></tr>
+            <tr><td>Obesity (Class III)</td><td>≥ 40.0</td></tr>
+          </tbody>
+        </table>
+        <p class="small">BMI is a simple screening tool and does not directly measure body fat, muscle, or fluid shifts.</p>
+      </div>
+      <div class="band">
+        <p><strong>Senior-aware context (65+):</strong></p>
+        <ul class="small" style="margin:0; padding-left:18px">
+          <li>Very low BMI can be linked with <em>frailty, falls, and poorer recovery</em>. Discuss unintentional weight loss with your clinician.</li>
+          <li>Slightly higher BMI may be acceptable in some older adults depending on health, function, and muscle mass.</li>
+          <li>Waist-to-height ratio (WHtR) and strength/mobility often give extra context alongside BMI.</li>
+        </ul>
+        <p class="small" style="margin-top:8px"><strong>Not medical advice.</strong> Use this as a guide and follow your clinician’s plan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <h2>Quick answers (FAQ)</h2>
+    <div class="grid">
+      <div class="band">
+        <p><strong>Is BMI reliable for seniors?</strong><br/>
+        It’s a quick screening number. In older adults, hydration, posture/height changes, and muscle loss can affect it. Pair it with clinical advice.</p>
+      </div>
+      <div class="band">
+        <p><strong>What is a helpful waist-to-height ratio?</strong><br/>
+        Many public-health sources suggest keeping waist under ~½ of height (WHtR &lt; ~0.5) as a simple general cue.</p>
+      </div>
+      <div class="band">
+        <p><strong>Why does my BMI look “normal” but I feel weak?</strong><br/>
+        BMI doesn’t show muscle. If strength or balance is falling, ask about nutrition and safe activity plans.</p>
+      </div>
+      <div class="band">
+        <p><strong>Can I track trends?</strong><br/>
+        Yes—measure at the same time of day, similar clothing, and keep a simple log.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- JSON-LD: SoftwareApplication + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"BMI (Senior-Aware) Calculator",
+  "operatingSystem":"Web",
+  "applicationCategory":"HealthApplication",
+  "description":"Senior-aware BMI calculator with large inputs, WHO categories, and contextual guidance for older adults.",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+  "url":"https://thevitatrack.com/tools/bmi"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Is BMI reliable for seniors?","acceptedAnswer":{"@type":"Answer","text":"BMI is a simple screening number. In older adults, hydration, posture/height changes, and muscle loss can affect it. Pair it with clinical advice."}},
+    {"@type":"Question","name":"What is a helpful waist-to-height ratio?","acceptedAnswer":{"@type":"Answer","text":"Many public-health sources suggest keeping waist under about half of height (WHtR < 0.5) as a simple general cue."}},
+    {"@type":"Question","name":"Why do I feel weak with a normal BMI?","acceptedAnswer":{"@type":"Answer","text":"BMI doesn’t show muscle. If strength or balance is falling, ask about nutrition and safe activity plans."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Calculators","item":"https://thevitatrack.com/tools/"},
+    {"@type":"ListItem","position":3,"name":"BMI (Senior-Aware)","item":"https://thevitatrack.com/tools/bmi"}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  const unitSel = document.getElementById('unit');
+  const metric = document.getElementById('metric-fields');
+  const imperial = document.getElementById('imperial-fields');
+  const calcBtn = document.getElementById('calc');
+  const printBtn = document.getElementById('print');
+
+  const ageEl = document.getElementById('age');
+  const kgEl = document.getElementById('kg');
+  const cmEl = document.getElementById('cm');
+  const lbEl = document.getElementById('lb');
+  const ftEl = document.getElementById('ft');
+  const inchEl = document.getElementById('inch');
+  const waistEl = document.getElementById('waist');
+
+  const bmiLine = document.getElementById('bmi-line');
+  const bmiPill = document.getElementById('bmi-pill');
+  const seniorNote = document.getElementById('senior-note');
+  const wthrBox = document.getElementById('wthr');
+
+  const adWrap = document.getElementById('calc-ad-slot');
+
+  unitSel.addEventListener('change', () => {
+    if (unitSel.value === 'imperial'){
+      metric.style.display = 'none';
+      imperial.style.display = 'grid';
+      waistEl.placeholder = "in";
+    } else {
+      metric.style.display = 'grid';
+      imperial.style.display = 'none';
+      waistEl.placeholder = "cm";
+    }
+  });
+
+  function toMeters(){
+    if(unitSel.value === 'metric'){
+      const cm = parseFloat(cmEl.value);
+      return (isFinite(cm) && cm > 0) ? (cm/100) : NaN;
+    } else {
+      const ft = parseFloat(ftEl.value) || 0;
+      const inch = parseFloat(inchEl.value) || 0;
+      const totalIn = ft*12 + inch;
+      return (totalIn > 0) ? (totalIn * 0.0254) : NaN;
+    }
+  }
+  function toKg(){
+    if(unitSel.value === 'metric'){
+      const kg = parseFloat(kgEl.value);
+      return (isFinite(kg) && kg > 0) ? kg : NaN;
+    } else {
+      const lb = parseFloat(lbEl.value);
+      return (isFinite(lb) && lb > 0) ? (lb * 0.45359237) : NaN;
+    }
+  }
+  function waistToHeightRatio(){
+    const h = toMeters();
+    if(!isFinite(h)) return NaN;
+    let waist = parseFloat(waistEl.value);
+    if(!isFinite(waist) || waist <= 0) return NaN;
+    if(unitSel.value === 'imperial'){ waist = waist * 2.54; } // inches -> cm
+    const heightCm = h*100;
+    return waist/heightCm;
+  }
+
+  function catFromBMI(b){
+    if(b < 18.5) return {label:'Underweight', tone:'danger'};
+    if(b < 25) return {label:'Healthy weight', tone:'ok'};
+    if(b < 30) return {label:'Overweight', tone:'warn'};
+    if(b < 35) return {label:'Obesity (Class I)', tone:'danger'};
+    if(b < 40) return {label:'Obesity (Class II)', tone:'danger'};
+    return {label:'Obesity (Class III)', tone:'danger'};
+  }
+
+  function setPill(text, tone){
+    bmiPill.textContent = text;
+    bmiPill.style.display = 'inline-flex';
+    bmiPill.className = 'pill ' + (tone === 'ok' ? 'pill--ok' : tone === 'warn' ? 'pill--warn' : 'pill--danger');
+  }
+
+  function seniorContext(age, bmi){
+    if(!isFinite(age)) return "BMI is a simple screening number. Discuss concerns with your clinician.";
+    if(age >= 65){
+      if(bmi < 20) return "In older adults, very low BMI can relate to frailty, falls, and slower recovery. If weight is dropping unintentionally, talk to your clinician.";
+      if(bmi >= 20 && bmi < 23) return "For some older adults, a slightly higher BMI may be acceptable. Consider strength, mobility, and recent weight changes.";
+      if(bmi >= 23 && bmi < 30) return "Context matters: function, strength, and waist size provide extra insight alongside BMI.";
+      return "Consider discussing waist size, activity, and any limits with your clinician to tailor a safe plan.";
+    }
+    return "Use BMI together with waist size, strength, and how you feel day to day.";
+  }
+
+  function renderAdEachCalc(){
+    // Make the ad container visible and request a fresh fill each time
+    adWrap.style.display = 'block';
+    try {
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    } catch(e){}
+  }
+
+  calcBtn.addEventListener('click', () => {
+    const m = toMeters();
+    const kg = toKg();
+    if(!isFinite(m) || !isFinite(kg)){
+      bmiLine.textContent = "Your BMI: — (enter valid height and weight)";
+      bmiPill.style.display = 'none';
+      seniorNote.textContent = "";
+      wthrBox.style.display = 'none';
+      return;
+    }
+    const bmi = kg / (m*m);
+    const bmiRounded = Math.round(bmi*10)/10;
+    const cat = catFromBMI(bmi);
+    bmiLine.textContent = `Your BMI: ${bmiRounded}`;
+    setPill(cat.label, cat.tone);
+
+    const age = parseFloat(ageEl.value);
+    seniorNote.textContent = seniorContext(age, bmi);
+
+    const r = waistToHeightRatio();
+    if(isFinite(r)){
+      const rRound = Math.round(r*100)/100;
+      let msg = `Waist-to-Height Ratio (WHtR): ${rRound}`;
+      if(r < 0.5) { msg += " — generally within a favorable range."; wthrBox.className="ok"; }
+      else { msg += " — consider discussing with your clinician."; wthrBox.className="note"; }
+      wthrBox.textContent = msg;
+      wthrBox.style.display = 'block';
+    } else {
+      wthrBox.style.display = 'none';
+    }
+
+    renderAdEachCalc(); // show AdSense unit on each calculation
+  });
+
+  printBtn.addEventListener('click', () => {
+    window.print();
+  });
+
+  // Small QoL: Esc to blur on mobile keyboards
+  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') document.activeElement?.blur(); });
+})();
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

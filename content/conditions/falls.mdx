@@ -1,0 +1,542 @@
+---
+title: "Falls"
+slug: "falls"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Falls — Senior Symptom Guide • TheVitatrack</title>
+<meta name="description" content="Falls in older adults: emergencies, top causes (balance, medicines, vision, low BP), first aid, home safety checklist, strength & balance plan, footwear, clinician tests, and what to track. Clear, senior-friendly steps." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+  .ok{
+    background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Falls</h1>
+    <p>Emergency signs, top causes (balance, medicines, vision, low blood pressure), first aid, home safety checklist, strength & balance plan, footwear tips, clinician tests, and what to track.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#about">Why falls happen</a></li>
+      <li><a href="#red-flags">When to call emergency</a></li>
+      <li><a href="#first-aid">If a fall just happened</a></li>
+      <li><a href="#causes">Common causes & risks</a></li>
+      <li><a href="#home-safety">Home safety checklist</a></li>
+      <li><a href="#strength">Strength & balance plan</a></li>
+      <li><a href="#footwear">Footwear & equipment</a></li>
+      <li><a href="#meds">Medicine review</a></li>
+      <li><a href="#tests">What clinicians may do</a></li>
+      <li><a href="#tracking">What to track</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>Why falls happen</h2>
+    <p class="lead"><span class="badge">Overview</span> Falls often come from a mix of <strong>balance or leg weakness, medicines, vision problems, low blood pressure on standing, foot issues,</strong> and <strong>home hazards</strong>. One fall increases the risk of another—<em>but risk can be lowered</em> with targeted steps.</p>
+    <div class="card small">
+      <p><strong>Goal:</strong> prevent injury and fear of falling while keeping as much independence and activity as possible.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to call emergency</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Head injury, loss of consciousness, <strong>new confusion</strong>, or severe headache</li>
+        <li>Severe pain, inability to bear weight, deformity (possible fracture)</li>
+        <li>New one-sided weakness, facial droop, slurred speech (possible stroke/TIA)</li>
+        <li>Chest pain, palpitations, or <strong>unexplained fainting</strong></li>
+        <li>On blood thinners with any head strike, or bleeding that won’t stop</li>
+      </ul>
+      <p class="small">When in doubt, seek urgent care to check for head injury or fractures.</p>
+    </div>
+  </section>
+
+  <!-- First aid -->
+  <section id="first-aid" class="section">
+    <h2>If a fall just happened</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Check safety first</p>
+        <ul class="list">
+          <li>If injured or can’t get up, call for help. Keep warm while waiting.</li>
+          <li>If no severe pain or dizziness, roll to your side, <strong>get on hands and knees</strong>, crawl to a sturdy chair, and rise slowly using armrests.</li>
+          <li>After standing, <strong>pause 3 breaths</strong> to steady before walking.</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Tell your clinician</strong> after any fall—especially with head strike, new weakness, or if falls are recurring.
+      </div>
+    </div>
+  </section>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Common causes & risks</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Area</th><th scope="col">Examples</th><th scope="col">Clues</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Balance & strength</strong></td>
+          <td>Leg weakness, neuropathy, Parkinson’s, stroke after-effects</td>
+          <td>Shuffling steps, difficulty rising from chair, unsteady turns</td>
+        </tr>
+        <tr>
+          <td><strong>Blood pressure / heart</strong></td>
+          <td>Orthostatic hypotension, arrhythmia</td>
+          <td>Dizziness on standing, palpitations, near-faint</td>
+        </tr>
+        <tr>
+          <td><strong>Vision & hearing</strong></td>
+          <td>Cataracts, glaucoma, poor lighting, hearing loss (balance input)</td>
+          <td>Recent vision changes, difficulty in dim rooms</td>
+        </tr>
+        <tr>
+          <td><strong>Feet & footwear</strong></td>
+          <td>Painful feet, numbness, unstable or slippery shoes</td>
+          <td>Trips on edges, avoids walking due to discomfort</td>
+        </tr>
+        <tr>
+          <td><strong>Medicines</strong></td>
+          <td>Sedatives/sleep aids, opioids, some BP meds, alcohol</td>
+          <td>Sleepiness, dizziness after doses, recent dose changes</td>
+        </tr>
+        <tr>
+          <td><strong>Home hazards</strong></td>
+          <td>Loose rugs, clutter, cords, no grab bars, poor night lighting</td>
+          <td>Falls in bathroom/at night, stumbles on thresholds</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD (after Causes) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Home safety -->
+  <section id="home-safety" class="section">
+    <h2>Home safety checklist</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Bathroom</p>
+        <ul class="list">
+          <li>Install <strong>grab bars</strong> by toilet and in shower; use non-slip mats.</li>
+          <li>Consider a shower chair and hand-held shower head.</li>
+          <li>Keep essentials within reach to avoid bending/twisting.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Bedroom & night path</p>
+        <ul class="list">
+          <li><strong>Motion night-lights</strong> from bed to bathroom.</li>
+          <li>Keep a sturdy chair or walker nearby; remove cords/clutter.</li>
+          <li>Stand slowly; sit to dress; avoid rushing for the phone/door.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Floors & stairs</p>
+        <ul class="list">
+          <li>Remove loose rugs or tape edges; secure thresholds.</li>
+          <li>Add <strong>two railings</strong> on stairs; high-contrast step edges.</li>
+          <li>Keep pathways wide and clear; tidy daily.</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        <strong>Tip:</strong> reorganize daily items to <strong>waist height</strong>—avoid step stools.
+      </div>
+    </div>
+  </section>
+
+  <!-- Strength -->
+  <section id="strength" class="section">
+    <h2>Strength & balance plan</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Daily basics (5–10 minutes)</p>
+        <ul class="list">
+          <li><strong>Chair sit-to-stands</strong> (2–3 sets of 5–10, as able)</li>
+          <li><strong>Heel raises</strong> and <strong>toe raises</strong> (10–15 each)</li>
+          <li><strong>Standing balance</strong> near counter: feet together → semi-tandem → tandem (hold 10–30 sec)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Weekly extras</p>
+        <ul class="list">
+          <li><strong>Short walks</strong> after meals (5–10 min)</li>
+          <li><strong>Light resistance</strong> (bands) for hips and thighs</li>
+          <li><strong>Tai chi</strong> or gentle yoga for coordination and posture</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Start at your level; hold a counter for safety. A <strong>physiotherapist</strong> can tailor a program and check gait.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footwear -->
+  <section id="footwear" class="section">
+    <h2>Footwear & equipment</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Shoes with <strong>firm heel cup</strong>, non-slip sole, low heel; replace worn soles.</li>
+          <li>Avoid loose slippers and backless sandals.</li>
+          <li>Consider orthotics if foot pain or deformity affects balance.</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <ul class="list">
+          <li>Use a <strong>cane or walker</strong> sized to your wrist crease; ask for a professional fit.</li>
+          <li><strong>Personal alarm</strong> or phone within reach; avoid carrying heavy loads while walking.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Footwear) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Medicines -->
+  <section id="meds" class="section">
+    <h2>Medicine review</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">May increase fall risk</p>
+        <ul class="list">
+          <li>Sedatives/sleep aids, benzodiazepines, opioids</li>
+          <li>Some blood pressure medicines (especially dose changes)</li>
+          <li>Alcohol; some antidepressants; Parkinson’s medicines</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <strong>Do not stop medicines on your own.</strong> Ask about dose timing (e.g., bedtime), alternatives, or deprescribing where safe.
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>What clinicians may do</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Step</th><th scope="col">Purpose</th><th scope="col">Examples</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>History & exam</strong></td>
+          <td>Find causes & risk</td>
+          <td>Orthostatic vitals, heart rhythm, feet/neuropathy check, vision, gait (Timed Up & Go)</td>
+        </tr>
+        <tr>
+          <td><strong>Labs</strong></td>
+          <td>Rule out contributors</td>
+          <td>CBC (anemia), electrolytes, kidney/thyroid, B12, glucose</td>
+        </tr>
+        <tr>
+          <td><strong>Imaging</strong></td>
+          <td>Injury assessment</td>
+          <td>Hip/wrist X-ray after fall; head CT if indicated</td>
+        </tr>
+        <tr>
+          <td><strong>Plan</strong></td>
+          <td>Reduce future risk</td>
+          <td>Physio referral, vision update, footwear/orthotics, home safety visit, med adjustments, vitamin D if appropriate</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Date/time, location (bathroom, stairs, outside), shoes used</li>
+          <li>What you were doing (standing up, carrying items, rushing at night)</li>
+          <li>Symptoms before the fall (dizzy on standing, tripped, feet numb)</li>
+          <li>Any injury, help needed to get up, and medicine changes that week</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        A simple log helps target the <strong>one or two biggest risks</strong> to fix first.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Are falls a normal part of aging?</p>
+        <p>No. Risk rises with age, but <em>many falls are preventable</em> with strength, safer homes, and medicine review.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Should I rest after a fall?</p>
+        <p>Rest if injured, but prolonged inactivity weakens legs. Resume gentle activity once cleared and pain allows.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do I need a walker?</p>
+        <p>Use the least assistance that keeps you safe. A professional fit ensures the right height and style.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What about vitamin D?</p>
+        <p>Some people benefit; dosing varies by health history. Ask your clinician—don’t self-dose high amounts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card small">
+      <ul class="list">
+        <li><a href="#">Balance Problems & Falls</a></li>
+        <li><a href="#">Dizziness on Standing (Orthostatic)</a></li>
+        <li><a href="#">Dehydration</a></li>
+        <li><a href="#">Vision Safety & Cataracts</a></li>
+        <li><a href="#">Peripheral Neuropathy</a></li>
+        <li><a href="#">Daily Living — Bathroom Safety</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Falls",
+  "description":"Falls in older adults: emergencies, causes, first aid, home safety checklist, strength & balance plan, footwear and equipment tips, clinician evaluation, and tracking.",
+  "about":{"@type":"MedicalSymptom","name":"Falls"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/falls"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Are falls a normal part of aging?","acceptedAnswer":{"@type":"Answer","text":"No. While risk increases with age, many falls can be prevented with strength and balance training, home safety changes, vision and footwear updates, and medication review."}},
+    {"@type":"Question","name":"When should I go to emergency after a fall?","acceptedAnswer":{"@type":"Answer","text":"Go immediately for head injury, loss of consciousness, new confusion, severe pain or deformity, stroke signs, chest pain, or any head strike while on blood thinners."}},
+    {"@type":"Question","name":"What are the most effective ways to reduce falls?","acceptedAnswer":{"@type":"Answer","text":"Targeted leg and balance exercises, removing home hazards, ensuring good lighting, using stable footwear or aids, treating orthostatic hypotension, and reviewing medicines that cause dizziness or sleepiness."}},
+    {"@type":"Question","name":"Do I need a cane or walker?","acceptedAnswer":{"@type":"Answer","text":"Use the least device that keeps you safe. Have it professionally fitted to wrist height and reviewed during a gait assessment."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Symptoms (A–Z)","item":"https://thevitatrack.com/symptoms/"},
+    {"@type":"ListItem","position":3,"name":"Falls","item":"https://thevitatrack.com/falls"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

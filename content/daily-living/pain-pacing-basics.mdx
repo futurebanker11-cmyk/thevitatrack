@@ -1,0 +1,447 @@
+---
+title: "Pain Pacing Basics"
+slug: "pain-pacing-basics"
+category: "daily-living"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Pain Pacing Basics — Daily Living • TheVitatrack</title>
+<meta name="description" content="Pain pacing for older adults: set a safe baseline, use time-based activity, spread tasks, micro-breaks, flare rules, and a simple log. Step-by-step plan with printable checklist, common mistakes, and red flags." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- AdSense (load ONCE globally) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .danger{background:var(--danger-bg); border:1.5px solid #FECACA; color:#7F1D1D; border-left:6px solid var(--danger); border-radius:14px; padding:12px}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-conscious; no visible labels) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Pain Pacing Basics</h1>
+    <p>Do steady, planned amounts of activity — not boom-and-bust. Use timers, micro-breaks, and flare rules to stay consistent.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#why">Why pacing helps</a></li>
+      <li><a href="#baseline">Find your safe baseline</a></li>
+      <li><a href="#time-based">Time-based activity (not pain-based)</a></li>
+      <li><a href="#spread">Spread tasks & micro-breaks</a></li>
+      <li><a href="#flare">Flare rules (plan B)</a></li>
+      <li><a href="#upgrade">Upgrade schedule: 10% rule</a></li>
+      <li><a href="#log">Simple daily log</a></li>
+      <li><a href="#mistakes">Common mistakes</a></li>
+      <li><a href="#tools">Helpful tools & aids</a></li>
+      <li><a href="#redflags">When to seek help</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <!-- Display AD (after TOC) -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <h2>Why pacing helps</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="lead">Pacing smooths activity so pain and fatigue don’t spike. You keep moving most days, but you stop <em>before</em> you flare.</p>
+        <ul class="list">
+          <li>Prevents the <strong>boom-and-bust cycle</strong> (overdo on good days → crash after).</li>
+          <li>Builds <strong>capacity slowly</strong> with fewer setbacks.</li>
+          <li>Supports sleep, mood, and confidence.</li>
+        </ul>
+      </div>
+      <div class="card ok">Aim for “just enough, often.” Small, regular sessions beat rare big efforts.</div>
+    </div>
+  </section>
+
+  <!-- In-article AD -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Baseline -->
+  <section id="baseline" class="section">
+    <h2>Find your safe baseline</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Step 1 — Pick one activity</p>
+        <ul class="list">
+          <li>Choose walking, dishes, sweeping, or gentle exercises.</li>
+          <li>Note the longest time you can do it today <em>without worsening pain</em> in the next 24 hours.</li>
+        </ul>
+        <p class="kicker" style="margin-top:10px">Step 2 — Set baseline</p>
+        <ul class="list">
+          <li>Baseline = <strong>60–70%</strong> of that time. If 10 minutes is okay, start at 6–7 minutes.</li>
+          <li>Use a timer. Stop on time even if you “feel fine.”</li>
+        </ul>
+      </div>
+      <div class="card note">
+        If you flare after the baseline, drop by 20–30% for 3–4 days, then retry.
+      </div>
+    </div>
+  </section>
+
+  <!-- Time-based -->
+  <section id="time-based" class="section">
+    <h2>Time-based activity (not pain-based)</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Use a <strong>fixed time</strong> (e.g., 6 minutes walk), not “until it hurts.”</li>
+          <li>Alternate: activity block → <strong>micro-break</strong> (1–2 minutes sit/lean, relax shoulders, slow breaths).</li>
+          <li>Plan 2–4 small blocks through the day rather than one long session.</li>
+        </ul>
+      </div>
+      <div class="card info">
+        A kitchen timer, phone alarm, or smartwatch gentle vibrate works well and is easy to hear.
+      </div>
+    </div>
+  </section>
+
+  <!-- Spread -->
+  <section id="spread" class="section">
+    <h2>Spread tasks & micro-breaks</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Split big chores</p>
+        <ul class="list">
+          <li>Do half the sink now, half later. Fold 5 items, pause, then 5 more.</li>
+          <li>Use <strong>stools</strong> for tasks (cooking, brushing teeth) to reduce back/leg load.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Micro-break recipe (1–2 min)</p>
+        <ul class="list">
+          <li>3 slow nasal breaths, relax jaw/shoulders.</li>
+          <li>Gentle shoulder rolls × 5, ankle pumps × 10.</li>
+          <li>Rate pain/tiredness 0–10; if rising >2 points, stop the block.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flare rules -->
+  <section id="flare" class="section">
+    <h2>Flare rules (plan B)</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Reduce all blocks by <strong>30–50%</strong> for 2–4 days.</li>
+          <li>Use heat/ice as advised; prioritize sleep and hydration.</li>
+          <li>Keep gentle movement (e.g., 2–3 minute strolls) to avoid stiffness.</li>
+        </ul>
+      </div>
+      <div class="card danger">
+        Red flags: new severe pain, fever, chest pain, weakness/numbness, or bladder/bowel changes. Seek medical care.
+      </div>
+    </div>
+  </section>
+
+  <!-- Upgrade -->
+  <section id="upgrade" class="section">
+    <h2>Upgrade schedule: the 10% rule</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">After 4–7 steady days without flare</p>
+        <ul class="list">
+          <li>Increase each block by <strong>~10%</strong>. Example: 6 → 7 minutes.</li>
+          <li>Or add <strong>one extra block</strong> of the same time.</li>
+          <li>Only change one thing per week (time <em>or</em> total blocks).</li>
+        </ul>
+      </div>
+      <div class="card ok">Slow and steady wins. If a flare occurs, step back and stabilize before the next increase.</div>
+    </div>
+  </section>
+
+  <!-- In-article AD (mid page) -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Log -->
+  <section id="log" class="section">
+    <h2>Simple daily log</h2>
+    <div class="card">
+      <table class="table" role="table" aria-label="Pacing log">
+        <thead>
+          <tr><th>Time</th><th>Activity</th><th>Minutes</th><th>Break</th><th>Pain (0–10) after</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Morning</td><td>Walk indoors</td><td>6</td><td>2 min sit</td><td>3</td><td>Felt steady</td></tr>
+          <tr><td>Midday</td><td>Prep lunch (seated)</td><td>8</td><td>1 min breath</td><td>3</td><td>Used timer</td></tr>
+          <tr><td>Evening</td><td>Stretch routine</td><td>5</td><td>1 min pause</td><td>4</td><td>Tight calves</td></tr>
+        </tbody>
+      </table>
+      <p class="small" style="margin-top:6px">Track for 1–2 weeks. Look for patterns (best times of day, triggers, helpful breaks).</p>
+    </div>
+  </section>
+
+  <!-- Mistakes -->
+  <section id="mistakes" class="section">
+    <h2>Common mistakes</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>Going by pain</strong> instead of the timer.</li>
+          <li><strong>Jumping too fast</strong> after a good day.</li>
+          <li>Skipping breaks, then crashing later.</li>
+        </ul>
+      </div>
+      <div class="card note">Use a written plan. “If I feel great, I still stop at the timer.”</div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section id="tools" class="section">
+    <h2>Helpful tools & aids</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Kitchen timer / phone alarm / watch vibrate.</li>
+          <li>Stool for kitchen/bath tasks; long-handled reacher; shower chair.</li>
+          <li>Ice/heat packs as advised; comfortable walking shoes.</li>
+        </ul>
+      </div>
+      <div class="card small">
+        Related: <a href="#">Chronic Pain</a> · <a href="#">Back Pain (Chronic)</a> · <a href="#">Balance Breaks</a> · <a href="#">Morning Routine</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="redflags" class="section">
+    <h2>When to seek help</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>New severe pain, fever, or swelling/redness at a joint.</li>
+        <li>Chest pain, breathlessness, or fainting.</li>
+        <li>Numbness/weakness or bladder/bowel changes.</li>
+      </ul>
+      <p class="small">Contact your clinician to review your plan and rule out new causes.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers (FAQ)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">How long should a block be?</p>
+        <p>Start where you can finish without worsening pain the next day, then use ~60–70% of that as your baseline.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What if I miss a day?</p>
+        <p>Resume at the last stable level. If a flare happened, reduce 20–30% for a few days, then rebuild.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can I pace different tasks?</p>
+        <p>Yes. Use separate timers for walking, chores, and exercises. Keep total effort steady across the week.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">When will I notice progress?</p>
+        <p>Often within 2–4 weeks of steady pacing. Capacity rises with fewer flare-ups.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Multiplex AD (bottom) -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Pain Pacing Basics",
+  "description":"Step-by-step pacing plan for older adults to manage chronic pain and fatigue.",
+  "supply":[
+    {"@type":"HowToSupply","name":"Timer or phone alarm"},
+    {"@type":"HowToSupply","name":"Notebook or pacing log"},
+    {"@type":"HowToSupply","name":"Comfortable walking shoes"}
+  ],
+  "tool":[
+    {"@type":"HowToTool","name":"Stool or chair for tasks"},
+    {"@type":"HowToTool","name":"Heat/ice packs as advised"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Find baseline","text":"Choose one activity and identify the longest safe time that does not worsen pain the next day. Set baseline at 60–70% of that time."},
+    {"@type":"HowToStep","name":"Use time blocks","text":"Work for the set minutes, then take a 1–2 minute micro-break. Repeat small blocks across the day."},
+    {"@type":"HowToStep","name":"Apply flare rules","text":"If pain rises >2 points or a flare occurs, cut block times by 30–50% for 2–4 days, then rebuild."},
+    {"@type":"HowToStep","name":"Upgrade slowly","text":"After 4–7 steady days, increase by ~10% or add one extra block. Change only one variable per week."}
+  ],
+  "totalTime":"PT10M",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How do I choose my pacing time?", "acceptedAnswer":{"@type":"Answer","text":"Pick a time you can complete without worsening pain for 24 hours afterward, then use about 60–70% of that as your baseline."}},
+    {"@type":"Question","name":"What if I feel great during a block?", "acceptedAnswer":{"@type":"Answer","text":"Stop at the timer anyway. Consistency prevents boom-and-bust cycles and lowers the risk of a flare."}},
+    {"@type":"Question","name":"How fast should I increase?", "acceptedAnswer":{"@type":"Answer","text":"Increase by about 10% after 4–7 steady days without flare, or add one extra block. Only change one thing per week."}},
+    {"@type":"Question","name":"Do I rest completely during a flare?", "acceptedAnswer":{"@type":"Answer","text":"Usually no. Reduce activity to shorter gentle blocks, keep micro-breaks, and rebuild once symptoms settle. Seek medical care for red flags."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Pain Pacing Basics","item":"https://thevitatrack.com/daily-living/pain-pacing-basics"}
+  ]
+}
+</script>
+
+<script>
+  // Small QoL: ESC to blur focused element (mobile keyboards)
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

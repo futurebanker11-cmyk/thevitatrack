@@ -1,0 +1,545 @@
+---
+title: "Hydration Through the Day"
+slug: "hydration-through-the-day"
+category: "daily-living"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Hydration Through the Day — Daily Living • TheVitatrack</title>
+<meta name="description" content="Simple, steady hydration plan for older adults: how much to drink, a day-by-day schedule, safe electrolyte use, adjustments for heart/kidney/diabetes/BPH, medicines that affect fluids, urine color guide, and tracking checklist." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .calm{background:var(--calm); border:1.5px solid var(--calm-border); color:var(--calm-ink); border-radius:14px; padding:12px}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Hydration Through the Day</h1>
+    <p>A calm, practical plan to drink enough without overdoing it — tailored for common senior health needs.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#why">Why steady hydration matters</a></li>
+      <li><a href="#how-much">How much is right for me?</a></li>
+      <li><a href="#schedule">Your day-by-day schedule</a></li>
+      <li><a href="#choices">Smart drink choices</a></li>
+      <li><a href="#electrolytes">Electrolytes & heat days</a></li>
+      <li><a href="#meds">Medicines that change fluids</a></li>
+      <li><a href="#adjust">Adjustments by condition</a></li>
+      <li><a href="#urine">Urine color guide</a></li>
+      <li><a href="#tracking">What to track</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <h2>Why steady hydration matters</h2>
+    <p class="lead"><span class="badge">Benefits</span> Better energy, fewer falls (stable blood pressure), clearer thinking, easier bowel movements, healthier kidneys, and safer medicine effects.</p>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Common signs you need more fluids</p>
+        <ul class="list">
+          <li>Dry mouth, headache, dizziness on standing</li>
+          <li>Dark yellow urine or going &lt;4 times/day</li>
+          <li>Constipation, fatigue, muscle cramps</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Important:</strong> If you have a clinician-set fluid limit (heart/kidney/liver conditions), <em>follow that limit</em>. This page gives general guidance.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- How much -->
+  <section id="how-much" class="section">
+    <h2>How much is right for me?</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Simple starting target (no fluid restriction)</p>
+        <ul class="list">
+          <li><strong>1.8–2.4 liters/day</strong> total fluids (about <strong>7–10 cups</strong>), spread from morning to early evening.</li>
+          <li>Hot weather, exercise, fever, diarrhea, or vomiting → you’ll likely need more.</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <p class="kicker">Personalize</p>
+        <ul class="list">
+          <li>Urine light-yellow = usually enough. Dark = add fluids; clear + frequent night trips = too much late.</li>
+          <li>Include water, tea/coffee, milk, soups, ORS, and high-water foods (fruit/veg) in your total.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule" class="section">
+    <h2>Your day-by-day schedule</h2>
+    <table class="table" role="table" aria-label="Hydration schedule">
+      <thead>
+        <tr><th scope="col">Time</th><th scope="col">Goal</th><th scope="col">Ideas</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>On waking</strong></td>
+          <td>200–300 ml</td>
+          <td>Room-temp water; warm lemon water; tea/coffee if you like</td>
+        </tr>
+        <tr>
+          <td><strong>Breakfast</strong></td>
+          <td>200–300 ml</td>
+          <td>Water, milk, or herbal tea; fruit or yogurt adds fluids</td>
+        </tr>
+        <tr>
+          <td><strong>Mid-morning</strong></td>
+          <td>200–250 ml</td>
+          <td>Water bottle check-in; light snack (fruit, nuts)</td>
+        </tr>
+        <tr>
+          <td><strong>Lunch</strong></td>
+          <td>250–300 ml</td>
+          <td>Water or buttermilk; soup counts toward total</td>
+        </tr>
+        <tr>
+          <td><strong>Mid-afternoon</strong></td>
+          <td>200–300 ml</td>
+          <td>Water or diluted juice; brief walk to stimulate thirst</td>
+        </tr>
+        <tr>
+          <td><strong>Early evening</strong></td>
+          <td>200–250 ml</td>
+          <td>Finish most fluids now; avoid big drinks after this</td>
+        </tr>
+        <tr>
+          <td><strong>With dinner</strong></td>
+          <td>150–200 ml</td>
+          <td>Small sips; avoid large, fizzy drinks if reflux</td>
+        </tr>
+        <tr>
+          <td><strong>2–3 h before bed</strong></td>
+          <td>Small sips only</td>
+          <td>Helps reduce night bathroom trips (nocturia/BPH)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">Adjust amounts to match your daily total and medical advice.</p>
+  </section>
+
+  <!-- ===== In-article AD (after schedule) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Choices -->
+  <section id="choices" class="section">
+    <h2>Smart drink choices</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Good everyday options</p>
+        <ul class="list">
+          <li>Plain or filtered water; <strong>ORS</strong> if dehydrated/ill</li>
+          <li>Unsweetened tea/coffee (limit late day if insomnia)</li>
+          <li>Buttermilk, milk, diluted fruit juice, coconut water</li>
+          <li>Soups/broths; high-water foods (cucumber, watermelon, oranges)</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <p class="kicker">Limit/avoid</p>
+        <ul class="list">
+          <li>Very sugary drinks (sodas, energy drinks) — spike glucose</li>
+          <li>Excess alcohol — dehydrates and disrupts sleep</li>
+          <li>Very salty sports drinks without need — can raise blood pressure</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Electrolytes -->
+  <section id="electrolytes" class="section">
+    <h2>Electrolytes & heat days</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">When to use ORS</p>
+        <ul class="list">
+          <li>Diarrhea, vomiting, fever, or heavy sweating</li>
+          <li>Make-at-home: <strong>6 level tsp sugar + ½ tsp salt in 1 liter</strong> clean water. Stir well.</li>
+          <li>Sip 100–200 ml every 15–20 minutes; slow down if bloated.</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <strong>Potassium/salt cautions:</strong> If you take ACE inhibitors/ARBs, spironolactone, or have kidney disease, ask before using high-potassium drinks or salt substitutes.
+      </div>
+    </div>
+  </section>
+
+  <!-- Medicines -->
+  <section id="meds" class="section">
+    <h2>Medicines that change fluids</h2>
+    <table class="table" role="table" aria-label="Medicines affecting hydration">
+      <thead>
+        <tr><th scope="col">Medicine</th><th scope="col">Effect</th><th scope="col">Tips</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Diuretics</strong> (furosemide, HCTZ)</td>
+          <td>Increase urine, lower fluid</td>
+          <td>Often taken in morning; avoid late-day doses if nocturia</td>
+        </tr>
+        <tr>
+          <td><strong>ACE/ARB, Spironolactone</strong></td>
+          <td>Raise potassium</td>
+          <td>Be cautious with high-K drinks/salt substitutes</td>
+        </tr>
+        <tr>
+          <td><strong>NSAIDs</strong></td>
+          <td>Kidney strain</td>
+          <td>Avoid dehydration; use only as advised</td>
+        </tr>
+        <tr>
+          <td><strong>SGLT2 inhibitors</strong> (e.g., dapagliflozin)</td>
+          <td>Mild diuresis</td>
+          <td>Drink steadily; watch for dizziness on standing</td>
+        </tr>
+        <tr>
+          <td><strong>Laxatives</strong></td>
+          <td>Can shift fluids</td>
+          <td>Hydrate; don’t overuse stimulant types</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Adjustments -->
+  <section id="adjust" class="section">
+    <h2>Adjustments by condition</h2>
+    <table class="table" role="table" aria-label="Hydration adjustments">
+      <thead>
+        <tr><th scope="col">Condition</th><th scope="col">Do</th><th scope="col">Watch-outs</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Heart failure / CKD</strong></td>
+          <td>Follow clinician-set daily limit; spread sips; track weight daily</td>
+          <td>Swelling, shortness of breath, sudden weight ↑ → call</td>
+        </tr>
+        <tr>
+          <td><strong>Diabetes</strong></td>
+          <td>Prefer water/unsweetened drinks; ORS for illness per plan</td>
+          <td>Very high sugars cause dehydration—monitor when unwell</td>
+        </tr>
+        <tr>
+          <td><strong>BPH / nocturia</strong></td>
+          <td>Front-load fluids; <strong>limit 2–3 h before bed</strong>; double-void at lights-out</td>
+          <td>Dizziness on standing — rise slowly, night lights on</td>
+        </tr>
+        <tr>
+          <td><strong>Kidney stones history</strong></td>
+          <td>Target clear to light-yellow urine; lemon water can help citrate</td>
+          <td>Ask about specific fluid type if advised (e.g., low soda)</td>
+        </tr>
+        <tr>
+          <td><strong>Diarrhea/vomiting</strong></td>
+          <td>Use ORS; small frequent sips; seek care for red flags</td>
+          <td>Black stools, blood, severe weakness → urgent care</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Urine -->
+  <section id="urine" class="section">
+    <h2>Urine color guide</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>Pale straw/light yellow:</strong> well hydrated</li>
+          <li><strong>Amber/dark yellow:</strong> add fluids steadily</li>
+          <li><strong>Brown, red, or tea-colored:</strong> <em>seek medical advice</em></li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Aim to urinate every <strong>3–4 hours</strong> while awake. Frequent clear urine + night trips? Shift more fluids earlier and reduce late-evening sips.
+      </div>
+    </div>
+  </section>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Daily total fluids (rough cups or ml)</li>
+          <li>Urine color & frequency</li>
+          <li>Weight (HF/CKD): same time each morning</li>
+          <li>Symptoms: dizziness, swelling, cramps, constipation</li>
+          <li>Hot days/illness episodes and ORS used</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Bring this log to appointments — it speeds adjustments to your plan.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Does tea/coffee count?</p>
+        <p>Yes. Moderate tea/coffee contribute to hydration; limit late-day if sleep or reflux issues.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">How do I drink more without running to the bathroom all night?</p>
+        <p>Front-load fluids: finish most by early evening; use only small sips 2–3 hours before bed; double-void at lights-out.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">When should I use electrolytes?</p>
+        <p>With illness (vomiting/diarrhea), heat, or heavy sweating. Otherwise water and meals usually provide enough salts.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">When is dehydration dangerous?</p>
+        <p>Very little dark urine, confusion, fainting, fast heartbeat, or inability to keep fluids down — seek urgent care.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card">
+      <ul class="list">
+        <li><a href="#">Morning Routine (5 steps)</a></li>
+        <li><a href="#">Evening Wind-Down</a></li>
+        <li><a href="#">Constipation</a></li>
+        <li><a href="#">Heat Safety</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Hydration Through the Day",
+  "description":"A practical all-day hydration routine for older adults.",
+  "totalTime":"PT0H",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"},
+  "supply":[
+    {"@type":"HowToSupply","name":"Reusable water bottle"},
+    {"@type":"HowToSupply","name":"ORS packets (optional)"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Front-load fluids","text":"Drink more in the morning and early afternoon; taper in the evening to reduce nocturia."},
+    {"@type":"HowToStep","name":"Use a schedule","text":"Sip 200–300 ml at wake, each meal, and mid-morning/afternoon."},
+    {"@type":"HowToStep","name":"Choose smart drinks","text":"Prefer water, unsweetened tea/coffee, milk, diluted juice, soups; limit sugar and alcohol."},
+    {"@type":"HowToStep","name":"Add electrolytes when ill or in heat","text":"Use ORS during diarrhea, vomiting, fever, or heavy sweating."},
+    {"@type":"HowToStep","name":"Adjust for your conditions","text":"Follow clinician-set limits for heart/kidney disease; monitor urine color and symptoms."}
+  ],
+  "url":"https://thevitatrack.com/daily-living/hydration-through-the-day"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How much should I drink each day?","acceptedAnswer":{"@type":"Answer","text":"A simple target is 1.8–2.4 liters (about 7–10 cups) unless your clinician sets a different limit. Increase during heat, fever, or illness."}},
+    {"@type":"Question","name":"Do soups and fruit count toward fluids?","acceptedAnswer":{"@type":"Answer","text":"Yes. Soups, milk, tea/coffee, and high-water foods all count toward your daily total."}},
+    {"@type":"Question","name":"How can I avoid night bathroom trips?","acceptedAnswer":{"@type":"Answer","text":"Finish most fluids by early evening, take only small sips 2–3 hours before bed, and double-void before lights out."}},
+    {"@type":"Question","name":"When should I seek help for dehydration?","acceptedAnswer":{"@type":"Answer","text":"Very dark urine and going rarely, dizziness/confusion, fast heartbeat, or inability to keep fluids down warrant medical evaluation."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Hydration Through the Day","item":"https://thevitatrack.com/daily-living/hydration-through-the-day"}
+  ]
+}
+</script>
+
+<script>
+  // Small QoL
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

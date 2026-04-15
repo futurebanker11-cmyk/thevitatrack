@@ -1,0 +1,603 @@
+---
+title: "Passport"
+slug: "passport"
+category: "tools"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Passport & Visa Photos — thevitatrack.com</title>
+<meta name="description" content="Make compliant passport and visa photos in minutes. Country presets (US, India, Schengen/EU, UK), exact size at 300 DPI, guides, background options, fast and private in your browser." />
+
+<style>
+  /* ====== Base: match homepage ====== */
+  :root{
+    --vt-text:#0f172a; --vt-soft:#475569; --vt-bg:#f7fafc; --vt-card:#fff;
+    --vt-b:rgba(15,23,42,.08); --vt-accent:#2563eb; --vt-radius:14px;
+    --vt-shadow:0 10px 24px rgba(2,6,23,.08);
+  }
+  html,body{ margin:0; background:var(--vt-bg); color:var(--vt-text);
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif; }
+  a{ color:var(--vt-accent); text-decoration:none }
+  a:hover{ text-decoration:underline }
+  .wrap{ max-width:1100px; width:min(1100px,94vw); margin:0 auto; padding:24px 18px 80px }
+
+  /* Header */
+  .crumbs{ display:flex; gap:8px; align-items:center; font-size:13.5px; color:var(--vt-soft); margin:8px 0 10px }
+  .crumbs a{ color:var(--vt-soft) }
+  .page-title{ font-size:clamp(24px,4.2vw,36px); font-weight:800; letter-spacing:-.02em; margin:6px 0 8px }
+  .page-sub{ color:var(--vt-soft); font-size:15.5px; max-width:860px }
+
+  /* Grid */
+  .tool-grid{ display:grid; grid-template-columns:1fr; gap:18px; margin-top:24px }
+  @media (min-width:980px){ .tool-grid{ grid-template-columns:1.05fr .95fr } }
+
+  .card{
+    background:var(--vt-card); border:1px solid var(--vt-b); border-radius:var(--vt-radius);
+    box-shadow:var(--vt-shadow); padding:18px;
+  }
+  .card h2{ margin:4px 0 14px; font-size:18px; font-weight:800 }
+
+  .row{ display:grid; grid-template-columns:1fr; gap:12px; margin-bottom:14px }
+  @media (min-width:680px){ .row.cols-2{ grid-template-columns:1fr 1fr } }
+  @media (min-width:820px){ .row.cols-3{ grid-template-columns:1fr 1fr 1fr } }
+
+  label{ font-size:13px; color:var(--vt-soft); display:block; margin-bottom:6px; font-weight:600 }
+  input[type="number"], input[type="text"], select{
+    width:100%; padding:12px 12px; border-radius:10px; border:2px solid #e2e8f0; outline:none; background:#fff; font-size:14px;
+  }
+  input:focus, select:focus{ border-color:var(--vt-accent) }
+  .hint{ font-size:12px; color:var(--vt-soft); margin-top:6px }
+  .muted{ color:var(--vt-soft) }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 16px;
+    background:var(--vt-accent); color:#fff; border:none; border-radius:12px; cursor:pointer; font-weight:700;
+  }
+  .btn:disabled{ opacity:.5; cursor:not-allowed }
+  .btn.outline{ background:#fff; color:var(--vt-accent); border:2px solid var(--vt-accent) }
+
+  .preset-chips{ display:flex; flex-wrap:wrap; gap:8px }
+  .chip{
+    border:1px solid #e5e7eb; border-radius:999px; padding:6px 10px; font-size:12.5px; background:#f1f5f9; cursor:pointer;
+  }
+  .chip:hover{ border-color:var(--vt-accent) }
+
+  /* Drop / Preview */
+  .drop{
+    border:2px dashed #cbd5e1; border-radius:14px; padding:16px; text-align:center; color:var(--vt-soft); background:#f8fafc;
+  }
+  .drop.drag{ background:#eef2ff; border-color:var(--vt-accent); color:#1e3a8a }
+
+  .canvas-wrap{
+    position:relative; background:#0b1220; border-radius:12px; padding:12px; display:grid; place-items:center; min-height:360px;
+  }
+  canvas#out{ max-width:100%; height:auto; background:#fff; border-radius:8px }
+
+  /* Guides overlay */
+  .guide{ position:absolute; inset:12px; pointer-events:none; }
+  .guide .line{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); border:1px dashed rgba(37,99,235,.6); }
+  .guide .safe{ position:absolute; left:50%; transform:translateX(-50%); border:1px solid rgba(15,23,42,.35); }
+
+  .kv{ display:flex; flex-wrap:wrap; gap:10px; font-size:12.5px; color:#cbd5e1; justify-content:center; margin-top:8px }
+  .kv span{ background:#111827; padding:6px 8px; border-radius:999px; border:1px solid #1f2937 }
+
+  /* Sliders */
+  .slider{ width:100% }
+  input[type="range"].slider{
+    -webkit-appearance:none; height:8px; background:#e5e7eb; border-radius:999px; outline:none;
+  }
+  input[type="range"].slider::-webkit-slider-thumb{
+    -webkit-appearance:none; width:18px; height:18px; border-radius:50%; background:var(--vt-accent); cursor:pointer;
+  }
+
+  /* File input overlay (mobile safe) */
+  .file-wrap{ position:relative; display:inline-block; }
+  .file-input-overlay{
+    position:absolute; inset:0; width:100%; height:100%;
+    opacity:0; cursor:pointer; z-index:2;
+  }
+
+  /* Sections */
+  .section{ margin-top:28px }
+  .section h3{ font-size:18px; font-weight:800; margin:0 0 10px }
+  details{ border:1px solid #e5e7eb; border-radius:12px; padding:12px 14px; background:#fff }
+  details+details{ margin-top:10px }
+  details summary{ cursor:pointer; font-weight:700 }
+  details[open]{ border-color:rgba(37,99,235,.25) }
+
+  /* Footer */
+  .vt-footer{ background:#0b1220; color:#cbd5e1; margin-top:40px; border-top:4px solid #1f2937 }
+  .vt-footer .inner{ max-width:1100px; width:min(1100px,94vw); margin:0 auto; padding:24px 18px 34px }
+  .vt-foot-h{ color:#fff; font-weight:800; margin-bottom:8px; font-size:14px }
+  .vt-social{ display:flex; gap:10px; margin-top:6px }
+  .vt-social a{ width:36px; height:36px; border-radius:10px; display:grid; place-items:center; background:#111827; border:1px solid #374151; color:#e5e7eb }
+  .vt-copy{ border-top:1px solid #1f2937; margin-top:18px; padding-top:14px; text-align:center; font-size:12.5px; color:#9ca3af }
+</style>
+</head>
+<body>
+
+<div class="wrap" id="passport-tool">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> › <a href="/tools/">Tools</a> › <span>Passport & Visa Photos</span>
+  </nav>
+  <h1 class="page-title">Passport & Visa Photos in Minutes</h1>
+  <p class="page-sub">Choose a country preset, align your face with guides, pick a clean background, and export at exact size & DPI. Everything runs locally in your browser.</p>
+
+  <div class="tool-grid">
+    <!-- Controls -->
+    <section class="card" aria-labelledby="controls-title">
+      <h2 id="controls-title">Photo Settings</h2>
+
+      <div class="row cols-3">
+        <div>
+          <label for="country">Country / Standard</label>
+          <select id="country">
+            <option value="US">United States — 2×2 in (51×51 mm)</option>
+            <option value="IN">India — 35×45 mm</option>
+            <option value="EU">Schengen / EU — 35×45 mm</option>
+            <option value="UK">United Kingdom — 35×45 mm</option>
+          </select>
+          <div class="hint">Aspect is locked by the preset.</div>
+        </div>
+        <div>
+          <label for="dpi">DPI</label>
+          <input type="number" id="dpi" value="300" min="150" max="1200" step="1" />
+          <div class="hint">300 DPI is standard for prints.</div>
+        </div>
+        <div>
+          <label for="bg">Background</label>
+          <select id="bg">
+            <option value="#ffffff">White</option>
+            <option value="#f7f7f7">Off-white</option>
+            <option value="#eeeeee">Light gray</option>
+          </select>
+          <div class="hint">Solid background under your photo.</div>
+        </div>
+      </div>
+
+      <div class="row cols-3">
+        <div>
+          <label for="zoom">Zoom</label>
+          <input type="range" id="zoom" class="slider" min="10" max="300" value="100" />
+        </div>
+        <div>
+          <label for="feather">Background Smoothing</label>
+          <input type="range" id="feather" class="slider" min="0" max="80" value="20" />
+          <div class="hint">Softens edges around hair/shoulders (not a remover).</div>
+        </div>
+        <div>
+          <label for="format">Output</label>
+          <select id="format">
+            <option value="image/jpeg">JPG</option>
+            <option value="image/png">PNG</option>
+            <option value="image/webp">WebP</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row cols-2">
+        <div>
+          <label>Nudge (position)</label>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <button class="btn outline" data-nudge="up" type="button">↑</button>
+            <button class="btn outline" data-nudge="down" type="button">↓</button>
+            <button class="btn outline" data-nudge="left" type="button">←</button>
+            <button class="btn outline" data-nudge="right" type="button">→</button>
+            <button class="btn outline" id="centerBtn" type="button">Center</button>
+          </div>
+          <div class="hint">Tip: drag on the canvas to move the image.</div>
+        </div>
+        <div>
+          <label>Presets</label>
+          <div class="preset-chips" id="presets">
+            <button class="chip" data-preset="US">US 2×2 in</button>
+            <button class="chip" data-preset="EU">EU 35×45 mm</button>
+            <button class="chip" data-preset="UK">UK 35×45 mm</button>
+            <button class="chip" data-preset="IN">India 35×45 mm</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row cols-2">
+        <button class="btn" id="downloadBtn" disabled>⬇️ Download Photo</button>
+        <button class="btn outline" id="resetBtn" type="button">Reset</button>
+      </div>
+      <div class="hint">Filename keeps your original name with “-passport”.</div>
+    </section>
+
+    <!-- Preview / Upload -->
+    <section class="card" aria-labelledby="preview-title">
+      <h2 id="preview-title">Preview & Upload</h2>
+      <div id="drop" class="drop" tabindex="0" aria-label="Use buttons below, or drag & drop / paste an image">
+        <p><strong>Use the buttons below</strong> or <strong>drag & drop</strong> / <strong>paste</strong> an image here.</p>
+
+        <!-- Two-button mobile picker -->
+        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center">
+          <!-- Gallery/Files (no capture) -->
+          <div class="file-wrap">
+            <button class="btn" type="button" aria-describedby="chooseHelp">📁 Choose from Gallery/Files</button>
+            <input
+              id="file"
+              type="file"
+              accept="image/*"
+              class="file-input-overlay"
+              aria-label="Choose an image from Gallery or Files"
+            />
+          </div>
+          <!-- Camera (explicit) -->
+          <div class="file-wrap">
+            <button class="btn outline" type="button">📷 Take Photo</button>
+            <input
+              id="cameraFile"
+              type="file"
+              accept="image/*"
+              capture="environment"
+              class="file-input-overlay"
+              aria-label="Take a photo with the camera"
+            />
+          </div>
+        </div>
+        <div id="chooseHelp" class="hint">Tip: Gallery/Files shows Photos & Files. “Take Photo” opens the camera.</div>
+      </div>
+
+      <div class="canvas-wrap" id="canvasWrap">
+        <canvas id="out" width="900" height="1200" aria-label="Passport preview canvas"></canvas>
+
+        <!-- Guides -->
+        <div class="guide" id="guides" aria-hidden="true">
+          <!-- center lines -->
+          <div class="line" style="width:1px; height:100%; top:50%; left:50%;"></div>
+          <div class="line" style="width:100%; height:1px; top:50%; left:50%;"></div>
+          <!-- face safe area (approximate head-height band) -->
+          <div class="safe" id="eyeLine" style="top:40%; width:80%; height:0; border-top:2px solid rgba(37,99,235,.7)"></div>
+          <div class="safe" id="chinLine" style="top:70%; width:80%; height:0; border-top:2px solid rgba(37,99,235,.3)"></div>
+        </div>
+      </div>
+      <div class="kv" id="meta" hidden>
+        <span id="sizeInfo">Size: —</span>
+        <span id="dpiInfo">DPI: 300</span>
+        <span id="estInfo">Estimated file size: —</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- Help -->
+  <section class="section wrap">
+    <h3>How to Create a Compliant Passport/Visa Photo</h3>
+    <ol class="muted" style="line-height:1.85; padding-left:18px">
+      <li>Use <strong>Choose from Gallery/Files</strong> (or <strong>Take Photo</strong>), or drag & drop/paste an image.</li>
+      <li>Select a <strong>Country/Standard</strong>. Size and aspect are set automatically (US 2×2 in; EU/UK/India 35×45 mm).</li>
+      <li>Use <strong>Zoom</strong> and <strong>drag</strong> to position your face. Keep the eyes near the top guide and the chin near the lower guide.</li>
+      <li>Choose a clean <strong>Background</strong> (white/light). Optional <strong>Background Smoothing</strong> softens edges.</li>
+      <li>Download as <strong>JPG/PNG/WebP</strong> at exact size and DPI. Print on photo paper or upload to your portal.</li>
+    </ol>
+
+    <h3>Why This Matters</h3>
+    <p class="muted" style="line-height:1.9">
+      Agencies reject photos for size, background, or head placement errors. This tool provides a fixed-aspect frame with guides so you can align correctly and export at exact print dimensions. Everything runs locally for privacy.
+    </p>
+
+    <h3>FAQs</h3>
+    <details>
+      <summary>Are these sizes compliant?</summary>
+      <div class="muted">Presets follow common standards: US 2×2 in (51×51 mm); EU/Schengen 35×45 mm; UK 35×45 mm; India 35×45 mm. Always check your authority’s latest rules before submission.</div>
+    </details>
+    <details>
+      <summary>Does it remove backgrounds?</summary>
+      <div class="muted">It places your photo over a light solid background and offers a soft feather around edges. It’s not an AI remover—shoot against a plain wall for best results.</div>
+    </details>
+    <details>
+      <summary>What DPI should I use?</summary>
+      <div class="muted">300 DPI is standard for photo-quality prints. Some kiosks accept 600 DPI. Online portals usually want exact pixels that match the printed size at 300 DPI.</div>
+    </details>
+    <details>
+      <summary>Will the exported file include DPI metadata?</summary>
+      <div class="muted">Browsers export exact pixel dimensions. Some apps may ignore or rewrite DPI metadata—print at 100% scale using the given DPI and paper size.</div>
+    </details>
+    <details>
+      <summary>Tips for acceptance</summary>
+      <div class="muted">Neutral expression, eyes open, no heavy shadows, even lighting, no filters, plain background, head centered. Remove hats/glasses unless allowed by policy.</div>
+    </details>
+  </section>
+
+  <!-- Footer -->
+  <footer class="vt-footer" role="contentinfo">
+    <div class="inner">
+      <div style="display:grid; grid-template-columns:1.2fr 1fr 1fr 1fr; gap:14px">
+        <div>
+          <div class="vt-foot-h">thevitatrack.com</div>
+          <p style="margin:0; font-size:13px; color:#9ca3af">Fast, privacy-first tools for image prep. No sign-up, no upload.</p>
+        </div>
+        <div>
+          <div class="vt-foot-h">Company</div>
+          <div><a href="/about/">About</a></div>
+          <div><a href="/contact/">Contact</a></div>
+        </div>
+        <div>
+          <div class="vt-foot-h">Legal</div>
+          <div><a href="/privacy/">Privacy Policy</a></div>
+          <div><a href="/terms/">Terms of Use</a></div>
+          <div><a href="/disclaimer/">Disclaimer</a></div>
+        </div>
+        <div>
+          <div class="vt-foot-h">Stay in Touch</div>
+          <p style="margin:0; font-size:13px">
+            ✉️ <a href="mailto:team@thevitatrack.com">team@thevitatrack.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="vt-copy">© <span id="vt-year"></span> thevitatrack.com • All rights reserved</div>
+    </div>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const out = $('#out'), ctx = out.getContext('2d');
+  const drop = $('#drop'), fileInput = $('#file'), cameraInput = $('#cameraFile');
+  const zoomEl = $('#zoom'), featherEl = $('#feather'), dpiEl = $('#dpi');
+  const countryEl = $('#country'), bgEl = $('#bg'), fmtEl = $('#format');
+  const downloadBtn = $('#downloadBtn'), resetBtn = $('#resetBtn');
+  const presetsWrap = $('#presets');
+  const centerBtn = $('#centerBtn');
+  const meta = $('#meta'), sizeInfo = $('#sizeInfo'), dpiInfo = $('#dpiInfo'), estInfo = $('#estInfo');
+
+  const inchPerMm = 0.03937007874;
+
+  let img = null, imgURL = null, baseName = 'photo';
+  let frameWpx = 900, frameHpx = 1200; // default 3:4
+  let zoom = 100;
+  let offsetX = 0, offsetY = 0;
+  let dragging = false, lastX = 0, lastY = 0;
+  let renderedBlob = null;
+
+  // Country size presets (width_mm, height_mm, and rough eye/chin guides)
+  const PRESETS = {
+    US: { mm:[50.8, 50.8], note:'2×2 in', eyeY: 0.42, chinY: 0.70 },
+    EU: { mm:[35, 45], note:'35×45 mm', eyeY: 0.40, chinY: 0.70 },
+    UK: { mm:[35, 45], note:'35×45 mm', eyeY: 0.40, chinY: 0.70 },
+    IN: { mm:[35, 45], note:'35×45 mm', eyeY: 0.40, chinY: 0.70 },
+  };
+
+  function mmToPx(mm, dpi){ return Math.round(mm * inchPerMm * dpi); }
+
+  function setFrameFromPreset(code){
+    const p = PRESETS[code] || PRESETS.EU;
+    const dpi = +dpiEl.value || 300;
+    frameWpx = mmToPx(p.mm[0], dpi);
+    frameHpx = mmToPx(p.mm[1], dpi);
+    out.width = frameWpx;
+    out.height = frameHpx;
+    // Reset positioning/zoom
+    zoom = 100; offsetX = 0; offsetY = 0; zoomEl.value = 100;
+    draw();
+    updateMeta();
+  }
+
+  function updateMeta(){
+    const code = countryEl.value;
+    const p = PRESETS[code];
+    sizeInfo.textContent = `Size: ${p.mm[0]}×${p.mm[1]} mm (${frameWpx}×${frameHpx}px)`;
+    dpiInfo.textContent = `DPI: ${dpiEl.value}`;
+    if(renderedBlob) estInfo.textContent = 'Estimated file size: ' + humanBytes(renderedBlob.size);
+    meta.hidden = false;
+  }
+
+  function humanBytes(bytes){
+    if(!bytes) return '—';
+    const u=['B','KB','MB','GB']; let i=0; let v=bytes;
+    while(v>1024 && i<u.length-1){ v/=1024; i++; }
+    return v.toFixed(v<10?2:1)+' '+u[i];
+  }
+
+  function clearCanvas(color){
+    ctx.save();
+    ctx.fillStyle = color || '#fff';
+    ctx.fillRect(0,0,out.width,out.height);
+    ctx.restore();
+  }
+
+  function draw(){
+    clearCanvas(bgEl.value);
+    if(!img){
+      ctx.save(); ctx.fillStyle = '#e5e7eb'; ctx.fillRect(0,0,out.width,out.height); ctx.restore();
+      placeGuides(); return;
+    }
+    const imgW = img.naturalWidth || img.width;
+    const imgH = img.naturalHeight || img.height;
+
+    const scaleBase = Math.max(out.width / imgW, out.height / imgH);
+    const scale = scaleBase * (zoom/100);
+
+    const drawW = imgW * scale;
+    const drawH = imgH * scale;
+    const cx = out.width/2 + offsetX;
+    const cy = out.height/2 + offsetY;
+
+    const dx = Math.round(cx - drawW/2);
+    const dy = Math.round(cy - drawH/2);
+
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
+
+    // Feather blend (soften edges to background)
+    const feather = +featherEl.value || 0;
+    if(feather>0){
+      ctx.drawImage(img, dx, dy, drawW, drawH);
+      ctx.save();
+      ctx.globalAlpha = Math.min(0.6, feather/100);
+      ctx.fillStyle = bgEl.value;
+      ctx.fillRect(0,0,out.width,out.height);
+      ctx.restore();
+      ctx.drawImage(img, dx, dy, drawW, drawH);
+    }else{
+      ctx.drawImage(img, dx, dy, drawW, drawH);
+    }
+
+    // Save blob estimate
+    const mime = fmtEl.value;
+    const quality = (mime==='image/png') ? 1 : 0.92;
+    out.toBlob(b=>{ renderedBlob=b; updateMeta(); }, mime, quality);
+
+    placeGuides();
+  }
+
+  function placeGuides(){
+    const code = countryEl.value;
+    const p = PRESETS[code];
+    const eyeLine = $('#eyeLine'), chinLine = $('#chinLine');
+    eyeLine.style.top = (p.eyeY*100) + '%';
+    chinLine.style.top = (p.chinY*100) + '%';
+  }
+
+  // File handling
+  function loadFile(file){
+    if(!file || !file.type?.startsWith('image/')) return;
+    baseName = (file.name||'photo').replace(/\.[^.]+$/,'');
+    if(imgURL) URL.revokeObjectURL(imgURL);
+    imgURL = URL.createObjectURL(file);
+    const im = new Image();
+    im.onload = ()=>{ img = im; fileInput.value=''; cameraInput.value=''; draw(); enableDownload(); };
+    im.onerror = ()=>{ URL.revokeObjectURL(imgURL); fileInput.value=''; cameraInput.value=''; alert('Could not load this image.'); };
+    im.src = imgURL;
+  }
+
+  // Drag/drop
+  ['dragenter','dragover'].forEach(ev=>{
+    drop.addEventListener(ev, e=>{ e.preventDefault(); drop.classList.add('drag'); });
+  });
+  ['dragleave','drop'].forEach(ev=>{
+    drop.addEventListener(ev, e=>{ e.preventDefault(); drop.classList.remove('drag'); });
+  });
+  drop.addEventListener('drop', e=>{
+    const f = e.dataTransfer?.files?.[0];
+    if(f) loadFile(f);
+  });
+
+  // Real inputs (mobile-safe)
+  fileInput.addEventListener('change', e=>{
+    const f = e.target.files && e.target.files[0];
+    if(f) loadFile(f);
+  });
+  cameraInput.addEventListener('change', e=>{
+    const f = e.target.files && e.target.files[0];
+    if(f) loadFile(f);
+  });
+
+  // Paste
+  window.addEventListener('paste', e=>{
+    const items = e.clipboardData?.items;
+    if(!items) return;
+    for(const it of items){
+      if(it.type?.startsWith('image/')){ loadFile(it.getAsFile()); break; }
+    }
+  });
+
+  // Zoom / background / format
+  zoomEl.addEventListener('input', ()=>{ zoom = +zoomEl.value || 100; draw(); });
+  [bgEl, fmtEl].forEach(el=> el.addEventListener('change', draw));
+  featherEl.addEventListener('input', draw);
+  featherEl.addEventListener('change', draw);
+
+  // DPI / Country changes
+  function applyPreset(){ setFrameFromPreset(countryEl.value); }
+  countryEl.addEventListener('change', applyPreset);
+  dpiEl.addEventListener('change', applyPreset);
+
+  // Preset chips
+  presetsWrap.addEventListener('click', e=>{
+    const b = e.target.closest('.chip'); if(!b) return;
+    countryEl.value = b.dataset.preset;
+    applyPreset();
+  });
+
+  // Drag to move
+  const wrap = $('#canvasWrap');
+  wrap.addEventListener('mousedown', e=>{
+    dragging=true; lastX=e.clientX; lastY=e.clientY;
+  });
+  window.addEventListener('mousemove', e=>{
+    if(!dragging) return;
+    offsetX += (e.clientX - lastX);
+    offsetY += (e.clientY - lastY);
+    lastX = e.clientX; lastY = e.clientY;
+    draw();
+  });
+  window.addEventListener('mouseup', ()=> dragging=false);
+
+  // Touch drag
+  wrap.addEventListener('touchstart', e=>{
+    if(e.touches.length!==1) return;
+    const t=e.touches[0]; dragging=true; lastX=t.clientX; lastY=t.clientY;
+  }, {passive:true});
+  window.addEventListener('touchmove', e=>{
+    if(!dragging || e.touches.length!==1) return;
+    const t=e.touches[0];
+    offsetX += (t.clientX - lastX);
+    offsetY += (t.clientY - lastY);
+    lastX = t.clientX; lastY = t.clientY;
+    draw();
+  }, {passive:true});
+  window.addEventListener('touchend', ()=> dragging=false);
+
+  // Nudge buttons
+  document.querySelectorAll('[data-nudge]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const step = Math.max(1, Math.round(Math.min(out.width,out.height)/100));
+      const dir = btn.dataset.nudge;
+      if(dir==='up') offsetY -= step;
+      if(dir==='down') offsetY += step;
+      if(dir==='left') offsetX -= step;
+      if(dir==='right') offsetX += step;
+      draw();
+    });
+  });
+  centerBtn.addEventListener('click', ()=>{ offsetX=0; offsetY=0; draw(); });
+
+  // Download
+  function enableDownload(){ downloadBtn.disabled = !img; }
+  downloadBtn.addEventListener('click', ()=>{
+    if(!img) return;
+    const extMap = {'image/jpeg':'jpg','image/png':'png','image/webp':'webp'};
+    const ext = extMap[fmtEl.value] || 'jpg';
+    out.toBlob(b=>{
+      if(!b) return;
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(b);
+      a.download = `${baseName}-passport.${ext}`;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    }, fmtEl.value, fmtEl.value==='image/png' ? 1 : 0.92);
+  });
+
+  // Reset
+  resetBtn.addEventListener('click', ()=>{
+    img = null; if(imgURL) { URL.revokeObjectURL(imgURL); imgURL=null; }
+    baseName='photo'; zoom=100; offsetX=offsetY=0; zoomEl.value=100; featherEl.value=20;
+    countryEl.value='US'; dpiEl.value=300; bgEl.value='#ffffff'; fmtEl.value='image/jpeg';
+    setFrameFromPreset('US');
+    renderedBlob=null; meta.hidden=true;
+    draw(); enableDownload();
+  });
+
+  // Init
+  setFrameFromPreset('US');
+  document.getElementById('vt-year').textContent = new Date().getFullYear();
+})();
+</script>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Passport & Visa Photos","url":"https://thevitatrack.com/passport/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","browserRequirements":"Requires a modern browser","description":"Create compliant passport and visa photos in your browser. Country presets, exact size at 300 DPI, background options, guides, and instant download."}
+</script>
+</body>
+</html>
+<!-- /wp:html -->

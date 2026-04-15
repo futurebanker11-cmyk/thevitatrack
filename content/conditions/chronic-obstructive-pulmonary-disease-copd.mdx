@@ -1,0 +1,550 @@
+---
+title: "Chronic Obstructive Pulmonary Disease (COPD)"
+slug: "chronic-obstructive-pulmonary-disease-copd"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Chronic Obstructive Pulmonary Disease (COPD) — Senior-Friendly Guide • TheVitatrack</title>
+<meta name="description" content="COPD made simple for seniors: symptoms, red-flags, GOLD stages, spirometry, inhalers, pulmonary rehab, oxygen therapy, flare-up action plan, breathing techniques, vaccines, and daily breath-saving tips." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Chronic Obstructive Pulmonary Disease (COPD)</h1>
+    <p>Symptoms, red-flags, GOLD stages, spirometry basics, inhalers, pulmonary rehab, oxygen therapy, flare-up action plan, vaccines, breathing techniques, and daily breath-saving tips.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is-copd">What is COPD?</a></li>
+      <li><a href="#red-flags">When to seek urgent help</a></li>
+      <li><a href="#symptoms">Common symptoms</a></li>
+      <li><a href="#causes">Causes & risk factors</a></li>
+      <li><a href="#diagnosis">Diagnosis & spirometry</a></li>
+      <li><a href="#staging">GOLD staging (overview)</a></li>
+      <li><a href="#treatment">Treatment (inhalers, rehab, oxygen)</a></li>
+      <li><a href="#flare">Flare-up (exacerbation) action plan</a></li>
+      <li><a href="#breathing">Breathing techniques & energy saving</a></li>
+      <li><a href="#vaccines">Vaccines & prevention</a></li>
+      <li><a href="#daily">Daily tips & home setup</a></li>
+      <li><a href="#questions">Questions for your clinician</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- ===== Display AD (near top) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- What is COPD -->
+  <section id="what-is-copd" class="section">
+    <h2>What is COPD?</h2>
+    <p class="lead"><span class="badge">In short</span> COPD is a long-term lung condition that makes it harder to breathe due to <strong>airflow limitation</strong> that isn’t fully reversible (often from chronic bronchitis and/or emphysema). Goals: reduce symptoms, prevent flare-ups, keep you active and independent.</p>
+    <div class="card small">
+      <p><strong>Good to know:</strong> Stopping smoking, correct inhaler use, pulmonary rehab, and vaccinations are the most effective steps for many people.</p>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent help</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Severe breathlessness at rest or trouble speaking in full sentences</li>
+        <li>Blue lips or fingers, confusion, or extreme drowsiness</li>
+        <li>Chest pain, new fast heartbeat, or swelling of legs with worsening breathlessness</li>
+        <li>High fever with shaking chills and thick green/bloody sputum</li>
+      </ul>
+      <p class="small">These may signal a serious flare or another urgent problem. Seek emergency care.</p>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section id="symptoms" class="section">
+    <h2>Common symptoms</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Shortness of breath (especially on exertion)</li>
+          <li>Chronic cough with or without sputum</li>
+          <li>Chest tightness, wheeze</li>
+          <li>Fatigue, reduced stamina, frequent winter “chest colds”</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">Breathlessness (Dyspnea)</a></li>
+          <li><a href="#">Inhaler Technique</a></li>
+          <li><a href="#">Walking Plans</a></li>
+          <li><a href="#">Vaccines</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after symptoms) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Causes & risk factors</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Cigarette smoking (current or past)</li>
+          <li>Indoor biomass fuel exposure (wood/coal chulhas), secondhand smoke</li>
+          <li>Outdoor air pollution and occupational dusts/chemicals</li>
+          <li>Genetic factors (e.g., alpha-1 antitrypsin deficiency — less common)</li>
+          <li>Frequent childhood respiratory infections</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Key step:</strong> If you smoke, stopping is the most powerful treatment at any stage.
+      </div>
+    </div>
+  </section>
+
+  <!-- Diagnosis -->
+  <section id="diagnosis" class="section">
+    <h2>Diagnosis & spirometry</h2>
+    <div class="card">
+      <ul class="list">
+        <li>Clinical history (breathlessness, cough, exposures)</li>
+        <li><strong>Spirometry:</strong> airflow limitation confirmed when post-bronchodilator <strong>FEV<sub>1</sub>/FVC &lt; 0.70</strong></li>
+        <li>Severity estimated by FEV<sub>1</sub> % predicted and symptom/flare history</li>
+        <li>Chest X-ray or CT sometimes used to assess emphysema or complications</li>
+        <li>Pulse oximetry ± arterial blood gases in advanced disease or flares</li>
+      </ul>
+      <p class="small">Always pair numbers with how you feel and how often you flare.</p>
+    </div>
+  </section>
+
+  <!-- Staging -->
+  <section id="staging" class="section">
+    <h2>GOLD staging (overview)</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Grade</th><th scope="col">FEV<sub>1</sub> % predicted</th><th scope="col">Typical notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>GOLD 1</strong></td><td>≥ 80%</td><td>Mild obstruction; symptoms vary</td></tr>
+        <tr><td><strong>GOLD 2</strong></td><td>50–79%</td><td>Moderate; breathlessness with activity</td></tr>
+        <tr><td><strong>GOLD 3</strong></td><td>30–49%</td><td>Severe; limited stamina, frequent flares</td></tr>
+        <tr><td><strong>GOLD 4</strong></td><td>&lt; 30%</td><td>Very severe; daily symptoms and risks higher</td></tr>
+      </tbody>
+    </table>
+    <p class="small">Your treatment also depends on symptom burden and past exacerbations, not grades alone.</p>
+  </section>
+
+  <!-- ===== In-article AD (after staging) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Treatment -->
+  <section id="treatment" class="section">
+    <h2>Treatment (inhalers, rehab, oxygen)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Core steps</p>
+        <ul class="list">
+          <li><strong>Smoking cessation</strong> support (counseling, medicines as advised)</li>
+          <li><strong>Correct inhaler technique</strong> and adherence; spacer if needed</li>
+          <li><strong>Pulmonary rehabilitation:</strong> exercise + education improves breathlessness and quality of life</li>
+          <li><strong>Vaccines:</strong> seasonal flu, pneumococcal, and others as recommended</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Inhalers (examples; individualized)</p>
+        <ul class="list">
+          <li><strong>Relievers:</strong> short-acting bronchodilators (SABA/SAMA) for quick relief</li>
+          <li><strong>Controllers:</strong> long-acting bronchodilators (LABA and/or LAMA)</li>
+          <li><strong>Inhaled corticosteroid</strong> may be added in selected patients (e.g., frequent exacerbations with certain lab patterns)</li>
+          <li>Some people use <strong>triple therapy</strong> as advised by their clinician</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Oxygen & devices</p>
+        <ul class="list">
+          <li>Long-term home oxygen for those who meet criteria (resting low oxygen)</li>
+          <li>Portable concentrators improve mobility when prescribed</li>
+          <li>Non-invasive ventilation in selected advanced cases per specialist</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Medicines and devices are individualized. Bring your inhalers to visits to review technique.
+      </div>
+    </div>
+  </section>
+
+  <!-- Flare-up -->
+  <section id="flare" class="section">
+    <h2>Flare-up (exacerbation) action plan</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Know your early signs</p>
+        <ul class="list">
+          <li>More breathless than usual, walking less distance</li>
+          <li>Increased cough or thicker/darker sputum</li>
+          <li>Needing rescue inhaler more often</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Typical steps (personalized plan)</p>
+        <ul class="list">
+          <li>Start rescue inhaler as directed; add spacers/nebulizer if prescribed</li>
+          <li>Short course of <strong>steroids ± antibiotics</strong> may be pre-planned by your clinician</li>
+          <li>Hydration, airway clearance techniques; monitor oxygen if you use it</li>
+          <li>Seek care if not improving within 24–48 hours or if red flags develop</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small calm" style="margin-top:10px">Ask for a written, step-by-step action plan you can keep at home.</p>
+  </section>
+
+  <!-- Breathing -->
+  <section id="breathing" class="section">
+    <h2>Breathing techniques & energy saving</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Breathe smarter</p>
+        <ul class="list">
+          <li><strong>Pursed-lip breathing:</strong> in through nose 2 counts → out through pursed lips 4 counts</li>
+          <li><strong>Forward-lean positions</strong> to ease breathlessness during tasks</li>
+          <li>Airway clearance if advised (huff cough, active cycle techniques)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Conserve energy</p>
+        <ul class="list">
+          <li>Pace tasks; sit for grooming/cooking; keep items at waist height</li>
+          <li>Break chores into short blocks with rest</li>
+          <li>Use rolling carts or backpacks instead of carrying</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vaccines -->
+  <section id="vaccines" class="section">
+    <h2>Vaccines & prevention</h2>
+    <div class="card">
+      <ul class="list">
+        <li>Annual influenza vaccine</li>
+        <li>Pneumococcal vaccines as recommended for your age/health</li>
+        <li>Other vaccines per local guidance and clinician advice</li>
+        <li>Handwashing and avoiding sick contacts during outbreaks</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Daily tips -->
+  <section id="daily" class="section">
+    <h2>Daily tips & home setup</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Home environment</p>
+        <ul class="list">
+          <li>Good ventilation; avoid smoke, incense, and strong fumes</li>
+          <li>Keep rescue inhaler accessible; label by time and purpose</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Movement & strength</p>
+        <ul class="list">
+          <li>Daily gentle walking; add light strength exercises as tolerated</li>
+          <li>Stop and use breathing techniques if breathless; restart when settled</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Nutrition & hydration</p>
+        <ul class="list">
+          <li>Small, frequent meals if a full stomach worsens breathing</li>
+          <li>Stay hydrated unless on a fluid limit; discuss weight goals if underweight</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Keep an up-to-date medicines list and your written action plan on the fridge or inside your inhaler pouch.
+      </div>
+    </div>
+  </section>
+
+  <!-- Questions -->
+  <section id="questions" class="section">
+    <h2>Questions for your clinician</h2>
+    <div class="card">
+      <ul class="list">
+        <li>What is my current COPD severity and flare risk?</li>
+        <li>Which inhalers should I use daily vs. only when needed?</li>
+        <li>Can we review my inhaler technique with a spacer or demo device?</li>
+        <li>Am I a candidate for pulmonary rehabilitation or home oxygen?</li>
+        <li>What vaccines are recommended for me this year?</li>
+        <li>Can you give me a written flare-up action plan?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Can COPD be reversed?</p>
+        <p>Airway damage cannot be fully reversed, but symptoms and flare-ups can be reduced with the right plan.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do inhaled steroids help everyone?</p>
+        <p>No. They are used selectively (for frequent exacerbations/selected lab patterns) and usually combined with long-acting bronchodilators.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is oxygen always needed?</p>
+        <p>Only if your oxygen is low at rest or with activity based on testing and criteria. Many people with COPD never need oxygen.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Will exercise make me worse?</p>
+        <p>Done safely, exercise and pulmonary rehab improve stamina and breathlessness for many people.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalCondition",
+  "name":"Chronic Obstructive Pulmonary Disease",
+  "alternateName":["COPD","Chronic bronchitis","Emphysema"],
+  "description":"Senior-focused COPD guide: symptoms, red-flags, GOLD stages, spirometry, inhalers, pulmonary rehab, oxygen therapy, flare-up action plan, breathing techniques, vaccines, and daily breath-saving tips.",
+  "signOrSymptom":[
+    {"@type":"MedicalSymptom","name":"Shortness of breath"},
+    {"@type":"MedicalSymptom","name":"Chronic cough"},
+    {"@type":"MedicalSymptom","name":"Wheezing"},
+    {"@type":"MedicalSymptom","name":"Chest tightness"}
+  ],
+  "possibleComplication":[
+    {"@type":"MedicalEntity","name":"Acute exacerbations"},
+    {"@type":"MedicalEntity","name":"Respiratory failure"}
+  ],
+  "riskFactor":[
+    {"@type":"MedicalRiskFactor","name":"Cigarette smoking"},
+    {"@type":"MedicalRiskFactor","name":"Biomass fuel exposure"},
+    {"@type":"MedicalRiskFactor","name":"Air pollution"},
+    {"@type":"MedicalRiskFactor","name":"Alpha-1 antitrypsin deficiency"}
+  ],
+  "url":"https://thevitatrack.com/copd"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Can COPD be reversed?",
+      "acceptedAnswer":{"@type":"Answer","text":"Airway damage cannot be fully reversed, but symptoms and flare-ups can be reduced with smoking cessation, correct inhaler use, pulmonary rehab, and vaccinations."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do inhaled steroids help everyone with COPD?",
+      "acceptedAnswer":{"@type":"Answer","text":"No. They are used selectively—often in people with frequent exacerbations—and usually combined with long-acting bronchodilators."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is long-term oxygen therapy always needed in COPD?",
+      "acceptedAnswer":{"@type":"Answer","text":"Only if testing shows low oxygen at rest or with activity and you meet criteria. Many people with COPD do not require oxygen."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is exercise safe with COPD?",
+      "acceptedAnswer":{"@type":"Answer","text":"When tailored and supervised if needed, exercise and pulmonary rehab improve stamina and reduce breathlessness for many people."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Chronic Obstructive Pulmonary Disease (COPD)","item":"https://thevitatrack.com/copd"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

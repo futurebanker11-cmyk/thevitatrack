@@ -1,0 +1,495 @@
+---
+title: "Dehydration"
+slug: "covid-19-older-adults-2"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Dehydration (Older Adults) — Senior-Friendly Guide • TheVitatrack</title>
+<meta name="description" content="Dehydration in older adults: warning signs, causes (meds, heat, illness), tests, home rehydration plan, fluids & electrolytes, sick-day rules, prevention in hot weather and travel, and when to seek help." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Dehydration (Older Adults)</h1>
+    <p>Warning signs, causes (medicines, heat, illness), tests, home rehydration plan, fluids & electrolytes, sick-day rules, prevention in hot weather and travel, and when to seek help.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is-dehydration">What is dehydration?</a></li>
+      <li><a href="#red-flags">When to seek urgent help</a></li>
+      <li><a href="#symptoms">Common signs & symptoms</a></li>
+      <li><a href="#causes">Why it happens in older adults</a></li>
+      <li><a href="#tests">How dehydration is checked</a></li>
+      <li><a href="#rehydration">Home rehydration plan</a></li>
+      <li><a href="#special">Sick-day rules, heat & travel</a></li>
+      <li><a href="#prevention">Daily prevention checklist</a></li>
+      <li><a href="#when-to-call">When to call your clinician</a></li>
+      <li><a href="#questions">Questions to ask</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- ===== Display AD (near top) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- What is -->
+  <section id="what-is-dehydration" class="section">
+    <h2>What is dehydration?</h2>
+    <p class="lead"><span class="badge">In short</span> The body doesn’t have enough water and electrolytes for normal function. In older adults this can appear quickly with heat, infections, medicines, or poor intake — and can worsen dizziness, kidney function, and blood pressure control.</p>
+    <div class="card small">
+      <p><strong>Why it matters:</strong> Even mild dehydration can increase falls, confusion, constipation, and urinary infections. Early recognition and a simple drink plan usually helps; sometimes IV fluids are needed.</p>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent help</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Very sleepy, confused, or fainting</li>
+        <li>Unable to keep fluids down (vomiting) or severe diarrhea</li>
+        <li>Very low urine output or dark, tea-colored urine with pain</li>
+        <li>Fast heartbeat, breathing difficulty, or severe dizziness on standing</li>
+      </ul>
+      <p class="small">These can be emergencies — seek care immediately.</p>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section id="symptoms" class="section">
+    <h2>Common signs & symptoms</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Thirst or dry mouth, cracked lips, dry tongue</li>
+          <li>Dizziness on standing, headache, fatigue</li>
+          <li>Less urine, darker urine, constipation</li>
+          <li>Muscle cramps; cool, dry skin or excessive heat with sweating</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Clues in daily life</p>
+        <ul class="list">
+          <li>Not finishing drinks; avoiding fluids late due to night urination</li>
+          <li>Hot weather, travel days, or fasting</li>
+          <li>Recent illness with fever, vomiting, or diarrhea</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after symptoms) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Why it happens in older adults</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Common triggers</p>
+        <ul class="list">
+          <li><strong>Heat & humidity</strong> or poor ventilation</li>
+          <li><strong>Illness</strong> with fever, vomiting, or diarrhea</li>
+          <li><strong>Low fluid intake</strong> (fear of night urination, poor appetite)</li>
+          <li><strong>High-sugar drinks</strong> pulling water into the gut</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Medicines to review</p>
+        <ul class="list">
+          <li>Diuretics (“water pills”), some blood pressure medicines</li>
+          <li>SGLT2 inhibitors (diabetes), laxatives</li>
+          <li>Anticholinergics or sedatives that reduce awareness of thirst</li>
+        </ul>
+        <p class="small">Never stop a medicine without medical advice — ask about dose timing during heat or illness.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>How dehydration is checked</h2>
+    <div class="card">
+      <ul class="list">
+        <li><strong>Vitals:</strong> pulse, blood pressure (drop on standing), temperature</li>
+        <li><strong>Exam:</strong> dry mouth, low skin moisture, reduced urine</li>
+        <li><strong>Labs:</strong> sodium, potassium, kidney tests (BUN/creatinine), sometimes urine tests</li>
+      </ul>
+      <p class="small">Results guide whether oral fluids are enough or IV fluids are safer.</p>
+    </div>
+  </section>
+
+  <!-- Rehydration -->
+  <section id="rehydration" class="section">
+    <h2>Home rehydration plan</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Fluids</p>
+        <ul class="list">
+          <li>Start with small, frequent sips every 5–10 minutes</li>
+          <li>Use water plus an <strong>oral rehydration solution</strong> (ORS) or low-sugar electrolyte drink</li>
+          <li>If nauseated: ice chips or a teaspoon every few minutes, then increase</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Targets (example)</p>
+        <ul class="list">
+          <li>First 2–4 hours: ~250–500 mL, as tolerated</li>
+          <li>Next 24 hours: spread sips to reach your daily goal from your clinician</li>
+          <li>Avoid high-sugar sodas/juices and excessive caffeine</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Electrolytes & salt</p>
+        <ul class="list">
+          <li>ORS provides balanced sodium/potassium</li>
+          <li>If on a salt-restricted diet (heart/kidney), ask for personalized advice</li>
+        </ul>
+      </div>
+      <div class="card info">
+        If you have <strong>heart failure or kidney disease</strong>, fluid goals may be lower and must be individualized. Use your care team’s plan.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after rehydration) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Special situations -->
+  <section id="special" class="section">
+    <h2>Sick-day rules, heat & travel</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Sick-day basics</p>
+        <ul class="list">
+          <li>Keep ORS at home; take tiny, frequent sips during vomiting/diarrhea</li>
+          <li>Ask if any medicines should be paused temporarily during severe illness (per your care plan)</li>
+          <li>Monitor weight, urine output, and dizziness on standing</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Heat & travel</p>
+        <ul class="list">
+          <li>Shade/AC, light clothing, cool showers</li>
+          <li>Carry a water bottle and ORS packets; set phone reminders to sip hourly</li>
+          <li>Avoid alcohol and very sweet drinks in hot weather</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prevention -->
+  <section id="prevention" class="section">
+    <h2>Daily prevention checklist</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Drink regularly through the day; keep a bottle within reach</li>
+          <li>Hydration routine: a glass at wake-up, with medicines (if allowed), and with meals</li>
+          <li>Eat water-rich foods: soups, fruits, yogurt (as allowed by your diet)</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Balance with night urination: shift more fluids earlier in the day; taper in the evening if instructed.
+      </div>
+    </div>
+  </section>
+
+  <!-- When to call -->
+  <section id="when-to-call" class="section">
+    <h2>When to call your clinician</h2>
+    <div class="card">
+      <ul class="list">
+        <li>Ongoing vomiting/diarrhea > 6–8 hours, or you can’t keep fluids down</li>
+        <li>Worsening dizziness, very little urine, or new confusion</li>
+        <li>Heart/kidney disease and unsure about fluid targets during illness</li>
+        <li>Fever with worsening weakness despite fluids</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Questions -->
+  <section id="questions" class="section">
+    <h2>Questions to ask</h2>
+    <div class="card">
+      <ul class="list">
+        <li>How much should I drink on regular days vs sick days?</li>
+        <li>Which electrolyte drink fits my heart/kidney/diabetes plan?</li>
+        <li>Do any of my medicines raise dehydration risk during heat or illness?</li>
+        <li>What signs mean I should go to urgent care or the ER?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Do I drink plain water or ORS?</p>
+        <p>Both can help; ORS is best during vomiting/diarrhea or heavy sweating because it replaces electrolytes along with water.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">How do I avoid nighttime bathroom trips?</p>
+        <p>Front-load fluids earlier in the day, take steady sips at meals, and taper in the evening if advised.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can coffee or tea count?</p>
+        <p>Yes in moderation, but avoid excess caffeine and very sweet drinks during rehydration.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">When are IV fluids needed?</p>
+        <p>Severe dehydration, inability to keep fluids down, or significant low blood pressure often require IV fluids in a clinic or hospital.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalCondition",
+  "name":"Dehydration",
+  "description":"Dehydration in older adults: warning signs, causes, tests, home rehydration plan, fluids and electrolytes, sick-day rules, prevention in heat and travel, and when to seek help.",
+  "signOrSymptom":[
+    {"@type":"MedicalSymptom","name":"Thirst and dry mouth"},
+    {"@type":"MedicalSymptom","name":"Dizziness on standing"},
+    {"@type":"MedicalSymptom","name":"Low urine output or dark urine"},
+    {"@type":"MedicalSymptom","name":"Fatigue"}
+  ],
+  "possibleComplication":[
+    {"@type":"MedicalEntity","name":"Kidney injury"},
+    {"@type":"MedicalEntity","name":"Falls"},
+    {"@type":"MedicalEntity","name":"Confusion"}
+  ],
+  "riskFactor":[
+    {"@type":"MedicalRiskFactor","name":"Older age"},
+    {"@type":"MedicalRiskFactor","name":"Heat exposure"},
+    {"@type":"MedicalRiskFactor","name":"Vomiting or diarrhea"},
+    {"@type":"MedicalRiskFactor","name":"Diuretics or certain medications"}
+  ],
+  "url":"https://thevitatrack.com/dehydration"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Do I drink plain water or an oral rehydration solution?",
+      "acceptedAnswer":{"@type":"Answer","text":"Use both; ORS is best during vomiting/diarrhea or heavy sweating because it replaces electrolytes along with water."}
+    },
+    {
+      "@type":"Question",
+      "name":"How can I avoid nighttime bathroom trips while staying hydrated?",
+      "acceptedAnswer":{"@type":"Answer","text":"Shift more of your fluid intake earlier in the day and taper in the evening if advised by your clinician."}
+    },
+    {
+      "@type":"Question",
+      "name":"When are IV fluids necessary for dehydration?",
+      "acceptedAnswer":{"@type":"Answer","text":"Severe dehydration, ongoing vomiting preventing oral intake, or significant low blood pressure often require IV fluids under medical care."}
+    },
+    {
+      "@type":"Question",
+      "name":"Which medicines increase dehydration risk?",
+      "acceptedAnswer":{"@type":"Answer","text":"Diuretics, some blood pressure and diabetes medicines, laxatives, and drugs that reduce awareness of thirst can increase risk. Do not stop medicines without medical advice."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Dehydration","item":"https://thevitatrack.com/dehydration"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

@@ -1,0 +1,512 @@
+---
+title: "Chills"
+slug: "chills"
+category: "symptoms"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Chills — Senior Symptom Guide • TheVitatrack</title>
+<meta name="description" content="Chills in older adults: urgent red flags, common causes (infections, medication effects, thyroid), safe first steps, fever care, medicine cautions, tests, and what to track. Clear checklists and tables." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+  .ok{
+    background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Chills</h1>
+    <p>Urgent warning signs, common causes (infections, medication effects, thyroid), safe first steps, fever care, medicine cautions, evaluation, and tracking for older adults.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#about">What chills can mean</a></li>
+      <li><a href="#red-flags">When to call emergency</a></li>
+      <li><a href="#causes">Common causes in later life</a></li>
+      <li><a href="#first-steps">Safe first steps & fever care</a></li>
+      <li><a href="#pairs">Chills + other symptoms (what it suggests)</a></li>
+      <li><a href="#meds">Medicine cautions</a></li>
+      <li><a href="#tests">What clinicians may do</a></li>
+      <li><a href="#tracking">What to track</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>What chills can mean</h2>
+    <p class="lead"><span class="badge">Overview</span> Chills are a sudden feeling of cold with shivering. They often occur with <strong>fever</strong> from infection, but can also follow exposure to cold, certain <strong>medicines</strong>, or hormone/metabolic issues. In seniors, chills deserve attention—serious infection can show few other signs.</p>
+    <div class="card small">
+      <p><strong>Goals:</strong> identify red flags early, measure temperature correctly, hydrate, and seek timely evaluation when needed.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to call emergency</h2>
+    <div class="danger">
+      <ul class="list">
+        <li><strong>Rigors</strong> (uncontrolled shaking) with fever and <strong>confusion</strong> or extreme weakness</li>
+        <li>Fever/chills with <strong>shortness of breath, chest pain,</strong> or oxygen drop (if you monitor)</li>
+        <li>Chills with <strong>stiff neck, severe headache, new rash</strong> (especially purple spots)</li>
+        <li>Chills  + <strong>burning urination</strong>, flank pain, or inability to pass urine</li>
+        <li>Recent <strong>surgery, catheter, wound, or device</strong> and feeling acutely unwell</li>
+        <li>On <strong>chemotherapy, high-dose steroids, or immunosuppressants</strong></li>
+      </ul>
+      <p class="small">These may signal sepsis, meningitis, pneumonia, pyelonephritis, endocarditis, or other urgent problems.</p>
+    </div>
+  </section>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Common causes in later life</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Category</th><th scope="col">Examples</th><th scope="col">Clues</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Infections</strong></td>
+          <td>UTI, pneumonia, COVID-19/flu, cellulitis, biliary infection, dental infections</td>
+          <td>Fever, cough, painful urination, new confusion, localized redness/swelling</td>
+        </tr>
+        <tr>
+          <td><strong>Medication effects</strong></td>
+          <td>Transfusion reactions, infusion reactions, opioid withdrawal, some antibiotics</td>
+          <td>Timing with new meds/infusions; rash, itching, blood pressure changes</td>
+        </tr>
+        <tr>
+          <td><strong>Endocrine/metabolic</strong></td>
+          <td>Hypothyroidism, low blood sugar, adrenal insufficiency</td>
+          <td>Cold intolerance, weight change, tremor/sweats, dizziness</td>
+        </tr>
+        <tr>
+          <td><strong>Environmental</strong></td>
+          <td>Exposure to cold, dehydration</td>
+          <td>Low oral intake, outdoor exposure, low blood pressure</td>
+        </tr>
+        <tr>
+          <td><strong>Inflammatory/other</strong></td>
+          <td>Autoimmune flares, malignancy</td>
+          <td>Night sweats, weight loss, persistent fevers</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD (after Causes) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- First steps -->
+  <section id="first-steps" class="section">
+    <h2>Safe first steps & fever care</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Check & note</p>
+        <ul class="list">
+          <li>Measure temperature correctly (oral/tympanic). Write down time and reading.</li>
+          <li>Note other symptoms: cough, burning urination, rash, confusion, chest pain.</li>
+          <li>Drink small, frequent fluids unless on a fluid restriction.</li>
+          <li>Layer light clothing/blanket; avoid overheating once shaking stops.</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        <p class="kicker">At-home comfort</p>
+        <ul class="list">
+          <li>Rest, but move around every couple of hours if able.</li>
+          <li>Cool cloth on forehead if fever high; tepid (not ice-cold) sponge if uncomfortable.</li>
+          <li>Consider home tests (influenza/COVID-19) during respiratory season.</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Call your clinician soon</strong> if fever ≥38.3°C (101°F), lasts >24–48 hours, or if you feel worse—especially with chronic heart, lung, or kidney disease.
+      </div>
+    </div>
+  </section>
+
+  <!-- Pairs -->
+  <section id="pairs" class="section">
+    <h2>Chills + … may suggest</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Paired symptom</th><th scope="col">Think about</th><th scope="col">Next step</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cough, shortness of breath</td>
+          <td>Pneumonia, COVID-19/flu, COPD flare</td>
+          <td>Home test, oximeter check, seek care if low oxygen or worsening</td>
+        </tr>
+        <tr>
+          <td>Burning urination, frequency</td>
+          <td>UTI, kidney infection</td>
+          <td>Urine test; urgent care if flank pain or fever</td>
+        </tr>
+        <tr>
+          <td>Red, warm skin area</td>
+          <td>Cellulitis</td>
+          <td>Mark border; seek same-day care if spreading/painful</td>
+        </tr>
+        <tr>
+          <td>Right-upper abdominal pain</td>
+          <td>Gallbladder or biliary infection</td>
+          <td>Urgent evaluation if fever + vomiting</td>
+        </tr>
+        <tr>
+          <td>Severe headache, stiff neck, light sensitivity</td>
+          <td>Meningitis</td>
+          <td>Emergency evaluation</td>
+        </tr>
+        <tr>
+          <td>New heart murmur or persistent fevers</td>
+          <td>Endocarditis (esp. with valves/devices)</td>
+          <td>Medical review; blood cultures if indicated</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD (after Pairs) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Medicines -->
+  <section id="meds" class="section">
+    <h2>Medicine cautions</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Fever reducers</p>
+        <ul class="list">
+          <li><strong>Acetaminophen</strong> within safe total daily limits (consider combination products).</li>
+          <li><strong>NSAIDs</strong> (ibuprofen/naproxen) can irritate stomach, affect kidneys, and raise BP—use only if your clinician agrees.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">When on blood thinners</p>
+        <ul class="list">
+          <li>Avoid starting additional NSAIDs unless specifically advised.</li>
+          <li>Report fever with bleeding/bruising or black stools promptly.</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <strong>Do not take leftover antibiotics</strong> without guidance—this can delay correct diagnosis and cause resistance.
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>What clinicians may do</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Step</th><th scope="col">Purpose</th><th scope="col">Examples</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>History & exam</strong></td>
+          <td>Identify source and severity</td>
+          <td>Vitals, oxygen level, lungs/abdomen/skin, devices/wounds, medication review</td>
+        </tr>
+        <tr>
+          <td><strong>Targeted tests</strong></td>
+          <td>Confirm/inform treatment</td>
+          <td>COVID-19/flu tests; urinalysis & culture; chest X-ray; blood tests (CBC, chemistries, cultures if ill)</td>
+        </tr>
+        <tr>
+          <td><strong>Further workup</strong></td>
+          <td>Less common causes</td>
+          <td>Thyroid panel; imaging for biliary/abdominal sources; device/wound cultures</td>
+        </tr>
+        <tr>
+          <td><strong>Treatment</strong></td>
+          <td>Manage cause & symptoms</td>
+          <td>Fluids, antipyretics, antibiotics/antivirals when indicated; oxygen/IV therapy if severe</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Temperature (°C/°F), time, and response to medicines</li>
+          <li>Associated symptoms (cough, urinary changes, rash, pain location)</li>
+          <li>Fluid intake and urine output</li>
+          <li>Recent procedures, travel, new meds, device/wound changes</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        A simple 1–2 day log helps clinicians find the source faster.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Can you have chills without a fever?</p>
+        <p>Yes—early infection, environmental cold, medication effects, or hormonal/metabolic issues can cause chills without a high temperature.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">When should I test for COVID-19/flu?</p>
+        <p>During respiratory season or after exposure—especially if you also have cough, sore throat, or body aches.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What is a “rigor”?</p>
+        <p>Intense shaking chills with teeth chattering. In older adults, rigors plus feeling very unwell deserve urgent assessment.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Warm bath for chills?</p>
+        <p>Lukewarm bathing can help comfort, but avoid very hot water with fever or dizziness. Hydrate and rest.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card small">
+      <ul class="list">
+        <li><a href="#">Fever</a></li>
+        <li><a href="#">Urinary Tract Infection (UTI)</a></li>
+        <li><a href="#">Pneumonia / Breathlessness</a></li>
+        <li><a href="#">Hydration & Drinks</a></li>
+        <li><a href="#">Daily Living — Safety</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Chills",
+  "description":"Chills in older adults: red flags, causes, safe first steps and fever care, medicine cautions, clinician evaluation, and tracking.",
+  "about":{"@type":"MedicalSymptom","name":"Chills"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/chills"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Can chills occur without fever?","acceptedAnswer":{"@type":"Answer","text":"Yes—early infection, environmental cold, medication effects, or metabolic issues may cause chills without fever."}},
+    {"@type":"Question","name":"What makes chills an emergency?","acceptedAnswer":{"@type":"Answer","text":"Rigors with confusion, chest pain or breathing trouble, stiff neck, new rash, urinary symptoms with fever, or immunosuppression."}},
+    {"@type":"Question","name":"Which medicines help fever safely in seniors?","acceptedAnswer":{"@type":"Answer","text":"Acetaminophen within safe daily limits is often preferred; NSAIDs require clinician guidance due to kidney and stomach risks."}},
+    {"@type":"Question","name":"What should I track?","acceptedAnswer":{"@type":"Answer","text":"Temperature/time, associated symptoms, fluids and urine output, recent procedures or new medicines."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Symptoms (A–Z)","item":"https://thevitatrack.com/symptoms/"},
+    {"@type":"ListItem","position":3,"name":"Chills","item":"https://thevitatrack.com/chills"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://thevitatrack.com
+
+# Sitemaps
+Sitemap: https://thevitatrack.com/sitemap.xml

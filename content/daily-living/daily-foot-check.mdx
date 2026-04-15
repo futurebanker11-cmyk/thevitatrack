@@ -1,0 +1,474 @@
+---
+title: "Daily Foot Check"
+slug: "daily-foot-check"
+category: "daily-living"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Daily Foot Check — Daily Living • TheVitatrack</title>
+<meta name="description" content="A quick 5–7 minute daily foot check for older adults: what to look for, cleaning and moisturizing, nail care, footwear fit, red flags, diabetes/neuropathy tips, and a printable checklist." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .danger{background:var(--danger-bg); border:1.5px solid #FECACA; color:#7F1D1D; border-radius:14px; padding:12px}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Daily Foot Check</h1>
+    <p>A quick daily routine (5–7 minutes) to protect skin, nails, and circulation — especially important with diabetes, neuropathy, or poor vision.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#why">Why daily checks matter</a></li>
+      <li><a href="#kit">What you’ll need</a></li>
+      <li><a href="#steps">Your 6-step check</a></li>
+      <li><a href="#clean">Clean, dry & moisturize</a></li>
+      <li><a href="#nails">Nail care & callus</a></li>
+      <li><a href="#shoes">Shoes & socks</a></li>
+      <li><a href="#redflags">Red flags</a></li>
+      <li><a href="#tracking">What to track</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <h2>Why daily checks matter</h2>
+    <p class="lead"><span class="badge">Small issues → big problems</span> Tiny cuts, pressure spots, or nail problems can turn into serious infections before they hurt — especially if you have <strong>diabetes</strong> or <strong>reduced sensation</strong>. A quick daily check finds trouble early.</p>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Common risks</p>
+        <ul class="list">
+          <li>Dry, cracked heels; fungal nails; athlete’s foot</li>
+          <li>Pressure points from tight shoes or bunions</li>
+          <li>Blisters under calluses you can’t feel</li>
+        </ul>
+      </div>
+      <div class="card info">
+        If bending is hard or vision is limited, use a <strong>hand mirror</strong> or ask a family member/caregiver to check with you.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Kit -->
+  <section id="kit" class="section">
+    <h2>What you’ll need</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Good light and a <strong>hand mirror</strong></li>
+          <li>Soft towel; mild soap</li>
+          <li>Unscented moisturizer (avoid between toes)</li>
+          <li>Nail clippers/emery board</li>
+          <li>Clean cotton or moisture-wicking socks</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Keep the kit together near your chair or bedside to make the routine easy and consistent.
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section id="steps" class="section">
+    <h2>Your 6-step check (5–7 minutes)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">1) Look top & bottom</p>
+        <ul class="list">
+          <li>Use the mirror to see heels, soles, and between toes.</li>
+          <li>Check for redness, cuts, cracks, blisters, or color changes.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">2) Feel for trouble</p>
+        <ul class="list">
+          <li>Press gently along the sole and toes for tender or warm spots.</li>
+          <li>Compare both feet — swelling or warmth on one side can signal infection.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">3) Dry well — especially between toes</p>
+        <ul class="list">
+          <li>Moisture between toes leads to fungal infections and skin splits.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">4) Moisturize skin</p>
+        <ul class="list">
+          <li>Apply cream to tops/soles/heels; <strong>skip between toes</strong>.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">5) Check nails</p>
+        <ul class="list">
+          <li>Trim straight across; smooth edges. Don’t dig into corners.</li>
+          <li>Yellow, thick, or curved nails? Consider podiatry review.</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        <p class="kicker">6) Socks & shoes</p>
+        <ul class="list">
+          <li>Shake out shoes; inspect insoles for wear or stones.</li>
+          <li>Wear clean, dry socks; choose shoes with a roomy toe box.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clean / moisturize -->
+  <section id="clean" class="section">
+    <h2>Clean, dry & moisturize (quick guide)</h2>
+    <table class="table" role="table" aria-label="Cleaning and moisturizing">
+      <thead>
+        <tr><th scope="col">Do</th><th scope="col">Avoid</th><th scope="col">Why</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Short, lukewarm wash (not hot)</td>
+          <td>Soaking &gt;10 minutes</td>
+          <td>Long soaks soften skin and increase splits</td>
+        </tr>
+        <tr>
+          <td>Pat dry, especially between toes</td>
+          <td>Rubbing hard</td>
+          <td>Prevents skin tears</td>
+        </tr>
+        <tr>
+          <td>Moisturize heels/soles daily</td>
+          <td>Cream between toes</td>
+          <td>Moisture between toes → fungal/maceration</td>
+        </tr>
+        <tr>
+          <td>Use pumice gently on thick heels</td>
+          <td>Sharp blades or callus shavers</td>
+          <td>Risk of cuts and infection</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Nails -->
+  <section id="nails" class="section">
+    <h2>Nail care & callus</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Trim nails when they’re dry and firm; cut <strong>straight across</strong>.</li>
+          <li>Round sharp edges with a file; avoid digging into corners.</li>
+          <li>Thick or curved nails (ingrown risk) → book a podiatry visit.</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Diabetes/anticoagulants:</strong> Consider professional nail care to avoid cuts and bleeding.
+      </div>
+    </div>
+  </section>
+
+  <!-- Shoes -->
+  <section id="shoes" class="section">
+    <h2>Shoes & socks</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Fit checklist</p>
+        <ul class="list">
+          <li>Roomy toe box; thumb’s width in front of the longest toe.</li>
+          <li>Firm heel counter; non-slip sole; cushioned insole.</li>
+          <li>No inside seams rubbing bunions or hammer toes.</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Socks: cotton or moisture-wicking; seamless if sensitive skin; change if damp.
+      </div>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="redflags" class="section">
+    <h2>Red flags (call your clinician promptly)</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Any open sore, ulcer, or skin breakdown</li>
+        <li>Spreading redness, warmth, pus, or fever</li>
+        <li>Black/blue skin patches, sudden severe pain, or numb area that’s getting bigger</li>
+        <li>Ingrown nail with swelling/pain, especially if diabetic</li>
+      </ul>
+      <p class="small">Mark the edge of redness with a pen to see if it’s spreading while you arrange care.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Cuts/blisters/callus areas (draw or snap a dated photo)</li>
+          <li>Daily moisturizing (✓/✗) and sock changes</li>
+          <li>Shoe issues (rubbing spots, worn insoles)</li>
+          <li>Blood sugars (if diabetic) when infections occur</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Bring photos and your notes to visits — they help decisions and speed healing.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Best time to check?</p>
+        <p>After your bath or before bed when feet are clean and you can sit with good light.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can I go barefoot at home?</p>
+        <p>It’s safer to wear supportive slippers/shoes with a closed toe to avoid cuts and stubs.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What if I can’t reach my feet?</p>
+        <p>Use a long-handled mirror or ask a helper to check. Consider periodic podiatry visits.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Lotion between toes — yes or no?</p>
+        <p>No. Keep that area dry to prevent fungal skin splits. Moisturize the rest of the foot.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card">
+      <ul class="list">
+        <li><a href="#">Hydration Through the Day</a></li>
+        <li><a href="#">Short Walk After Meals</a></li>
+        <li><a href="#">Bathroom Safety Setup</a></li>
+        <li><a href="#">Constipation</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Daily Foot Check (6 steps)",
+  "description":"A quick daily routine to spot skin, nail, and pressure problems early — especially with diabetes or neuropathy.",
+  "totalTime":"PT7M",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"},
+  "tool":[
+    {"@type":"HowToTool","name":"Hand mirror and good light"},
+    {"@type":"HowToTool","name":"Soft towel and moisturizer"},
+    {"@type":"HowToTool","name":"Nail clippers/emery board"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Look top & bottom","text":"Use a mirror to inspect soles, heels, and between toes for redness, cuts, blisters, or color change."},
+    {"@type":"HowToStep","name":"Feel for trouble","text":"Gently press for tender or warm spots; compare both feet."},
+    {"@type":"HowToStep","name":"Dry well","text":"Pat dry after washing, especially between toes."},
+    {"@type":"HowToStep","name":"Moisturize skin","text":"Apply cream to tops/soles/heels; avoid between toes."},
+    {"@type":"HowToStep","name":"Check nails","text":"Trim straight across; file edges; avoid cutting corners."},
+    {"@type":"HowToStep","name":"Socks & shoes","text":"Shake out shoes, inspect insoles, and wear clean, dry socks."}
+  ],
+  "url":"https://thevitatrack.com/daily-living/daily-foot-check"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"When should I do a daily foot check?","acceptedAnswer":{"@type":"Answer","text":"After bathing or before bed with good lighting so you can dry thoroughly and inspect all areas, including between the toes."}},
+    {"@type":"Question","name":"Is moisturizing between toes okay?","acceptedAnswer":{"@type":"Answer","text":"No. Keep the area between toes dry to prevent fungal infections; moisturize heels, soles, and tops only."}},
+    {"@type":"Question","name":"What shoe features are safest?","acceptedAnswer":{"@type":"Answer","text":"Roomy toe box, firm heel counter, non-slip sole, and no internal seams rubbing sensitive areas."}},
+    {"@type":"Question","name":"What are foot-care red flags?","acceptedAnswer":{"@type":"Answer","text":"Any open sore, spreading redness, warmth, pus, fever, black/blue patches, or painful ingrown nails—seek prompt medical care."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Daily Foot Check","item":"https://thevitatrack.com/daily-living/daily-foot-check"}
+  ]
+}
+</script>
+
+<script>
+  // Small QoL
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

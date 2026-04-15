@@ -1,0 +1,507 @@
+---
+title: "Arthritis (Osteoarthritis)"
+slug: "arthritis-osteoarthritis"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Osteoarthritis (OA) — Senior-Friendly Guide • TheVitatrack</title>
+<meta name="description" content="Osteoarthritis guide for seniors: symptoms, red-flags, causes and risks, joints affected, diagnosis, treatments (movement, meds, injections, surgery), daily care tips, and questions for your clinician." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+  .small{font-size:.96em;color:var(--muted)}
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad helpers (no labels) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Osteoarthritis (OA)</h1>
+    <p>Symptoms, red-flags, causes and risks, joints commonly affected, diagnosis, treatment choices, daily care strategies, and what to ask your clinician.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is-oa">What is osteoarthritis?</a></li>
+      <li><a href="#red-flags">When to seek urgent help</a></li>
+      <li><a href="#symptoms">Common symptoms</a></li>
+      <li><a href="#causes-risks">Causes & risk factors</a></li>
+      <li><a href="#joints">Joints commonly affected</a></li>
+      <li><a href="#diagnosis">How OA is diagnosed</a></li>
+      <li><a href="#treatment">Treatment options</a></li>
+      <li><a href="#daily-care">Daily care & safety</a></li>
+      <li><a href="#questions">Questions for your clinician</a></li>
+      <li><a href="#faq">OA — quick answers</a></li>
+    </ul>
+  </nav>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- ===== Display AD (near top) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- What is OA -->
+  <section id="what-is-oa" class="section">
+    <h2>What is osteoarthritis?</h2>
+    <p class="lead"><span class="badge">In short</span> Osteoarthritis is joint “wear and repair” imbalance leading to cartilage thinning, bony changes, pain, stiffness, and reduced function. It most often affects knees, hips, hands, and spine.</p>
+    <div class="card small">
+      <p><strong>Key idea:</strong> OA management combines regular movement, weight and strength strategies, pain relief options, activity pacing, and joint protection. Plans are individualized to support mobility and daily life.</p>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent help</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Hot, swollen, very painful joint with fever (possible infection)</li>
+        <li>New severe joint pain after a fall or twist, inability to bear weight</li>
+        <li>Rapidly worsening redness, swelling, or deformity</li>
+      </ul>
+      <p class="small">These can be emergencies. Contact local emergency services or urgent care promptly.</p>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section id="symptoms" class="section">
+    <h2>Common symptoms</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Aching or sharp joint pain that worsens with activity</li>
+          <li>Morning stiffness or stiffness after sitting (“start-up pain”)</li>
+          <li>Reduced range of motion, joint clicking or grinding</li>
+          <li>Swelling or a feeling of joint instability</li>
+          <li>Hand OA: bony knuckles, thumb base pain, grip weakness</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">Knee Pain</a></li>
+          <li><a href="#">Hip Pain</a></li>
+          <li><a href="#">Hand & Wrist</a></li>
+          <li><a href="#">Daily Living</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (mid-content) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Causes & risks -->
+  <section id="causes-risks" class="section">
+    <h2>Causes & risk factors</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Common contributors</p>
+        <ul class="list">
+          <li>Age-related cartilage changes and prior joint injuries</li>
+          <li>Excess body weight (knee/hip load), muscle weakness</li>
+          <li>Repetitive joint stress from work or activities</li>
+          <li>Genetics and bone alignment differences</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">What can worsen flares</p>
+        <ul class="list">
+          <li>Prolonged sitting or standing without movement breaks</li>
+          <li>High-impact or sudden unaccustomed activity</li>
+          <li>Poor sleep and stress, which heighten pain sensitivity</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Joints commonly affected -->
+  <section id="joints" class="section">
+    <h2>Joints commonly affected</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Joint</th><th scope="col">Typical features</th><th scope="col">Everyday tips</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Knee</strong></td>
+          <td>Pain with stairs, rising from chair; swelling; crepitus</td>
+          <td>Quadriceps strengthening, weight management, walking aids when needed</td>
+        </tr>
+        <tr>
+          <td><strong>Hip</strong></td>
+          <td>Groin/outer hip pain, stiffness after sitting</td>
+          <td>Glute/hip strengthening, activity pacing, cushioned footwear</td>
+        </tr>
+        <tr>
+          <td><strong>Hand/Thumb</strong></td>
+          <td>Thumb base pain (CMC), bony nodes at finger joints</td>
+          <td>Splints for tasks, jar openers, heat for stiffness</td>
+        </tr>
+        <tr>
+          <td><strong>Spine</strong></td>
+          <td>Neck or low-back ache, stiffness</td>
+          <td>Core and posture exercises, avoid heavy twisting</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Diagnosis -->
+  <section id="diagnosis" class="section">
+    <h2>How OA is diagnosed</h2>
+    <div class="card">
+      <ul class="list">
+        <li>History and exam: pain pattern, stiffness, function, previous injuries</li>
+        <li>X-rays often sufficient (joint space narrowing, bone spurs)</li>
+        <li>Advanced imaging only if symptoms are atypical or surgery considered</li>
+        <li>Blood tests when other arthritis types need to be ruled out</li>
+      </ul>
+      <p class="small">Findings are matched with symptoms to guide a practical plan.</p>
+    </div>
+  </section>
+
+  <!-- Treatment -->
+  <section id="treatment" class="section">
+    <h2>Treatment options</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">1) Movement & strength</p>
+        <ul class="list">
+          <li>Low-impact exercise: walking, cycling, water exercise, tai chi</li>
+          <li>Targeted strengthening (quads, hips, core); supervised PT when possible</li>
+          <li>Activity pacing: short bouts, frequent breaks</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">2) Weight & load</p>
+        <ul class="list">
+          <li>Even modest weight loss reduces knee/hip load</li>
+          <li>Supportive footwear; cushioned insoles; canes/walkers for stability</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">3) Pain relief options</p>
+        <ul class="list">
+          <li>Topical NSAIDs (first-line for many joints)</li>
+          <li>Oral pain relievers as advised; review risks with your clinician</li>
+          <li>Heat for stiffness; ice after activity flares</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">4) Procedures</p>
+        <ul class="list">
+          <li>Joint injections (corticosteroid) for selected flares</li>
+          <li>Viscosupplementation in some settings</li>
+          <li>Joint replacement for severe, life-limiting OA after conservative care</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small note" style="margin-top:12px">Choices depend on symptoms, joint, health history, and goals. Review benefits and risks with your clinician.</p>
+  </section>
+
+  <!-- Daily care -->
+  <section id="daily-care" class="section">
+    <h2>Daily care & safety</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Home strategies</p>
+        <ul class="list">
+          <li>Short warm-up before walking; gentle range-of-motion in the morning</li>
+          <li>Use handrails, raised chairs, and bathroom safety aids</li>
+          <li>Plan tasks to avoid long standing or heavy lifting</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Flare control</p>
+        <ul class="list">
+          <li>Ice 10–15 minutes after overuse; heat before activity</li>
+          <li>Break big tasks into smaller steps; rest between sets</li>
+          <li>Track triggers to adjust pacing and supports</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Hands & tools</p>
+        <ul class="list">
+          <li>Thumb/wrist splints for chores; jar openers, large-handled utensils</li>
+          <li>Voice-activated devices to reduce repetitive strain</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Mind & sleep</p>
+        <ul class="list">
+          <li>Relaxation/breathing practices to lower pain tension</li>
+          <li>Regular sleep schedule; cushion painful joints with pillows</li>
+        </ul>
+      </div>
+    </div>
+    <div class="small" style="margin-top:8px">
+      Related: <a href="#">Daily Living</a> · <a href="#">Senior-Friendly Recipes & Drinks</a> · <a href="#">Knee & Hip hubs</a>
+    </div>
+  </section>
+
+  <!-- Questions -->
+  <section id="questions" class="section">
+    <h2>Questions for your clinician</h2>
+    <div class="card">
+      <ul class="list">
+        <li>Which joints are affected and how severe is my OA?</li>
+        <li>What exercise program and supports fit my goals?</li>
+        <li>Which pain relievers are safest for me, and how should I use them?</li>
+        <li>Could injections help, and when should they be considered?</li>
+        <li>When would surgery be reasonable, and what are outcomes and risks?</li>
+        <li>What signs suggest I should seek care sooner?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>OA — quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Is exercise safe?</p>
+        <p>Yes. Low-impact, progressive exercise reduces pain and improves function. Start small and increase gradually.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Heat or ice?</p>
+        <p>Heat before activity to loosen; ice after flares to calm swelling or soreness.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do supplements help?</p>
+        <p>Evidence is mixed. Discuss glucosamine/chondroitin or others with your clinician to avoid interactions and cost without benefit.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">When think about surgery?</p>
+        <p>When pain and disability remain high despite optimized non-surgical care and imaging matches symptoms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (end of page) ===== -->
+  <div class="ad-wrap--wide">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Helpful links -->
+  <section class="section">
+    <h2>Keep learning</h2>
+    <div class="card small">
+      <ul class="list">
+        <li><a href="#">Daily Living routines</a></li>
+        <li><a href="#">Mobility & Balance</a></li>
+        <li><a href="#">Symptoms (A–Z)</a></li>
+        <li><a href="#">Joints & Bones hub</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalCondition",
+  "name":"Osteoarthritis",
+  "alternateName":["OA","Degenerative joint disease","Arthritis (osteoarthritis)"],
+  "description":"Osteoarthritis guide for seniors: symptoms, red-flags, causes and risks, joints affected, diagnosis, treatments, daily care tips, and key questions for clinicians.",
+  "signOrSymptom":[
+    {"@type":"MedicalSymptom","name":"Joint pain"},
+    {"@type":"MedicalSymptom","name":"Stiffness"},
+    {"@type":"MedicalSymptom","name":"Swelling"},
+    {"@type":"MedicalSymptom","name":"Limited range of motion"}
+  ],
+  "possibleComplication":[
+    {"@type":"MedicalEntity","name":"Reduced mobility"},
+    {"@type":"MedicalEntity","name":"Falls due to pain or stiffness"}
+  ],
+  "riskFactor":[
+    {"@type":"MedicalRiskFactor","name":"Older age"},
+    {"@type":"MedicalRiskFactor","name":"Excess body weight"},
+    {"@type":"MedicalRiskFactor","name":"Prior joint injury"},
+    {"@type":"MedicalRiskFactor","name":"Genetics and bone alignment"}
+  ],
+  "url":"https://thevitatrack.com/osteoarthritis"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Is exercise safe for osteoarthritis?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. Low-impact, progressive exercise reduces pain and improves function. Start small and increase gradually."}
+    },
+    {
+      "@type":"Question",
+      "name":"Should I use heat or ice for OA?",
+      "acceptedAnswer":{"@type":"Answer","text":"Use heat before activity to loosen joints and ice after flares to calm swelling or soreness."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do supplements help osteoarthritis?",
+      "acceptedAnswer":{"@type":"Answer","text":"Evidence is mixed. Discuss options such as glucosamine or chondroitin with your clinician to avoid interactions and unnecessary cost."}
+    },
+    {
+      "@type":"Question",
+      "name":"When is surgery considered for OA?",
+      "acceptedAnswer":{"@type":"Answer","text":"When pain and disability remain high despite optimized non-surgical care and imaging findings match symptoms, joint replacement may be discussed."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Osteoarthritis","item":"https://thevitatrack.com/osteoarthritis"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

@@ -1,0 +1,517 @@
+---
+title: "Shoe &amp; Fit Check"
+slug: "shoe-fit-check"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Shoe & Fit Check — Daily Living • TheVitatrack</title>
+<meta name="description" content="A simple senior-first guide to picking and fitting shoes: 5-step fit check, sizing & width tips, lacing tricks, insoles & orthotics, swelling/edema adjustments, diabetes foot care, and when to replace shoes." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --danger:#B91C1C; --danger-bg:#FEF2F2; --danger-border:#FECACA;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #EAF4FF, rgba(234,244,255,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .danger{background:var(--danger-bg); border:1.5px solid var(--danger-border); border-radius:14px; padding:12px; color:#7F1D1D}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFE7FF,#BFE3FD,#CFE7FF);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Shoe & Fit Check</h1>
+    <p>Comfortable, stable shoes prevent falls and protect feet. Use this 5-step fit check, sizing tips, and lacing tricks to get the right pair—plus adjustments for swelling, bunions, diabetes, and orthotics.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#why">Why fit matters</a></li>
+      <li><a href="#steps">5-step fit check</a></li>
+      <li><a href="#sizing">Sizing & width</a></li>
+      <li><a href="#lacing">Lacing & closure tricks</a></li>
+      <li><a href="#insoles">Insoles & orthotics</a></li>
+      <li><a href="#conditions">Special situations</a></li>
+      <li><a href="#features">Shoe features that help</a></li>
+      <li><a href="#replace">When to replace</a></li>
+      <li><a href="#care">Care & daily checks</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <h2>Why fit matters</h2>
+    <p class="lead"><span class="kicker">Big wins:</span> fewer calluses & blisters, steadier balance, less knee/back pain, and better protection for people with neuropathy or diabetes.</p>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Red flags (stop using that pair)</p>
+        <ul class="list">
+          <li>Toe numbness, new corns/blisters, or skin breakdown</li>
+          <li>Frequent tripping, heel slippage, or ankle rolling</li>
+          <li>Soles worn smooth or tilted (inside/outside edge)</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Feet often change size with age and swelling—<strong>re-measure yearly</strong> and when switching brands.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Steps -->
+  <section id="steps" class="section">
+    <h2>5-step fit check</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">1) Right time of day</p>
+        <ul class="list">
+          <li>Shop/try on in the <strong>late afternoon</strong> when feet are slightly swollen—it prevents buying too-tight shoes.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">2) Length & toe room</p>
+        <ul class="list">
+          <li>Stand. You should have a <strong>thumb’s width (≈1–1.5 cm)</strong> between longest toe and the front.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">3) Width & bunion room</p>
+        <ul class="list">
+          <li>Upper should not bulge or dig. If snug across the forefoot, try a <strong>wider width</strong> or stretchy mesh upper.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">4) Heel hold</p>
+        <ul class="list">
+          <li>Walk. Heel should stay put with <em>minimal</em> lift. Use heel-lock lacing if slightly loose.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">5) Insole test</p>
+        <ul class="list">
+          <li>Remove the insole and stand on it. Your foot should not spill over at the sides or toes.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sizing -->
+  <section id="sizing" class="section">
+    <h2>Sizing & width</h2>
+    <table class="table" role="table" aria-label="Sizing & width">
+      <thead>
+        <tr><th>Tip</th><th>Why</th><th>How</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Measure both feet</td>
+          <td>Feet can differ; fit the <strong>larger</strong> foot</td>
+          <td>Use a Brannock gauge; note length & width</td>
+        </tr>
+        <tr>
+          <td>Match socks</td>
+          <td>Thickness changes fit</td>
+          <td>Bring the socks you’ll wear most</td>
+        </tr>
+        <tr>
+          <td>Width letters matter</td>
+          <td>Standard isn’t one-size-fits-all</td>
+          <td>Narrow (N), Medium (M), Wide (W), Extra-wide (XW)</td>
+        </tr>
+        <tr>
+          <td>Room for inserts</td>
+          <td>Orthotics take space</td>
+          <td>Choose “removable insole” styles; size up ½ if needed</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Lacing -->
+  <section id="lacing" class="section">
+    <h2>Lacing & closure tricks</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Common fixes</p>
+        <ul class="list">
+          <li><strong>Heel lock (runner’s loop):</strong> adds heel hold to reduce slippage.</li>
+          <li><strong>Skip-eyelet over bunion:</strong> skip the hole over the sore spot to reduce pressure.</li>
+          <li><strong>Window lacing:</strong> relieve top-of-foot pressure by crossing laces around (not over) the tender area.</li>
+          <li><strong>Elastic laces/Velcro:</strong> easier for arthritis or limited hand strength.</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        If you use an <strong>ankle brace</strong> or compression sock, try shoes on with the device—many need a wider or higher-volume model.
+      </div>
+    </div>
+  </section>
+
+  <!-- Insoles -->
+  <section id="insoles" class="section">
+    <h2>Insoles & orthotics</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>Cushion insoles</strong> add shock absorption for sensitive feet.</li>
+          <li><strong>Support insoles</strong> add arch control—helpful for plantar fasciitis or over-pronation.</li>
+          <li><strong>Custom orthotics</strong> per clinician/podiatrist for deformities or stubborn pain.</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Remove the <em>original</em> insole first to avoid crowding. Check that heel sits deep and stable after any insert is added.
+      </div>
+    </div>
+  </section>
+
+  <!-- Conditions -->
+  <section id="conditions" class="section">
+    <h2>Special situations</h2>
+    <table class="table" role="table" aria-label="Special situations">
+      <thead>
+        <tr><th>Condition</th><th>Shoe setup</th><th>Watch-outs</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Diabetes / neuropathy</strong></td>
+          <td>Wide toe box, smooth interior, seam-free socks; consider extra-depth shoes</td>
+          <td>Daily foot checks; <strong>no barefoot</strong>; treat any skin break promptly</td>
+        </tr>
+        <tr>
+          <td><strong>Bunions / hammer toes</strong></td>
+          <td>Stretchy knit upper, wide/extra-wide, high toe box</td>
+          <td>Avoid hard overlays that rub the bunion area</td>
+        </tr>
+        <tr>
+          <td><strong>Edema / swelling</strong></td>
+          <td>Adjustable straps or laces; consider expandable uppers; try on late day</td>
+          <td>Room for swelling without cutting off circulation</td>
+        </tr>
+        <tr>
+          <td><strong>Balance issues / fall risk</strong></td>
+          <td>Low heel (≤2.5 cm), firm heel counter, grippy outsole, rocker-sole only if advised</td>
+          <td>Avoid floppy slip-ons and slick soles</td>
+        </tr>
+        <tr>
+          <td><strong>Heel pain (plantar fasciitis)</strong></td>
+          <td>Moderate arch support, cushioned heel, slight heel-to-toe drop</td>
+          <td>Replace worn shoes sooner; consider support insoles</td>
+        </tr>
+        <tr>
+          <td><strong>Toe deformities / sensitive nails</strong></td>
+          <td>High toe box; seamless/smooth lining; roomy depth</td>
+          <td>Trim nails straight; avoid pointy toe shapes</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <h2>Shoe features that help</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>Upper:</strong> breathable mesh or soft leather; minimal seams over pressure spots</li>
+          <li><strong>Midsole:</strong> cushioning that isn’t mushy—stable when you press</li>
+          <li><strong>Outsole:</strong> non-slip tread, wide base; avoid heavy weight</li>
+          <li><strong>Heel counter:</strong> firm cup that doesn’t fold when pinched</li>
+          <li><strong>Closure:</strong> lace/Velcro/BOA for adjustability</li>
+          <li><strong>Removable insole:</strong> makes room for inserts/orthotics</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Try <strong>house shoes</strong> (indoor-only, grippy) instead of slippers—more stable and still easy to slip on/off.
+      </div>
+    </div>
+  </section>
+
+  <!-- Replace -->
+  <section id="replace" class="section">
+    <h2>When to replace</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Outsole tread is smooth or unevenly worn</li>
+          <li>Midsole feels flat/compressed; new aches by day’s end</li>
+          <li>Upper tears or heel counter floppy</li>
+          <li>Typical lifespan: walking shoes <strong>9–18 months</strong> depending on use</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Rotate two pairs to extend life and let cushioning rebound.
+      </div>
+    </div>
+  </section>
+
+  <!-- Care -->
+  <section id="care" class="section">
+    <h2>Care & daily checks</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Air shoes out; remove insoles to dry if sweaty/rained on</li>
+          <li>Clean with mild soap; avoid high heat dryers</li>
+          <li>Use seamless socks; change daily</li>
+        </ul>
+      </div>
+      <div class="card danger">
+        <strong>Daily foot scan:</strong> look for redness, blisters, cuts, or nail problems—especially if you have diabetes or neuropathy. Seek care early for any wounds.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">How much toe room do I need?</p>
+        <p>About a thumb’s width (≈1–1.5 cm) beyond the longest toe when standing.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">My heels slip—what can I try?</p>
+        <p>Use a heel-lock lacing pattern or a shoe with a firmer heel counter. If still loose, try a different last/brand.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Are slip-on shoes okay?</p>
+        <p>Choose ones with firm heel cups and good tread. Many older adults do better with adjustable closures for a snug, safe fit.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do I need wide shoes?</p>
+        <p>If the upper bulges or rubs the forefoot/bunion, a wide or extra-wide size—or a stretch-mesh upper—often helps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card">
+      <ul class="list">
+        <li><a href="#">Falls (Injury Prevention)</a></li>
+        <li><a href="#">Balance Trouble / Unsteadiness</a></li>
+        <li><a href="#">Foot & Skin Care (Diabetes)</a></li>
+        <li><a href="#">Swelling (Ankle/Leg) Basics</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Shoe & Fit Check (5 steps)",
+  "description":"A quick method to choose and fit safer, more comfortable shoes for older adults.",
+  "totalTime":"PT10M",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"},
+  "tool":[
+    {"@type":"HowToTool","name":"Socks you normally wear"},
+    {"@type":"HowToTool","name":"Removable insole (from shoe)"},
+    {"@type":"HowToTool","name":"Laces or Velcro closure"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Try on late day","text":"Feet are slightly swollen—this prevents buying too-tight shoes."},
+    {"@type":"HowToStep","name":"Check toe room","text":"Stand with a thumb’s width beyond the longest toe."},
+    {"@type":"HowToStep","name":"Check width","text":"Upper should not bulge or dig; choose wider width if needed."},
+    {"@type":"HowToStep","name":"Secure the heel","text":"Walk to confirm minimal heel lift; use heel-lock lacing if needed."},
+    {"@type":"HowToStep","name":"Insole stand test","text":"Stand on the removed insole to ensure full coverage without spillover."}
+  ],
+  "url":"https://thevitatrack.com/daily-living/shoe-and-fit-check"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How much space should be in front of my toes?","acceptedAnswer":{"@type":"Answer","text":"Roughly 1–1.5 cm (a thumb’s width) when standing."}},
+    {"@type":"Question","name":"What if my feet swell by evening?","acceptedAnswer":{"@type":"Answer","text":"Choose adjustable closures, consider wide/extra-wide models, and try on shoes late in the day. Avoid tight bands and check circulation."}},
+    {"@type":"Question","name":"Can lacing change the fit?","acceptedAnswer":{"@type":"Answer","text":"Yes—heel-lock reduces slippage; window/skip-eyelet lacing eases pressure over sore spots; elastic laces help if hand strength is limited."}},
+    {"@type":"Question","name":"When should I replace shoes?","acceptedAnswer":{"@type":"Answer","text":"If tread is smooth/uneven, the heel counter is floppy, or cushioning feels flat. Many walking shoes last 9–18 months depending on use."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Shoe & Fit Check","item":"https://thevitatrack.com/daily-living/shoe-and-fit-check"}
+  ]
+}
+</script>
+
+<script>
+  // Small QoL
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

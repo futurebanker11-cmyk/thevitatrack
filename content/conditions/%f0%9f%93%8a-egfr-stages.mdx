@@ -1,0 +1,558 @@
+---
+title: "📊 eGFR Stages"
+slug: "%f0%9f%93%8a-egfr-stages"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>eGFR Stages — Senior-Friendly Guide • thevitatrack.com</title>
+<meta name="description" content="Understand eGFR stages (G1–G5) with a simple table, albumin categories (A1–A3), how to read trends, when to repeat labs, and an educational eGFR calculator. Senior-friendly, mobile-safe." />
+<link rel="canonical" href="https://thevitatrack.com/guides/egfr-stages" />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="eGFR Stages — Senior-Friendly Guide" />
+<meta property="og:description" content="eGFR stages table (G1–G5), albumin categories (A1–A3), plain-language tips, and an educational calculator." />
+<meta property="og:url" content="https://thevitatrack.com/guides/egfr-stages" />
+<meta property="og:site_name" content="thevitatrack.com" />
+<meta property="og:image" content="https://thevitatrack.com/assets/og/egfr.jpg" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="eGFR Stages — Senior-Friendly Guide" />
+<meta name="twitter:description" content="Understand eGFR stages and albumin categories with a mobile-safe table and an educational calculator." />
+<meta name="twitter:image" content="https://thevitatrack.com/assets/og/egfr.jpg" />
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+<!-- AdSense (LOAD ONCE) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F8FAF9; --paper:#ffffff; --ink:#0c1526; --muted:#445062;
+    --brand:#0b6b5c; --brand-2:#0d8c74; --accent:#f59e0b; --danger:#a61b1b;
+    --ring:rgba(16,185,129,.35);
+    --fs:21px; --fs-lg:23px; --lh:1.8; --wide:900px;
+    --radius:18px; --shadow:0 1px 2px rgba(2,6,23,.08), 0 12px 28px rgba(2,6,23,.06);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs); line-height:var(--lh); letter-spacing:.1px;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+
+  /* Centering (works with no sidebars) */
+  .wrap-page{width:100%; display:grid; justify-items:center; padding:18px 14px}
+  .wrap-article{width:min(100%,var(--wide)); margin-inline:auto !important; float:none !important}
+  .entry-content > *, .wp-site-blocks > *, .site-main > *, .hentry > *, .post > *{
+    max-width:var(--wide); width:100%; margin-left:auto !important; margin-right:auto !important; float:none !important;
+  }
+
+  a{color:var(--brand); text-underline-offset:3px}
+  a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible{outline:3px solid var(--brand-2); outline-offset:3px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+  /* Hero */
+  .hero{
+    background:linear-gradient(180deg,#eefcf6,transparent 70%);
+    border-radius:24px; padding:18px; box-shadow:var(--shadow); border:1.5px solid #e3efe9;
+  }
+  .h1{margin:0 0 6px; font-size:clamp(28px,4.5vw,42px)}
+  .lead{margin:0; color:var(--muted); font-size:1.05em}
+  .byline{margin-top:8px; color:#64748b; font-size:.95em}
+
+  /* Controls */
+  .controls{margin-top:12px; display:flex; gap:10px; flex-wrap:wrap}
+  .chip{
+    display:inline-flex; align-items:center; gap:8px; cursor:pointer;
+    background:#fff; color:#0c1526; border:2px solid #dbe5e0;
+    border-radius:999px; padding:10px 14px; font-weight:800; box-shadow:var(--shadow);
+  }
+
+  /* Accordion */
+  .acc{display:grid; gap:12px; margin-top:16px}
+  details.section{
+    background:#fff; border:1.5px solid #e6e8ec; border-radius:16px;
+    box-shadow:var(--shadow); overflow:hidden;
+  }
+  summary.head{
+    list-style:none; cursor:pointer; display:flex; align-items:center; gap:12px;
+    padding:14px 14px; background:#ecfdf5; border-bottom:2px solid #a7f3d0; font-weight:800;
+  }
+  summary.head::-webkit-details-marker{display:none}
+  .badge{display:inline-grid; place-items:center; width:34px; height:34px; border-radius:999px; background:#0b6b5c; color:#fff; font-weight:800}
+  .chev{margin-left:auto; transition:transform .15s ease}
+  details[open] .chev{transform:rotate(180deg)}
+  .content{padding:16px}
+
+  h2{margin:0 0 8px; font-size:1.3em}
+  h3{margin:8px 0 6px; font-size:1.06em}
+  p{margin:6px 0}
+  ul,ol{margin:8px 0 0 24px}
+  li{margin:4px 0}
+  .muted{color:var(--muted)}
+
+  /* Helpers */
+  .note{background:#fff7ed; color:#7b4108; border-left:6px solid var(--accent); padding:12px; border-radius:12px; box-shadow:var(--shadow)}
+  .warn{background:#ffecec; color:#7a1010; border-left:6px solid var(--danger)}
+  .tip{background:#ecfdf5; color:#065f46; border-left:6px solid #0d8c74}
+  .box{background:#f8fafc; border:1.5px solid #e2e8f0; border-radius:14px; padding:12px}
+
+  .two{display:grid; grid-template-columns:1fr; gap:14px}
+  @media(min-width:860px){ .two{grid-template-columns:1fr 1fr} }
+  .three{display:grid; grid-template-columns:1fr; gap:12px}
+  @media(min-width:990px){ .three{grid-template-columns:1fr 1fr 1fr} }
+
+  /* Table wrapper (mobile-safe) */
+  .table-wrap{width:100%; overflow:auto; -webkit-overflow-scrolling:touch; border-radius:14px; border:2px solid #e6e8f0; background:#fff}
+  table{width:100%; border-collapse:separate; border-spacing:0}
+  th,td{padding:12px; border-bottom:1px solid #e6e8f0; white-space:nowrap}
+  th{background:#f0f5f8; text-align:left; position:sticky; top:0}
+  tr:last-child td{border-bottom:0}
+
+  /* Simple calculator layout */
+  .calc-grid{display:grid; grid-template-columns:1fr; gap:12px}
+  @media(min-width:720px){ .calc-grid{grid-template-columns:repeat(4,1fr)} }
+  .field{display:grid; gap:6px}
+  .field label{font-weight:800}
+  .field input, .field select{
+    border:2px solid #dbe5e0; border-radius:12px; padding:10px; font-size:1em; background:#fff;
+  }
+  .result{display:flex; align-items:center; justify-content:space-between; gap:10px;
+    border:2px dashed #a7f3d0; background:#ecfdf5; color:#065f46; padding:12px; border-radius:12px; font-weight:800}
+
+  /* Buttons */
+  .btn{display:inline-flex; align-items:center; gap:10px; background:var(--brand); color:#fff; text-decoration:none; padding:12px 16px; border-radius:14px; font-weight:800; border:0; cursor:pointer}
+  .btn.ghost{background:#fff; color:var(--brand); border:2px solid var(--brand)}
+  .btn-row{display:flex; flex-wrap:wrap; gap:10px}
+
+  /* Ads (CLS-safe) */
+  .ad-slot{
+    display:block; margin:16px 0; padding:10px; border-radius:12px; background:#fff;
+    border:1px solid #e5e7eb; box-shadow:0 1px 0 rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.04)
+  }
+  .ad-slot .adsbygoogle{display:block; min-height:250px}
+  @media(min-width:760px){ .ad-slot .adsbygoogle{min-height:90px} }
+
+  @media print{
+    .ad-slot, .controls, .btn{display:none!important}
+    body{background:#fff}
+    .wrap-page{padding:0}
+    .wrap-article{max-width:100%}
+    summary.head{background:#fff; border-bottom:1px solid #ddd}
+    details.section{border:1px solid #ddd; box-shadow:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap-page">
+  <main class="wrap-article" id="top" itemscope itemtype="https://schema.org/Article" itemprop="mainEntity">
+
+    <!-- HERO -->
+    <header class="hero" role="banner">
+      <h1 class="h1" itemprop="headline">📊 eGFR Stages (G1–G5)</h1>
+      <p class="lead" itemprop="description">Understand the eGFR scale, see a simple table for stages, learn what albumin categories mean, and use a quick (educational) eGFR calculator. Senior-friendly and mobile-safe.</p>
+      <p class="byline">thevitatrack.com • Medically reviewed • <time datetime="2025-09-24" itemprop="dateModified">Updated Sep 24, 2025</time></p>
+      <div class="controls" role="group" aria-label="Reading controls">
+        <button type="button" class="chip" id="fontNormal">🅽 Normal</button>
+        <button type="button" class="chip" id="fontLarge">🅻 Large</button>
+        <button type="button" class="chip" id="openAll">➕ Expand all</button>
+        <button type="button" class="chip" id="closeAll">➖ Collapse all</button>
+      </div>
+    </header>
+
+    <!-- ACCORDION -->
+    <div class="acc">
+
+      <!-- 1 Overview -->
+      <details class="section" open>
+        <summary class="head"><span class="badge">1</span> What is eGFR? <span class="chev">▾</span></summary>
+        <div class="content">
+          <p><strong>eGFR</strong> (estimated glomerular filtration rate) is a lab estimate of how well your kidneys filter blood. It’s calculated from blood creatinine plus age and sex; the most current equations do <em>not</em> use race. <strong>Trends</strong> over months matter more than a single number.</p>
+          <ul>
+            <li><strong>Higher eGFR is better.</strong> Lower numbers mean less filtering.</li>
+            <li><strong>Albumin in urine</strong> (protein leak) adds risk information beyond eGFR alone.</li>
+            <li><strong>Hydration, illness, and some medicines</strong> can temporarily change eGFR.</li>
+          </ul>
+
+          <!-- Responsive Ad -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <!-- Vita Responsive 1 -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="3275781745"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </details>
+
+      <!-- 2 Stages Table -->
+      <details class="section">
+        <summary class="head"><span class="badge">2</span> eGFR Stages (G1–G5) Table <span class="chev">▾</span></summary>
+        <div class="content">
+          <p>Use this as a quick reference. Your clinician will tailor goals to your health conditions.</p>
+          <div class="table-wrap" role="region" aria-label="eGFR stages table">
+            <table>
+              <thead><tr><th>Stage</th><th>eGFR (mL/min/1.73m²)</th><th>Plain words</th></tr></thead>
+              <tbody>
+                <tr><td>G1</td><td>≥ 90</td><td>Normal/high eGFR (CKD possible if urine protein present)</td></tr>
+                <tr><td>G2</td><td>60–89</td><td>Mildly decreased (CKD if other signs like protein)</td></tr>
+                <tr><td>G3a</td><td>45–59</td><td>Mild–moderately decreased</td></tr>
+                <tr><td>G3b</td><td>30–44</td><td>Moderately to severely decreased</td></tr>
+                <tr><td>G4</td><td>15–29</td><td>Severely decreased</td></tr>
+                <tr><td>G5</td><td>&lt; 15</td><td>Kidney failure (plan with specialist)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="muted">Always interpret together with albumin (A1–A3), blood pressure, diabetes control, and symptoms.</p>
+
+          <!-- In-article ad under table -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="1548966214"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </details>
+
+      <!-- 3 Albumin categories -->
+      <details class="section">
+        <summary class="head"><span class="badge">3</span> Albumin Categories (A1–A3) <span class="chev">▾</span></summary>
+        <div class="content">
+          <p><strong>Urine albumin-to-creatinine ratio (ACR)</strong> checks if protein is leaking into urine. More protein typically means higher kidney and heart risk.</p>
+          <div class="table-wrap" role="region" aria-label="Albumin categories table">
+            <table>
+              <thead><tr><th>Category</th><th>ACR (mg/g)</th><th>Plain words</th></tr></thead>
+              <tbody>
+                <tr><td>A1</td><td>&lt; 30</td><td>Normal to mildly increased</td></tr>
+                <tr><td>A2</td><td>30–300</td><td>Moderately increased</td></tr>
+                <tr><td>A3</td><td>&gt; 300</td><td>Severely increased</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="muted">Combining G (eGFR) and A (albumin) guides treatment intensity.</p>
+        </div>
+      </details>
+
+      <!-- 4 Calculator (educational) -->
+      <details class="section">
+        <summary class="head"><span class="badge">4</span> Quick eGFR Calculator (Educational) <span class="chev">▾</span></summary>
+        <div class="content">
+          <p class="note">Educational only—not a diagnostic device. Results are estimates and may differ from your lab’s calculation. Always rely on your clinician’s interpretation.</p>
+          <div class="calc-grid" id="calc">
+            <div class="field">
+              <label for="age">Age (years)</label>
+              <input id="age" type="number" min="1" max="120" value="70" />
+            </div>
+            <div class="field">
+              <label for="sex">Sex</label>
+              <select id="sex">
+                <option value="female">Female</option>
+                <option value="male" selected>Male</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="scr">Serum Creatinine (mg/dL)</label>
+              <input id="scr" type="number" min="0.2" max="15" step="0.01" value="1.2" />
+            </div>
+            <div class="field">
+              <label for="units">Units</label>
+              <select id="units">
+                <option value="mgdl" selected>mg/dL</option>
+                <option value="umol">µmol/L</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn-row" style="margin-top:10px">
+            <button class="btn" id="calcGo" type="button">Calculate eGFR</button>
+            <button class="btn ghost" id="calcClear" type="button">Clear</button>
+          </div>
+          <div class="result" id="calcOut" aria-live="polite" style="margin-top:10px; display:none;">
+            <span id="egfrVal">eGFR: — mL/min/1.73m²</span>
+            <span id="egfrStage" style="font-weight:800">Stage: —</span>
+          </div>
+          <p class="muted" style="margin-top:8px">This uses a simplified creatinine-based, race-free equation similar in spirit to common lab formulas for adult outpatients.</p>
+        </div>
+      </details>
+
+      <!-- 5 Reading trends -->
+      <details class="section">
+        <summary class="head"><span class="badge">5</span> Reading trends & when to repeat labs <span class="chev">▾</span></summary>
+        <div class="content">
+          <div class="two">
+            <div class="box">
+              <h3>Trends matter</h3>
+              <ul>
+                <li>Compare <strong>several months</strong>, not one day.</li>
+                <li>Illness, dehydration, and some medicines can temporarily lower eGFR.</li>
+                <li>Share all over-the-counter drugs and supplements with your clinician.</li>
+              </ul>
+            </div>
+            <div class="note tip">
+              <strong>Repeating labs:</strong> Your clinician may repeat in weeks to months depending on stage, albumin level, and changes in medicines or symptoms.
+            </div>
+          </div>
+
+          <!-- Responsive ad mid-content -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="3275781745"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </details>
+
+      <!-- 6 Improve kidney & heart protection -->
+      <details class="section">
+        <summary class="head"><span class="badge">6</span> Protecting kidneys & heart (daily steps) <span class="chev">▾</span></summary>
+        <div class="content">
+          <div class="three">
+            <div class="box">
+              <h3>Blood pressure</h3>
+              <ul>
+                <li>Accurate home checks, calm posture, same times daily when adjusting treatment.</li>
+                <li>Share averages (morning/evening over several days).</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>Salt & meals</h3>
+              <ul>
+                <li>Taste first; use herbs/lemon instead of extra salt.</li>
+                <li>Limit processed meats, instant soups, sauces.</li>
+                <li>Ask about potassium/phosphorus limits for your stage.</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>Movement & sleep</h3>
+              <ul>
+                <li>Walk 5–10 minutes after meals; add gentle strength and balance.</li>
+                <li>Consistent bedtime; cool, dark room; safe night light.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- In-article ad in lifestyle section -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="1548966214"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </details>
+
+      <!-- 7 Meds & what to avoid -->
+      <details class="section">
+        <summary class="head"><span class="badge">7</span> Medicines & what to avoid <span class="chev">▾</span></summary>
+        <div class="content">
+          <div class="two">
+            <div>
+              <h3>Often used (individualized)</h3>
+              <ul>
+                <li>ACE inhibitor or ARB (especially with albumin leak)</li>
+                <li>SGLT2 inhibitor (for many with diabetes; sometimes without)</li>
+                <li>Diuretics (“water pills”) for salt/fluid control</li>
+                <li>Statins to reduce heart risk</li>
+              </ul>
+            </div>
+            <div class="note warn">
+              <strong>Use with caution / avoid unless cleared:</strong>
+              <ul>
+                <li>Many <strong>NSAIDs pain pills</strong> (over-the-counter) can worsen kidney function and raise BP</li>
+                <li>Herbal products with unknown kidney effects</li>
+                <li>Contrast dye scans without kidney-safe planning</li>
+              </ul>
+            </div>
+          </div>
+          <p class="muted">Never start/stop medicines on your own—doses depend on eGFR, potassium, and other conditions.</p>
+        </div>
+      </details>
+
+      <!-- 8 FAQs + Multiplex -->
+      <details class="section" itemscope itemtype="https://schema.org/FAQPage">
+        <summary class="head"><span class="badge">8</span> FAQs <span class="chev">▾</span></summary>
+        <div class="content">
+          <div class="box" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">What eGFR is considered “kidney failure”?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">eGFR &lt; 15 (G5) is considered kidney failure. Planning with a kidney specialist usually starts earlier (G4) so decisions are calm and personalized.</p>
+            </div>
+          </div>
+          <div class="box" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Can dehydration lower eGFR temporarily?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Yes. Illness and dehydration can temporarily lower eGFR. Your clinician may repeat labs when you’re well and hydrated.</p>
+            </div>
+          </div>
+          <div class="box" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Does muscle mass affect creatinine?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Yes. Low muscle mass can make creatinine lower and eGFR seem higher than true filtration. Clinicians interpret results in context.</p>
+            </div>
+          </div>
+
+          <!-- Multiplex ad at the very end -->
+          <div class="ad-slot" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="autorelaxed"
+                 data-ad-client="ca-pub-3496395300151813"
+                 data-ad-slot="7363184657"></ins>
+          </div>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+          <p style="text-align:right"><a class="btn ghost" href="#top" aria-label="Back to top">⬆️ Back to top</a></p>
+        </div>
+      </details>
+
+    </div><!-- /.acc -->
+
+    <section class="muted" style="margin-top:16px">
+      Educational content only. Always follow your clinician’s advice for your personal targets, medicines, and diet.
+    </section>
+
+  </main>
+</div>
+
+<!-- JSON-LD: Article + FAQ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"eGFR Stages — Senior-Friendly Guide",
+  "description":"eGFR stages (G1–G5), albumin categories (A1–A3), trend reading, and an educational calculator.",
+  "dateModified":"2025-09-24",
+  "author":{"@type":"Person","name":"thevitatrack.com Medical Team"},
+  "publisher":{"@type":"Organization","name":"thevitatrack.com"},
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://thevitatrack.com/guides/egfr-stages"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"What eGFR is considered kidney failure?","acceptedAnswer":{"@type":"Answer","text":"eGFR < 15 (G5) is considered kidney failure. Planning with a kidney specialist usually starts earlier (G4)."}},
+    {"@type":"Question","name":"Can dehydration lower eGFR temporarily?","acceptedAnswer":{"@type":"Answer","text":"Yes. Illness and dehydration can temporarily lower eGFR, so labs may be repeated when well hydrated."}},
+    {"@type":"Question","name":"Does muscle mass affect creatinine?","acceptedAnswer":{"@type":"Answer","text":"Yes. Low muscle mass can make creatinine lower and eGFR seem higher; clinicians interpret in context."}}
+  ]
+}
+</script>
+
+<script>
+  // Font size toggles
+  (function(){
+    const html=document.documentElement;
+    const normal=document.getElementById('fontNormal');
+    const large=document.getElementById('fontLarge');
+    function set(size){ html.style.fontSize=size; document.body.style.fontSize=size; }
+    normal && normal.addEventListener('click', ()=>set('var(--fs)'));
+    large && large.addEventListener('click', ()=>set('var(--fs-lg)'));
+  })();
+
+  // Expand/Collapse all (keep first open)
+  (function(){
+    const openAll=document.getElementById('openAll');
+    const closeAll=document.getElementById('closeAll');
+    const sections=[...document.querySelectorAll('details.section')];
+    openAll && openAll.addEventListener('click', ()=> sections.forEach(d=> d.open=true));
+    closeAll && closeAll.addEventListener('click', ()=>{
+      sections.forEach((d,i)=> d.open=(i===0));
+      sections[0].scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  })();
+
+  // Simple race-free, creatinine-only educational eGFR calculator
+  // Roughly aligned with modern outpatient formulas; not for medical decisions.
+  (function(){
+    const ageEl = document.getElementById('age');
+    const sexEl = document.getElementById('sex');
+    const scrEl = document.getElementById('scr');
+    const unitsEl = document.getElementById('units');
+    const btn = document.getElementById('calcGo');
+    const clr = document.getElementById('calcClear');
+    const out = document.getElementById('calcOut');
+    const val = document.getElementById('egfrVal');
+    const stage = document.getElementById('egfrStage');
+
+    function toMgDl(v, units){
+      const x = parseFloat(v);
+      if(!isFinite(x) || x<=0) return NaN;
+      return units==='umol' ? (x/88.4) : x;
+    }
+
+    function estimateEgfr(age, sex, scrMgDl){
+      // Very simplified race-free CKD-EPI–style estimate (educational!)
+      const k = (sex==='female') ? 0.7 : 0.9;
+      const a = (sex==='female') ? -0.241 : -0.302;
+      const alpha = (sex==='female') ? -0.241 : -0.302;
+      const minScr = Math.min(scrMgDl/k, 1);
+      const maxScr = Math.max(scrMgDl/k, 1);
+      // Base coefficient ~142, female factor ~1.012 (approx); age factor 0.993^age
+      const femaleFactor = (sex==='female') ? 1.012 : 1.0;
+      const egfr = 142 * Math.pow(minScr, alpha) * Math.pow(maxScr, -1.200) * Math.pow(0.993, age) * femaleFactor;
+      return egfr;
+    }
+
+    function stageFromEgfr(g){
+      if(g>=90) return 'G1 (normal/high)';
+      if(g>=60) return 'G2 (mildly decreased)';
+      if(g>=45) return 'G3a (mild–moderate)';
+      if(g>=30) return 'G3b (moderate–severe)';
+      if(g>=15) return 'G4 (severely decreased)';
+      return 'G5 (kidney failure)';
+    }
+
+    function go(){
+      const age = parseInt(ageEl.value,10);
+      const sex = sexEl.value;
+      const scr = toMgDl(scrEl.value, unitsEl.value);
+      if(!isFinite(age)||age<1||age>120||!isFinite(scr)){
+        out.style.display='none';
+        return;
+      }
+      const g = estimateEgfr(age, sex, scr);
+      const gRound = Math.max(0, Math.round(g));
+      val.textContent = 'eGFR: ' + gRound + ' mL/min/1.73m²';
+      stage.textContent = 'Stage: ' + stageFromEgfr(gRound);
+      out.style.display='flex';
+    }
+
+    btn && btn.addEventListener('click', go);
+    clr && clr.addEventListener('click', ()=>{
+      ageEl.value='70'; sexEl.value='male'; scrEl.value='1.2'; unitsEl.value='mgdl';
+      out.style.display='none';
+    });
+  })();
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

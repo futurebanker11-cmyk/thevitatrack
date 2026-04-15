@@ -1,0 +1,497 @@
+---
+title: "Skin Care (Dry/Itchy)"
+slug: "skin-care-dry-itchy"
+category: "daily-living"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Skin Care (Dry / Itchy) — Daily Living • TheVitatrack</title>
+<meta name="description" content="Senior-friendly skin care for dry, itchy skin: bath routine, moisturizers, itch relief, clothing & laundry tips, home humidity, product labels, troubleshooting, and red flags. Step-by-step how-to with FAQs." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- AdSense (load ONCE globally) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .danger{background:var(--danger-bg); border:1.5px solid #FECACA; color:#7F1D1D; border-left:6px solid var(--danger); border-radius:14px; padding:12px}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ads wrappers (CLS-conscious; no visible labels) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Skin Care (Dry / Itchy)</h1>
+    <p>Gentle daily routine to calm dryness and itching: smart bathing, right moisturizers, itch control, and home tweaks.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#why">Why skin gets dry/itchy with age</a></li>
+      <li><a href="#daily">Daily routine (AM/PM)</a></li>
+      <li><a href="#bath">Bathing & hand-washing</a></li>
+      <li><a href="#moisturizers">Moisturizers: ointment/cream/lotion</a></li>
+      <li><a href="#itch">Itch control & scratch safety</a></li>
+      <li><a href="#clothes">Clothing, laundry & home humidity</a></li>
+      <li><a href="#labels">Reading labels: what to prefer/avoid</a></li>
+      <li><a href="#special">Special cases (diabetes, CKD, eczema)</a></li>
+      <li><a href="#troubleshoot">Troubleshooting</a></li>
+      <li><a href="#redflags">When to seek care</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <!-- Display AD (after TOC) -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <h2>Why skin gets dry/itchy with age</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="lead">Oil and water content in skin drops with age; soaps, hot water, and some medicines pull out moisture. Scratching breaks the barrier and leads to more itching.</p>
+        <ul class="list">
+          <li>Thinner outer layer → water escapes faster.</li>
+          <li>Fewer oil glands → weaker barrier.</li>
+          <li>Heat, low humidity, and fragrances can irritate.</li>
+        </ul>
+      </div>
+      <div class="card ok">Good news: consistent gentle care (cleanse → seal with moisturizer) usually calms itch in 1–2 weeks.</div>
+    </div>
+  </section>
+
+  <!-- In-article AD -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Daily routine -->
+  <section id="daily" class="section">
+    <h2>Daily routine (AM / PM)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Morning</p>
+        <ul class="list">
+          <li>Quick lukewarm rinse or face/underarms/groin cleanse with <strong>fragrance-free gentle cleanser</strong>.</li>
+          <li>Pat dry (don’t rub). Within 3 minutes, apply <strong>cream or ointment</strong> head-to-toe.</li>
+          <li>Hands: re-apply moisturizer after washing, every time.</li>
+          <li>Sun exposed areas: add SPF 30+ (fragrance-free) after moisturizer.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Evening</p>
+        <ul class="list">
+          <li>Short shower (≤10 minutes), lukewarm.</li>
+          <li>Use cleanser on sweaty/soiled areas only; water alone elsewhere.</li>
+          <li>Pat dry; apply <strong>thicker layer</strong> of moisturizer. Itchy spots: consider <strong>colloidal oatmeal</strong> cream or <strong>pramoxine</strong> lotion.</li>
+          <li>Very dry heels/shins: seal with a thin <strong>petrolatum</strong> layer.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bathing -->
+  <section id="bath" class="section">
+    <h2>Bathing & hand-washing</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Temperature: <strong>lukewarm</strong>, not hot.</li>
+          <li>Time: ≤10 minutes; avoid long soaks.</li>
+          <li>Cleansers: fragrance-free, dye-free; avoid antibacterial bars unless prescribed.</li>
+          <li>Hands: switch to <strong>gentle liquid</strong> wash; rinse well; moisturize immediately.</li>
+        </ul>
+      </div>
+      <div class="card note">“3-minute rule”: moisturize within 3 minutes after bathing to trap water in the skin.</div>
+    </div>
+  </section>
+
+  <!-- Moisturizers -->
+  <section id="moisturizers" class="section">
+    <h2>Moisturizers: ointment, cream, lotion — which & when</h2>
+    <div class="card">
+      <table class="table" role="table" aria-label="Moisturizer guide">
+        <thead>
+          <tr><th>Type</th><th>When to use</th><th>Pros</th><th>Watch for</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Ointment</strong> (petrolatum, dimethicone blends)</td>
+            <td>Night; very dry heels/shins, eczema patches</td>
+            <td>Best seal, strong itch relief</td>
+            <td>Greasy feel — use thin layer</td>
+          </tr>
+          <tr>
+            <td><strong>Cream</strong> (ceramides, glycerin, shea)</td>
+            <td>Daily AM/PM for most body areas</td>
+            <td>Balanced feel, long-lasting</td>
+            <td>Pick fragrance-free</td>
+          </tr>
+          <tr>
+            <td><strong>Lotion</strong> (lighter)</td>
+            <td>Humid weather, hairy areas</td>
+            <td>Spreads easily</td>
+            <td>Less sealing — may need 2–3 coats/day</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="small" style="margin-top:6px"><strong>Helpful add-ons:</strong> urea 5–10% or lactic acid 5–12% for rough heels (avoid open skin); ceramides for barrier repair; colloidal oatmeal for itch.</p>
+    </div>
+  </section>
+
+  <!-- Itch control -->
+  <section id="itch" class="section">
+    <h2>Itch control & scratch safety</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Cold, not scratch: apply a <strong>cool pack</strong> for 5–10 minutes.</li>
+          <li>Short nails; wear soft cotton at night to reduce skin damage.</li>
+          <li>Spot treatment: 1% <strong>hydrocortisone</strong> thin layer, 1–2×/day for ≤7 days on small itchy patches (avoid face/groin unless advised).</li>
+          <li><strong>Pramoxine</strong> or <strong>menthol</strong> lotions can calm itch without steroids.</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Many oral antihistamines cause drowsiness/confusion in older adults. Ask your clinician before use.
+      </div>
+    </div>
+  </section>
+
+  <!-- Clothing & home -->
+  <section id="clothes" class="section">
+    <h2>Clothing, laundry & home humidity</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Clothing & laundry</p>
+        <ul class="list">
+          <li>Choose <strong>soft cotton</strong> layers; avoid scratchy wool on skin.</li>
+          <li>Fragrance-free detergent; skip fabric softener sheets on itchy days.</li>
+          <li>Rinse cycle on “extra rinse” if sensitive.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Home humidity</p>
+        <ul class="list">
+          <li>Target indoor humidity: <strong>40–50%</strong>.</li>
+          <li>Use a small room humidifier in bedroom; clean weekly.</li>
+          <li>Avoid very hot rooms and direct heater air.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Labels -->
+  <section id="labels" class="section">
+    <h2>Reading labels: what to prefer / what to avoid</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Prefer</p>
+        <ul class="list">
+          <li>“<strong>Fragrance-free</strong>”, “dye-free”, “hypoallergenic”.</li>
+          <li>Barrier helpers: <strong>ceramides, glycerin, petrolatum, dimethicone</strong>.</li>
+          <li>Soothers: <strong>colloidal oatmeal, allantoin, panthenol</strong>.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Avoid (for sensitive skin)</p>
+        <ul class="list">
+          <li>Perfumes, essential oils on broken skin.</li>
+          <li>Harsh exfoliants or peels on thin senior skin.</li>
+          <li>Strong alpha/beta-hydroxy acids on large areas without guidance.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special cases -->
+  <section id="special" class="section">
+    <h2>Special cases (when to tailor the plan)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Diabetes / CKD</p>
+        <ul class="list">
+          <li>Check feet daily; moisturize tops/soles (not between toes).</li>
+          <li>See clinician promptly for cracks, ulcers, or infection signs.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Eczema / dermatitis history</p>
+        <ul class="list">
+          <li>Use steroid-sparing moisturizers daily; short steroid courses for flares as prescribed.</li>
+          <li>Patch-test new products on a small area for 48 hours.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-article AD (mid page) -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Troubleshooting -->
+  <section id="troubleshoot" class="section">
+    <h2>Troubleshooting</h2>
+    <div class="card">
+      <table class="table" role="table" aria-label="Troubleshooting dry/itchy skin">
+        <thead>
+          <tr><th>Problem</th><th>Likely cause</th><th>Try this</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Still itchy after 2 weeks</td>
+            <td>Not sealing moisture; hot showers; fragrance exposure</td>
+            <td>Switch to thicker cream/ointment; shorter lukewarm baths; strict fragrance-free routine</td>
+          </tr>
+          <tr>
+            <td>Stings with moisturizer</td>
+            <td>Acids/menthol on broken skin</td>
+            <td>Use bland barrier (petrolatum/ceramide cream) until healed; avoid actives on cracks</td>
+          </tr>
+          <tr>
+            <td>Hands crack despite cream</td>
+            <td>Frequent washing, sanitizer alcohol</td>
+            <td>Cream after each wash + cotton gloves at night with ointment layer</td>
+          </tr>
+          <tr>
+            <td>Itch worse at night</td>
+            <td>Dry air, warm bedding, delayed moisturizer</td>
+            <td>Humidify 40–50%; moisturizer 1–2 hours before bed; cool pack on hot spots</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="redflags" class="section">
+    <h2>When to seek care</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Spreading <strong>redness, warmth, pus</strong>, or fever.</li>
+        <li><strong>Yellow skin or eyes</strong>, severe new rash, or widespread hives.</li>
+        <li>Severe itch with <strong>weight loss</strong> or night sweats.</li>
+        <li>New <strong>blisters</strong> or sudden painful skin.</li>
+      </ul>
+      <p class="small">These may need urgent assessment or prescription treatment.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers (FAQ)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">How often should I moisturize?</p>
+        <p>At least <strong>twice daily</strong> and after every wash. Very dry areas may need 3–4×/day in winter.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Which is better: cream or oil?</p>
+        <p>Creams with ceramides + glycerin are best for daytime; a thin petrolatum layer locks in moisture overnight.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can I use coconut or mustard oil?</p>
+        <p>Light oils can soften but don’t seal as well as ointments. If used, apply on damp skin and <em>then</em> add a cream to seal.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is hydrocortisone safe?</p>
+        <p>Short courses (≤7 days) on small itchy patches can help. Avoid face/groin unless advised. If not better, see a clinician.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Multiplex AD (bottom) -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Skin Care for Dry, Itchy Skin",
+  "description":"Step-by-step routine for older adults to reduce dryness and itching.",
+  "supply":[
+    {"@type":"HowToSupply","name":"Fragrance-free gentle cleanser"},
+    {"@type":"HowToSupply","name":"Ceramide cream or ointment"},
+    {"@type":"HowToSupply","name":"Colloidal oatmeal or pramoxine lotion"}
+  ],
+  "tool":[
+    {"@type":"HowToTool","name":"Humidifier"},
+    {"@type":"HowToTool","name":"Cool gel pack"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Short lukewarm wash","text":"Bathe for ≤10 minutes with lukewarm water; use gentle cleanser on sweaty/soiled areas only."},
+    {"@type":"HowToStep","name":"Moisturize within 3 minutes","text":"Pat dry and apply a cream or ointment from neck to toes; reapply to hands after each wash."},
+    {"@type":"HowToStep","name":"Target itch spots","text":"Use colloidal oatmeal/pramoxine lotion on itchy patches; consider 1% hydrocortisone thin layer for ≤7 days if needed."},
+    {"@type":"HowToStep","name":"Optimize clothing & humidity","text":"Wear soft cotton; use fragrance-free detergent; keep indoor humidity around 40–50%."}
+  ],
+  "totalTime":"PT15M",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How often should I moisturize dry skin?", "acceptedAnswer":{"@type":"Answer","text":"At least twice daily and after every wash. Very dry areas may need more frequent application in cold or dry weather."}},
+    {"@type":"Question","name":"Which moisturizer is best for seniors?", "acceptedAnswer":{"@type":"Answer","text":"A fragrance-free cream with ceramides and glycerin for daytime and a thin layer of petrolatum on very dry areas at night."}},
+    {"@type":"Question","name":"Can hot showers worsen itching?", "acceptedAnswer":{"@type":"Answer","text":"Yes. Use lukewarm water and limit bathing to 10 minutes to protect the skin barrier."}},
+    {"@type":"Question","name":"When should I see a clinician for itchy skin?", "acceptedAnswer":{"@type":"Answer","text":"If you notice spreading redness, warmth, pus, fever, new blisters, yellow skin/eyes, or severe persistent itch despite care."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Skin Care (Dry / Itchy)","item":"https://thevitatrack.com/daily-living/skin-care-dry-itchy"}
+  ]
+}
+</script>
+
+<script>
+  // Small QoL: ESC to blur focused element (mobile keyboards)
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

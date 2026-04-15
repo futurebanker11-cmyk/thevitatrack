@@ -1,0 +1,526 @@
+---
+title: "Medicine + Meals"
+slug: "medicine-meals"
+category: "daily-living"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Medicine + Meals — Daily Living • TheVitatrack</title>
+<meta name="description" content="A practical guide to taking medicines with or without food: timing, common interactions, what to avoid, sample day schedules, nausea tips, and red flags—tailored for older adults." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #EAF4FF, rgba(234,244,255,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .danger{background:var(--danger-bg); border:1.5px solid #FECACA; color:#7F1D1D; border-radius:14px; padding:12px}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFE7FF,#BFE3FD,#CFE7FF);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,1px,6px,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Medicine + Meals</h1>
+    <p>Eat smart with your medicines. Use this quick guide to know what to take with food, on an empty stomach, what to avoid, and how to build a safe daily routine.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#why">Why timing with food matters</a></li>
+      <li><a href="#rules">General rules (fast)</a></li>
+      <li><a href="#with-food">Take <em>with</em> food</a></li>
+      <li><a href="#empty">Take on an <em>empty stomach</em></a></li>
+      <li><a href="#avoid">Foods & drinks to avoid or space</a></li>
+      <li><a href="#schedule">Sample day schedules</a></li>
+      <li><a href="#nausea">If medicine causes nausea</a></li>
+      <li><a href="#redflags">Red flags</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <h2>Why timing with food matters</h2>
+    <p class="lead"><span class="badge">Absorption & comfort</span> Food can change how medicines absorb and can protect the stomach. Some drugs need food to work best; others work best away from meals.</p>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Food can</p>
+        <ul class="list">
+          <li>Reduce nausea/heartburn from irritating meds</li>
+          <li>Increase or decrease absorption</li>
+          <li>Interact with specific nutrients (calcium, vitamin K)</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Always follow your prescription label. If advice here conflicts with your clinician’s instructions, follow <strong>your</strong> plan.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- General rules -->
+  <section id="rules" class="section">
+    <h2>General rules (fast)</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>“With food”</strong> = during a meal or within ~15 minutes after.</li>
+          <li><strong>“Empty stomach”</strong> = 30–60 minutes before food or 2–4 hours after.</li>
+          <li>Use a <strong>standard glass of water</strong> (150–250 ml) unless told otherwise.</li>
+          <li>Do not crush/chew <strong>extended-release</strong> or <strong>enteric-coated</strong> tablets.</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Keep a simple <strong>med + meal card</strong> on the fridge or with your pillbox for quick reference.
+      </div>
+    </div>
+  </section>
+
+  <!-- With food -->
+  <section id="with-food" class="section">
+    <h2>Take <em>with food</em> (common examples)</h2>
+    <table class="table" role="table" aria-label="Medicines recommended with food">
+      <thead>
+        <tr><th scope="col">Medicine</th><th scope="col">Why with food</th><th scope="col">Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Metformin</strong></td>
+          <td>Less stomach upset</td>
+          <td>Take with main meals (breakfast/dinner for ER)</td>
+        </tr>
+        <tr>
+          <td><strong>NSAIDs</strong> (ibuprofen, naproxen)</td>
+          <td>Protect stomach lining</td>
+          <td>Avoid if ulcer/bleed risk; ask before use if on blood thinners</td>
+        </tr>
+        <tr>
+          <td><strong>Steroids</strong> (prednisolone)</td>
+          <td>Reduce indigestion</td>
+          <td>Usually morning to protect sleep</td>
+        </tr>
+        <tr>
+          <td><strong>Antibiotics (selected)</strong></td>
+          <td>Reduce nausea</td>
+          <td>Amoxicillin OK with food; some have special rules—see label</td>
+        </tr>
+        <tr>
+          <td><strong>Opioids</strong> (codeine, tramadol)</td>
+          <td>Reduce nausea</td>
+          <td>Avoid alcohol; watch constipation (see fiber/fluids)</td>
+        </tr>
+        <tr>
+          <td><strong>Rivaroxaban ≥15 mg</strong></td>
+          <td>Needs food for absorption</td>
+          <td>Take with the largest meal</td>
+        </tr>
+        <tr>
+          <td><strong>Iron</strong> (if stomach upset)</td>
+          <td>Improves tolerance</td>
+          <td>Food can reduce absorption—see <a href="#avoid">“avoid/space”</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Empty stomach -->
+  <section id="empty" class="section">
+    <h2>Take on an <em>empty stomach</em> (common examples)</h2>
+    <table class="table" role="table" aria-label="Medicines recommended on empty stomach">
+      <thead>
+        <tr><th scope="col">Medicine</th><th scope="col">Timing</th><th scope="col">Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Levothyroxine</strong></td>
+          <td>Morning: 30–60 min before breakfast</td>
+          <td>Keep 4 hrs apart from calcium/iron/multivitamins</td>
+        </tr>
+        <tr>
+          <td><strong>Bisphosphonates</strong> (alendronate, risedronate)</td>
+          <td>First thing, with plain water only</td>
+          <td>Stay upright 30 min; no food/coffee/juice in that window</td>
+        </tr>
+        <tr>
+          <td><strong>PPIs</strong> (omeprazole, pantoprazole)</td>
+          <td>~30 min before breakfast</td>
+          <td>Helps activation to reduce acid</td>
+        </tr>
+        <tr>
+          <td><strong>Some antibiotics</strong> (e.g., flucloxacillin)</td>
+          <td>1 hour before or 2 hours after food</td>
+          <td>Follow label—varies by drug</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Avoid / space -->
+  <section id="avoid" class="section">
+    <h2>Foods & drinks to avoid or space from medicines</h2>
+    <table class="table" role="table" aria-label="Food–medicine interactions">
+      <thead>
+        <tr><th scope="col">Food / drink</th><th scope="col">Interacts with</th><th scope="col">What to do</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Grapefruit / Seville orange</strong></td>
+          <td>Some statins (simvastatin), calcium-channel blockers, certain psych meds</td>
+          <td>Avoid unless clinician says it’s safe with your specific drug</td>
+        </tr>
+        <tr>
+          <td><strong>High-calcium & iron</strong> (milk, yogurt, antacids; iron tabs)</td>
+          <td>Thyroid pills, some antibiotics (tetracyclines, fluoroquinolones), iron itself</td>
+          <td>Separate by 2–4 hours; Vitamin C may improve iron absorption</td>
+        </tr>
+        <tr>
+          <td><strong>Vitamin K-rich greens</strong> (spinach, kale, methi)</td>
+          <td>Warfarin</td>
+          <td>Keep intake <em>consistent</em> week to week; don’t binge or avoid</td>
+        </tr>
+        <tr>
+          <td><strong>Alcohol</strong></td>
+          <td>Sleep pills, opioids, some diabetes meds, metronidazole</td>
+          <td>Often unsafe—ask; avoid with metronidazole and sedatives</td>
+        </tr>
+        <tr>
+          <td><strong>Very high-fiber meals</strong></td>
+          <td>Can slow absorption of several meds</td>
+          <td>Keep fiber consistent day to day; space from “empty stomach” meds</td>
+        </tr>
+        <tr>
+          <td><strong>Coffee/tea right with pills</strong></td>
+          <td>Iron, thyroid</td>
+          <td>Use water for pills; have tea/coffee later</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">Not a full list—check your labels and pharmacist guidance.</p>
+  </section>
+
+  <!-- ===== In-article AD (after interactions) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Schedules -->
+  <section id="schedule" class="section">
+    <h2>Sample day schedules</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Thyroid + diabetes + blood pressure</p>
+        <ul class="list">
+          <li><strong>6:30 am</strong> Levothyroxine with water → wait 30–60 min</li>
+          <li><strong>7:15–7:30 am</strong> Breakfast; take BP med (if morning) and metformin WITH food</li>
+          <li><strong>1:00 pm</strong> Lunch; second metformin (if prescribed)</li>
+          <li><strong>6:30–7:30 pm</strong> Dinner; statin at night if advised</li>
+          <li><strong>Bedtime</strong> Separate calcium/iron supplements from thyroid by ≥4 hrs</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Osteoporosis + reflux</p>
+        <ul class="list">
+          <li><strong>6:00 am (weekly)</strong> Alendronate with water only; stay upright 30 min</li>
+          <li><strong>6:30 am</strong> PPI (omeprazole) 30 min before breakfast</li>
+          <li><strong>7:00 am</strong> Breakfast</li>
+          <li><strong>Noon/Evening</strong> Calcium + Vitamin D with meals (NOT near thyroid/bisphosphonate)</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small">These are examples—confirm timing for your prescriptions.</p>
+  </section>
+
+  <!-- Nausea -->
+  <section id="nausea" class="section">
+    <h2>If a medicine causes nausea</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Take with a <strong>small snack</strong> (cracker, yogurt) unless labeled “empty stomach”.</li>
+          <li>Use <strong>room-temperature</strong> water; avoid big gulps.</li>
+          <li>Avoid greasy or spicy meals near dosing; try ginger tea.</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Persistent vomiting, black stools, severe stomach pain, or blood in vomit/stool → <strong>seek care</strong>.
+      </div>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="redflags" class="section">
+    <h2>Red flags (call your clinician promptly)</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Severe or worsening chest/abdominal pain after a new medicine</li>
+        <li>Fainting, severe dizziness, new confusion</li>
+        <li>Rash, swelling of lips/tongue, trouble breathing (possible allergy)</li>
+        <li>Black/tarry stools, vomiting blood, or bright red blood in stool</li>
+        <li>Very low sugars or repeated lows if on insulin/sulfonylureas</li>
+      </ul>
+      <p class="small">Bring your full <strong>medicine + supplements</strong> list to appointments.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">What counts as “with food”?</p>
+        <p>Take during a meal or within ~15 minutes after the first bites. Even a small snack can help with stomach-irritating meds.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can I take pills with tea or coffee?</p>
+        <p>Use water. Tea/coffee can interfere with iron and thyroid pills—drink them later.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do soups and milk count as “food” with medicines?</p>
+        <p>Yes, but dairy calcium can block some meds (thyroid, certain antibiotics). If so, choose non-dairy snacks or separate by 2–4 hours.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Warfarin and greens?</p>
+        <p>Keep leafy greens consistent—not zero. Sudden increases or cuts change your INR. Tell your clinic about diet changes.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Rivaroxaban with meals?</p>
+        <p>Doses ≥15 mg should be taken <strong>with food</strong> for proper absorption. Lower doses may not require it—follow your label.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can I split extended-release tablets?</p>
+        <p>No. Don’t crush or split extended-release or enteric-coated pills unless your pharmacist confirms it’s safe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card">
+      <ul class="list">
+        <li><a href="#">Hydration Through the Day</a></li>
+        <li><a href="#">Short Walk After Meals</a></li>
+        <li><a href="#">Evening Wind-Down</a></li>
+        <li><a href="#">Constipation</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Medicine + Meals (safe timing guide)",
+  "description":"How to take common medicines with or without food, avoid interactions, and build a simple daily schedule.",
+  "totalTime":"PT0M",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"},
+  "tool":[
+    {"@type":"HowToTool","name":"Water (150–250 ml)"},
+    {"@type":"HowToTool","name":"Pill organizer"},
+    {"@type":"HowToTool","name":"Meal/snack"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Check labels","text":"Mark each medicine as 'with food', 'empty stomach', or 'anytime'."},
+    {"@type":"HowToStep","name":"Map to meals","text":"Place 'with food' meds at breakfast/lunch/dinner; 'empty stomach' in early morning or mid-gap."},
+    {"@type":"HowToStep","name":"Separate interactions","text":"Keep thyroid and some antibiotics 2–4 hours away from calcium/iron."},
+    {"@type":"HowToStep","name":"Set reminders","text":"Use phone or pillbox alarms tied to meals."},
+    {"@type":"HowToStep","name":"Review changes","text":"Recheck timing after new meds are added or doses change."}
+  ],
+  "url":"https://thevitatrack.com/daily-living/medicine-and-meals"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"What does 'empty stomach' mean for pills?","acceptedAnswer":{"@type":"Answer","text":"Take 30–60 minutes before food or 2–4 hours after a meal, with a glass of water."}},
+    {"@type":"Question","name":"Which medicines should I never take with dairy or antacids?","acceptedAnswer":{"@type":"Answer","text":"Levothyroxine and some antibiotics (tetracyclines, fluoroquinolones) should be spaced 2–4 hours from calcium/iron and antacids."}},
+    {"@type":"Question","name":"Do I need to avoid all leafy greens on warfarin?","acceptedAnswer":{"@type":"Answer","text":"No—keep intake consistent from week to week and inform your clinic about any major diet changes."}},
+    {"@type":"Question","name":"Can I drink grapefruit juice with my meds?","acceptedAnswer":{"@type":"Answer","text":"Grapefruit interacts with several medicines (e.g., some statins and blood pressure drugs). Avoid unless your clinician confirms it’s safe for your specific prescription."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Medicine + Meals","item":"https://thevitatrack.com/daily-living/medicine-and-meals"}
+  ]
+}
+</script>
+
+<script>
+  // Small QoL
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

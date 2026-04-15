@@ -1,0 +1,505 @@
+---
+title: "Emergency Info Sheet"
+slug: "emergency-info-sheet"
+category: "daily-living"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Emergency Info Sheet — Daily Living • TheVitatrack</title>
+<meta name="description" content="Create a one-page Emergency Information Sheet for seniors: medications, allergies, diagnoses, devices, contacts, hospital preferences, and quick instructions. Print-friendly templates, wallet card, lock-screen ideas, and update checklist." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- AdSense (load ONCE globally) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .danger{background:var(--danger-bg); border:1.5px solid #FECACA; color:#7F1D1D; border-left:6px solid var(--danger); border-radius:14px; padding:12px}
+
+  /* Tables and templates */
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  /* Print-friendly areas */
+  .print-tools{display:flex; gap:10px; flex-wrap:wrap}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    min-height:44px; padding:8px 14px; border-radius:12px; border:2px solid var(--brand);
+    background:var(--brand); color:#fff; font-weight:800; cursor:pointer;
+  }
+  .btn.ghost{background:#fff; color:var(--brand)}
+  .sheet{background:#fff; border:2px dashed #D1FAE5; border-radius:14px; padding:14px}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ads wrappers (CLS-conscious) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+
+  /* Print */
+  @media print{
+    .ad-wrap, .ad-wrap--wide, .sep, .print-tools{display:none !important}
+    body{background:#fff}
+    .wrap{padding:0}
+    .pagehead{box-shadow:none; background:#fff}
+    .card{box-shadow:none}
+    a::after{content:""}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Emergency Info Sheet</h1>
+    <p>One clear page for first responders and hospital staff — keep a copy on the fridge and in your phone.</p>
+    <div class="print-tools" style="justify-content:center; margin-top:12px">
+      <button class="btn" onclick="window.print()">🖨️ Print</button>
+      <a class="btn ghost" href="#templates">🧾 Jump to Templates</a>
+    </div>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#why">Why this sheet matters</a></li>
+      <li><a href="#what">What to include</a></li>
+      <li><a href="#templates">Fridge Sheet (A4) & Wallet Card</a></li>
+      <li><a href="#phone">Phone lock-screen / ICE</a></li>
+      <li><a href="#organize">How to organize & update</a></li>
+      <li><a href="#special">Special notes (devices & directives)</a></li>
+      <li><a href="#redflags">When to call emergency</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <!-- Display AD (after TOC) -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <h2>Why this sheet matters</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="lead">In an emergency, seconds count. A single page with medicines, allergies, diagnoses, and contacts prevents delays and errors.</p>
+        <ul class="list">
+          <li>Helps paramedics give the <strong>right care fast</strong>.</li>
+          <li>Reduces medicine mix-ups and repeated tests.</li>
+          <li>Makes hospital registration smoother.</li>
+        </ul>
+      </div>
+      <div class="card ok"><strong>Goal today:</strong> Fill the templates below, print one for the fridge, and save a photo on your phone.</div>
+    </div>
+  </section>
+
+  <!-- What to include -->
+  <section id="what" class="section">
+    <h2>What to include</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>Identification</strong>: full name, DOB, address, preferred language.</li>
+          <li><strong>Contacts</strong>: primary caregiver, emergency contacts (with phone numbers).</li>
+          <li><strong>Diagnoses</strong>: major conditions (e.g., CHF, CKD, diabetes, COPD).</li>
+          <li><strong>Allergies</strong>: drugs/foods + reaction.</li>
+          <li><strong>Medicines</strong>: name, dose, times, purpose.</li>
+          <li><strong>Devices</strong>: pacemaker/ICD, stents, valves, joint replacements, catheters.</li>
+          <li><strong>Baseline data</strong>: usual BP/HR, weight (if CHF/CKD), typical O₂ if on oxygen.</li>
+          <li><strong>Preferences</strong>: hospital/doctor, blood thinners, special precautions.</li>
+          <li><strong>Documents</strong>: advance directive/medical power-of-attorney (where kept).</li>
+          <li><strong>Insurance</strong>: plan name/number (optional on fridge, carry a copy in wallet).</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Keep information <strong>short and legible</strong>. Use a black pen or type and print. Update after any medicine change or hospital visit.
+      </div>
+    </div>
+  </section>
+
+  <!-- In-article AD -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Templates -->
+  <section id="templates" class="section">
+    <h2>Fridge Sheet (A4) & Wallet Card</h2>
+
+    <!-- Fridge Sheet -->
+    <div class="card sheet">
+      <p class="kicker">Fridge Sheet — A4 / Letter</p>
+      <table class="table" role="table" aria-label="Emergency Information Sheet">
+        <thead>
+          <tr><th colspan="4">EMERGENCY INFORMATION — TheVitatrack</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Name</strong>:</td><td>___________________________</td>
+            <td><strong>DOB</strong>:</td><td>________________</td>
+          </tr>
+          <tr>
+            <td><strong>Address</strong>:</td><td colspan="3">________________________________________________________</td>
+          </tr>
+          <tr>
+            <td><strong>Primary Contact</strong>:</td><td>________________ (📞 __________)</td>
+            <td><strong>Backup</strong>:</td><td>________________ (📞 __________)</td>
+          </tr>
+          <tr>
+            <td><strong>Preferred Hospital</strong>:</td><td>________________</td>
+            <td><strong>Doctor</strong>:</td><td>________________ (📞 __________)</td>
+          </tr>
+          <tr>
+            <td><strong>Conditions</strong>:</td>
+            <td colspan="3">□ Heart (____) □ Kidney (____) □ Diabetes □ COPD/Asthma □ Stroke/TIA □ Dementia □ Other: ____________________</td>
+          </tr>
+          <tr>
+            <td><strong>Allergies & Reactions</strong>:</td>
+            <td colspan="3">________________________________________________________</td>
+          </tr>
+          <tr>
+            <td><strong>Implants/Devices</strong>:</td>
+            <td colspan="3">□ Pacemaker/ICD □ Stent □ Valve □ Joint □ Catheter □ Oxygen (____ L/min) □ Other: ___________</td>
+          </tr>
+          <tr>
+            <td><strong>Baseline</strong>:</td>
+            <td colspan="3">BP ~ ____/____ | HR ~ ____ | Weight ~ ____ kg (dry) | O₂ Sat ~ ____% (if known)</td>
+          </tr>
+          <tr>
+            <td colspan="4"><strong>Current Medicines</strong> (name — dose — time — purpose)</td>
+          </tr>
+          <tr><td colspan="4">
+            1) ____________________________________ — __________ — __________ — _____________________<br/>
+            2) ____________________________________ — __________ — __________ — _____________________<br/>
+            3) ____________________________________ — __________ — __________ — _____________________<br/>
+            4) ____________________________________ — __________ — __________ — _____________________<br/>
+            5) ____________________________________ — __________ — __________ — _____________________
+          </td></tr>
+          <tr>
+            <td><strong>Blood Thinners</strong>:</td><td>□ None □ Aspirin □ Clopidogrel □ Warfarin □ DOAC: ________</td>
+            <td><strong>Last Dose</strong>:</td><td>__________</td>
+          </tr>
+          <tr>
+            <td><strong>Advance Directive</strong>:</td><td>□ Yes □ No</td>
+            <td><strong>Location</strong>:</td><td>________________________</td>
+          </tr>
+          <tr>
+            <td><strong>Insurance</strong>:</td><td colspan="3">Plan: __________ | ID: __________ (carry copy in wallet)</td>
+          </tr>
+          <tr>
+            <td><strong>Notes</strong>:</td><td colspan="3">____________________________________________________________________</td>
+          </tr>
+          <tr>
+            <td><strong>Updated</strong>:</td><td>____/____/______</td>
+            <td><strong>By</strong>:</td><td>________________</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Wallet Card -->
+    <div class="card sheet" style="margin-top:12px">
+      <p class="kicker">Wallet Card — foldable</p>
+      <table class="table" role="table" aria-label="Wallet emergency card">
+        <tbody>
+          <tr><td><strong>Name</strong>:</td><td>________________</td><td><strong>DOB</strong>:</td><td>________</td></tr>
+          <tr><td><strong>Allergies</strong>:</td><td colspan="3">__________________________</td></tr>
+          <tr><td><strong>Conditions</strong>:</td><td colspan="3">__________________________</td></tr>
+          <tr><td><strong>Key Medicines</strong>:</td><td colspan="3">1) ________ 2) ________ 3) ________</td></tr>
+          <tr><td><strong>Blood Thinner</strong>:</td><td>________</td><td><strong>Last Dose</strong>:</td><td>________</td></tr>
+          <tr><td><strong>Primary Contact</strong>:</td><td colspan="3">__________ (📞 __________)</td></tr>
+          <tr><td><strong>Doctor</strong>:</td><td colspan="3">__________ (📞 __________)</td></tr>
+          <tr><td><strong>Notes</strong>:</td><td colspan="3">__________________________</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Tip: Laminate, or keep in a transparent card holder with the latest update date.</p>
+    </div>
+  </section>
+
+  <!-- Phone lock screen / ICE -->
+  <section id="phone" class="section">
+    <h2>Phone lock-screen / ICE</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Lock-screen idea</p>
+        <ul class="list">
+          <li>Create a simple image: “Name — ICE: ______ (phone)” + allergies + key condition.</li>
+          <li>Set as lock-screen wallpaper so responders can see it without unlocking.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Contacts</p>
+        <ul class="list">
+          <li>Save “ICE — [Name]” in contacts with relationship.</li>
+          <li>Share medical ID in iPhone/Android health app if available.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-article AD (mid page) -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Organize & update -->
+  <section id="organize" class="section">
+    <h2>How to organize & update</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Where to keep it</p>
+        <ul class="list">
+          <li>Fridge door (top-right) or inside main door — magnet/clip.</li>
+          <li>Binder front pocket + photo in phone gallery.</li>
+          <li>Copy in caregiver’s phone and a backup relative.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">When to update</p>
+        <ul class="list">
+          <li>Any medicine change or new diagnosis.</li>
+          <li>After hospital/ER visit or new device implant.</li>
+          <li>At least every <strong>3 months</strong> for accuracy.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special notes -->
+  <section id="special" class="section">
+    <h2>Special notes (devices & directives)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Devices & precautions</p>
+        <ul class="list">
+          <li>Pacemaker/ICD: carry device card; note model and implant date.</li>
+          <li>Joint replacements/stents/valves: note year and side/location.</li>
+          <li>Catheters/ports/feeding tubes: note type and care instructions.</li>
+        </ul>
+      </div>
+      <div class="card note">
+        If you have an <strong>advance directive</strong> or medical power-of-attorney, write where it’s kept and who to contact. Keep a copy in the binder.
+      </div>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="redflags" class="section">
+    <h2>When to call emergency</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Chest pain/pressure, severe shortness of breath, fainting.</li>
+        <li>One-sided weakness, facial droop, slurred speech (possible stroke).</li>
+        <li>Severe bleeding, black/bloody stool, vomiting blood.</li>
+        <li>Confusion with high fever or dehydration (very sleepy, no urine).</li>
+      </ul>
+      <p class="small">Call your local emergency number. Bring this sheet and the pill box.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers (FAQ)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Is one page really enough?</p>
+        <p>Yes. Keep it short for speed. Add extra details in your binder if needed.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Paper or phone?</p>
+        <p>Both. Paper on the fridge is easy for responders; a phone photo travels with you.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What if I can’t list every medicine?</p>
+        <p>Include the most important ones (blood thinners, heart, diabetes, seizure, inhalers) and bring the pill box or photos of labels.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">How do I keep versions straight?</p>
+        <p>Write the update date on top. When you change medicines, cross out the old page and print a fresh one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Multiplex AD (bottom) -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Create an Emergency Information Sheet",
+  "description":"A one-page emergency info sheet for older adults: medicines, allergies, diagnoses, contacts, devices, and preferences.",
+  "supply":[
+    {"@type":"HowToSupply","name":"Printed template or plain paper"},
+    {"@type":"HowToSupply","name":"Pen or computer + printer"},
+    {"@type":"HowToSupply","name":"Phone camera to save a photo"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Fill identification & contacts","text":"Add full name, DOB, address, primary and backup contacts with phone numbers."},
+    {"@type":"HowToStep","name":"Add medical details","text":"List key diagnoses, allergies with reactions, devices, baseline vitals, and preferred hospital/doctor."},
+    {"@type":"HowToStep","name":"List medicines","text":"Write medicine name, dose, times, and purpose. Include blood thinners and last dose time."},
+    {"@type":"HowToStep","name":"Place & share","text":"Put one copy on the fridge, one in a binder, and save a photo on your phone. Share with a caregiver."}
+  ],
+  "totalTime":"PT30M",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Is one page enough for emergency info?", "acceptedAnswer":{"@type":"Answer","text":"Yes. Keep it short for speed. Keep detailed records in a binder and bring it to appointments."}},
+    {"@type":"Question","name":"Should I keep the info on my phone?", "acceptedAnswer":{"@type":"Answer","text":"Yes. Save a photo of the sheet and add ICE contacts or a medical ID in your phone's health app."}},
+    {"@type":"Question","name":"How often should I update the sheet?", "acceptedAnswer":{"@type":"Answer","text":"Update after any medicine change or hospital visit, and at least every 3 months."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Emergency Info Sheet","item":"https://thevitatrack.com/daily-living/emergency-info-sheet"}
+  ]
+}
+</script>
+
+<script>
+  // QoL: ESC to blur focused element (mobile keyboards)
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

@@ -1,0 +1,534 @@
+---
+title: "Osteoporosis"
+slug: "osteoporosis"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Osteoporosis — Senior Guide • TheVitatrack</title>
+<meta name="description" content="Osteoporosis in older adults: warning signs, risk factors, DEXA (T-score), FRAX risk, labs, bone-healthy diet, weight-bearing & balance exercises, fall-proofing, and treatment options including bisphosphonates, denosumab, and anabolic therapy." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Osteoporosis</h1>
+    <p>Stronger bones, fewer fractures: know the risks, testing, food & exercise habits, fall-proofing, and medicine options that protect bone and independence.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is">What it is</a></li>
+      <li><a href="#red-flags">When to seek urgent help</a></li>
+      <li><a href="#symptoms">Warning signs</a></li>
+      <li><a href="#risk">Risk factors</a></li>
+      <li><a href="#testing">Testing (DEXA, T-score, FRAX)</a></li>
+      <li><a href="#labs">Helpful labs</a></li>
+      <li><a href="#treatment">Treatment choices</a></li>
+      <li><a href="#exercise">Exercise & balance plan</a></li>
+      <li><a href="#diet">Calcium, vitamin D, and foods</a></li>
+      <li><a href="#falls">Fall-proofing home</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- What it is -->
+  <section id="what-is" class="section">
+    <h2>What it is</h2>
+    <p class="lead"><span class="badge">In short</span> Osteoporosis means bones are less dense and more fragile, raising the chance of hip, spine, and wrist fractures. Many people have no symptoms until a fracture happens—so screening and prevention matter.</p>
+    <div class="card small">
+      <p><strong>Good news:</strong> Daily habits, fall-proofing, and when appropriate, medicines can lower fracture risk substantially.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent help</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Severe new back pain with sudden height loss (possible vertebral fracture)</li>
+        <li>Hip pain after a fall; inability to bear weight</li>
+        <li>Wrist fracture or other fracture after a minor fall</li>
+      </ul>
+      <p class="small">These can be emergencies. Seek immediate care.</p>
+    </div>
+  </section>
+
+  <!-- Signs -->
+  <section id="symptoms" class="section">
+    <h2>Warning signs</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Gradual height loss; stooped posture (kyphosis)</li>
+          <li>Back pain that started after lifting or a small twist</li>
+          <li>Fracture after minimal trauma (cough, sneeze, simple fall)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">Falls & Balance</a> · <a href="#">Vitamin D</a> · <a href="#">Calcium-rich Foods</a></li>
+          <li><a href="#">Hip Protectors</a> · <a href="#">Daily Living</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Signs) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Risk factors -->
+  <section id="risk" class="section">
+    <h2>Risk factors</h2>
+    <table class="table" role="table" aria-label="Osteoporosis risk factors">
+      <thead><tr><th>Category</th><th>Examples</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Age & sex</td>
+          <td>Older age; postmenopausal females</td>
+          <td>Bone loss accelerates after menopause</td>
+        </tr>
+        <tr>
+          <td>Low body weight</td>
+          <td>BMI &lt; 20; unintentional weight loss</td>
+          <td>Lower reserves → higher fracture risk</td>
+        </tr>
+        <tr>
+          <td>Family & prior fractures</td>
+          <td>Parent hip fracture; any adult low-trauma fracture</td>
+          <td>Strong predictors of future fracture</td>
+        </tr>
+        <tr>
+          <td>Medicines</td>
+          <td>Long-term steroids, aromatase inhibitors, some prostate/breast cancer therapy</td>
+          <td>Ask about bone protection plan</td>
+        </tr>
+        <tr>
+          <td>Conditions</td>
+          <td>Hyperthyroidism, hyperparathyroidism, celiac, CKD, COPD, rheumatoid arthritis</td>
+          <td>Some increase bone loss or falls</td>
+        </tr>
+        <tr>
+          <td>Lifestyle</td>
+          <td>Smoking; heavy alcohol; inactivity; low calcium/vitamin D</td>
+          <td>Changeable risk—small steps help</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Testing -->
+  <section id="testing" class="section">
+    <h2>Testing (DEXA, T-score, FRAX)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">DEXA scan (bone density)</p>
+        <ul class="list">
+          <li>Measures bone density at hip and spine</li>
+          <li><strong>T-score</strong> compares to healthy young adults</li>
+        </ul>
+        <table class="table small" aria-label="T-score interpretation" style="margin-top:8px">
+          <thead><tr><th>T-score</th><th>Interpretation</th></tr></thead>
+          <tbody>
+            <tr><td>≥ −1.0</td><td>Normal</td></tr>
+            <tr><td>−1.0 to &gt; −2.5</td><td>Osteopenia (low bone mass)</td></tr>
+            <tr><td>≤ −2.5</td><td>Osteoporosis</td></tr>
+            <tr><td>≤ −2.5 + fragility fracture</td><td>Severe osteoporosis</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <p class="kicker">FRAX fracture risk</p>
+        <ul class="list">
+          <li>Estimates 10-year hip & major osteoporotic fracture risk</li>
+          <li>Uses age, sex, BMI, prior fracture, smoking, steroids, and optional femoral neck BMD</li>
+          <li>Helps decide who benefits from medicine</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Testing) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Labs -->
+  <section id="labs" class="section">
+    <h2>Helpful labs</h2>
+    <div class="card">
+      <ul class="list">
+        <li>Calcium, phosphorus, alkaline phosphatase</li>
+        <li>25-OH vitamin D; thyroid (TSH)</li>
+        <li>Renal & liver function</li>
+        <li>Parathyroid hormone (PTH) if calcium issues</li>
+        <li>In selected cases: testosterone (men), celiac screen, SPEP/UPEP</li>
+      </ul>
+      <p class="small">Testing is individualized based on history and exam.</p>
+    </div>
+  </section>
+
+  <!-- Treatment -->
+  <section id="treatment" class="section">
+    <h2>Treatment choices</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Foundations for everyone</p>
+        <ul class="list">
+          <li>Calcium & vitamin D targets (see below)</li>
+          <li>Weight-bearing, resistance, and balance exercises</li>
+          <li>Quit smoking; limit alcohol; review fall risks & medicines</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Antiresorptives</p>
+        <ul class="list">
+          <li><strong>Bisphosphonates:</strong> alendronate, risedronate, ibandronate, zoledronic acid</li>
+          <li><strong>Denosumab</strong> (injection every 6 months)</li>
+          <li>Discuss rare risks (jaw osteonecrosis, atypical femur fracture), dental check before therapy</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Anabolic/dual-action options</p>
+        <ul class="list">
+          <li><strong>Teriparatide</strong> / <strong>Abaloparatide</strong> (bone-building)</li>
+          <li><strong>Romosozumab</strong> (dual action)</li>
+          <li>Often for very high risk or multiple fractures</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">How taken matters</p>
+        <ul class="list">
+          <li>Oral bisphosphonate: morning, empty stomach, full glass of water; remain upright 30–60 min</li>
+          <li>Missed denosumab doses can rebound—plan timely follow-up</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note" style="margin-top:12px">Medicine choices are individualized. Your clinician balances benefits, risks, and convenience.</div>
+  </section>
+
+  <!-- ===== In-article AD (after Treatment) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Exercise -->
+  <section id="exercise" class="section">
+    <h2>Exercise & balance plan</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Weight-bearing & strength</p>
+        <ul class="list">
+          <li>Walking most days; gentle stair use as tolerated</li>
+          <li>2–3 sessions/week of resistance (bands, light weights, sit-to-stands)</li>
+          <li>Back-extensor strengthening supports posture</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Balance & safety</p>
+        <ul class="list">
+          <li>Tai chi, heel-to-toe walk, single-leg stands near a counter</li>
+          <li>Avoid deep forward spine flexion & twisting with heavy loads</li>
+          <li>Supportive, non-slip footwear; vision and hearing checks</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diet -->
+  <section id="diet" class="section">
+    <h2>Calcium, vitamin D, and foods</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Targets (typical)</p>
+        <ul class="list">
+          <li><strong>Calcium:</strong> ~1,000–1,200 mg/day (diet + supplements)</li>
+          <li><strong>Vitamin D:</strong> commonly 800–1,000 IU/day</li>
+          <li>Adjust if kidney stones, CKD, or other conditions—ask your clinician</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Food ideas</p>
+        <ul class="list">
+          <li>Dairy or fortified alternatives; tofu set with calcium, leafy greens</li>
+          <li>Fish with soft bones (sardines/salmon), almonds, sesame (til), soy</li>
+          <li>Take calcium supplements away from high-iron meals if advised</li>
+        </ul>
+        <p class="small">Related: <a href="#">Senior-Friendly Recipes & Drinks</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Falls -->
+  <section id="falls" class="section">
+    <h2>Fall-proofing home</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Clear clutter, cords, and loose rugs; add night lights</li>
+          <li>Grab bars in bathroom; non-slip bath mats</li>
+          <li>Keep commonly used items at waist height; use a reacher tool</li>
+          <li>Consider hip protectors if high fall risk</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        <strong>Medication review:</strong> Ask which medicines raise fall risk (sleep aids, some anxiety pills, blood pressure meds) and whether timing or doses can be adjusted.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">If my T-score is −2.3, do I need medicine?</p>
+        <p>Maybe. In osteopenia, FRAX (10-year risk) helps decide. Higher risk or prior fracture often favors treatment—review with your clinician.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">How long do I take osteoporosis medicine?</p>
+        <p>Varies. Some take 3–5 years then reassess (“drug holiday”) if risk is lower; others need longer or different therapy. Follow a personalized plan.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can I just take calcium and vitamin D?</p>
+        <p>They support bone, but by themselves don’t prevent many fractures in higher-risk adults. Exercise, fall-proofing, and medicines (when indicated) add protection.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is yoga safe?</p>
+        <p>Many poses are, but avoid deep forward bends and loaded twists if you have spine osteoporosis. Choose neutral-spine, balance-focused sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Osteoporosis",
+  "description":"Older-adult guide to osteoporosis: red flags, risk factors, DEXA T-score and FRAX, labs, diet, exercise and balance training, fall-proofing, and treatment options including bisphosphonates, denosumab, and anabolic therapy.",
+  "about":{"@type":"MedicalCondition","name":"Osteoporosis"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/osteoporosis"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"If my T-score is −2.3, do I need medicine?","acceptedAnswer":{"@type":"Answer","text":"In osteopenia, the decision depends on overall fracture risk (e.g., FRAX) and clinical factors. Higher risk or prior fracture often favors treatment."}},
+    {"@type":"Question","name":"How long should osteoporosis medicines be taken?","acceptedAnswer":{"@type":"Answer","text":"Duration varies. Some use 3–5 years then reassess; others need longer or a different class. Plans are individualized based on ongoing risk."}},
+    {"@type":"Question","name":"Are calcium and vitamin D enough?","acceptedAnswer":{"@type":"Answer","text":"They support bone health but may not be sufficient alone for higher-risk adults. Exercise, fall prevention, and prescription therapy when indicated add protection."}},
+    {"@type":"Question","name":"Is yoga safe with osteoporosis?","acceptedAnswer":{"@type":"Answer","text":"Many poses are safe, but deep forward flexion and loaded twisting should be avoided in spine osteoporosis. Emphasize balance and neutral-spine movements."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Osteoporosis","item":"https://thevitatrack.com/osteoporosis"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

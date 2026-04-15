@@ -1,0 +1,515 @@
+---
+title: "Macular Degeneration (AMD)"
+slug: "macular-degeneration-amd"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Macular Degeneration (AMD) — Senior Guide • TheVitatrack</title>
+<meta name="description" content="Age-related macular degeneration (AMD): early signs, urgent red flags, daily vision-safety plan, home lighting tips, Amsler grid self-check, AREDS2 vitamins overview, assistive tech, low-vision services, and caregiver steps." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Macular Degeneration (AMD)</h1>
+    <p>Understand early signs, protect your central vision, and use a safe daily plan with lighting tips, Amsler grid self-checks, assistive tech, and when to see an eye specialist.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is">What AMD is & why it matters</a></li>
+      <li><a href="#red-flags">When to get urgent eye care</a></li>
+      <li><a href="#signs">Common symptoms</a></li>
+      <li><a href="#types">Types (dry vs wet)</a></li>
+      <li><a href="#risks">Risk factors & prevention</a></li>
+      <li><a href="#screen">Simple self-check (Amsler)</a></li>
+      <li><a href="#daily-plan">Daily vision-safety plan</a></li>
+      <li><a href="#tech">Helpful low-vision tech</a></li>
+      <li><a href="#community">Services & support</a></li>
+      <li><a href="#caregivers">For caregivers</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- What it is -->
+  <section id="what-is" class="section">
+    <h2>What AMD is & why it matters</h2>
+    <p class="lead"><span class="badge">In short</span> <strong>Age-related macular degeneration (AMD)</strong> affects the <em>macula</em>, the small area in the back of the eye that gives sharp, central vision used for reading, faces, and driving. AMD does <em>not</em> cause total blindness, but can make central vision blurry or distorted—early action helps protect sight.</p>
+    <div class="card small">
+      <p><strong>Good to know:</strong> Regular dilated eye exams and prompt treatment for certain types (injections for “wet” AMD) can slow vision loss. Good lighting and magnification tools make daily life easier.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to get urgent eye care</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Sudden or recent central vision loss in one eye</li>
+        <li>Straight lines look wavy or a dark/blank spot appears</li>
+        <li>Rapid change in reading vision or face recognition</li>
+      </ul>
+      <p class="small">These can be signs of <strong>wet AMD</strong> or other eye emergencies. Call your eye specialist promptly—earlier treatment works better.</p>
+    </div>
+  </section>
+
+  <!-- Signs -->
+  <section id="signs" class="section">
+    <h2>Common symptoms</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Blurry or <strong>distorted central vision</strong> (straight lines look bent)</li>
+          <li>Fading contrast; needing brighter light to read</li>
+          <li>Difficulty recognizing faces or reading street signs</li>
+          <li>A central “smudge,” dark spot, or missing letters</li>
+          <li>Slow recovery when moving from bright to dim rooms</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">Glaucoma</a> · <a href="#">Cataracts</a></li>
+          <li><a href="#">Diabetes & Eyes</a> · <a href="#">Daily Living</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Types -->
+  <section id="types" class="section">
+    <h2>Types of AMD</h2>
+    <table class="table" role="table" aria-label="Types of AMD">
+      <thead>
+        <tr><th>Type</th><th>What it means</th><th>Care</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Dry (atrophic)</strong></td>
+          <td>More common; gradual thinning of macula with drusen deposits; slower vision change.</td>
+          <td>Regular monitoring, Amsler grid checks, good lighting, low-vision aids; some patients may benefit from <strong>AREDS2</strong> vitamins (ask your eye doctor).</td>
+        </tr>
+        <tr>
+          <td><strong>Wet (neovascular)</strong></td>
+          <td>Less common; fragile new vessels leak fluid/blood causing faster central vision loss.</td>
+          <td><strong>Urgent evaluation.</strong> Often treated with anti-VEGF eye injections to reduce leakage and protect vision.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Risks -->
+  <section id="risks" class="section">
+    <h2>Risk factors & prevention</h2>
+    <table class="table" role="table" aria-label="Risk factors">
+      <thead>
+        <tr><th>Area</th><th>Examples</th><th>What helps</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Age & family</td>
+          <td>Age 60+, family history, certain genes, lighter eye color</td>
+          <td>Dilated exams as advised; know your baseline; home monitoring</td>
+        </tr>
+        <tr>
+          <td>Lifestyle</td>
+          <td>Smoking, high blood pressure, poor diet</td>
+          <td>Stop smoking, manage BP/cholesterol, eat leafy greens & fish</td>
+        </tr>
+        <tr>
+          <td>Light & protection</td>
+          <td>Chronic UV exposure, glare sensitivity</td>
+          <td>UV-blocking sunglasses/hat; task lighting with diffusers</td>
+        </tr>
+        <tr>
+          <td>Nutrition</td>
+          <td>Low intake of lutein/zeaxanthin, omega-3</td>
+          <td>Leafy greens (spinach, kale), eggs, colorful veg; discuss AREDS2</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Screen -->
+  <section id="screen" class="section">
+    <h2>Simple self-check (Amsler grid)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">How to use (weekly)</p>
+        <ul class="list">
+          <li>Wear your reading glasses. Hold the grid at reading distance in good light.</li>
+          <li>Cover one eye. Focus on the center dot. Do lines look <strong>wavy</strong> or <strong>missing</strong>?</li>
+          <li>Repeat with the other eye. If new distortion or a blank spot appears, <strong>call your eye doctor</strong>.</li>
+        </ul>
+        <p class="small">Print an Amsler grid or use your clinic’s version; mark any changes with date.</p>
+      </div>
+      <div class="card info">
+        <strong>AREDS2 vitamins:</strong> Some with intermediate AMD may benefit. Not for everyone. <em>Ask your eye specialist</em>, especially if you smoke or take other supplements/meds.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Daily plan -->
+  <section id="daily-plan" class="section">
+    <h2>Daily vision-safety plan</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">At home</p>
+        <ul class="list">
+          <li><strong>Light the task:</strong> Adjustable lamp on the side of your better eye; use warm-white LEDs with diffusers.</li>
+          <li><strong>High contrast:</strong> Dark placemats with white plates; bold pens; large-print labels.</li>
+          <li><strong>Reduce glare:</strong> Matte finishes; close blinds; use anti-glare screen filters.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Eye health</p>
+        <ul class="list">
+          <li>Don’t smoke; walk daily; manage BP, diabetes, cholesterol.</li>
+          <li>Eat leafy greens, colorful veg, nuts; fish 1–2×/week if allowed.</li>
+          <li>Keep all <strong>injection</strong> or follow-up appointments if treated for wet AMD.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note" style="margin-top:12px">Small changes in lighting and contrast often help immediately.</div>
+  </section>
+
+  <!-- Tech -->
+  <section id="tech" class="section">
+    <h2>Helpful low-vision tech</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Easy tools</p>
+        <ul class="list">
+          <li><strong>Magnifiers:</strong> Handheld, stand, or video magnifiers (CCTV/electronic).</li>
+          <li><strong>Phone features:</strong> Zoom, Large Text, VoiceOver/TalkBack, bold text.</li>
+          <li><strong>Reading:</strong> Audiobooks, e-readers with large font and high contrast.</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        <strong>Safety tip:</strong> Use <em>Favorites</em> for key contacts and transport apps; enable medical ID on your phone.
+      </div>
+    </div>
+  </section>
+
+  <!-- Community -->
+  <section id="community" class="section">
+    <h2>Services & support</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Where to get help</p>
+        <ul class="list">
+          <li>Low-vision clinics (optometry/ophthalmology with rehab)</li>
+          <li>Vision rehabilitation therapists; orientation & mobility training</li>
+          <li>Local blindness/low-vision organizations; library talking-book programs</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Insurance & access</p>
+        <ul class="list">
+          <li>Ask about coverage for low-vision aids and rehab visits.</li>
+          <li>Request written summaries in large font after appointments.</li>
+          <li>Seek community transport for clinic visits.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="small" style="margin-top:8px">
+      Related: <a href="#">Cataracts</a> · <a href="#">Glaucoma</a> · <a href="#">Diabetes & Eyes</a> · <a href="#">Daily Living</a>
+    </div>
+  </section>
+
+  <!-- Caregivers -->
+  <section id="caregivers" class="section">
+    <h2>For caregivers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Support the person</p>
+        <ul class="list">
+          <li>Offer rides to eye appointments; help track Amsler grid changes.</li>
+          <li>Label medications with large print; use pill organizers.</li>
+          <li>Arrange brighter task lighting in kitchen, reading chair, and hallway.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Make home safer</p>
+        <ul class="list">
+          <li>High-contrast stair edges; remove loose rugs; clear walkways.</li>
+          <li>Large-face clock, bold calendars, and tactile stove markers.</li>
+          <li>Teach phone accessibility shortcuts; set up audio reminders.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Can AMD be prevented?</p>
+        <p>We can’t guarantee prevention, but <strong>not smoking</strong>, managing blood pressure, and eating leafy greens and fish support eye health. Regular eye exams catch changes early.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do I need injections forever?</p>
+        <p>For wet AMD, many need a series of <strong>anti-VEGF injections</strong>. Frequency depends on how your eye responds; your specialist will tailor the plan.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Will I go completely blind?</p>
+        <p>AMD affects <strong>central</strong> vision; side (peripheral) vision usually remains. Low-vision aids and rehab can keep you independent.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Should I take AREDS2?</p>
+        <p>Only some AMD stages benefit. <strong>Ask your eye doctor</strong> before starting—important if you smoke or take other supplements/meds.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Macular Degeneration (AMD)",
+  "description":"Senior-friendly guide to age-related macular degeneration (AMD): symptoms, urgent red flags, Amsler grid self-check, daily lighting & contrast tips, AREDS2 overview, assistive technology, low-vision services, and caregiver steps.",
+  "about":{"@type":"MedicalCondition","name":"Age-related macular degeneration"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/macular-degeneration-amd"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Can AMD be prevented?",
+      "acceptedAnswer":{"@type":"Answer","text":"We can’t guarantee prevention, but not smoking, managing blood pressure, and eating leafy greens and fish support eye health. Regular eye exams catch changes early."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do I need injections forever for wet AMD?",
+      "acceptedAnswer":{"@type":"Answer","text":"Many people need a series of anti-VEGF injections; frequency depends on response. Your eye specialist will tailor the plan."}
+    },
+    {
+      "@type":"Question",
+      "name":"Will AMD cause total blindness?",
+      "acceptedAnswer":{"@type":"Answer","text":"AMD mainly affects central vision; peripheral vision usually remains. Low-vision aids and rehab help maintain independence."}
+    },
+    {
+      "@type":"Question",
+      "name":"Should I take AREDS2 vitamins?",
+      "acceptedAnswer":{"@type":"Answer","text":"Only some AMD stages benefit. Ask your eye doctor before starting—especially if you smoke or take other supplements/medications."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Macular Degeneration (AMD)","item":"https://thevitatrack.com/macular-degeneration-amd"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

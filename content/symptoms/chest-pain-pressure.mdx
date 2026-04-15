@@ -1,0 +1,496 @@
+---
+title: "Chest Pain / Pressure"
+slug: "chest-pain-pressure"
+category: "symptoms"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Chest Pain / Pressure — Senior Symptom Guide • TheVitatrack</title>
+<meta name="description" content="Chest pain or pressure in older adults: emergency red flags, heart vs. non-heart causes, what to do now, safe steps at home, tests, and medicine cautions. Clear checklists." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+  .ok{
+    background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Chest Pain / Pressure</h1>
+    <p>Emergency warning signs, heart vs. non-heart causes, what to do right now, safe steps, tests, and medicine cautions for older adults.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#about">What chest pain can mean</a></li>
+      <li><a href="#red-flags">When to call emergency</a></li>
+      <li><a href="#types">Common patterns & clues</a></li>
+      <li><a href="#do-now">What to do right now</a></li>
+      <li><a href="#self-care">If symptoms fully resolve</a></li>
+      <li><a href="#meds-caution">Medicine cautions</a></li>
+      <li><a href="#tests">What clinicians may do</a></li>
+      <li><a href="#tracking">What to track at home</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>What chest pain can mean</h2>
+    <p class="lead"><span class="badge">Overview</span> Chest pain or pressure may come from the heart, lungs, esophagus/stomach, muscles/bones, anxiety, or even the aorta. In older adults, symptoms can be <strong>atypical</strong> (indigestion, breathlessness, fatigue, jaw/arm/back pain). Treat new or worsening pain as potentially serious until proven otherwise.</p>
+    <div class="card small">
+      <p><strong>Heart-related causes:</strong> angina, heart attack, pericarditis, aortic emergencies. <strong>Lung-related:</strong> pulmonary embolism, pneumonia, pneumothorax (collapsed lung), pleurisy. <strong>Other common:</strong> GERD/acid reflux, esophageal spasm, costochondritis (chest wall strain), anxiety/panic.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to call emergency</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Chest pressure, tightness, heaviness, or pain lasting <strong>>5 minutes</strong>, especially at rest</li>
+        <li>Pain spreading to arm, jaw, neck, back, or with <strong>shortness of breath</strong>, sweating, nausea, or fainting</li>
+        <li>Sudden, severe “tearing” chest/back pain (possible aortic problem)</li>
+        <li>Chest pain with <strong>fast heartbeat</strong>, lightheadedness, or low oxygen</li>
+        <li>Recent long travel/immobility with sharp pain and breathlessness (possible clot)</li>
+        <li>Known heart disease, diabetes, kidney disease, or on blood thinners with new chest pain</li>
+      </ul>
+      <p class="small">Do <strong>not</strong> drive yourself. Call emergency services for evaluation.</p>
+    </div>
+  </section>
+
+  <!-- Types -->
+  <section id="types" class="section">
+    <h2>Common patterns & clues</h2>
+    <table class="table" role="table" aria-label="Chest pain patterns">
+      <thead>
+        <tr><th scope="col">Pattern</th><th scope="col">More likely</th><th scope="col">Clues</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Pressure/heaviness</strong> with exertion, improves with rest</td>
+          <td>Angina (reduced heart blood flow)</td>
+          <td>Risk factors: age, diabetes, high BP, cholesterol; may radiate to arm/jaw</td>
+        </tr>
+        <tr>
+          <td><strong>Crushing, persistent pressure</strong> not relieved by rest</td>
+          <td>Heart attack</td>
+          <td>Shortness of breath, sweating, nausea; call emergency</td>
+        </tr>
+        <tr>
+          <td><strong>Sharp pain worse with deep breath/cough</strong></td>
+          <td>Pleurisy, pneumonia, pulmonary embolism</td>
+          <td>Fever/cough or recent immobility/clot risks</td>
+        </tr>
+        <tr>
+          <td><strong>Burning behind breastbone</strong> after meals/lying down</td>
+          <td>GERD/acid reflux</td>
+          <td>Bitter taste/regurgitation; improves with antacids</td>
+        </tr>
+        <tr>
+          <td><strong>Tender to touch</strong> over ribs/sternum</td>
+          <td>Costochondritis/muscle strain</td>
+          <td>Pain reproducible with movement or pressure</td>
+        </tr>
+        <tr>
+          <td><strong>Sudden, tearing pain</strong> to back/abdomen</td>
+          <td>Aortic dissection</td>
+          <td>Blood pressure difference between arms; immediate emergency</td>
+        </tr>
+        <tr>
+          <td><strong>Chest tightness with panic</strong></td>
+          <td>Anxiety/panic attack</td>
+          <td>Rapid breathing, tingling; still consider heart causes in older adults</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD (after Types) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Do now -->
+  <section id="do-now" class="section">
+    <h2>What to do right now</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">If symptoms suggest a heart problem</p>
+        <ul class="list">
+          <li><strong>Stop activity. Sit or lie with head elevated.</strong></li>
+          <li><strong>Call emergency services.</strong> Do not drive yourself.</li>
+          <li>If you have <strong>prescribed nitroglycerin</strong>, use it as directed while waiting.</li>
+          <li>If not allergic and no bleeding risk, many clinicians advise <strong>chewing aspirin</strong> (160–325 mg) <em>only if instructed by an emergency operator/clinician.</em></li>
+        </ul>
+      </div>
+      <div class="card info">
+        <p class="kicker">If pain fully resolves and seems non-urgent</p>
+        <ul class="list">
+          <li>Arrange a <strong>prompt clinic visit</strong>, especially if symptoms were new, intense, or you have heart risk factors.</li>
+          <li>Note triggers (exertion, meals, position), duration, and any associated symptoms.</li>
+          <li>Avoid heavy exertion until evaluated.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small">This page is educational and not a diagnosis. When in doubt, seek urgent care.</p>
+  </section>
+
+  <!-- Self-care (after resolution) -->
+  <section id="self-care" class="section">
+    <h2>If symptoms fully resolve</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Helpful steps</p>
+        <ul class="list">
+          <li>Small, non-heavy meals; avoid late-night large meals if reflux suspected</li>
+          <li>Elevate head of bed for nighttime reflux; consider antacids/H2 blocker if previously advised</li>
+          <li>Gentle activity as tolerated; avoid over-the-chest strain until assessed</li>
+        </ul>
+      </div>
+      <div class="card note">
+        <strong>Important:</strong> Even if pain stops, new chest pain in older adults often needs <strong>ECG and troponin testing</strong> to rule out heart injury.
+      </div>
+    </div>
+  </section>
+
+  <!-- Meds -->
+  <section id="meds-caution" class="section">
+    <h2>Medicine cautions</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>NSAIDs</strong> (ibuprofen, naproxen) may raise heart/stomach risks; avoid for undiagnosed chest pain unless told otherwise.</li>
+          <li><strong>Antacids/acid reducers</strong> can help reflux; seek care if symptoms persist or mimic heart pain.</li>
+          <li><strong>Nitroglycerin</strong> is only for those prescribed it; can cause low blood pressure/headache.</li>
+          <li><strong>Do not start/stop heart medicines</strong> (beta-blockers, blood thinners) without clinician advice.</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Keep an updated list of <strong>all medicines and supplements</strong> and bring it to appointments.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (before tests) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>What clinicians may do</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Step</th><th scope="col">Purpose</th><th scope="col">Examples</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>History & exam</strong></td>
+          <td>Assess cardiac, lung, GI, and aortic risks</td>
+          <td>Risk factors, vital signs, oxygen level, chest wall tenderness</td>
+        </tr>
+        <tr>
+          <td><strong>ECG & troponin</strong></td>
+          <td>Detect heart injury/ischemia</td>
+          <td>ECG on arrival; repeat troponin over hours</td>
+        </tr>
+        <tr>
+          <td><strong>Imaging</strong></td>
+          <td>Look for lung/aorta issues</td>
+          <td>Chest X-ray; CT angiography for clots or aorta when indicated; echocardiogram</td>
+        </tr>
+        <tr>
+          <td><strong>Other tests</strong></td>
+          <td>Clarify reflux or chronic angina</td>
+          <td>Stress test, coronary CT, endoscopy if GI cause suspected</td>
+        </tr>
+        <tr>
+          <td><strong>Treatment</strong></td>
+          <td>Stabilize and treat cause</td>
+          <td>Oxygen, aspirin if appropriate, nitroglycerin, anticoagulation for clots, PCI for heart attack, antibiotics for pneumonia</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">The plan depends on severity, age, medical history, and exam/testing results.</p>
+  </section>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track at home</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Onset time, duration, and character (pressure, burning, sharp, tearing)</li>
+          <li>Triggers and relievers (exertion, meals, position, antacids, nitroglycerin)</li>
+          <li>Associated symptoms: breathlessness, sweating, nausea, palpitations, fainting</li>
+          <li>All medicines taken before/during event (dose and time)</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Bring these notes and your medication list to appointments—it speeds diagnosis.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Is chest “pressure” the same as pain?</p>
+        <p>Yes—pressure, heaviness, tightness, or an “elephant on the chest” sensation can all be heart symptoms, especially in older adults.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">If antacids help, is it just reflux?</p>
+        <p>Not always. Heart pain can briefly improve with rest or medicines; new or recurrent symptoms still need medical evaluation.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Should I take aspirin?</p>
+        <p>Only if not allergic and if advised by a clinician or emergency operator for suspected heart attack. Otherwise, wait for medical guidance.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">When can I resume activity?</p>
+        <p>After a clinician evaluates the cause. Avoid heavy exertion until cleared, especially if symptoms were exertional.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card small">
+      <ul class="list">
+        <li><a href="#">Heart Attack (Warning Signs)</a></li>
+        <li><a href="#">High Blood Pressure (Hypertension)</a></li>
+        <li><a href="#">GERD / Acid Reflux</a></li>
+        <li><a href="#">Anxiety / Feeling On Edge</a></li>
+        <li><a href="#">Pneumonia (Basics)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Chest Pain / Pressure",
+  "description":"Chest pain or pressure in older adults: emergency red flags, heart vs non-heart causes, what to do now, tests, and medicine cautions.",
+  "about":{"@type":"MedicalSymptom","name":"Chest pain"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/chest-pain"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Is chest pressure an emergency?","acceptedAnswer":{"@type":"Answer","text":"Chest pressure or pain lasting more than 5 minutes—especially with shortness of breath, sweating, nausea, or radiation to arm/jaw/back—warrants emergency care."}},
+    {"@type":"Question","name":"Does antacid relief rule out heart causes?","acceptedAnswer":{"@type":"Answer","text":"No. Symptoms can overlap. New or recurrent chest pain in older adults should be evaluated by a clinician."}},
+    {"@type":"Question","name":"Should I take aspirin for chest pain?","acceptedAnswer":{"@type":"Answer","text":"Only if you are not allergic and are advised by a clinician or emergency operator when a heart attack is suspected."}},
+    {"@type":"Question","name":"What tests might I need?","acceptedAnswer":{"@type":"Answer","text":"An ECG and troponin blood tests, chest X-ray, and additional imaging such as echocardiogram or CT angiography depending on findings."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Symptoms (A–Z)","item":"https://thevitatrack.com/symptoms/"},
+    {"@type":"ListItem","position":3,"name":"Chest Pain / Pressure","item":"https://thevitatrack.com/chest-pain"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

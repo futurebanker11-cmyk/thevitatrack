@@ -1,0 +1,534 @@
+---
+title: "Bathroom Safety Setup"
+slug: "bathroom-safety-setup"
+category: "daily-living"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Bathroom Safety Setup — Daily Living • TheVitatrack</title>
+<meta name="description" content="Step-by-step bathroom safety setup for older adults: quick risk check, grab bars, non-slip flooring, lighting, toilet & shower aids, meds that raise fall risk, emergency plan, and a printable checklist." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #EAF4FF, rgba(234,244,255,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .calm{background:var(--calm); border:1.5px solid var(--calm-border); color:var(--calm-ink); border-radius:14px; padding:12px}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFE7FF,#BFE3FD,#CFE7FF);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Bathroom Safety Setup</h1>
+    <p>Practical upgrades to reduce slips, trips, and dizziness — with a simple step-by-step plan and gear suggestions for older adults.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#why">Why bathroom safety matters</a></li>
+      <li><a href="#check">Quick risk check</a></li>
+      <li><a href="#steps">Your 6-step setup</a></li>
+      <li><a href="#grab">Grab bars & seating</a></li>
+      <li><a href="#light-floor">Lighting, flooring & clutter</a></li>
+      <li><a href="#meds">Medicines & conditions</a></li>
+      <li><a href="#emergency">Emergency plan</a></li>
+      <li><a href="#tracking">What to track</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <h2>Why bathroom safety matters</h2>
+    <p class="lead"><span class="badge">Slips happen fast</span> Wet floors, low toilets, poor lighting, and rush-to-bathroom urgency raise fall risk. Small changes (grab bars, non-slip surfaces, lighting) prevent injuries, hospital stays, and loss of independence.</p>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Common hazards</p>
+        <ul class="list">
+          <li>Loose rugs/mats and soapy floors</li>
+          <li>Low toilet height and no handholds</li>
+          <li>Dim night lighting and glare</li>
+          <li>Dizziness from meds or standing up too quickly</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Goal: <strong>1 safe path</strong> from bed → bathroom with steady light, clear floor, and sturdy supports.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Quick risk check -->
+  <section id="check" class="section">
+    <h2>Quick risk check</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">If you answer “yes”, prioritize setup now</p>
+        <ul class="list">
+          <li>Have you felt <strong>unsteady</strong> or grabbed furniture in the bathroom?</li>
+          <li>Any <strong>near-falls</strong> or actual falls in the last year?</li>
+          <li>Do you rush for the toilet (urgency/leakage) or wake 2+ times/night?</li>
+          <li>New <strong>dizziness</strong> when you stand up?</li>
+          <li>Do you take sleep pills, anxiety meds, strong pain meds, or blood pressure meds at night?</li>
+        </ul>
+      </div>
+      <div class="card info">
+        If you use a <strong>cane/walker</strong>, make sure it fits through the doorway and can stand safely by the sink and toilet.
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section id="steps" class="section">
+    <h2>Your 6-step setup (about 60–90 minutes)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">1) Light the path</p>
+        <ul class="list">
+          <li>Install <strong>motion night lights</strong> from bed → bathroom.</li>
+          <li>Add a <strong>bright, non-glare</strong> light near sink and shower.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">2) Make floors non-slip</p>
+        <ul class="list">
+          <li>Place <strong>rubber-backed, low-profile</strong> bath mats (no loose rugs).</li>
+          <li>Use <strong>non-slip decals</strong> or a full mat inside the tub/shower.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">3) Add sturdy handholds</p>
+        <ul class="list">
+          <li>Install <strong>screw-mounted grab bars</strong>: beside toilet; vertical at shower entry; horizontal inside.</li>
+          <li>Do <strong>not</strong> rely on towel bars or suction-only cups as primary support.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">4) Sit to shower</p>
+        <ul class="list">
+          <li>Use a <strong>shower chair/bench</strong> with rubber feet; add a <strong>handheld shower</strong>.</li>
+          <li>Keep shampoo/soap <strong>within reach</strong> to avoid bending.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">5) Right-height toilet</p>
+        <ul class="list">
+          <li>Add a <strong>raised seat</strong> or replace with a comfort-height toilet (43–46 cm / 17–18 in).</li>
+          <li>Consider <strong>toilet safety frame</strong> or armrests for push-off support.</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        <p class="kicker">6) Declutter & organize</p>
+        <ul class="list">
+          <li>Remove extra rugs, bins, and low stools; route cords away.</li>
+          <li>Store daily items at <strong>waist height</strong>; keep a dry towel within easy reach.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after steps) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Grab bars & seating -->
+  <section id="grab" class="section">
+    <h2>Grab bars & seating: where and how</h2>
+    <table class="table" role="table" aria-label="Grab bar placement">
+      <thead>
+        <tr><th scope="col">Location</th><th scope="col">Placement idea</th><th scope="col">Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Toilet</strong></td>
+          <td>One bar <strong>beside</strong> the toilet (wall-mounted) OR a freestanding <strong>safety frame</strong></td>
+          <td>Align at standing wrist height for push support</td>
+        </tr>
+        <tr>
+          <td><strong>Shower entry</strong></td>
+          <td>Vertical bar near the entrance</td>
+          <td>Helps step in/out; combine with non-slip threshold</td>
+        </tr>
+        <tr>
+          <td><strong>Inside shower/tub</strong></td>
+          <td>Horizontal bar on long wall; optional angled bar</td>
+          <td>Use <strong>studs or anchors</strong> rated for grab bars; stainless steel preferred</td>
+        </tr>
+        <tr>
+          <td><strong>Sink area</strong></td>
+          <td>Small vertical “assist” bar</td>
+          <td>For steadying during grooming</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">If renting, ask for permission; many bars can mount into studs with minimal repair later.</p>
+  </section>
+
+  <!-- Lighting & Flooring -->
+  <section id="light-floor" class="section">
+    <h2>Lighting, flooring & clutter</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Lighting</p>
+        <ul class="list">
+          <li>Use <strong>warm, even</strong> LEDs to reduce glare and shadows.</li>
+          <li>Install <strong>motion sensors</strong> or night lights with battery backup.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Flooring</p>
+        <ul class="list">
+          <li>Prefer <strong>textured tiles</strong> or anti-slip coating; dry floors after each use.</li>
+          <li>Secure mats by the tub and sink; avoid thick, loose rugs.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Clutter & storage</p>
+        <ul class="list">
+          <li>Shower caddy at chest height; pump bottles to avoid fiddly caps.</li>
+          <li>Hamper outside the bathroom to keep floor clear.</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Keep a <strong>spare pair</strong> of non-slip bathroom slippers with good grip; avoid smooth, worn soles.
+      </div>
+    </div>
+  </section>
+
+  <!-- Medicines & conditions -->
+  <section id="meds" class="section">
+    <h2>Medicines & conditions that affect bathroom safety</h2>
+    <table class="table" role="table" aria-label="Meds and conditions">
+      <thead>
+        <tr><th scope="col">Factor</th><th scope="col">Effect</th><th scope="col">What to do</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Sleep pills, sedatives, strong pain meds</strong></td>
+          <td>Drowsy, unsteady at night</td>
+          <td>Use night lights; move slowly; discuss dose/timing with clinician</td>
+        </tr>
+        <tr>
+          <td><strong>Blood pressure meds / diuretics</strong></td>
+          <td>Dizziness on standing; frequent urination</td>
+          <td>Rise in stages (sit → stand pause); ask about earlier dosing</td>
+        </tr>
+        <tr>
+          <td><strong>Diabetes meds (insulin/sulfonylureas)</strong></td>
+          <td>Low glucose → shakiness, confusion</td>
+          <td>Keep glucose tabs nearby; follow low-sugar plan</td>
+        </tr>
+        <tr>
+          <td><strong>Arthritis, neuropathy, stroke</strong></td>
+          <td>Limited balance/strength; foot sensation issues</td>
+          <td>Use seating, bars, and assistive devices; footwear with grip</td>
+        </tr>
+        <tr>
+          <td><strong>BPH/overactive bladder</strong></td>
+          <td>Urgency → rushing</td>
+          <td>Clear path; consider bedside commode; limit late fluids</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Emergency plan -->
+  <section id="emergency" class="section">
+    <h2>Emergency plan (simple & ready)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Prepare</p>
+        <ul class="list">
+          <li>Keep a <strong>water-resistant phone</strong> or emergency button within reach.</li>
+          <li>Place a <strong>non-slip bath bench</strong> for safe seated showering.</li>
+          <li>Stick a small card with <strong>ICE contacts</strong> on the inside of the cabinet door.</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        <p class="kicker">If a fall happens</p>
+        <ul class="list">
+          <li>Stay calm; call for help or use your device.</li>
+          <li>Roll onto hands and knees to a stable surface; use bars/chair to rise if uninjured.</li>
+          <li>If dizzy, <strong>crawl</strong> to a dry area first—wet floors increase risk of a second fall.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small">Head injury, severe pain, bleeding, or you take blood thinners → seek urgent care.</p>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Tracking -->
+  <section id="tracking" class="section">
+    <h2>What to track</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Completed items: lighting / mats / bars / seating / raised seat (✓/✗)</li>
+          <li>Near-falls or slips (date/time and cause)</li>
+          <li>Night bathroom trips and dizziness on standing</li>
+          <li>Any doorframe/walker width issues</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Re-check the setup every <strong>6 months</strong> or after any fall or medication change.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Are suction grab bars safe?</p>
+        <p>They can help <em>temporarily</em>, but for primary support use <strong>screw-mounted</strong> bars into studs or proper anchors.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What height should a grab bar be?</p>
+        <p>Place bars where your hand naturally lands when standing by the toilet or stepping in/out (often 80–90 cm / 32–36 in from floor). Comfort and reach trump strict numbers.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is a raised toilet seat worth it?</p>
+        <p>Yes for knee/hip pain or low strength—less strain and easier stand-up. Add armrests or a safety frame if you need push support.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What about small bathrooms?</p>
+        <p>Use a corner shower stool, vertical bars, low-profile mats, and wall caddies; ensure the door opens outward or keep a slide-bolt you can unlock from outside.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card">
+      <ul class="list">
+        <li><a href="#">Short Walk After Meals</a></li>
+        <li><a href="#">Evening Wind-Down</a></li>
+        <li><a href="#">Hydration Through the Day</a></li>
+        <li><a href="#">Falls (Injury Prevention)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Bathroom Safety Setup (6 steps)",
+  "description":"A practical, low-cost bathroom fall-prevention setup for older adults.",
+  "totalTime":"PT90M",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"},
+  "tool":[
+    {"@type":"HowToTool","name":"Screwdriver/drill and wall anchors"},
+    {"@type":"HowToTool","name":"Motion night lights"},
+    {"@type":"HowToTool","name":"Non-slip mats/decals"},
+    {"@type":"HowToTool","name":"Grab bars"},
+    {"@type":"HowToTool","name":"Shower chair or bench"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Light the path","text":"Install motion night lights from bed to bathroom and add bright, non-glare task light."},
+    {"@type":"HowToStep","name":"Make floors non-slip","text":"Use rubber-backed mats and anti-slip decals inside the tub/shower."},
+    {"@type":"HowToStep","name":"Add sturdy handholds","text":"Mount screw-fixed grab bars near toilet, shower entry, and inside shower."},
+    {"@type":"HowToStep","name":"Sit to shower","text":"Place a stable shower chair/bench and add a handheld shower head."},
+    {"@type":"HowToStep","name":"Right-height toilet","text":"Fit a raised seat or comfort-height toilet and consider a safety frame."},
+    {"@type":"HowToStep","name":"Declutter & organize","text":"Remove loose rugs/clutter; store daily items at waist height within easy reach."}
+  ],
+  "url":"https://thevitatrack.com/daily-living/bathroom-safety-setup"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Are suction grab bars safe?","acceptedAnswer":{"@type":"Answer","text":"Suction bars are best as temporary aids. For primary support, install screw-mounted bars into studs or proper anchors."}},
+    {"@type":"Question","name":"What height should bathroom grab bars be?","acceptedAnswer":{"@type":"Answer","text":"Commonly 80–90 cm (32–36 in) from the floor, adjusted to the user's natural reach and posture."}},
+    {"@type":"Question","name":"Is a raised toilet seat worth it?","acceptedAnswer":{"@type":"Answer","text":"Yes—reduces strain on knees/hips and makes standing safer. Add armrests or a safety frame for push support."}},
+    {"@type":"Question","name":"How do I prevent slips in a small bathroom?","acceptedAnswer":{"@type":"Answer","text":"Use low-profile rubber-backed mats, wall-mounted caddies, a corner shower stool, and ensure good lighting with motion sensors."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Bathroom Safety Setup","item":"https://thevitatrack.com/daily-living/bathroom-safety-setup"}
+  ]
+}
+</script>
+
+<script>
+  // Small QoL
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

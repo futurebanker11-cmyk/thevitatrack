@@ -1,0 +1,505 @@
+---
+title: "Hyperthyroidism"
+slug: "hyperthyroidism"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Hyperthyroidism — Senior Guide • TheVitatrack</title>
+<meta name="description" content="Hyperthyroidism in older adults: symptoms (including atrial fibrillation and weight loss), Graves’ disease and other causes, TSH/Free T4/T3 testing, treatment (antithyroid drugs, radioactive iodine, surgery), medication interactions, and follow-up." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Hyperthyroidism</h1>
+    <p>What high thyroid levels do, how symptoms differ in older adults, common causes, key tests, treatment options, interactions, and safe follow-up.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is">What is hyperthyroidism?</a></li>
+      <li><a href="#symptoms">Symptoms in older adults</a></li>
+      <li><a href="#red-flags">When to seek urgent care</a></li>
+      <li><a href="#causes">Common causes</a></li>
+      <li><a href="#tests">How it’s diagnosed (TSH, Free T4/T3, scan)</a></li>
+      <li><a href="#treatment">Treatment options</a></li>
+      <li><a href="#interactions">Interactions & what to avoid</a></li>
+      <li><a href="#followup">Monitoring & follow-up</a></li>
+      <li><a href="#daily">Daily care & safety</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- What is -->
+  <section id="what-is" class="section">
+    <h2>What is hyperthyroidism?</h2>
+    <p class="lead"><span class="badge">In short</span> The thyroid makes too much hormone, speeding up body systems: heart rate, metabolism, bowels, and nerves. In older adults, signs can be subtle (fatigue, weight loss, atrial fibrillation) rather than classic tremor and heat intolerance.</p>
+    <div class="card small">
+      <p><strong>Why treatment matters:</strong> Persistent overactive thyroid can strain the heart, weaken bones, and increase fall risk.</p>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section id="symptoms" class="section">
+    <h2>Symptoms in older adults</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Unintentional weight loss, poor appetite tolerance, muscle weakness</li>
+          <li>Rapid or irregular heartbeat (<strong>atrial fibrillation</strong>), palpitations</li>
+          <li>Shortness of breath with activity, reduced exercise tolerance</li>
+          <li>Nervousness, anxiety, sleep problems; sometimes apathy (“apathetic hyperthyroidism”)</li>
+          <li>Frequent stools/diarrhea, heat intolerance, warm/moist skin</li>
+          <li>Shaking hands (tremor), eye irritation or bulging with Graves’ disease</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">Atrial Fibrillation</a> · <a href="#">Bone Health & Osteoporosis</a></li>
+          <li><a href="#">Weight Loss (Unintentional)</a> · <a href="#">Anxiety</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Symptoms) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent care</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Chest pain, fainting, or new severe shortness of breath</li>
+        <li>Very fast or irregular pulse, dizziness, or confusion</li>
+        <li>High fever, agitation, vomiting/diarrhea with weakness (possible <strong>thyroid storm</strong>)</li>
+        <li>Eye pain, double vision, vision loss</li>
+      </ul>
+      <p class="small">These can be emergencies. Call your local emergency number.</p>
+    </div>
+  </section>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Common causes</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Cause</th><th scope="col">What’s happening</th><th scope="col">Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Graves’ disease</strong></td>
+          <td>Autoantibodies stimulate the thyroid</td>
+          <td>May cause eye findings (gritty eyes, bulging); diffuse uptake on scan</td>
+        </tr>
+        <tr>
+          <td><strong>Toxic multinodular goiter</strong></td>
+          <td>Multiple overactive nodules</td>
+          <td>Common in older adults; patchy uptake on scan</td>
+        </tr>
+        <tr>
+          <td><strong>Toxic adenoma</strong></td>
+          <td>Single overactive nodule</td>
+          <td>“Hot” nodule on scan; surrounding tissue suppressed</td>
+        </tr>
+        <tr>
+          <td><strong>Thyroiditis</strong></td>
+          <td>Leak of stored hormone</td>
+          <td>Often transient; <em>low</em> uptake on scan; may follow infection or be painless</td>
+        </tr>
+        <tr>
+          <td><strong>Medicines/iodine</strong></td>
+          <td>Amiodarone, excessive iodine, thyroid hormone excess</td>
+          <td>Review supplements and contrast exposures</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Tests -->
+  <section id="tests" class="section">
+    <h2>How it’s diagnosed (TSH, Free T4/T3, scan)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Labs</p>
+        <ul class="list">
+          <li><strong>TSH low</strong> with <strong>Free T4 and/or T3 high</strong> → hyperthyroidism</li>
+          <li>“Subclinical”: TSH low, Free T4/T3 normal; decisions depend on age, heart/bone risk, and symptoms</li>
+          <li>Thyroid antibodies (TRAb/TSI) support Graves’ diagnosis</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Imaging</p>
+        <ul class="list">
+          <li><strong>Radioactive iodine uptake (RAIU) and scan</strong> distinguishes overproduction (high/patchy uptake) vs thyroiditis (low uptake)</li>
+          <li>Ultrasound helps define nodules and goiter anatomy</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Tests) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Treatment -->
+  <section id="treatment" class="section">
+    <h2>Treatment options</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Beta-blockers (symptom relief)</p>
+        <p>Help slow heart rate and reduce tremor/palpitations while other treatments take effect. Choice depends on heart/lung status.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Antithyroid drugs</p>
+        <ul class="list">
+          <li><strong>Methimazole</strong> is first choice for most adults</li>
+          <li><strong>Propylthiouracil (PTU)</strong> reserved for specific cases (e.g., early pregnancy or thyroid storm)</li>
+          <li>Rare risks: low white count, liver injury—report fever/sore throat, dark urine, or jaundice</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Radioactive iodine (RAI)</p>
+        <p>Common definitive therapy for Graves’ or toxic nodules. Many patients become hypothyroid afterward and need levothyroxine.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Surgery</p>
+        <p>Consider for large goiter, compressive symptoms, suspicious nodules, or when RAI/drugs aren’t suitable. Requires experienced surgeon.</p>
+      </div>
+    </div>
+    <div class="note" style="margin-top:12px">Choice depends on cause, age, heart and bone health, eye disease, and personal preference.</div>
+  </section>
+
+  <!-- Interactions -->
+  <section id="interactions" class="section">
+    <h2>Interactions & what to avoid</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Iodine exposures</p>
+        <ul class="list">
+          <li>Limit unnecessary high-iodine supplements</li>
+          <li>Tell your team before <strong>iodinated contrast</strong> scans—can worsen or trigger hyperthyroidism</li>
+          <li><strong>Amiodarone</strong> can cause over- or under-active thyroid; needs close monitoring</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Antithyroid drug cautions</p>
+        <ul class="list">
+          <li>Seek care urgently for fever/sore throat (possible agranulocytosis)</li>
+          <li>Report jaundice, severe abdominal pain, dark urine (possible liver injury)</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Keep an updated medication/supplement list and share it at every visit.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Follow-up -->
+  <section id="followup" class="section">
+    <h2>Monitoring & follow-up</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Lab checks</p>
+        <ul class="list">
+          <li>Recheck TSH and Free T4 (± T3) about <strong>4–6 weeks</strong> after starting or changing therapy</li>
+          <li>With antithyroid drugs, periodic labs continue until stable; then extend intervals</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Heart & bone health</p>
+        <ul class="list">
+          <li>Pulse/blood pressure checks; rhythm monitoring if palpitations</li>
+          <li>Bone protection after long-standing hyperthyroidism; discuss DEXA when appropriate</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Daily -->
+  <section id="daily" class="section">
+    <h2>Daily care & safety</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Energy & sleep</p>
+        <ul class="list">
+          <li>Limit late-day caffeine; use calming routines to improve sleep</li>
+          <li>Balance gentle activity with rest while symptoms improve</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Eye comfort (Graves’)</p>
+        <ul class="list">
+          <li>Lubricating drops, sunglasses, and head-of-bed elevation for swelling</li>
+          <li>Stop smoking; it worsens eye disease</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Safety</p>
+        <ul class="list">
+          <li>Stand up slowly if light-headed; hydrate well</li>
+          <li>Seek care for chest pain, racing heart, fever, or sudden weakness</li>
+        </ul>
+      </div>
+      <div class="card small">
+        Related: <a href="#">Atrial Fibrillation</a> · <a href="#">Anxiety</a> · <a href="#">Bone Health</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Can hyperthyroidism cause atrial fibrillation?</p>
+        <p>Yes. Overactive thyroid increases heart irritability and can trigger AFib—especially in older adults. Treating the thyroid often helps control rhythm.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Will I need treatment forever?</p>
+        <p>It depends on the cause. Thyroiditis may resolve; Graves’ may remit on medicines, or be treated definitively with RAI or surgery.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What side effects should I watch for on methimazole?</p>
+        <p>Fever/sore throat (possible low white count) and liver symptoms (jaundice, dark urine, severe abdominal pain). Seek care urgently.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can I take iodine supplements?</p>
+        <p>Avoid high-dose iodine unless your clinician prescribes it—excess iodine can worsen hyperthyroidism.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Hyperthyroidism",
+  "description":"Older-adult guide: symptoms, causes (Graves’, toxic nodules, thyroiditis, iodine/meds), testing (TSH, Free T4/T3, RAIU scan), treatment (beta-blockers, antithyroid drugs, radioactive iodine, surgery), interactions, and follow-up.",
+  "about":{"@type":"MedicalCondition","name":"Hyperthyroidism"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/hyperthyroidism"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Can hyperthyroidism cause atrial fibrillation?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. Excess thyroid hormone increases heart excitability and can trigger AFib in older adults. Treating the thyroid often helps restore rhythm control."}
+    },
+    {
+      "@type":"Question",
+      "name":"Will I need treatment forever?",
+      "acceptedAnswer":{"@type":"Answer","text":"Duration depends on cause. Thyroiditis may resolve; Graves’ disease may remit with antithyroid drugs or be treated definitively with radioactive iodine or surgery."}
+    },
+    {
+      "@type":"Question",
+      "name":"What side effects should I watch for on methimazole?",
+      "acceptedAnswer":{"@type":"Answer","text":"Fever or sore throat (possible agranulocytosis) and liver warning signs such as jaundice, dark urine, or severe abdominal pain require urgent evaluation."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is it safe to take iodine supplements with hyperthyroidism?",
+      "acceptedAnswer":{"@type":"Answer","text":"Avoid high-dose iodine unless prescribed. Excess iodine can worsen or trigger hyperthyroidism, particularly in nodular thyroid disease."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Hyperthyroidism","item":"https://thevitatrack.com/hyperthyroidism"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

@@ -1,0 +1,473 @@
+---
+title: "Mood Boost Mini-Plan"
+slug: "mood-boost-mini-plan"
+category: "daily-living"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Mood Boost Mini-Plan — Daily Living • TheVitatrack</title>
+<meta name="description" content="A 10–20 minute, evidence-informed mini-plan to lift mood: light & movement, quick connection, thought reset, tiny wins, soothing breath, and when to seek help. Senior-first, low-pressure steps." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2; --danger-border:#FECACA;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #EAF4FF, rgba(234,244,255,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .step{position:relative;padding-top:var(--s5)}
+  .step .num{
+    position:absolute; top:0; left:0;
+    display:inline-flex; align-items:center; justify-content:center;
+    width:40px; height:40px; border-radius:12px;
+    background:#ECFDF5; color:#065F46; border:2px solid #BBF7D0; font-weight:800;
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .danger{background:var(--danger-bg); border:1.5px solid var(--danger-border); border-radius:14px; padding:12px; color:#7F1D1D}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFE7FF,#BFE3FD,#CFE7FF);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Mood Boost Mini-Plan</h1>
+    <p>A gentle 10–20 minute routine to lift mood and steady the day—light movement, quick connection, thought reset, tiny wins, and calming breath. Built for older adults.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#about">Why this works</a></li>
+      <li><a href="#steps">Your 5-step mini-plan</a></li>
+      <li><a href="#options">Pick-one options</a></li>
+      <li><a href="#signals">When to seek help</a></li>
+      <li><a href="#habits">Make it a habit</a></li>
+      <li><a href="#caregivers">For caregivers</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>Why this works</h2>
+    <p class="lead"><span class="kicker">Small inputs → real gains:</span> Light, movement, connection, and achievement signals nudge brain chemistry (serotonin, dopamine, circadian rhythm). Consistency beats intensity.</p>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">What you’ll need</p>
+        <ul class="list">
+          <li>A bright spot (window/balcony) or lamp</li>
+          <li>Comfortable chair and shoes</li>
+          <li>Phone (1 call/text) and a sticky note or notebook</li>
+          <li>Glass of water or warm tea</li>
+        </ul>
+      </div>
+      <div class="card info">
+        Low mood can come from sleep issues, pain, medicines, thyroid, B12, grief, or loneliness—this plan helps, but medical review may still be useful.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Steps -->
+  <section id="steps" class="section">
+    <h2>Your 5-step mini-plan (10–20 minutes total)</h2>
+    <div class="grid">
+      <!-- Step 1 -->
+      <article class="card step">
+        <div class="num">1</div>
+        <h3 class="kicker">Light + sip (2 min)</h3>
+        <ul class="list">
+          <li>Open curtains or sit by a bright window; face light.</li>
+          <li>Drink a few sips of water/tea to cue “start.”</li>
+        </ul>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="card step">
+        <div class="num">2</div>
+        <h3 class="kicker">Move gently (3–6 min)</h3>
+        <ul class="list">
+          <li>Seated or standing: march in place x30, shoulder rolls x10, ankle circles x10/side, slow neck look L/R x5.</li>
+          <li>Optional: short walk to the mailbox/balcony.</li>
+        </ul>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="card step">
+        <div class="num">3</div>
+        <h3 class="kicker">Connect (2–5 min)</h3>
+        <ul class="list">
+          <li>Send a <strong>one-line text/voice note</strong>: “Thinking of you—how’s today?”</li>
+          <li>No phone? Wave to a neighbor, greet a caregiver, or pet an animal.</li>
+        </ul>
+      </article>
+
+      <!-- Step 4 -->
+      <article class="card step">
+        <div class="num">4</div>
+        <h3 class="kicker">Tiny win (2–4 min)</h3>
+        <ul class="list">
+          <li>Choose a <strong>2-minute task</strong>: make the bed, water one plant, sort today’s pills, put 5 items away.</li>
+          <li>Say out loud: “Done.” Write a ✓ on a sticky note.</li>
+        </ul>
+      </article>
+
+      <!-- Step 5 -->
+      <article class="card step">
+        <div class="num">5</div>
+        <h3 class="kicker">Calm the system (1–3 min)</h3>
+        <ul class="list">
+          <li><strong>Pursed-lip breathing:</strong> inhale nose 2, exhale lips 4 (x5–8 breaths).</li>
+          <li>Option: 10-second gratitude—name one good thing from the last 24 hours.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Options -->
+  <section id="options" class="section">
+    <h2>Pick-one options (swap as you like)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">If you’re low on energy</p>
+        <ul class="list">
+          <li>Sunlight at window + 2-minute ankle/hand moves</li>
+          <li>Call a friend while seated</li>
+          <li>Hold a warm mug; 5 slow breaths</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">If you’re anxious or keyed up</p>
+        <ul class="list">
+          <li>Feet on floor, hands on belly—slow exhale focus</li>
+          <li>Light music or nature sounds (low volume)</li>
+          <li>Note & park worries on paper: “I’ll revisit at 4 pm.”</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">If you’re lonely</p>
+        <ul class="list">
+          <li>Send “photo + one line” to family group</li>
+          <li>Schedule a 10-minute call this week (put on calendar)</li>
+          <li>Join one recurring activity (library talk, walking group)</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Repeat the mini-plan <strong>once in the morning</strong> and again mid-afternoon for best effect.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Signals -->
+  <section id="signals" class="section">
+    <h2>When to seek help</h2>
+    <div class="grid">
+      <div class="card danger">
+        <strong>Urgent now:</strong> thoughts of self-harm, not wanting to live, severe confusion, or inability to care for yourself (not eating/drinking). Call your local emergency number or crisis line.
+      </div>
+      <div class="card">
+        <p class="kicker">Call your clinician soon if</p>
+        <ul class="list">
+          <li>Low mood lasts most days &gt;2 weeks, or loss of interest/pleasure</li>
+          <li>Major sleep/appetite changes, weight loss, or new memory issues</li>
+          <li>Med changes preceded mood drop, or alcohol is creeping up</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habits -->
+  <section id="habits" class="section">
+    <h2>Make it a habit</h2>
+    <table class="table" role="table" aria-label="Make it a habit">
+      <thead>
+        <tr><th>Anchor</th><th>Example</th><th>Why it helps</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Time</td>
+          <td>After breakfast & at 4 pm daily</td>
+          <td>Creates a reliable mood “reset” point</td>
+        </tr>
+        <tr>
+          <td>Place</td>
+          <td>Chair by window with water, pen, sticky notes</td>
+          <td>Reduces setup friction</td>
+        </tr>
+        <tr>
+          <td>People</td>
+          <td>Buddy texts “DONE” emoji after mini-plan</td>
+          <td>Light accountability keeps it going</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Caregivers -->
+  <section id="caregivers" class="section">
+    <h2>For caregivers</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Pre-stage the “mood corner” (light, chair, water, notebook).</li>
+          <li>Offer a choice: “Mini-plan now or after tea?”</li>
+          <li>Join for a 3-minute walk or breathing set.</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        Praise completion, not perfection. Even <strong>one step</strong> counts on hard days.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Does this replace treatment for depression?</p>
+        <p>No—this is a supportive routine. Persistent or severe symptoms need clinical care.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">I don’t feel like doing anything—where do I start?</p>
+        <p>Start at step 1 only (light + sip). Often step 2 follows naturally. Set a 3-minute timer.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">What if I have pain or limited mobility?</p>
+        <p>Do seated versions of movements and keep steps tiny. Even ankle/hand motions plus breath work help.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Best time of day?</p>
+        <p>Morning and mid-afternoon. Consistency at the same times improves results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card">
+      <ul class="list">
+        <li><a href="#">Loneliness & Social Isolation</a></li>
+        <li><a href="#">Evening Wind-Down</a></li>
+        <li><a href="#">Energy Conservation</a></li>
+        <li><a href="#">Hydration & Drinks</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Mood Boost Mini-Plan (5 steps)",
+  "description":"A 10–20 minute routine combining light, movement, social contact, a tiny task, and calming breath to lift mood.",
+  "totalTime":"PT20M",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"},
+  "tool":[
+    {"@type":"HowToTool","name":"Bright window or lamp"},
+    {"@type":"HowToTool","name":"Chair"},
+    {"@type":"HowToTool","name":"Phone"},
+    {"@type":"HowToTool","name":"Notebook or sticky notes"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Light + sip","text":"Sit by bright light and take a few sips of water/tea."},
+    {"@type":"HowToStep","name":"Move gently","text":"March in place, shoulder rolls, ankle circles, and a short walk if able."},
+    {"@type":"HowToStep","name":"Connect","text":"Send a one-line text or voice note to someone you trust."},
+    {"@type":"HowToStep","name":"Tiny win","text":"Complete a 2-minute task and check it off."},
+    {"@type":"HowToStep","name":"Calm the system","text":"5–8 cycles of pursed-lip breathing and a quick gratitude note."}
+  ],
+  "url":"https://thevitatrack.com/daily-living/mood-boost-mini-plan"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How long should the mini-plan take?","acceptedAnswer":{"@type":"Answer","text":"About 10–20 minutes. Shorter on tough days is fine—start with step 1."}},
+    {"@type":"Question","name":"Can I do it seated?","acceptedAnswer":{"@type":"Answer","text":"Yes. All movements can be done seated. Focus on ankle/hand motions and breathing if standing isn’t safe."}},
+    {"@type":"Question","name":"How often should I repeat it?","acceptedAnswer":{"@type":"Answer","text":"Once in the morning and once mid-afternoon. Add an evening version if helpful."}},
+    {"@type":"Question","name":"When should I seek professional help?","acceptedAnswer":{"@type":"Answer","text":"If low mood lasts most days for more than two weeks, or if you have thoughts of self-harm or cannot manage daily tasks—seek care urgently."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Mood Boost Mini-Plan","item":"https://thevitatrack.com/daily-living/mood-boost-mini-plan"}
+  ]
+}
+</script>
+
+<script>
+  // Small QoL
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

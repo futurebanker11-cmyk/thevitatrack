@@ -1,0 +1,508 @@
+---
+title: "Anxiety"
+slug: "anxiety"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Anxiety — Senior-Friendly Guide • TheVitatrack</title>
+<meta name="description" content="Anxiety guide for seniors: symptoms, types (GAD, panic, phobias), red-flags, evaluation, effective treatments, daily coping skills, and questions to ask your clinician." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .cta-ghost{
+    display:inline-flex;align-items:center;gap:8px;margin-top:10px;
+    padding:10px 12px;border-radius:12px;border:2px solid var(--brand);color:var(--brand);font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+  .small{font-size:.96em;color:var(--muted)}
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad helpers (maintain spacing without labels) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Anxiety</h1>
+    <p>Symptoms, types, red-flags, evaluation, effective treatments, daily coping skills, and what to discuss with your clinician.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is-anxiety">What is anxiety?</a></li>
+      <li><a href="#red-flags">When to seek urgent help</a></li>
+      <li><a href="#symptoms">Common symptoms</a></li>
+      <li><a href="#types">Types: GAD, panic, social anxiety, phobias</a></li>
+      <li><a href="#causes-risks">Causes & risk factors</a></li>
+      <li><a href="#assessment">How clinicians assess</a></li>
+      <li><a href="#treatment">Treatment options</a></li>
+      <li><a href="#skills">Daily coping skills</a></li>
+      <li><a href="#questions">Questions for your clinician</a></li>
+      <li><a href="#faq">Anxiety FAQ</a></li>
+    </ul>
+  </nav>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- ===== Display AD (near top, high viewability) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- What is anxiety -->
+  <section id="what-is-anxiety" class="section">
+    <h2>What is anxiety?</h2>
+    <p class="lead"><span class="badge">In short</span> Anxiety involves ongoing worry, tension, or fear that can affect sleep, energy, focus, and daily activities. It can also cause physical symptoms like palpitations, chest tightness, stomach upset, or shortness of breath.</p>
+    <div class="card small">
+      <p><strong>Key idea:</strong> Anxiety is common at older ages and often coexists with medical conditions (heart, lung, thyroid, pain) or medications that can worsen symptoms. Effective treatments and practical skills work at any age.</p>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent help</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Thoughts of self-harm or suicide</li>
+        <li>Chest pain, pressure, or trouble breathing that may be heart- or lung-related</li>
+        <li>Severe agitation, confusion, or new sudden panic with fainting</li>
+      </ul>
+      <p class="small">If at immediate risk, contact local emergency services. If you have self-harm thoughts, reach out to your clinician or local crisis resources.</p>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section id="symptoms" class="section">
+    <h2>Common symptoms</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Excessive worry, feeling “on edge” or keyed up</li>
+          <li>Restlessness, muscle tension, shakiness</li>
+          <li>Poor sleep, fatigue, irritability</li>
+          <li>Difficulty concentrating or mind going blank</li>
+          <li>Physical symptoms: palpitations, shortness of breath, chest or stomach discomfort, nausea, sweating</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">Palpitations</a></li>
+          <li><a href="#">Shortness of Breath</a></li>
+          <li><a href="#">Dizziness on Standing</a></li>
+          <li><a href="#">Sleep</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (mid-content) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Types -->
+  <section id="types" class="section">
+    <h2>Types: GAD, panic, social anxiety, phobias</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Type</th><th scope="col">Typical features</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Generalized Anxiety Disorder (GAD)</strong></td>
+          <td>Chronic, excessive worry about multiple areas (health, family, finances), plus restlessness, fatigue, muscle tension, poor sleep.</td>
+        </tr>
+        <tr>
+          <td><strong>Panic Disorder</strong></td>
+          <td>Sudden panic attacks with intense fear, palpitations, shortness of breath, chest discomfort, trembling; worry about future attacks.</td>
+        </tr>
+        <tr>
+          <td><strong>Social Anxiety</strong></td>
+          <td>Marked fear of being judged or embarrassed in social situations; avoidance can limit daily activities.</td>
+        </tr>
+        <tr>
+          <td><strong>Specific Phobias</strong></td>
+          <td>Focused fears (elevators, flying, procedures, heights, animals) leading to avoidance.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Causes & risks -->
+  <section id="causes-risks" class="section">
+    <h2>Causes & risk factors</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Common contributors</p>
+        <ul class="list">
+          <li>Stressful life events, loneliness, caregiving strain</li>
+          <li>Medical conditions (thyroid issues, arrhythmias, lung disease, chronic pain)</li>
+          <li>Medicines/substances (stimulants, decongestants, high caffeine, alcohol withdrawal)</li>
+          <li>Sleep problems, inactivity</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Protective factors</p>
+        <ul class="list">
+          <li>Regular movement and consistent sleep routine</li>
+          <li>Social connection and meaningful activities</li>
+          <li>Skills training (breathing, grounding, problem-solving)</li>
+          <li>Timely treatment for medical and mental health conditions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assessment -->
+  <section id="assessment" class="section">
+    <h2>How clinicians assess</h2>
+    <div class="card">
+      <ul class="list">
+        <li>Interview about symptoms, triggers, sleep, mood, and daily impact</li>
+        <li>Review of medicines and substances (including caffeine, alcohol)</li>
+        <li>Screening tools may be used to track severity</li>
+        <li>Focused exam and selected tests if symptoms suggest a medical cause (e.g., thyroid, ECG when appropriate)</li>
+      </ul>
+      <p class="small">Assessment looks for anxiety disorders, medical contributors, and coexisting low mood or cognitive concerns.</p>
+    </div>
+  </section>
+
+  <!-- Treatment -->
+  <section id="treatment" class="section">
+    <h2>Treatment options</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">1) Skills & therapies</p>
+        <ul class="list">
+          <li><strong>Cognitive Behavioral Therapy (CBT)</strong>: identifies worry patterns and builds coping skills</li>
+          <li><strong>Exposure methods</strong> for panic/phobias</li>
+          <li>Problem-solving therapy; brief structured approaches for older adults</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">2) Medicines (when indicated)</p>
+        <ul class="list">
+          <li>First-line: <strong>SSRIs/SNRIs</strong> (dose and choice individualized)</li>
+          <li><strong>Buspirone</strong> for some with GAD</li>
+          <li><strong>Benzodiazepines</strong>: generally avoided or used cautiously in older adults due to fall, memory, and dependence risks</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">3) Combined care</p>
+        <p>Therapy plus medicine often provides the best long-term results, with periodic review and dose adjustments.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">4) Supportive steps</p>
+        <p>Address sleep apnea, pain, thyroid disorders, and reduce substances that worsen symptoms (excess caffeine, alcohol, nicotine).</p>
+      </div>
+    </div>
+    <p class="small note" style="margin-top:12px">Plans are individualized. Discuss options, benefits, and risks with your clinician.</p>
+  </section>
+
+  <!-- Daily coping skills -->
+  <section id="skills" class="section">
+    <h2>Daily coping skills</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Breathing & grounding</p>
+        <ul class="list">
+          <li><strong>4-6 breathing:</strong> in 4 seconds, out 6 seconds; repeat for 1–2 minutes</li>
+          <li><strong>5-4-3-2-1 grounding:</strong> notice 5 things you see, 4 feel, 3 hear, 2 smell, 1 taste</li>
+          <li>Use cues (chair arms, wall) for safety during dizziness</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Sleep & routine</p>
+        <ul class="list">
+          <li>Regular bedtime and wake time; wind-down routine with dim light</li>
+          <li>Limit screens before bed; keep bedroom cool and quiet</li>
+          <li>Cut caffeine after mid-afternoon; avoid late heavy meals</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Movement & body</p>
+        <ul class="list">
+          <li>Light daily activity (walks, tai chi, stretching) to reduce tension</li>
+          <li>Eat regular balanced meals; stay hydrated through the day</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Mind & connection</p>
+        <ul class="list">
+          <li>Brief journaling to park worries; set a daily “worry window” if helpful</li>
+          <li>Call a friend or join a group; schedule simple enjoyable activities</li>
+        </ul>
+      </div>
+    </div>
+    <div class="calm small" style="margin-top:8px">
+      If anxiety limits daily life or you notice mood changes, speak with your clinician—effective help is available.
+    </div>
+  </section>
+
+  <!-- Questions -->
+  <section id="questions" class="section">
+    <h2>Questions for your clinician</h2>
+    <div class="card">
+      <ul class="list">
+        <li>Which type of anxiety fits my symptoms?</li>
+        <li>Could any medical issues or medicines be contributing?</li>
+        <li>Which therapy approach is a good first step for me?</li>
+        <li>Would a medicine help, and what side effects should I watch for?</li>
+        <li>How will we track progress and adjust the plan?</li>
+        <li>What should prompt me to call sooner?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Anxiety — quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Can anxiety feel like a heart problem?</p>
+        <p>Yes. Palpitations, chest tightness, and shortness of breath can occur. Chest pain or concerning symptoms should be medically assessed.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do skills really help at older ages?</p>
+        <p>Yes. Structured skills (CBT, breathing, grounding, problem-solving) are effective and can be combined with medicine when needed.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">How long until I notice improvement?</p>
+        <p>Many notice early benefits from skills within days to weeks. Medicines may take several weeks; steady routines support results.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Are naps helpful?</p>
+        <p>Short daytime rests can help some people, but long or late naps may worsen nighttime sleep and next-day anxiety for others.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (end of page) ===== -->
+  <div class="ad-wrap--wide">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Helpful links -->
+  <section class="section">
+    <h2>Keep learning</h2>
+    <div class="card small">
+      <ul class="list">
+        <li><a href="#">Sleep — Better Nights</a></li>
+        <li><a href="#">Daily Living routines</a></li>
+        <li><a href="#">Symptoms (A–Z)</a></li>
+        <li><a href="#">Mind & Memory hub</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalCondition",
+  "name":"Anxiety",
+  "alternateName":["Anxiety disorder","Generalized anxiety","Panic disorder","Social anxiety","Specific phobia"],
+  "description":"Anxiety guide for seniors: symptoms, types (GAD, panic, social anxiety, phobias), red-flags, evaluation, treatments, daily coping skills, and questions to ask a clinician.",
+  "signOrSymptom":[
+    {"@type":"MedicalSymptom","name":"Excessive worry"},
+    {"@type":"MedicalSymptom","name":"Restlessness or tension"},
+    {"@type":"MedicalSymptom","name":"Sleep disturbance"},
+    {"@type":"MedicalSymptom","name":"Palpitations"},
+    {"@type":"MedicalSymptom","name":"Shortness of breath"}
+  ],
+  "possibleComplication":[
+    {"@type":"MedicalEntity","name":"Reduced sleep quality"},
+    {"@type":"MedicalEntity","name":"Avoidance limiting activities"}
+  ],
+  "riskFactor":[
+    {"@type":"MedicalRiskFactor","name":"Stressful life events"},
+    {"@type":"MedicalRiskFactor","name":"Medical conditions"},
+    {"@type":"MedicalRiskFactor","name":"Certain medications or substances"},
+    {"@type":"MedicalRiskFactor","name":"Sleep problems"}
+  ],
+  "url":"https://thevitatrack.com/anxiety"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Can anxiety feel like a heart problem?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. Palpitations, chest tightness, and shortness of breath can occur. Chest pain or concerning symptoms should be medically assessed."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do skills help older adults with anxiety?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. Structured skills such as CBT, breathing, grounding, and problem-solving are effective and can be combined with medication when needed."}
+    },
+    {
+      "@type":"Question",
+      "name":"How long until I notice improvement?",
+      "acceptedAnswer":{"@type":"Answer","text":"Many notice benefits from skills within days to weeks. Medications may take several weeks; consistent routines support results."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are naps helpful for anxiety?",
+      "acceptedAnswer":{"@type":"Answer","text":"Short daytime rests can help some people, but long or late naps may worsen nighttime sleep and next-day anxiety for others."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Anxiety","item":"https://thevitatrack.com/anxiety"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

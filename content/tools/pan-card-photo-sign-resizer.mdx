@@ -1,0 +1,649 @@
+---
+title: "PAN Card Photo &amp; Sign Resizer"
+slug: "pan-card-photo-sign-resizer"
+category: "tools"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PAN Card Photo & Sign Resizer — thevitatrack.com</title>
+<meta name="description" content="Resize PAN photo and signature to NSDL/Protean or UTIITSL specs. Smart crop (drag + zoom), auto file size under KB, B/W threshold for signatures. 100% private, in-browser." />
+
+<style>
+  :root{
+    --vt-text:#0f172a; --vt-soft:#475569; --vt-bg:#f7fafc; --vt-card:#fff;
+    --vt-b:rgba(15,23,42,.08); --vt-accent:#2563eb; --vt-radius:14px;
+    --vt-shadow:0 10px 24px rgba(2,6,23,.08);
+  }
+  html,body{ margin:0; background:var(--vt-bg); color:var(--vt-text);
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif; }
+  a{ color:var(--vt-accent); text-decoration:none }
+  a:hover{ text-decoration:underline }
+  .wrap{ max-width:1100px; width:min(1100px,94vw); margin:0 auto; padding:24px 18px 80px }
+
+  .crumbs{ display:flex; gap:8px; align-items:center; font-size:13.5px; color:var(--vt-soft); margin:8px 0 10px }
+  .crumbs a{ color:var(--vt-soft) }
+  .page-title{ font-size:clamp(24px,4.2vw,36px); font-weight:800; letter-spacing:-.02em; margin:6px 0 8px }
+  .page-sub{ color:var(--vt-soft); font-size:15.5px; max-width:860px }
+
+  .tool-grid{ display:grid; grid-template-columns:1fr; gap:18px; margin-top:24px }
+  @media (min-width:980px){ .tool-grid{ grid-template-columns:1.1fr .9fr } }
+
+  .card{
+    background:var(--vt-card); border:1px solid var(--vt-b); border-radius:var(--vt-radius);
+    box-shadow:var(--vt-shadow); padding:18px;
+  }
+  .card h2{ margin:4px 0 14px; font-size:18px; font-weight:800 }
+
+  .row{ display:grid; grid-template-columns:1fr; gap:12px; margin-bottom:14px }
+  @media (min-width:680px){ .row.cols-2{ grid-template-columns:1fr 1fr } }
+  @media (min-width:980px){ .row.cols-3{ grid-template-columns:1fr 1fr 1fr } }
+
+  label{ font-size:13px; color:var(--vt-soft); display:block; margin-bottom:6px; font-weight:600 }
+  input[type="number"], input[type="text"], select{
+    width:100%; padding:12px 12px; border-radius:10px; border:2px solid #e2e8f0; outline:none; background:#fff; font-size:14px;
+  }
+  input:focus, select:focus{ border-color:var(--vt-accent) }
+  .hint{ font-size:12px; color:var(--vt-soft); margin-top:6px }
+  .muted{ color:var(--vt-soft) }
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 16px;
+    background:var(--vt-accent); color:#fff; border:none; border-radius:12px; cursor:pointer; font-weight:700;
+  }
+  .btn.outline{ background:#fff; color:var(--vt-accent); border:2px solid var(--vt-accent) }
+  .btn.gray{ background:#e5e7eb; color:#0f172a }
+  .btn:disabled{ opacity:.5; cursor:not-allowed }
+
+  .drop{
+    border:2px dashed #cbd5e1; border-radius:14px; padding:16px; text-align:center; color:var(--vt-soft); background:#f8fafc;
+  }
+  .drop.drag{ background:#eef2ff; border-color:var(--vt-accent); color:#1e3a8a }
+
+  .canvas-wrap{
+    position:relative; background:#0b1220; border-radius:12px; padding:12px; display:grid; place-items:center; min-height:360px;
+  }
+  canvas#pv{ max-width:100%; width:100%; height:auto; background:#0b1220; border-radius:8px }
+  .overlay{ position:absolute; inset:12px; pointer-events:none }
+  .spec{ display:flex; flex-wrap:wrap; gap:10px; font-size:12.5px; color:#cbd5e1; justify-content:center; margin-top:8px }
+  .spec span{ background:#111827; padding:6px 8px; border-radius:999px; border:1px solid #1f2937 }
+
+  .slider{ width:100% }
+  input[type="range"].slider{ -webkit-appearance:none; height:8px; background:#e5e7eb; border-radius:999px; outline:none; }
+  input[type="range"].slider::-webkit-slider-thumb{ -webkit-appearance:none; width:18px; height:18px; border-radius:50%; background:var(--vt-accent); cursor:pointer; }
+
+  .visually-hidden-input{ position:fixed; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+
+  .vt-footer{ background:#0b1220; color:#cbd5e1; margin-top:40px; border-top:4px solid #1f2937 }
+  .vt-footer .inner{ max-width:1100px; width:min(1100px,94vw); margin:0 auto; padding:24px 18px 34px }
+  .vt-foot-h{ color:#fff; font-weight:800; margin-bottom:8px; font-size:14px }
+  .vt-social{ display:flex; gap:10px; margin-top:6px }
+  .vt-social a{ width:36px; height:36px; border-radius:10px; display:grid; place-items:center; background:#111827; border:1px solid #374151; color:#e5e7eb }
+  .vt-copy{ border-top:1px solid #1f2937; margin-top:18px; padding-top:14px; text-align:center; font-size:12.5px; color:#9ca3af }
+
+  .hide{ display:none !important; }
+</style>
+</head>
+<body>
+
+<div class="wrap" id="pan-tool">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> › <a href="/tools/">Tools</a> › <span>PAN Photo & Sign Resizer</span>
+  </nav>
+  <h1 class="page-title">PAN Card Photo & Sign Resizer</h1>
+  <p class="page-sub">Create perfectly sized PAN photos and signatures for <strong>NSDL/Protean</strong> or <strong>UTIITSL</strong>. Drag to position, zoom to crop, auto-limit file size, and export — all in your browser.</p>
+
+  <div class="tool-grid">
+    <!-- Controls -->
+    <section class="card" aria-labelledby="controls-title">
+      <h2 id="controls-title">Target Settings</h2>
+
+      <div class="row cols-3">
+        <div>
+          <label for="provider">Provider</label>
+          <select id="provider">
+            <option value="nsdl" selected>NSDL / Protean</option>
+            <option value="uti">UTIITSL</option>
+          </select>
+          <div class="hint">Pick the site you’re applying on.</div>
+        </div>
+        <div>
+          <label for="docType">Document</label>
+          <select id="docType">
+            <option value="photo" selected>Photograph</option>
+            <option value="sign">Signature</option>
+          </select>
+          <div class="hint">Signature works best on white paper.</div>
+        </div>
+        <div>
+          <label>Rotate</label>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <button class="btn outline" id="rotL" type="button">⟲ 90°</button>
+            <button class="btn outline" id="rotR" type="button">⟳ 90°</button>
+            <button class="btn gray" id="flipH" type="button">⇋ Flip</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row cols-3">
+        <div>
+          <label>Output Size (pixels)</label>
+          <div style="display:flex; gap:8px">
+            <input id="outW" type="number" min="30" value="276" />
+            <input id="outH" type="number" min="30" value="197" />
+          </div>
+          <div class="hint" id="aspectHint">Aspect: —</div>
+        </div>
+        <div>
+          <label for="kbLimit">Max File Size (KB)</label>
+          <input id="kbLimit" type="number" min="5" value="20" />
+          <div class="hint"><label><input type="checkbox" id="autoSize" checked /> Auto compress to stay under limit</label></div>
+        </div>
+        <div>
+          <label for="format">Format</label>
+          <select id="format">
+            <option value="image/jpeg" selected>JPG</option>
+            <option value="image/png">PNG</option>
+            <option value="image/webp">WebP</option>
+          </select>
+          <div class="hint">JPG recommended for portal uploads.</div>
+        </div>
+      </div>
+
+      <div class="row cols-3">
+        <div>
+          <label for="zoom">Zoom</label>
+          <input id="zoom" type="range" class="slider" min="10" max="400" value="100" />
+          <div class="hint">Drag on the preview to position.</div>
+        </div>
+        <div>
+          <label for="bg">Background (signature)</label>
+          <div style="display:flex; gap:8px; align-items:center">
+            <input id="bg" type="color" value="#ffffff" />
+            <label style="font-size:12.5px; color:var(--vt-soft)"><input id="bw" type="checkbox" /> B/W threshold</label>
+          </div>
+        </div>
+        <div id="thWrap" class="hide">
+          <label for="th">Threshold</label>
+          <input id="th" type="range" class="slider" min="10" max="90" value="65" />
+        </div>
+      </div>
+
+      <div class="row cols-2">
+        <div>
+          <label for="quality">Quality (manual)</label>
+          <input id="quality" type="range" class="slider" min="40" max="100" value="92" />
+          <div class="hint">Used when Auto is off.</div>
+        </div>
+        <div>
+          <label>&nbsp;</label>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <button class="btn" id="downloadBtn" disabled>⬇️ Export</button>
+            <button class="btn outline" id="resetBtn" type="button">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hint">Note: “Instant e-PAN” via Aadhaar doesn’t need photo/signature uploads.</div>
+    </section>
+
+    <!-- Preview / Upload -->
+    <section class="card" aria-labelledby="preview-title">
+      <h2 id="preview-title">Preview & Upload</h2>
+      <div id="drop" class="drop" tabindex="0" aria-label="Use buttons below, or drag & drop / paste an image">
+        <p><strong>Use the buttons below</strong>, or <strong>drag & drop</strong> / <strong>paste</strong> an image.</p>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center">
+          <label class="btn" for="file">📁 Choose from Gallery/Files</label>
+          <input id="file" type="file" accept="image/*" class="visually-hidden-input" />
+          <label class="btn outline" for="cameraFile">📷 Take Photo</label>
+          <input id="cameraFile" type="file" accept="image/*" capture="environment" class="visually-hidden-input" />
+        </div>
+        <div class="hint">Tip: Gallery/Files shows Photos & Files. “Take Photo” opens the camera.</div>
+      </div>
+
+      <div class="canvas-wrap" id="canvasWrap">
+        <canvas id="pv" width="900" height="600" aria-label="PAN crop preview"></canvas>
+        <div class="overlay" id="overlay"></div>
+      </div>
+
+      <div class="spec" id="specline" hidden>
+        <span id="specProvider">—</span>
+        <span id="specDoc">—</span>
+        <span id="specPx">—</span>
+        <span id="specKb">—</span>
+        <span id="specDpi">—</span>
+      </div>
+    </section>
+  </div>
+
+  <section class="card" style="margin-top:18px">
+    <h2>How to Use</h2>
+    <ol class="muted" style="line-height:1.85; padding-left:18px">
+      <li>Pick <strong>Provider</strong> (NSDL/Protean or UTIITSL) and <strong>Document</strong> (Photo/Signature).</li>
+      <li><strong>Choose from Gallery/Files</strong> (or use <strong>Take Photo</strong>), then <strong>drag to position</strong> the image and adjust <strong>Zoom</strong>.</li>
+      <li>For signatures, you can enable <strong>B/W threshold</strong> and pick a white <strong>Background</strong> for cleaner edges.</li>
+      <li>Click <strong>Export</strong>. With Auto enabled, the file will be compressed to stay under the KB limit.</li>
+    </ol>
+
+    <h3>FAQs</h3>
+    <details>
+      <summary>Why two presets (NSDL vs UTI)?</summary>
+      <div class="muted">Different portals specify slightly different pixel/KB limits. Choose the one you’re applying on.</div>
+    </details>
+    <details>
+      <summary>Is DPI embedded?</summary>
+      <div class="muted">Most portals validate by <em>pixel dimensions</em> and file size, not embedded DPI. This tool outputs exact pixels; DPI metadata isn’t added.</div>
+    </details>
+    <details>
+      <summary>Do you upload my images?</summary>
+      <div class="muted">No. Everything runs locally in your browser using Canvas. Your files never leave your device.</div>
+    </details>
+  </section>
+</div>
+
+<footer class="vt-footer" role="contentinfo">
+  <div class="inner">
+    <div style="display:grid; grid-template-columns:1.2fr 1fr 1fr 1fr; gap:14px">
+      <div>
+        <div class="vt-foot-h">thevitatrack.com</div>
+        <p style="margin:0; font-size:13px; color:#9ca3af">Fast, privacy-first tools for image prep. No sign-up, no upload.</p>
+      </div>
+      <div>
+        <div class="vt-foot-h">Company</div>
+        <div><a href="/about/">About</a></div>
+        <div><a href="/contact/">Contact</a></div>
+      </div>
+      <div>
+        <div class="vt-foot-h">Legal</div>
+        <div><a href="/privacy/">Privacy Policy</a></div>
+        <div><a href="/terms/">Terms of Use</a></div>
+        <div><a href="/disclaimer/">Disclaimer</a></div>
+      </div>
+      <div>
+        <div class="vt-foot-h">Stay in Touch</div>
+        <p style="margin:0; font-size:13px">
+          ✉️ <a href="mailto:team@thevitatrack.com">team@thevitatrack.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="vt-copy">© <span id="vt-year"></span> thevitatrack.com • All rights reserved</div>
+  </div>
+</footer>
+
+<script>
+(()=> {
+  const $ = s => document.querySelector(s);
+
+  // Canvas + overlay
+  const pv = $('#pv'), ctx = pv.getContext('2d');
+  const wrap = $('#canvasWrap'), overlay = $('#overlay');
+
+  // Inputs
+  const fileInput = $('#file'), cameraInput = $('#cameraFile');
+  const providerEl = $('#provider'), docTypeEl = $('#docType');
+  const outWEl = $('#outW'), outHEl = $('#outH');
+  const kbLimitEl = $('#kbLimit'), autoSizeEl = $('#autoSize');
+  const formatEl = $('#format'), qualityEl = $('#quality');
+  const zoomEl = $('#zoom'), bgEl = $('#bg'), bwEl = $('#bw'), thWrap = $('#thWrap'), thEl = $('#th');
+  const rotL = $('#rotL'), rotR = $('#rotR'), flipH = $('#flipH');
+  const downloadBtn = $('#downloadBtn'), resetBtn = $('#resetBtn');
+
+  // Specs bar
+  const spec = $('#specline'), sProv = $('#specProvider'), sDoc = $('#specDoc'), sPx = $('#specPx'), sKb = $('#specKb'), sDpi = $('#specDpi');
+  const aspectHint = $('#aspectHint');
+
+  // Year
+  document.getElementById('vt-year').textContent = new Date().getFullYear();
+
+  // State
+  let img = null, imgURL = null, baseName = 'image';
+  let rot = 0, flip = 1;
+  let view = { cx:0, cy:0, scale:1 }; // image center in image px, and scale factor
+  let dragging = false, lastX=0, lastY=0;
+
+  // Presets (from public portal specs)
+  // NSDL/Protean: Photo 3.5x2.5 cm @200 DPI => ~276x197 px; Signature 2x4.5 cm @200 DPI => ~157x354 px; Max sizes 20KB / 10KB; JPEG. 
+  // UTIITSL: Photo 213x213 px (300 DPI), <=30KB JPEG; Signature: 2x4.5 cm scanned @600 DPI (rec), <=60KB JPEG (use B/W for smaller size).
+  const PRESETS = {
+    nsdl: {
+      photo: { w: 276, h: 197, kb: 20, dpi: 200, note: '3.5×2.5 cm @200 DPI' },
+      sign : { w: 354, h: 157, kb: 10, dpi: 200, note: '4.5×2.0 cm @200 DPI' }
+    },
+    uti: {
+      photo: { w: 213, h: 213, kb: 30, dpi: 300, note: '213×213 px (UTI)' },
+      sign : { w: 1063, h: 472, kb: 60, dpi: 600, note: '≈4.5×2.0 cm @600 DPI' }
+    }
+  };
+
+  function applyPreset(){
+    const p = PRESETS[providerEl.value][docTypeEl.value];
+    outWEl.value = p.w; outHEl.value = p.h;
+    kbLimitEl.value = p.kb;
+    updateSpec();
+    enforceAspectOverlay();
+    draw();
+  }
+
+  function updateSpec(){
+    const p = PRESETS[providerEl.value][docTypeEl.value];
+    spec.hidden = false;
+    sProv.textContent = providerEl.value==='nsdl' ? 'NSDL/Protean' : 'UTIITSL';
+    sDoc.textContent = docTypeEl.value==='photo' ? 'Photograph' : 'Signature';
+    sPx.textContent = `Pixels: ${outWEl.value}×${outHEl.value}`;
+    sKb.textContent = `Max size: ${kbLimitEl.value} KB`;
+    sDpi.textContent = `Guidance: ${p.note}`;
+    aspectHint.textContent = `Aspect: ${(outWEl.value/outHEl.value).toFixed(3)} : 1`;
+    thWrap.classList.toggle('hide', !bwEl.checked);
+  }
+
+  // Fit canvas
+  function fitCanvas(){
+    const w = Math.max(320, wrap.clientWidth - 24);
+    const h = Math.max(260, Math.round(w*0.66));
+    pv.width = w; pv.height = h;
+  }
+
+  // Draw overlay mask with fixed crop frame (based on outW/outH)
+  function enforceAspectOverlay(){
+    const aspect = (+outWEl.value||1)/Math.max(1,(+outHEl.value||1));
+    // Draw semi-transparent outside the crop area (handled in draw loop)
+    overlay.style.pointerEvents = 'none';
+  }
+
+  function resetView(){
+    if(!img) return;
+    // Center
+    view.cx = img.width/2;
+    view.cy = img.height/2;
+    // Scale so the smaller side of the image just covers the crop rect
+    const cropAspect = (+outWEl.value||1)/Math.max(1,(+outHEl.value||1));
+    const iw = (rot%180===0) ? img.width : img.height;
+    const ih = (rot%180===0) ? img.height : img.width;
+    // Match preview crop box to canvas (we’ll use full canvas as crop frame)
+    const scaleToCover = Math.max((+outWEl.value)/iw, (+outHEl.value)/ih);
+    view.scale = scaleToCover * 1.02; // slight zoom to avoid thin borders
+    zoomEl.value = Math.round(view.scale*100);
+  }
+
+  function draw(){
+    fitCanvas();
+    ctx.clearRect(0,0,pv.width,pv.height);
+
+    // Draw dark overlay outside crop area (we use full canvas size ratio to render crop rectangle)
+    const cropW = pv.width * 0.88;
+    const cropH = cropW * ((+outHEl.value)/(+outWEl.value));
+    const CH = Math.min(cropH, pv.height*0.78);
+    const CW = CH * ((+outWEl.value)/(+outHEl.value));
+    const cx = pv.width/2, cy = pv.height/2;
+
+    // Base checker for guidance
+    ctx.save();
+    ctx.fillStyle = '#0b1220';
+    ctx.fillRect(0,0,pv.width,pv.height);
+
+    // Image
+    if(img){
+      ctx.save();
+      // Transform to draw rotated/flipped image centered at desired position
+      // Map crop frame to image coords: we pan/zoom image beneath fixed crop frame
+      // Compute render scale in preview space
+      const scalePreview = (CW / (+outWEl.value));
+      ctx.translate(cx, cy);
+      ctx.rotate(rot*Math.PI/180);
+      ctx.scale(flip, 1);
+
+      const drawW = img.width * view.scale * scalePreview;
+      const drawH = img.height * view.scale * scalePreview;
+
+      const imgDX = - (view.cx * view.scale * scalePreview);
+      const imgDY = - (view.cy * view.scale * scalePreview);
+
+      ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality='high';
+      ctx.drawImage(img, imgDX, imgDY, drawW, drawH);
+      ctx.restore();
+    }
+    // Dim everything outside crop
+    ctx.save();
+    ctx.fillStyle = 'rgba(0,0,0,.45)';
+    // Outer
+    ctx.fillRect(0,0,pv.width,pv.height);
+    // Punch crop hole
+    ctx.globalCompositeOperation = 'destination-out';
+    roundRect(ctx, cx - CW/2, cy - CH/2, CW, CH, 12);
+    ctx.fill();
+    ctx.restore();
+
+    // Crop border
+    ctx.save();
+    ctx.strokeStyle = 'rgba(255,255,255,.9)';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([8,6]);
+    roundRect(ctx, cx - CW/2, cy - CH/2, CW, CH, 12);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function roundRect(c,x,y,w,h,r){
+    r = Math.min(r, Math.abs(w)/2, Math.abs(h)/2);
+    c.beginPath();
+    c.moveTo(x+r, y);
+    c.arcTo(x+w, y, x+w, y+h, r);
+    c.arcTo(x+w, y+h, x, y+h, r);
+    c.arcTo(x, y+h, x, y, r);
+    c.arcTo(x, y, x+w, y, r);
+    c.closePath();
+  }
+
+  // Export cropped image to target pixels, apply B/W if requested, and compress under KB
+  async function exportImage(){
+    if(!img) return null;
+    const W = Math.max(1, +outWEl.value|0), H = Math.max(1, +outHEl.value|0);
+    const off = document.createElement('canvas'); off.width=W; off.height=H;
+    const o = off.getContext('2d');
+    o.imageSmoothingEnabled=true; o.imageSmoothingQuality='high';
+
+    // Compute crop mapping: take center frame CW×CH (logical crop) mapped to W×H
+    // Determine source rect in the *rotated/flipped* image space
+    // Easiest: draw like preview but onto offscreen at exact output pixels
+    // Build a mini rendering with same math but scalePreview maps 1 output px : 1 logical crop px
+    const scaleOut = (W / (+outWEl.value)); // both same units; yields 1
+    o.save();
+    // Center
+    o.translate(W/2, H/2);
+    o.rotate(rot*Math.PI/180);
+    o.scale(flip, 1);
+
+    const drawW = img.width * view.scale;
+    const drawH = img.height * view.scale;
+    const imgDX = - (view.cx * view.scale);
+    const imgDY = - (view.cy * view.scale);
+    o.drawImage(img, imgDX, imgDY, drawW, drawH);
+    o.restore();
+
+    // Signature cleanup (background + optional B/W threshold)
+    if(docTypeEl.value==='sign'){
+      // Fill any transparent edges with chosen background
+      const tmp = o.getImageData(0,0,W,H);
+      const data = tmp.data;
+      // If B/W: convert to grayscale and threshold
+      const doBW = bwEl.checked;
+      const T = +thEl.value || 65;
+      for(let i=0;i<data.length;i+=4){
+        const r=data[i], g=data[i+1], b=data[i+2], a=data[i+3];
+        if(doBW){
+          const y = 0.299*r + 0.587*g + 0.114*b;
+          const v = y < (T*2.55) ? 0 : 255;
+          data[i]=data[i+1]=data[i+2]=v; data[i+3]=255;
+        }else{
+          // just force opaque on none
+          if(a===0){ data[i]=data[i+1]=data[i+2]=255; data[i+3]=255; }
+        }
+      }
+      o.putImageData(tmp,0,0);
+
+      if(!doBW){
+        // fill background with chosen color beneath
+        const bg = document.createElement('canvas'); bg.width=W; bg.height=H;
+        const bx = bg.getContext('2d');
+        bx.fillStyle = bgEl.value; bx.fillRect(0,0,W,H);
+        bx.drawImage(off,0,0);
+        off.width=W; off.height=H;
+        o.drawImage(bg,0,0);
+      }
+    }
+
+    const mime = formatEl.value;
+    if(autoSizeEl.checked){
+      const target = Math.max(1, (+kbLimitEl.value|0)) * 1024;
+      // Binary search quality
+      let lo = 40, hi = 98, best = null;
+      while(lo <= hi){
+        const mid = Math.floor((lo+hi)/2);
+        const blob = await canvasToBlobPromise(off, mime, mid/100);
+        if(blob.size <= target){ best = blob; lo = mid + 1; }
+        else { hi = mid - 1; }
+      }
+      return best || await canvasToBlobPromise(off, mime, (qualityEl.value|0)/100);
+    }else{
+      const q = (mime==='image/png') ? 1 : (qualityEl.value|0)/100;
+      return await canvasToBlobPromise(off, mime, q);
+    }
+  }
+  function canvasToBlobPromise(canvas, mime, q){
+    return new Promise(res=> canvas.toBlob(b=> res(b), mime, q));
+  }
+
+  // File handling
+  function loadFile(file){
+    if(!file || !file.type?.startsWith('image/')) return;
+    baseName = (file.name||'image').replace(/\.[^.]+$/,'');
+    if(imgURL) URL.revokeObjectURL(imgURL);
+    imgURL = URL.createObjectURL(file);
+    const im = new Image();
+    im.onload = ()=>{
+      img = im; rot=0; flip=1; fileInput.value=''; cameraInput.value='';
+      resetView(); draw(); downloadBtn.disabled=false;
+    };
+    im.onerror = ()=>{ URL.revokeObjectURL(imgURL); fileInput.value=''; cameraInput.value=''; alert('Could not load this image.'); };
+    im.src = imgURL;
+  }
+
+  // Drag & drop + paste
+  const drop = $('#drop');
+  ['dragenter','dragover'].forEach(ev=> drop.addEventListener(ev, e=>{ e.preventDefault(); drop.classList.add('drag'); }));
+  ['dragleave','drop'].forEach(ev=> drop.addEventListener(ev, e=>{ e.preventDefault(); drop.classList.remove('drag'); }));
+  drop.addEventListener('drop', e=>{ const f=e.dataTransfer?.files?.[0]; if(f) loadFile(f); });
+  window.addEventListener('paste', e=>{
+    const items = e.clipboardData?.items||[];
+    for(const it of items){ if(it.type?.startsWith('image/')){ loadFile(it.getAsFile()); break; } }
+  });
+
+  // Inputs
+  fileInput.addEventListener('change', e=>{ const f=e.target.files?.[0]; if(f) loadFile(f); });
+  cameraInput.addEventListener('change', e=>{ const f=e.target.files?.[0]; if(f) loadFile(f); });
+
+  // Provider/doc changes
+  providerEl.addEventListener('change', applyPreset);
+  docTypeEl.addEventListener('change', applyPreset);
+  [outWEl,outHEl,kbLimitEl,formatEl].forEach(el=>{
+    el.addEventListener('input', ()=>{ updateSpec(); draw(); });
+    el.addEventListener('change', ()=>{ updateSpec(); draw(); });
+  });
+
+  // Zoom + pan
+  zoomEl.addEventListener('input', ()=>{
+    view.scale = (+zoomEl.value)/100;
+    draw();
+  });
+
+  function startDrag(e){
+    if(!img) return;
+    dragging = true;
+    const pt = ('touches' in e) ? e.touches[0] : e;
+    lastX = pt.clientX; lastY = pt.clientY;
+    e.preventDefault?.();
+  }
+  function moveDrag(e){
+    if(!dragging || !img) return;
+    const pt = ('touches' in e) ? e.touches[0] : e;
+    const dx = pt.clientX - lastX, dy = pt.clientY - lastY;
+    lastX = pt.clientX; lastY = pt.clientY;
+
+    // Convert preview dx,dy to image pixels (approx via crop scale)
+    const CW = pv.width * 0.88;
+    const scalePreview = (CW / (+outWEl.value));
+    // Account for rotation (drag in preview space -> rotate back)
+    const ang = -rot * Math.PI/180;
+    const rx =  dx*Math.cos(ang) - dy*Math.sin(ang);
+    const ry =  dx*Math.sin(ang) + dy*Math.cos(ang);
+    view.cx -= rx / (view.scale * scalePreview) * (1/flip);
+    view.cy -= ry / (view.scale * scalePreview);
+    // clamp to image bounds a bit outside to allow edge fill
+    view.cx = Math.max(-img.width, Math.min(2*img.width, view.cx));
+    view.cy = Math.max(-img.height, Math.min(2*img.height, view.cy));
+    draw();
+  }
+  function endDrag(){ dragging=false; }
+
+  pv.addEventListener('mousedown', startDrag);
+  window.addEventListener('mousemove', moveDrag);
+  window.addEventListener('mouseup', endDrag);
+  pv.addEventListener('touchstart', startDrag, {passive:false});
+  window.addEventListener('touchmove', moveDrag, {passive:false});
+  window.addEventListener('touchend', endDrag);
+
+  // Signature toggles
+  bwEl.addEventListener('change', ()=>{ thWrap.classList.toggle('hide', !bwEl.checked); draw(); });
+  [thEl,bgEl].forEach(el=> el.addEventListener('input', draw));
+
+  // Rotate/flip
+  rotL.addEventListener('click', ()=>{ rot=(rot-90+360)%360; resetView(); draw(); });
+  rotR.addEventListener('click', ()=>{ rot=(rot+90)%360; resetView(); draw(); });
+  flipH.addEventListener('click', ()=>{ flip*=-1; draw(); });
+
+  // Download
+  downloadBtn.addEventListener('click', async ()=>{
+    if(!img) return;
+    const blob = await exportImage();
+    if(!blob){ alert('Could not produce output.'); return; }
+    const extMap={'image/jpeg':'jpg','image/png':'png','image/webp':'webp'};
+    const ext=extMap[formatEl.value]||'jpg';
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    const suffix = (docTypeEl.value==='photo') ? 'photo' : 'sign';
+    a.download=`${baseName}-pan-${suffix}.${ext}`;
+    document.body.appendChild(a); a.click();
+    setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 600);
+  });
+
+  // Reset
+  resetBtn.addEventListener('click', ()=>{
+    if(imgURL){ URL.revokeObjectURL(imgURL); imgURL=null; }
+    img=null; rot=0; flip=1; baseName='image';
+    providerEl.value='nsdl'; docTypeEl.value='photo';
+    applyPreset();
+    fileInput.value=''; cameraInput.value='';
+    ctx.clearRect(0,0,pv.width,pv.height);
+    downloadBtn.disabled=true;
+  });
+
+  // Init
+  window.addEventListener('resize', draw);
+  applyPreset();
+  draw();
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"PAN Card Photo & Sign Resizer","url":"https://thevitatrack.com/pan-photo-sign-resizer/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","browserRequirements":"Requires a modern browser","description":"Create PAN photo and signature images sized for NSDL/Protean or UTIITSL with smart crop and KB caps, entirely in-browser."}
+</script>
+</body>
+</html>
+<!-- /wp:html -->

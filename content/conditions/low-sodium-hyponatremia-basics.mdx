@@ -1,0 +1,462 @@
+---
+title: "Low Sodium (Hyponatremia) Basics"
+slug: "low-sodium-hyponatremia-basics"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Low Sodium (Hyponatremia) — Senior Guide • TheVitatrack</title>
+<meta name="description" content="Hyponatremia basics for older adults: signs, emergency red flags, common causes (medications, heart/kidney/lung disease, SIADH), key tests, safe correction limits, treatment options, and daily prevention tips." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .info{
+    background:var(--info); color:var(--info-ink); border:1.5px solid var(--info-border);
+    border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Low Sodium (Hyponatremia)</h1>
+    <p>Recognize symptoms, know when it’s urgent, understand the common causes in older adults, and see how clinicians test and treat it safely.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is">What it is</a></li>
+      <li><a href="#red-flags">When to call emergency</a></li>
+      <li><a href="#symptoms">Typical symptoms</a></li>
+      <li><a href="#causes">Why sodium drops (by volume status)</a></li>
+      <li><a href="#testing">How it’s diagnosed</a></li>
+      <li><a href="#treatment">Treatment & safe correction limits</a></li>
+      <li><a href="#daily">Daily care & prevention</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- What it is -->
+  <section id="what-is" class="section">
+    <h2>What it is</h2>
+    <p class="lead"><span class="badge">In short</span> Sodium helps control body water and nerve/muscle function. <strong>Hyponatremia</strong> means blood sodium is too low, often due to excess body water relative to sodium. In older adults, medicines and medical conditions are frequent drivers.</p>
+    <div class="card small">
+      <p><strong>Why it matters:</strong> A rapid or very low level can affect the brain—causing confusion, falls, or seizures. Correcting it too fast is also dangerous. Care plans focus on <em>cause</em> and <em>safe pacing</em>.</p>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to call emergency</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>Seizure, severe confusion, or fainting</li>
+        <li>New trouble speaking, walking, or severe headache</li>
+        <li>Persistent vomiting with weakness or drowsiness</li>
+      </ul>
+      <p class="small">These can signal severe/rapid sodium drop. Call your local emergency number immediately.</p>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section id="symptoms" class="section">
+    <h2>Typical symptoms</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Unsteadiness, falls, or dizziness</li>
+          <li>Nausea, vomiting, poor appetite</li>
+          <li>Headache, confusion, slowed thinking</li>
+          <li>Muscle cramps, weakness</li>
+          <li>Seizures (with severe cases)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">Dizziness on Standing</a> · <a href="#">Falls Prevention</a></li>
+          <li><a href="#">Chronic Kidney Disease (CKD)</a> · <a href="#">Heart Failure (CHF)</a></li>
+          <li><a href="#">Medications & Side Effects</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Symptoms) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Causes -->
+  <section id="causes" class="section">
+    <h2>Why sodium drops (by volume status)</h2>
+    <table class="table" role="table" aria-label="Hyponatremia causes by volume">
+      <thead>
+        <tr><th>Volume status</th><th>Common causes</th><th>Clues</th><th>Typical approaches</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Hypovolemic</strong> (low body water & sodium)</td>
+          <td>Vomiting/diarrhea, diuretics (especially thiazides), bleeding, adrenal insufficiency</td>
+          <td>Dry mouth, low BP, elevated BUN/Cr ratio</td>
+          <td>Careful isotonic fluids, stop culprit meds; treat cause</td>
+        </tr>
+        <tr>
+          <td><strong>Euvolemic</strong> (water gain without edema)</td>
+          <td>SIADH (lung/CNS disease, malignancy), <em>SSRIs/SNRIs</em>, carbamazepine, hypothyroidism, primary polydipsia, post-op</td>
+          <td>Normal exam; low serum uric acid; high urine sodium/osm</td>
+          <td>Fluid restriction, stop culprit meds, consider salt tablets/urea; treat cause</td>
+        </tr>
+        <tr>
+          <td><strong>Hypervolemic</strong> (water & sodium gain, more water)</td>
+          <td>Heart failure, cirrhosis, nephrotic syndrome, advanced CKD</td>
+          <td>Edema, ascites, elevated JVP, weight gain</td>
+          <td>Fluid + sodium restriction, loop diuretics; optimize underlying condition</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== In-article AD (after Causes) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Testing -->
+  <section id="testing" class="section">
+    <h2>How it’s diagnosed</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Key labs & measures</p>
+        <ul class="list">
+          <li>Repeat <strong>serum sodium</strong> to confirm</li>
+          <li><strong>Serum osmolality</strong> (true hypotonic vs. pseudo-hyponatremia)</li>
+          <li><strong>Urine osmolality & sodium</strong> to identify mechanism</li>
+          <li>Thyroid (TSH), cortisol if suspected, kidney/liver panel</li>
+        </ul>
+      </div>
+      <div class="card info">
+        <strong>Volume exam first:</strong> Blood pressure, orthostatics, edema, weights, JVP—these guide cause and treatment.
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatment -->
+  <section id="treatment" class="section">
+    <h2>Treatment & safe correction limits</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Emergent care</p>
+        <ul class="list">
+          <li>Severe symptoms: consider <strong>hypertonic saline (3%)</strong> in monitored care</li>
+          <li>Frequent sodium checks (every 2–4 hrs initially)</li>
+          <li>Address seizures, airway, and the underlying cause</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Safe correction</p>
+        <ul class="list">
+          <li>Avoid over-correction to prevent <strong>osmotic demyelination</strong></li>
+          <li>Typical targets: ≤6–8 mEq/L rise in 24 hrs (clinician-directed)</li>
+          <li>Desmopressin “brake” strategy may be used to control pace</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Cause-directed steps</p>
+        <ul class="list">
+          <li><strong>Fluid restriction</strong> for SIADH/euvolemic states (amount individualized)</li>
+          <li>Stop or adjust culprit meds (e.g., thiazides, SSRIs) after clinical review</li>
+          <li>Loop diuretics for hypervolemic states; optimize heart/liver/kidney care</li>
+          <li>Salt tablets, <strong>urea</strong>, or vasopressin antagonists in selected cases</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Plans differ if sodium is chronic vs. acute, and by co-morbidities. Follow your clinician’s instructions closely.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after Treatment) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Daily care -->
+  <section id="daily" class="section">
+    <h2>Daily care & prevention</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Medication review</p>
+        <ul class="list">
+          <li>Ask about <strong>thiazide diuretics</strong>, <strong>SSRIs/SNRIs</strong>, carbamazepine, oxcarbazepine, desmopressin, and others that can lower sodium</li>
+          <li>Never stop medicines on your own—request a supervised plan</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Fluids: get a personalized target</p>
+        <ul class="list">
+          <li>Restrictions vary (often 1–1.5 L/day in SIADH) and must fit heart/kidney status</li>
+          <li>Track <strong>daily weights</strong> and symptoms (nausea, confusion, swelling)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Nutrition & salt</p>
+        <ul class="list">
+          <li>Do not “chase” sodium with salty snacks unless advised—this may worsen fluid retention</li>
+          <li>Prioritize balanced meals with adequate protein; consider oral nutrition support if appetite is poor</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        <strong>Fall prevention:</strong> Hyponatremia raises fall risk. Rise slowly, use handrails, and review home safety lighting.
+      </div>
+    </div>
+    <div class="small" style="margin-top:8px">
+      Related: <a href="#">Chronic Kidney Disease</a> · <a href="#">Heart Failure</a> · <a href="#">Medication Safety</a> · <a href="#">Falls (Injury Prevention)</a>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (near bottom) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">What sodium level is “low”?</p>
+        <p>Many labs flag <strong>&lt;135 mEq/L</strong> as low. Risk depends on how low, how fast it fell, and your overall health.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can drinking too much water cause it?</p>
+        <p>Yes—especially with SIADH or very low dietary solute intake. Follow fluid targets set by your clinician.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Is sports drink better than water?</p>
+        <p>Not necessarily. Some are high in sugar and may not address the cause. Ask your clinician what’s appropriate for you.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">How fast should sodium be corrected?</p>
+        <p>Slowly and safely—often ≤6–8 mEq/L per 24 hours (clinician-directed) to avoid nerve damage from rapid shifts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "name":"Low Sodium (Hyponatremia)",
+  "description":"Hyponatremia in older adults: signs, emergency red flags, causes by volume status, key labs (serum/urine osmolality), safe correction limits, treatment options, and daily prevention tips.",
+  "about":{"@type":"MedicalCondition","name":"Hyponatremia"},
+  "speakable":{"@type":"SpeakableSpecification","xpath":["/html/head/title","/html/body//h1"]},
+  "url":"https://thevitatrack.com/low-sodium-hyponatremia"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"What sodium level is considered low?","acceptedAnswer":{"@type":"Answer","text":"Many labs define hyponatremia as serum sodium below 135 mEq/L. Severity and speed of onset determine symptoms and urgency."}},
+    {"@type":"Question","name":"Can drinking too much water cause low sodium?","acceptedAnswer":{"@type":"Answer","text":"Yes. Excess water intake, especially with SIADH or low dietary solute, can dilute sodium. Fluid targets should be individualized."}},
+    {"@type":"Question","name":"Are sports drinks helpful for hyponatremia?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. They may be sugary and don’t treat the underlying cause. Ask your clinician what’s appropriate for your situation."}},
+    {"@type":"Question","name":"How fast should sodium be corrected?","acceptedAnswer":{"@type":"Answer","text":"Gradual correction is key—often no more than 6–8 mEq/L in 24 hours under clinician guidance, to reduce risk of osmotic demyelination."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Low Sodium (Hyponatremia)","item":"https://thevitatrack.com/low-sodium-hyponatremia"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

@@ -1,0 +1,436 @@
+---
+title: "Evening Wind-Down"
+slug: "evening-wind-down"
+category: "daily-living"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Evening Wind-Down — Daily Living • TheVitatrack</title>
+<meta name="description" content="A calm 30–45 minute evening wind-down for older adults: 5 simple steps to sleep better and wake steadier—lights & timing, unload the brain, gentle mobility, smart fluids & medicines, and sleep environment. Includes adjustments for insomnia, GERD, nocturia/BPH, diabetes, pain, COPD/heart failure." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Load AdSense ONCE (global) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --info:#EFF6FF; --info-border:#BFDBFE; --info-ink:#1E40AF;
+    --ok:#DCFCE7; --ok-border:#BBF7D0; --ok-ink:#166534;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  /* Header */
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #EAF4FF, rgba(234,244,255,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  /* TOC */
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  /* Sections */
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .step{position:relative;padding-top:var(--s5)}
+  .step .num{
+    position:absolute; top:0; left:0;
+    display:inline-flex; align-items:center; justify-content:center;
+    width:40px; height:40px; border-radius:12px;
+    background:#ECFDF5; color:#065F46; border:2px solid #BBF7D0; font-weight:800;
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .list{margin:0;padding-left:18px}
+  .small{font-size:.96em;color:var(--muted)}
+  .ok{background:var(--ok); color:var(--ok-ink); border:1.5px solid var(--ok-border); border-radius:14px; padding:12px}
+  .note{background:var(--warn-bg); border:1.5px solid #FDE68A; border-radius:14px; padding:12px}
+  .info{background:var(--info); border:1.5px solid var(--info-border); color:var(--info-ink); border-radius:14px; padding:12px}
+  .calm{background:var(--calm); border:1.5px solid var(--calm-border); color:var(--calm-ink); border-radius:14px; padding:12px}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFE7FF,#BFE3FD,#CFE7FF);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers (CLS-considerate) */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Evening Wind-Down</h1>
+    <p>A quiet 30–45 minute routine to improve sleep, reduce night bathroom trips, and wake steadier — tailored for common senior health needs.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#why">Why wind-down works</a></li>
+      <li><a href="#steps">Your 5-step routine</a></li>
+      <li><a href="#adjust">Adjustments by condition</a></li>
+      <li><a href="#foods">Evening food & drinks</a></li>
+      <li><a href="#safety">Night-safety setup</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Display AD (after TOC) ===== -->
+  <div class="ad-wrap">
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- Why -->
+  <section id="why" class="section">
+    <h2>Why wind-down works</h2>
+    <p class="lead"><span class="kicker">Benefits:</span> steadier blood pressure at night, fewer awakenings, less reflux, safer bathroom trips, and a calmer mind for deeper sleep.</p>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">What you’ll need</p>
+        <ul class="list">
+          <li>Warm light (lamps/night lights), comfortable chair, water bottle.</li>
+          <li>Notebook/phone for “tomorrow list” & gratitude line.</li>
+          <li>Toothbrush, meds organizer, light bedtime snack if needed.</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Keep screens dim and on night mode after sunset; reduce loud news or heated conversations close to bedtime.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Steps -->
+  <section id="steps" class="section">
+    <h2>Your 5-step routine (30–45 minutes total)</h2>
+
+    <div class="grid">
+      <!-- Step 1 -->
+      <article class="card step">
+        <div class="num">1</div>
+        <h3 class="kicker">Dim & time (5 min)</h3>
+        <ul class="list">
+          <li>Choose a consistent bedtime; start wind-down 45–60 minutes before.</li>
+          <li>Switch to warm lamps; lower room to a comfortable cool temperature.</li>
+          <li>Set phones/TV to night mode; reduce volume and brightness.</li>
+        </ul>
+        <p class="small">Aim for a steady sleep window even on weekends.</p>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="card step">
+        <div class="num">2</div>
+        <h3 class="kicker">Unload the mind (5–10 min)</h3>
+        <ul class="list">
+          <li>Write “tomorrow list” (3 items max) and one line of gratitude.</li>
+          <li>Send any must-do messages or set a reminder — then close the phone.</li>
+          <li>Optional: 4–6 slow breaths (inhale through nose, exhale through pursed lips).</li>
+        </ul>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="card step">
+        <div class="num">3</div>
+        <h3 class="kicker">Body care & gentle mobility (8–12 min)</h3>
+        <ul class="list">
+          <li>Wash face/brush teeth; change into comfortable nightwear and supportive slippers.</li>
+          <li>Seated stretches: ankle circles x10, calf stretch, shoulder rolls x6, easy neck look-left/right.</li>
+          <li>If stiff joints: warm towel 5 minutes on the worst area.</li>
+        </ul>
+        <div class="ok">Keep movements painless and slow. Stop with chest pain, severe breathlessness, or dizziness.</div>
+      </article>
+
+      <!-- Step 4 -->
+      <article class="card step">
+        <div class="num">4</div>
+        <h3 class="kicker">Smart fluids & medicines (5–10 min)</h3>
+        <ul class="list">
+          <li>Shift most fluids earlier in the day; in the last 2–3 hours use small sips only.</li>
+          <li>Take evening medicines as prescribed; prepare the morning pill box now.</li>
+          <li>If you check evening glucose or use inhalers/CPAP, do it now.</li>
+        </ul>
+        <div class="info">On fluid restriction (heart/kidney), follow your daily limit. Ask about timing for diuretics to minimize night trips.</div>
+      </article>
+
+      <!-- Step 5 -->
+      <article class="card step">
+        <div class="num">5</div>
+        <h3 class="kicker">Set the sleep environment (5–8 min)</h3>
+        <ul class="list">
+          <li>Clear the path to the bathroom; switch on motion night lights.</li>
+          <li>Use extra pillows or elevate head/upper chest if reflux or breathlessness.</li>
+          <li>Cool, dark, and quiet — or soft fan/white noise if helpful.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after steps) ===== -->
+  <div class="ad-wrap">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Adjustments -->
+  <section id="adjust" class="section">
+    <h2>Adjustments by condition</h2>
+    <table class="table" role="table">
+      <thead>
+        <tr><th scope="col">Condition</th><th scope="col">Adjustments</th><th scope="col">Watch-outs</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Insomnia</strong></td>
+          <td>Anchor wake-time; use the routine nightly; bed only when sleepy; if awake &gt;20 min, get up to read quietly under dim light.</td>
+          <td>Avoid long daytime naps; skip late caffeine (after ~6 pm).</td>
+        </tr>
+        <tr>
+          <td><strong>GERD / reflux</strong></td>
+          <td>Finish dinner 3+ hours before bed; elevate head/upper chest with wedge or extra pillows; choose low-acid evening snacks.</td>
+          <td>Avoid large/fatty/spicy meals late; no lying flat after eating.</td>
+        </tr>
+        <tr>
+          <td><strong>Nocturia / BPH</strong></td>
+          <td>Limit fluids 2–3 hours pre-bed; double-void before lights out; keep a clear, lit path to the bathroom.</td>
+          <td>Dizziness on standing — rise slowly, consider a bedside commode if needed.</td>
+        </tr>
+        <tr>
+          <td><strong>Type 2 diabetes</strong></td>
+          <td>If on insulin/sulfonylureas and prone to lows: small protein-carb snack per plan; check glucose at bedtime as advised.</td>
+          <td>Shaking/sweating/odd dreams — treat lows per your clinician’s instructions.</td>
+        </tr>
+        <tr>
+          <td><strong>Chronic pain / arthritis</strong></td>
+          <td>Warm shower or heating pad (on low) 10–15 min before bed; pillow between knees or under calves to unload joints.</td>
+          <td>Avoid falling asleep with a hot pad on high; protect skin.</td>
+        </tr>
+        <tr>
+          <td><strong>COPD / heart failure</strong></td>
+          <td>Use inhalers/neb/CPAP/BiPAP as prescribed; elevate head; keep rescue inhaler nearby.</td>
+          <td>Sudden breathlessness, chest pain, or new swelling — seek care.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Foods & drinks -->
+  <section id="foods" class="section">
+    <h2>Evening food & drinks</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Good picks (light & steady)</p>
+        <ul class="list">
+          <li>Warm milk or chamomile; small yogurt with berries; banana with peanut butter; oats or khichdi (small bowl).</li>
+          <li>Hydrate earlier in the evening; switch to small sips later.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Skip late if possible</p>
+        <ul class="list">
+          <li>Large or spicy/fatty meals; chocolate, cola, strong tea/coffee late.</li>
+          <li>Alcohol as a “sleep aid” — it fragments sleep and worsens reflux.</li>
+        </ul>
+      </div>
+      <div class="card ok">
+        If you wake hungry at night, keep a small planned snack at the bedside to avoid rummaging in the dark.
+      </div>
+      <div class="card info">
+        Ask your clinician which medicines should be taken with food vs on an empty stomach at night.
+      </div>
+    </div>
+  </section>
+
+  <!-- Night safety -->
+  <section id="safety" class="section">
+    <h2>Night-safety setup</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li>Night lights with motion sensors from bed to bathroom.</li>
+          <li>Clear rugs/clutter; secure cords; consider grab bars.</li>
+          <li>Stable chair near the bed for a brief sit if you feel dizzy.</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Keep phone, glasses, water, and a list of medicines on the bedside table. If you use hearing aids, place them where they won’t fall.
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="section">
+    <h2>Keep exploring</h2>
+    <div class="card">
+      <ul class="list">
+        <li><a href="#">Morning Routine (5 steps)</a></li>
+        <li><a href="#">Hydration & Drinks</a></li>
+        <li><a href="#">Insomnia</a></li>
+        <li><a href="#">Falls (Injury Prevention)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</main>
+
+<!-- Structured data: HowTo + FAQ + Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"Evening Wind-Down (5 steps)",
+  "description":"A 30–45 minute evening routine for older adults to improve sleep quality and safety.",
+  "totalTime":"PT45M",
+  "estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"0"},
+  "tool":[
+    {"@type":"HowToTool","name":"Warm lamps/night lights"},
+    {"@type":"HowToTool","name":"Notebook or phone"},
+    {"@type":"HowToTool","name":"Pill organizer"},
+    {"@type":"HowToTool","name":"Supportive slippers"}
+  ],
+  "step":[
+    {"@type":"HowToStep","name":"Dim & time","text":"Choose a consistent bedtime and start winding down 45–60 minutes before. Switch to warm lamps and set devices to night mode."},
+    {"@type":"HowToStep","name":"Unload the mind","text":"Write a short to-do list for tomorrow, one line of gratitude, and practice slow breathing to reduce mental load."},
+    {"@type":"HowToStep","name":"Body care & mobility","text":"Teeth/face, change into nightwear, perform gentle stretches and joint warm-ups."},
+    {"@type":"HowToStep","name":"Smart fluids & medicines","text":"Limit fluids in the last hours, take evening medicines as prescribed, check glucose/inhalers/CPAP if applicable."},
+    {"@type":"HowToStep","name":"Set the sleep environment","text":"Clear the route to the bathroom, add motion night lights, elevate head if reflux or breathlessness, keep room cool and quiet."}
+  ],
+  "url":"https://thevitatrack.com/daily-living/evening-wind-down"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"When should I stop drinking liquids before bed?","acceptedAnswer":{"@type":"Answer","text":"Most people do well limiting larger drinks 2–3 hours before bed and taking only small sips later. Follow any fluid limits from your clinician."}},
+    {"@type":"Question","name":"What’s a good evening snack?","acceptedAnswer":{"@type":"Answer","text":"A light protein-carb option such as yogurt with berries, banana with peanut butter, or a small bowl of oats. Avoid heavy, spicy, or very fatty foods late."}},
+    {"@type":"Question","name":"How do I reduce night bathroom trips?","acceptedAnswer":{"@type":"Answer","text":"Shift fluids earlier, double-void before lights out, and keep a clear, lit path. Ask about timing of diuretics. For BPH, discuss specific treatments with your clinician."}},
+    {"@type":"Question","name":"Screens at night—okay or not?","acceptedAnswer":{"@type":"Answer","text":"If used, keep them dim and on night mode, and switch to calm content. Avoid exciting news or bright screens close to bedtime."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Daily Living","item":"https://thevitatrack.com/daily-living/"},
+    {"@type":"ListItem","position":3,"name":"Evening Wind-Down","item":"https://thevitatrack.com/daily-living/evening-wind-down"}
+  ]
+}
+</script>
+
+<script>
+  // Small QoL
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') document.activeElement?.blur();
+  });
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->

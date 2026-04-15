@@ -1,0 +1,554 @@
+---
+title: "Chronic Pain"
+slug: "chronic-pain"
+category: "conditions"
+excerpt: ""
+---
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Chronic Pain — Senior-Friendly Guide • TheVitatrack</title>
+<meta name="description" content="Chronic pain guide for seniors: definition (>3 months), red-flags, common causes (back, osteoarthritis, neuropathic), evaluation, non-drug care, medicines with senior-safe cautions, pacing plan, sleep, mood, flare strategy, and when to seek help." />
+<meta name="theme-color" content="#0b6b5c" />
+<meta name="color-scheme" content="light" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#F6FAF8; --surface:#FFFFFF; --ink:#111827; --muted:#4B5563;
+    --brand:#0B6B5C; --brand-hover:#065F46; --ring:rgba(16,185,129,.35);
+    --border:#E5E7EB; --accent:#10B981;
+    --shadow-sm:0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 2px 10px rgba(0,0,0,.06), 0 12px 28px rgba(0,0,0,.06);
+
+    --fs-body:19px; --lh:1.7;
+    --fs-h1:clamp(28px,4.6vw,40px); --fs-h2:clamp(22px,3.6vw,30px);
+
+    --radius:18px; --s2:12px; --s3:14px; --s4:16px; --s5:18px; --s6:22px;
+
+    --warn:#F59E0B; --warn-bg:#FFFBEB;
+    --danger:#B91C1C; --danger-bg:#FEF2F2;
+    --calm:#ECFDF5; --calm-border:#BBF7D0; --calm-ink:#065F46;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Atkinson Hyperlegible", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    font-size:var(--fs-body); line-height:var(--lh);
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  :focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+  a{color:inherit; text-decoration:none}
+
+  .wrap{max-width:1000px;margin:0 auto;padding:var(--s6) var(--s4) var(--s6)}
+
+  .pagehead{
+    border-radius:var(--radius);
+    background:
+      radial-gradient(1200px 320px at 50% -18%, #E9FBF4, rgba(233,251,244,0) 70%),
+      linear-gradient(180deg,#F6FAF8 0%, #FFFFFF 100%);
+    box-shadow:var(--shadow-sm);
+    padding:var(--s6) var(--s4);
+    text-align:center;
+  }
+  .pagehead h1{font-size:var(--fs-h1);margin:0 0 var(--s2);font-weight:800}
+  .pagehead p{margin:0;color:var(--muted)}
+
+  .toc{
+    margin-top:var(--s5);
+    background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow-sm); padding:var(--s4);
+  }
+  .toc h2{font-size:1.1em;margin:0 0 var(--s3);font-weight:800}
+  .toc ul{margin:0;padding-left:18px; columns:1}
+  @media (min-width:760px){ .toc ul{columns:2} }
+  .toc a{border-bottom:2px solid transparent}
+  .toc a:hover{border-color:#D1FAE5}
+
+  .section{margin-top:var(--s6)}
+  .section h2{font-size:var(--fs-h2);margin:0 0 var(--s3);font-weight:800}
+  .lead{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+
+  .card{
+    background:var(--surface); border:1.5px solid var(--border);
+    border-radius:16px; padding:var(--s4); box-shadow:var(--shadow-sm);
+  }
+  .note{
+    background:var(--warn-bg); color:#78350F; border:1.5px solid #FDE68A;
+    border-left:6px solid var(--warn); border-radius:14px; padding:12px;
+  }
+  .danger{
+    background:var(--danger-bg); color:#7F1D1D; border:1.5px solid #FECACA;
+    border-left:6px solid var(--danger); border-radius:14px; padding:12px;
+  }
+  .calm{
+    background:var(--calm); color:var(--calm-ink); border:1.5px solid var(--calm-border);
+    border-radius:14px; padding:12px;
+  }
+
+  .list{margin:0;padding-left:18px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+    background:#ECFDF5;border:2px solid #BBF7D0;color:#065F46;font-weight:800
+  }
+  .kicker{font-weight:800; letter-spacing:.2px}
+  .small{font-size:.96em;color:var(--muted)}
+
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1.5px solid var(--border);
+  }
+  .table th, .table td{padding:10px 12px; text-align:left; vertical-align:top}
+  .table thead th{background:#F8FAFC; font-weight:800}
+  .table tbody tr + tr td{border-top:1px solid #E5E7EB}
+
+  .sep{
+    margin:var(--s5) auto 0;height:12px;max-width:760px;border-radius:999px;
+    background:linear-gradient(90deg,#CFF7E2,#8AE0C5,#CFF7E2);
+    box-shadow:0 2px 8px rgba(0,0,0,.07) inset, 0 1px 6px rgba(0,0,0,.05);
+  }
+
+  /* Ad wrappers */
+  .ad-wrap{margin:var(--s5) auto 0; max-width:760px}
+  .ad-wrap--wide{margin:var(--s5) auto 0}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- Header -->
+  <header class="pagehead">
+    <h1>Chronic Pain</h1>
+    <p>Definition (&gt; 3 months), red-flags, common causes (back, osteoarthritis, neuropathic), evaluation, non-drug care, senior-safe medicine options, pacing plan, sleep and mood support, flare strategy, and when to seek help.</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="On this page">
+    <h2>Quick navigation</h2>
+    <ul>
+      <li><a href="#what-is-chronic-pain">What is chronic pain?</a></li>
+      <li><a href="#red-flags">When to seek urgent help</a></li>
+      <li><a href="#common-areas">Common pain conditions</a></li>
+      <li><a href="#evaluation">Evaluation</a></li>
+      <li><a href="#non-drug">Non-drug care (core)</a></li>
+      <li><a href="#medicines">Medicines (senior-safety notes)</a></li>
+      <li><a href="#procedures">Procedures & devices</a></li>
+      <li><a href="#pacing">Pacing & flare plan</a></li>
+      <li><a href="#sleep-mood">Sleep & mood</a></li>
+      <li><a href="#lifestyle">Weight, diet, and movement</a></li>
+      <li><a href="#questions">Questions for your clinician</a></li>
+      <li><a href="#faq">Quick answers</a></li>
+    </ul>
+  </nav>
+
+  <div class="sep" role="separator" aria-hidden="true"></div>
+
+  <!-- ===== Display AD (near top) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <!-- Vita Responsive 1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="3275781745"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- What is -->
+  <section id="what-is-chronic-pain" class="section">
+    <h2>What is chronic pain?</h2>
+    <p class="lead"><span class="badge">In short</span> Pain that persists or returns for <strong>more than 3 months</strong>. It may start after an injury or illness—or without a clear trigger—and can affect sleep, mood, mobility, and daily function.</p>
+    <div class="card small">
+      <p><strong>Goal:</strong> improve function and quality of life using a <em>multimodal</em> plan (movement, skills, medicines when appropriate, and supports).</p>
+    </div>
+  </section>
+
+  <!-- Red flags -->
+  <section id="red-flags" class="section">
+    <h2>When to seek urgent help</h2>
+    <div class="danger">
+      <ul class="list">
+        <li>New weakness, numbness in both legs, loss of bladder/bowel control</li>
+        <li>Severe, sudden back pain with fever, unexplained weight loss, or cancer history</li>
+        <li>Chest pain, shortness of breath, jaw/arm pain, or fainting</li>
+        <li>Severe abdominal pain, black/bloody stools, or vomiting blood (especially on NSAIDs)</li>
+      </ul>
+      <p class="small">These can indicate emergencies—seek care immediately.</p>
+    </div>
+  </section>
+
+  <!-- Common areas -->
+  <section id="common-areas" class="section">
+    <h2>Common pain conditions</h2>
+    <div class="grid">
+      <div class="card">
+        <ul class="list">
+          <li><strong>Low back pain</strong> (degenerative changes, facet pain, spinal stenosis)</li>
+          <li><strong>Osteoarthritis</strong> (knees, hips, hands)</li>
+          <li><strong>Neuropathic pain</strong> (diabetic neuropathy, post-herpetic neuralgia, radiculopathy)</li>
+          <li><strong>Fibromyalgia</strong> (widespread pain, sleep/mood issues)</li>
+          <li>Chronic neck/shoulder pain, tendon problems, osteoporosis fractures (healed but painful)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Related topics</p>
+        <ul class="list">
+          <li><a href="#">Back Pain (Chronic)</a></li>
+          <li><a href="#">Osteoarthritis</a></li>
+          <li><a href="#">Diabetic Neuropathy</a></li>
+          <li><a href="#">Sleep & Routines</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== In-article AD (after common areas) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Evaluation -->
+  <section id="evaluation" class="section">
+    <h2>Evaluation</h2>
+    <div class="card">
+      <ul class="list">
+        <li>History & exam: pain pattern, triggers, sleep, mood, daily function</li>
+        <li>Screen for red flags and mood symptoms (anxiety/depression)</li>
+        <li>Imaging only when indicated by red flags or persistent focal deficits</li>
+        <li>Review medicines (interactions, side effects), alcohol, and supplements</li>
+        <li>Consider contributing conditions (diabetes, kidney/heart disease, osteoporosis)</li>
+      </ul>
+      <p class="small">The plan is based on function goals, not imaging alone.</p>
+    </div>
+  </section>
+
+  <!-- Non-drug -->
+  <section id="non-drug" class="section">
+    <h2>Non-drug care (core)</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Movement & physical therapy</p>
+        <ul class="list">
+          <li>Gentle aerobic activity most days (walking, cycling, water exercise)</li>
+          <li>Targeted strength and flexibility (hips, core, back)</li>
+          <li>Balance training to reduce falls</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Skills & supports</p>
+        <ul class="list">
+          <li>Pacing strategies to avoid “boom–bust” cycles</li>
+          <li>Relaxation and breathing, mindfulness or CBT-based skills</li>
+          <li>Heat/ice, massage, topical rubs, TENS if helpful</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Sleep basics</p>
+        <ul class="list">
+          <li>Regular schedule; wind-down routine; reduce late caffeine</li>
+          <li>Comfortable mattress/pillow; positioning aids</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Consistency beats intensity. Start low, build slow, and track small wins.
+      </div>
+    </div>
+  </section>
+
+  <!-- Medicines -->
+  <section id="medicines" class="section">
+    <h2>Medicines (senior-safety notes)</h2>
+    <table class="table" role="table" aria-describedby="mednotes">
+      <thead>
+        <tr><th scope="col">Option</th><th scope="col">Where it helps</th><th scope="col">Senior cautions</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Acetaminophen</strong></td>
+          <td>Osteoarthritis, general pain</td>
+          <td>Mind total daily dose from all products (liver safety)</td>
+        </tr>
+        <tr>
+          <td><strong>Topical NSAIDs</strong></td>
+          <td>OA knees/hands, local tendon pain</td>
+          <td>Lower systemic risk vs oral; avoid on broken skin</td>
+        </tr>
+        <tr>
+          <td><strong>Oral NSAIDs</strong></td>
+          <td>Inflammatory flares</td>
+          <td>Kidney/heart/stomach risks ↑; use shortest time at lowest dose if used</td>
+        </tr>
+        <tr>
+          <td><strong>Duloxetine</strong></td>
+          <td>OA knee/hip, neuropathic pain, chronic back pain</td>
+          <td>Monitor for nausea, sleep changes, BP; interactions review</td>
+        </tr>
+        <tr>
+          <td><strong>Gabapentin/Pregabalin</strong></td>
+          <td>Neuropathic pain</td>
+          <td>Drowsiness/dizziness/falls; adjust for kidney function; start low</td>
+        </tr>
+        <tr>
+          <td><strong>Tramadol (selected cases)</strong></td>
+          <td>Breakthrough pain when others inadequate</td>
+          <td>Confusion, constipation, falls; interactions; short courses only if used</td>
+        </tr>
+        <tr>
+          <td><strong>Topical lidocaine/capsaicin</strong></td>
+          <td>Localized or nerve pain</td>
+          <td>Skin tolerance; follow application limits</td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="mednotes" class="small">Medicine plans are individualized to your health, other medicines, and goals. Avoid mixing sedating drugs without guidance.</p>
+  </section>
+
+  <!-- ===== In-article AD (after medicines) ===== -->
+  <div class="ad-wrap">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="1548966214"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Procedures -->
+  <section id="procedures" class="section">
+    <h2>Procedures & devices</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Options (selected cases)</p>
+        <ul class="list">
+          <li>Joint injections (e.g., knee OA), bursal injections</li>
+          <li>Spine interventions (facet injections, epidurals) when appropriate</li>
+          <li>TENS, bracing/assistive devices, canes or walkers for mobility</li>
+        </ul>
+      </div>
+      <div class="card calm">
+        Weigh benefits vs. risks and duration of relief; combine with movement and skills.
+      </div>
+    </div>
+  </section>
+
+  <!-- Pacing -->
+  <section id="pacing" class="section">
+    <h2>Pacing & flare plan</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Daily pacing</p>
+        <ul class="list">
+          <li>Break tasks into short blocks; alternate light and light-to-moderate activities</li>
+          <li>Set timers; stop before a big spike, then rest briefly and resume</li>
+          <li>Use “permission to pause” on higher-pain days</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Flare strategy</p>
+        <ul class="list">
+          <li>Heat/ice, gentle mobility, relaxation breathing</li>
+          <li>Short-term medicine adjustments if part of your plan</li>
+          <li>Call if new red flags or if not improving within a few days</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sleep & mood -->
+  <section id="sleep-mood" class="section">
+    <h2>Sleep & mood</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Better nights</p>
+        <ul class="list">
+          <li>Regular bedtime/wake time; wind-down routine; reduce screens late</li>
+          <li>Positioning aids (pillows under knees/hips) to reduce strain</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Mood tools</p>
+        <ul class="list">
+          <li>Brief daily relaxation practice (5–10 minutes)</li>
+          <li>CBT-based skills or group programs; treat anxiety/depression when present</li>
+          <li>Connect with peers, family, or support groups</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lifestyle -->
+  <section id="lifestyle" class="section">
+    <h2>Weight, diet, and movement</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Weight & joints</p>
+        <ul class="list">
+          <li>Even small weight changes can reduce knee/hip load</li>
+          <li>Focus on steady habits rather than strict diets</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="kicker">Food patterns</p>
+        <ul class="list">
+          <li>Fiber-rich meals, adequate protein, healthy fats</li>
+          <li>Limit excess alcohol; review supplements with your clinician</li>
+        </ul>
+      </div>
+      <div class="card note">
+        Pair food, movement, and sleep steps—together they’re more effective.
+      </div>
+    </div>
+  </section>
+
+  <!-- Questions -->
+  <section id="questions" class="section">
+    <h2>Questions for your clinician</h2>
+    <div class="card">
+      <ul class="list">
+        <li>What is my most likely pain diagnosis (or mix), and what are realistic goals?</li>
+        <li>Which exercises and pacing plan fit my condition today?</li>
+        <li>Which medicines are safest for me, and what should I avoid?</li>
+        <li>Could I benefit from physical therapy, CBT-based pain skills, or a group program?</li>
+        <li>Are procedures appropriate for me, and what results should I expect?</li>
+        <li>How do we adjust the plan during flares?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Quick answers</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="kicker">Is rest best for chronic pain?</p>
+        <p>Prolonged rest can worsen stiffness and de-conditioning. Gentle, paced activity usually helps long-term.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Do I need an MRI?</p>
+        <p>Only if red flags or persistent deficits suggest a specific problem. Imaging findings often don’t match pain levels.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Are opioids recommended?</p>
+        <p>They carry risks (falls, confusion, constipation) and are generally avoided or limited in older adults. Other options are preferred.</p>
+      </div>
+      <div class="card">
+        <p class="kicker">Can mood treatment reduce pain?</p>
+        <p>Yes—addressing sleep and mood can meaningfully lower pain intensity and improve function.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Multiplex AD (bottom) ===== -->
+  <div class="ad-wrap--wide">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3496395300151813"
+         crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-3496395300151813"
+         data-ad-slot="7363184657"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+</main>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalCondition",
+  "name":"Chronic pain",
+  "description":"Chronic pain guide for seniors: definition, red-flags, common causes, evaluation, non-drug care, medicines with senior-safe cautions, pacing, sleep and mood, and flare planning.",
+  "signOrSymptom":[
+    {"@type":"MedicalSymptom","name":"Persistent pain >3 months"},
+    {"@type":"MedicalSymptom","name":"Sleep disturbance"},
+    {"@type":"MedicalSymptom","name":"Reduced mobility"},
+    {"@type":"MedicalSymptom","name":"Mood changes"}
+  ],
+  "possibleComplication":[
+    {"@type":"MedicalEntity","name":"Falls"},
+    {"@type":"MedicalEntity","name":"Depression and anxiety"},
+    {"@type":"MedicalEntity","name":"Deconditioning"}
+  ],
+  "riskFactor":[
+    {"@type":"MedicalRiskFactor","name":"Older age"},
+    {"@type":"MedicalRiskFactor","name":"Osteoarthritis"},
+    {"@type":"MedicalRiskFactor","name":"Diabetes/neuropathy"},
+    {"@type":"MedicalRiskFactor","name":"Prior injury"}
+  ],
+  "url":"https://thevitatrack.com/chronic-pain"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Is rest best for chronic pain?",
+      "acceptedAnswer":{"@type":"Answer","text":"Prolonged rest can worsen stiffness and de-conditioning. Gentle, paced activity usually helps long-term."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do I need an MRI for chronic pain?",
+      "acceptedAnswer":{"@type":"Answer","text":"Only if red flags or persistent neurological deficits suggest a specific problem. Imaging findings often do not match pain levels."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are opioids recommended in older adults with chronic pain?",
+      "acceptedAnswer":{"@type":"Answer","text":"They carry important risks (falls, confusion, constipation) and are generally avoided or limited. Non-drug care and safer medicines are preferred."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can mood treatment reduce pain?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. Addressing sleep and mood can lower pain intensity and improve function and quality of life."}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://thevitatrack.com/"},
+    {"@type":"ListItem","position":2,"name":"Health Conditions","item":"https://thevitatrack.com/health-conditions/"},
+    {"@type":"ListItem","position":3,"name":"Chronic Pain","item":"https://thevitatrack.com/chronic-pain"}
+  ]
+}
+</script>
+</body>
+</html>
+
+<!-- /wp:html -->
