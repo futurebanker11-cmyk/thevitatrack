@@ -157,18 +157,18 @@ export default function HomePage() {
         {/* SUPPLEMENTS */}
         <div className="sh" id="supplements"><h2>Recommended Supplements</h2><p>Evidence-based supplement recommendations by health concern</p></div>
         <div className="sup-grid">
-          <Link href="/prostate" className="sc"><div className="sc-ico r">🛡️</div><div className="sc-body"><div className="sc-title">Prostate health</div><div className="sc-sub">BPH, nighttime urination, weak flow</div></div><span className="sc-arr">→</span></Link>
           <Link href="/heart" className="sc"><div className="sc-ico r">❤️</div><div className="sc-body"><div className="sc-title">Heart health</div><div className="sc-sub">Cholesterol, circulation, cardiovascular</div></div><span className="sc-arr">→</span></Link>
-          <Link href="/kidney" className="sc"><div className="sc-ico b">💧</div><div className="sc-body"><div className="sc-title">Kidney health</div><div className="sc-sub">GFR, creatinine, kidney function</div></div><span className="sc-arr">→</span></Link>
           <Link href="/brain" className="sc"><div className="sc-ico p">🧠</div><div className="sc-body"><div className="sc-title">Brain &amp; memory</div><div className="sc-sub">Focus, cognitive decline, brain fog</div></div><span className="sc-arr">→</span></Link>
-          <Link href="/blood-pressure" className="sc"><div className="sc-ico r">🩺</div><div className="sc-body"><div className="sc-title">Blood pressure</div><div className="sc-sub">Hypertension, natural BP support</div></div><span className="sc-arr">→</span></Link>
-          <Link href="/joints" className="sc"><div className="sc-ico a">🦴</div><div className="sc-body"><div className="sc-title">Joints &amp; bones</div><div className="sc-sub">Arthritis, bone density, joint pain</div></div><span className="sc-arr">→</span></Link>
           <Link href="/sleep" className="sc"><div className="sc-ico p">🌙</div><div className="sc-body"><div className="sc-title">Sleep</div><div className="sc-sub">Insomnia, nocturia, sleep quality</div></div><span className="sc-arr">→</span></Link>
           <Link href="/digestion" className="sc"><div className="sc-ico g">🌿</div><div className="sc-body"><div className="sc-title">Digestion &amp; gut</div><div className="sc-sub">Bloating, reflux, constipation</div></div><span className="sc-arr">→</span></Link>
-          <Link href="/eyes" className="sc"><div className="sc-ico t">👁️</div><div className="sc-body"><div className="sc-title">Eyes &amp; vision</div><div className="sc-sub">AMD, cataracts, dry eyes</div></div><span className="sc-arr">→</span></Link>
           <Link href="/liver" className="sc"><div className="sc-ico g">🧪</div><div className="sc-body"><div className="sc-title">Liver</div><div className="sc-sub">Fatty liver, detox, liver function</div></div><span className="sc-arr">→</span></Link>
           <Link href="/longevity" className="sc"><div className="sc-ico t">🧬</div><div className="sc-body"><div className="sc-title">Longevity</div><div className="sc-sub">Anti-aging, healthspan, Blue Zones</div></div><span className="sc-arr">→</span></Link>
           <Link href="/skin-hair" className="sc"><div className="sc-ico k">✨</div><div className="sc-body"><div className="sc-title">Skin &amp; hair</div><div className="sc-sub">Wrinkles, thinning hair, collagen</div></div><span className="sc-arr">→</span></Link>
+          <Link href="/conditions/high-blood-pressure-hypertension" className="sc"><div className="sc-ico r">🩺</div><div className="sc-body"><div className="sc-title">Blood pressure</div><div className="sc-sub">Hypertension, natural BP support</div></div><span className="sc-arr">→</span></Link>
+          <Link href="/conditions/osteoarthritis" className="sc"><div className="sc-ico a">🦴</div><div className="sc-body"><div className="sc-title">Joints &amp; bones</div><div className="sc-sub">Arthritis, bone density, joint pain</div></div><span className="sc-arr">→</span></Link>
+          <Link href="/conditions/benign-prostatic-hyperplasia-bph" className="sc"><div className="sc-ico r">🛡️</div><div className="sc-body"><div className="sc-title">Prostate health</div><div className="sc-sub">BPH, nighttime urination, weak flow</div></div><span className="sc-arr">→</span></Link>
+          <Link href="/conditions/chronic-kidney-disease-ckd" className="sc"><div className="sc-ico b">💧</div><div className="sc-body"><div className="sc-title">Kidney health</div><div className="sc-sub">GFR, creatinine, kidney function</div></div><span className="sc-arr">→</span></Link>
+          <Link href="/conditions/macular-degeneration-amd" className="sc"><div className="sc-ico t">👁️</div><div className="sc-body"><div className="sc-title">Eyes &amp; vision</div><div className="sc-sub">AMD, cataracts, dry eyes</div></div><span className="sc-arr">→</span></Link>
         </div>
 
         {/* FREE TOOLS */}
@@ -200,10 +200,10 @@ export default function HomePage() {
             <p>Evidence-based health support for adults 60+. Free tools, supplement recommendations, and premium health guides.</p>
           </div>
           <div className="ftr-col"><h4>Supplements</h4>
-            <Link href="/prostate">Prostate</Link><Link href="/heart">Heart</Link><Link href="/kidney">Kidney</Link><Link href="/brain">Brain &amp; Memory</Link><Link href="/blood-pressure">Blood Pressure</Link><Link href="/joints">Joints &amp; Bones</Link>
+            <Link href="/heart">Heart</Link><Link href="/brain">Brain &amp; Memory</Link><Link href="/sleep">Sleep</Link><Link href="/digestion">Digestion</Link><Link href="/liver">Liver</Link><Link href="/longevity">Longevity</Link>
           </div>
           <div className="ftr-col"><h4>More</h4>
-            <Link href="/sleep">Sleep</Link><Link href="/digestion">Digestion</Link><Link href="/eyes">Eyes &amp; Vision</Link><Link href="/liver">Liver</Link><Link href="/longevity">Longevity</Link><Link href="/skin-hair">Skin &amp; Hair</Link>
+            <Link href="/skin-hair">Skin &amp; Hair</Link><Link href="/conditions">Health Conditions</Link><Link href="/symptoms">Symptoms Guide</Link><Link href="/recipes">Recipes</Link><Link href="/daily-living">Daily Living</Link><Link href="/plans">7-Day Plans</Link>
           </div>
           <div className="ftr-col"><h4>Articles</h4>
             <Link href="/conditions">Health Conditions</Link><Link href="/symptoms">Symptoms Guide</Link><Link href="/daily-living">Daily Living</Link><Link href="/recipes">Recipes</Link><Link href="/tools">Health Tools</Link><Link href="/guides">Premium Guides</Link>
