@@ -311,7 +311,7 @@ input[type="range"]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;b
 </div>
 
 <div className="ad-slot">
-<ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="6355219695" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins>
 
 </div>
 

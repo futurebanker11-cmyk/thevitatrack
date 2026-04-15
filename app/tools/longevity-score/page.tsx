@@ -294,7 +294,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="6355219695" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
 <div className="content-section">
 <h2>What is biological age — and why it matters more than your birthday</h2>
 <p>Your chronological age counts the years since birth. Your biological age measures how well your body is actually functioning. Two people born the same year can have dramatically different biological ages depending on their lifestyle, genetics, and health management. A landmark study in the Proceedings of the National Academy of Sciences tracked 1,000 adults and found their biological ages ranged from 28 to 61 — all at the chronological age of 38. The difference only grows wider after 60.</p>

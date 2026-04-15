@@ -1,4 +1,5 @@
 import AdUnit from './AdUnit';
+import BundleCTA from './BundleCTA';
 import Link from 'next/link';
 
 export default function ArticleLayout({ title, category, children }: { title: string; category?: string; children: React.ReactNode }) {
@@ -21,9 +22,11 @@ export default function ArticleLayout({ title, category, children }: { title: st
       {/* Article content (has its own styling) */}
       {children}
 
-      {/* Bottom Ads */}
+      {/* Bottom: Bundle CTA + Ads */}
       <div style={{ maxWidth: '820px', margin: '0 auto', padding: '0 20px 60px' }}>
+        <BundleCTA variant="inline" />
         <AdUnit slot="1775331881" format="fluid" layout="in-article" />
+        <BundleCTA variant="compact" />
         <AdUnit slot="3333737430" format="auto" />
       </div>
     </main>

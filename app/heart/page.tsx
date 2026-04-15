@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
+import BundleCTA from '@/components/BundleCTA';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -181,6 +182,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,Blink
 </div>
 
 
+      <BundleCTA variant="compact" />
 
       <section style={{maxWidth:"840px",margin:"48px auto 60px",padding:"0 20px"}}>
         <div style={{borderTop:"2px solid #E8E6E1",paddingTop:"32px"}}>

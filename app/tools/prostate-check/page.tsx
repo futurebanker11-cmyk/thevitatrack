@@ -270,7 +270,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="6355219695" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
 
 <div className="content-section">
 <h2>Understanding prostate health after 50</h2>

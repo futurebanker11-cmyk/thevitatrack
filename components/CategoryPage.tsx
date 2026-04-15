@@ -1,6 +1,7 @@
 import { getArticlesByCategory } from '@/lib/articles';
 import Header from '@/components/Header';
 import AdUnit from '@/components/AdUnit';
+import BundleCTA from '@/components/BundleCTA';
 import Link from 'next/link';
 
 interface CategoryPageProps {
@@ -64,6 +65,7 @@ export default function CategoryPage({ category, title, subtitle, icon, color, b
           ))}
         </div>
 
+        <BundleCTA variant="default" />
         <AdUnit slot="3333737430" />
       </div>
     </>

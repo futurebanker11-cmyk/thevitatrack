@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
+
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -58,6 +59,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="bcta"><h3>Get Everything for $47</h3><p>All 19 guides. Every protocol. Every tracking sheet. Lifetime access including future updates.</p><a href="https://payhip.com/b/5LPT1" target="_blank" className="btn-w">Get The Complete Vault &rarr;</a></div>
 </div>
 
+      
 
     </>
   );
