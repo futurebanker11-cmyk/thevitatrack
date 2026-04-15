@@ -1,25 +1,13 @@
 'use client';
-import { useState } from 'react';
 import Link from 'next/link';
+import Header from '@/components/Header';
 
 export default function HomePage() {
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
       <style>{`
-        .hdr{background:#14442A;position:sticky;top:0;z-index:1000}
-        .hdr-inner{max-width:1100px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between}
-        .hdr-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
-        .hdr-logo span{font-size:22px;font-weight:700}
-        .hdr-nav{display:flex;gap:4px}
-        .hdr-nav a{color:rgba(255,255,255,.85);text-decoration:none;font-size:15px;font-weight:500;padding:8px 16px;border-radius:8px;transition:background .15s}
-        .hdr-nav a:hover{background:rgba(255,255,255,.12);color:#fff}
-        .hdr-toggle{display:none;background:none;border:none;color:#fff;cursor:pointer;padding:8px;min-height:48px;min-width:48px;align-items:center;justify-content:center}
-        .mob{display:none;position:fixed;inset:0;background:#14442A;z-index:999;flex-direction:column;padding:80px 20px 24px}
-        .mob.open{display:flex}
-        .mob a{color:#fff;text-decoration:none;font-size:20px;font-weight:600;padding:18px 20px;border-radius:12px;display:block}
-        .mob-x{position:absolute;top:14px;right:14px;background:none;border:none;color:#fff;cursor:pointer;padding:12px}
+        /* header styles now in shared Header component */
         .hero{background:linear-gradient(160deg,#0f3320 0%,#1a5632 40%,#1E6B3E 100%);color:#fff;padding:76px 20px 68px;text-align:center}
         .hero-ey{font-size:14px;letter-spacing:1.5px;text-transform:uppercase;opacity:.5;margin-bottom:16px;font-weight:600}
         .hero h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(32px,6vw,54px);font-weight:800;line-height:1.1;max-width:700px;margin:0 auto 20px}
@@ -103,39 +91,11 @@ export default function HomePage() {
         .ftr-btm{border-top:1px solid #E8E6E1;padding-top:20px;text-align:center}
         .ftr-btm p{font-size:13px;color:#717170;margin:3px 0;line-height:1.5}
         @media(max-width:900px){.guides-grid{grid-template-columns:repeat(2,1fr)}.bundle{flex-direction:column;text-align:center}.bundle-books{justify-content:center}.ftr-grid{grid-template-columns:1fr 1fr}}
-        @media(max-width:768px){.hdr-nav{display:none}.hdr-toggle{display:flex}body{font-size:20px}.hero{padding:56px 16px 48px}.hero-btns{flex-direction:column;align-items:center}.guides-grid{grid-template-columns:1fr 1fr}.fq{flex-direction:column;padding:24px;text-align:center}.fq-icon{margin:0 auto}.sup-grid{grid-template-columns:1fr}.tool-grid{grid-template-columns:1fr}.how{grid-template-columns:1fr 1fr}.ftr-grid{grid-template-columns:1fr 1fr}.main{padding:0 16px}}
+        @media(max-width:768px){body{font-size:20px}.hero{padding:56px 16px 48px}.hero-btns{flex-direction:column;align-items:center}.guides-grid{grid-template-columns:1fr 1fr}.fq{flex-direction:column;padding:24px;text-align:center}.fq-icon{margin:0 auto}.sup-grid{grid-template-columns:1fr}.tool-grid{grid-template-columns:1fr}.how{grid-template-columns:1fr 1fr}.ftr-grid{grid-template-columns:1fr 1fr}.main{padding:0 16px}}
         @media(max-width:400px){.guides-grid{grid-template-columns:1fr}.how{grid-template-columns:1fr}}
       `}</style>
 
-      {/* HEADER */}
-      <header className="hdr">
-        <div className="hdr-inner">
-          <Link href="/" className="hdr-logo">
-            <svg viewBox="0 0 36 36" fill="none" width="32" height="32"><circle cx="18" cy="18" r="16" fill="#1A5632"/><path d="M18 28 L12.5 21.5 C10 18.5 10 15.5 12.5 13.5 C14.5 12 16.5 13 18 15.5 C19.5 13 21.5 12 23.5 13.5 C26 15.5 26 18.5 23.5 21.5Z" fill="#4ADE80" opacity=".85"/><path d="M13 20.5L16 20.5 17 17.5 18.5 23 20 19.5 23 19.5" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            <span>VitaTrack</span>
-          </Link>
-          <nav className="hdr-nav">
-            <Link href="/">Home</Link>
-            <Link href="#supplements">Supplements</Link>
-            <Link href="/tools">Health Tools</Link>
-            <Link href="/guides">Guides</Link>
-          </nav>
-          <button className="hdr-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="28" height="28"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-          </button>
-        </div>
-      </header>
-
-      {/* MOBILE NAV */}
-      <div className={menuOpen ? 'mob open' : 'mob'}>
-        <button className="mob-x" onClick={() => setMenuOpen(false)}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="30" height="30"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-        <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
-        <Link href="#supplements" onClick={() => setMenuOpen(false)}>Supplements</Link>
-        <Link href="/tools" onClick={() => setMenuOpen(false)}>Health Tools</Link>
-        <Link href="/guides" onClick={() => setMenuOpen(false)}>Guides</Link>
-      </div>
+      <Header />
 
       {/* HERO */}
       <section className="hero">
