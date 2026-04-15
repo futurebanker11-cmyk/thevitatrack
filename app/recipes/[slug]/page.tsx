@@ -31,7 +31,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   return (
     <>
       <Header />
-      <ArticleLayout title={article.title} category="recipes">
+      <ArticleLayout title={article.title} category="recipes" slug={slug} excerpt={article.excerpt}>
         <ArticleContent html={article.content} />
       </ArticleLayout>
     </>

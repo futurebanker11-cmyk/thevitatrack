@@ -1,16 +1,22 @@
 import type { Metadata } from 'next';
+import { ToolJsonLd } from '@/components/ArticleSchema';
 
 export const metadata: Metadata = {
   title: "Protein Calculator for Seniors",
-  description: "How much protein you need after 60. Personalized calculation based on weight and activity.",
+  description: "How much protein you need after 60.",
   alternates: { canonical: "https://thevitatrack.com/tools/protein-calculator" },
   openGraph: {
     title: "Protein Calculator for Seniors",
-    description: "How much protein you need after 60. Personalized calculation based on weight and activity.",
+    description: "How much protein you need after 60.",
     url: "https://thevitatrack.com/tools/protein-calculator",
   },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <ToolJsonLd name="Protein Calculator for Seniors" description="How much protein you need after 60." slug="protein-calculator" />
+      {children}
+    </>
+  );
 }

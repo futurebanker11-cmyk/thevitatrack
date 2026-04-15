@@ -1,11 +1,28 @@
 import AdUnit from './AdUnit';
 import BundleCTA from './BundleCTA';
 import { ReviewBadge, MedicalDisclaimer } from './MedicalDisclaimer';
+import { ArticleJsonLd, BreadcrumbJsonLd } from './ArticleSchema';
 import Link from 'next/link';
 
-export default function ArticleLayout({ title, category, children }: { title: string; category?: string; children: React.ReactNode }) {
+interface Props {
+  title: string;
+  category?: string;
+  slug?: string;
+  excerpt?: string;
+  children: React.ReactNode;
+}
+
+export default function ArticleLayout({ title, category, slug, excerpt, children }: Props) {
   return (
     <main>
+      {/* Schema markup */}
+      {category && slug && (
+        <>
+          <ArticleJsonLd title={title} excerpt={excerpt || ''} slug={slug} category={category} />
+          <BreadcrumbJsonLd category={category} title={title} />
+        </>
+      )}
+
       {/* Top: Breadcrumb + Review Badge + Ad */}
       <div style={{ maxWidth: '820px', margin: '0 auto', padding: '16px 20px 0' }}>
         {category && (
