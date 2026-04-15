@@ -78,6 +78,13 @@ function extractParts(html: string): { css: string; body: string } {
   body = body.replace(/<footer[^>]*>[\s\S]*?<\/footer>/gi, '');
   body = body.replace(/<div\s+id="m"[\s\S]*?<\/nav>\s*<\/div>/gi, '');
 
+  // Strip photo placeholders
+  body = body.replace(/<div[^>]*class="img-hero"[^>]*>[\s\S]*?<\/div>/gi, '');
+
+  // Strip inline ad blocks (ads handled by ArticleLayout)
+  body = body.replace(/<div[^>]*class="ad-wrap[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '');
+  body = body.replace(/<ins[^>]*class="adsbygoogle"[^>]*><\/ins>/gi, '');
+
   return { css, body };
 }
 
