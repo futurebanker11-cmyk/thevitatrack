@@ -26,7 +26,7 @@ export default function CategoryPage({ category, title, subtitle, icon, color, b
         .cat-hero-icon{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:14px;background:rgba(255,255,255,.15);font-size:24px;margin-bottom:14px}
         .cat-hero h1{font-size:clamp(26px,5vw,38px);font-weight:700;line-height:1.15;margin:0 0 10px;font-family:'Fraunces',serif}
         .cat-hero p{font-size:17px;opacity:.88;max-width:500px;margin:0 auto 16px;line-height:1.5}
-        .cat-hero-count{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:5px 18px;font-size:13px;font-weight:600}
+        .cat-hero-count{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:5px 18px;font-size:13px;font-weight:600;cursor:default;pointer-events:none}
         .cat-main{max-width:1060px;margin:0 auto;padding:0 20px}
         .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px;margin:28px 0}
         .cat-card{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #E8E6E1;border-radius:12px;padding:16px 18px;text-decoration:none;color:#2C2C2A;cursor:pointer;transition:transform 200ms,box-shadow 200ms,border-color 200ms}
@@ -46,7 +46,7 @@ export default function CategoryPage({ category, title, subtitle, icon, color, b
         <div className="cat-hero-icon">{icon}</div>
         <h1>{title}</h1>
         <p>{subtitle}</p>
-        <span className="cat-hero-count">{count} guides available</span>
+        <span className="cat-hero-count">{count} guides</span>
       </section>
 
       <div className="cat-main">
