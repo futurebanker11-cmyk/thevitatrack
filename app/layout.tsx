@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 // Static, trusted JSON-LD string (not user-generated content)
@@ -53,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: orgSchema }} />
       </head>
-      <body>{children}</body>
+      <body>{children}<Footer /></body>
     </html>
   );
 }
