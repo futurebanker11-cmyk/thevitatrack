@@ -144,14 +144,14 @@ export default function LongevityPage() {
 
       <section style={{maxWidth:"840px",margin:"48px auto 60px",padding:"0 20px"}}>
         <div style={{borderTop:"2px solid #E8E6E1",paddingTop:"32px"}}>
-          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px"}}>Related Health Guides</h2>
+          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px",fontFamily:"Fraunces, serif"}}>Related Health Guides</h2>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"4px"}}>
-          <Link href="/conditions/osteoporosis" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Osteoporosis</Link>
-          <Link href="/conditions/osteoarthritis" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Osteoarthritis</Link>
-          <Link href="/conditions/diabetes-type-2" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Type 2 Diabetes</Link>
-          <Link href="/conditions/frailty-deconditioning" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Frailty & Deconditioning</Link>
-          <Link href="/conditions/weight-management-seniors" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Weight Management</Link>
-          <Link href="/conditions/vitamin-d-calcium-basics" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Vitamin D & Calcium</Link>
+          <Link href="/conditions/osteoporosis" className="interlink">Osteoporosis</Link>
+          <Link href="/conditions/osteoarthritis" className="interlink">Osteoarthritis</Link>
+          <Link href="/conditions/diabetes-type-2" className="interlink">Type 2 Diabetes</Link>
+          <Link href="/conditions/frailty-deconditioning" className="interlink">Frailty & Deconditioning</Link>
+          <Link href="/conditions/weight-management-seniors" className="interlink">Weight Management</Link>
+          <Link href="/conditions/vitamin-d-calcium-basics" className="interlink">Vitamin D & Calcium</Link>
           </div>
         </div>
       </section>

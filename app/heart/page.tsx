@@ -187,16 +187,16 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,Blink
 
       <section style={{maxWidth:"840px",margin:"48px auto 60px",padding:"0 20px"}}>
         <div style={{borderTop:"2px solid #E8E6E1",paddingTop:"32px"}}>
-          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px"}}>Related Health Guides</h2>
+          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px",fontFamily:"Fraunces, serif"}}>Related Health Guides</h2>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"4px"}}>
-          <Link href="/conditions/atrial-fibrillation-afib" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Atrial Fibrillation (AFib)</Link>
-          <Link href="/conditions/high-cholesterol" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>High Cholesterol</Link>
-          <Link href="/conditions/congestive-heart-failure-chf" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Congestive Heart Failure</Link>
-          <Link href="/conditions/high-blood-pressure-hypertension" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>High Blood Pressure</Link>
-          <Link href="/conditions/heart-attack-warning-signs" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Heart Attack Warning Signs</Link>
-          <Link href="/symptoms/heart-palpitations" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Heart Palpitations</Link>
-          <Link href="/symptoms/chest-pain-pressure" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Chest Pain</Link>
-          <Link href="/symptoms/shortness-of-breath" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Shortness of Breath</Link>
+          <Link href="/conditions/atrial-fibrillation-afib" className="interlink">Atrial Fibrillation (AFib)</Link>
+          <Link href="/conditions/high-cholesterol" className="interlink">High Cholesterol</Link>
+          <Link href="/conditions/congestive-heart-failure-chf" className="interlink">Congestive Heart Failure</Link>
+          <Link href="/conditions/high-blood-pressure-hypertension" className="interlink">High Blood Pressure</Link>
+          <Link href="/conditions/heart-attack-warning-signs" className="interlink">Heart Attack Warning Signs</Link>
+          <Link href="/symptoms/heart-palpitations" className="interlink">Heart Palpitations</Link>
+          <Link href="/symptoms/chest-pain-pressure" className="interlink">Chest Pain</Link>
+          <Link href="/symptoms/shortness-of-breath" className="interlink">Shortness of Breath</Link>
           </div>
         </div>
       </section>

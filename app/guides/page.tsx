@@ -60,13 +60,13 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 
       <section style={{maxWidth:"840px",margin:"48px auto 60px",padding:"0 20px"}}>
         <div style={{borderTop:"2px solid #E8E6E1",paddingTop:"32px"}}>
-          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px"}}>Related Health Guides</h2>
+          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px",fontFamily:"Fraunces, serif"}}>Related Health Guides</h2>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"4px"}}>
-          <Link href="/conditions/high-blood-pressure-hypertension" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>High Blood Pressure</Link>
-          <Link href="/conditions/high-cholesterol" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>High Cholesterol</Link>
-          <Link href="/conditions/diabetes-type-2" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Type 2 Diabetes</Link>
-          <Link href="/conditions/osteoporosis" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Osteoporosis</Link>
-          <Link href="/conditions/memory-loss-dementia" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Memory Loss & Dementia</Link>
+          <Link href="/conditions/high-blood-pressure-hypertension" className="interlink">High Blood Pressure</Link>
+          <Link href="/conditions/high-cholesterol" className="interlink">High Cholesterol</Link>
+          <Link href="/conditions/diabetes-type-2" className="interlink">Type 2 Diabetes</Link>
+          <Link href="/conditions/osteoporosis" className="interlink">Osteoporosis</Link>
+          <Link href="/conditions/memory-loss-dementia" className="interlink">Memory Loss & Dementia</Link>
           </div>
         </div>
       </section>

@@ -152,13 +152,13 @@ export default function DigestionPage() {
 
       <section style={{maxWidth:"840px",margin:"48px auto 60px",padding:"0 20px"}}>
         <div style={{borderTop:"2px solid #E8E6E1",paddingTop:"32px"}}>
-          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px"}}>Related Health Guides</h2>
+          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px",fontFamily:"Fraunces, serif"}}>Related Health Guides</h2>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"4px"}}>
-          <Link href="/conditions/constipation" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Constipation</Link>
-          <Link href="/conditions/gerd-acid-reflux" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>GERD & Acid Reflux</Link>
-          <Link href="/conditions/irritable-bowel-syndrome-ibs" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Irritable Bowel Syndrome</Link>
-          <Link href="/conditions/malnutrition-unintended-weight-loss" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Malnutrition & Weight Loss</Link>
-          <Link href="/conditions/diabetes-type-2" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Type 2 Diabetes</Link>
+          <Link href="/conditions/constipation" className="interlink">Constipation</Link>
+          <Link href="/conditions/gerd-acid-reflux" className="interlink">GERD & Acid Reflux</Link>
+          <Link href="/conditions/irritable-bowel-syndrome-ibs" className="interlink">Irritable Bowel Syndrome</Link>
+          <Link href="/conditions/malnutrition-unintended-weight-loss" className="interlink">Malnutrition & Weight Loss</Link>
+          <Link href="/conditions/diabetes-type-2" className="interlink">Type 2 Diabetes</Link>
           </div>
         </div>
       </section>

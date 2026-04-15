@@ -25,10 +25,9 @@ export default function SeniorFriendlyRecipesPage() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px', margin: '32px 0' }}>
           {articles.map(a => (
-            <Link key={a.slug} href={'/recipes/' + a.slug}
-              style={{ display: 'block', padding: '20px', background: '#fff', borderRadius: '12px', border: '1px solid #E8E6E1', textDecoration: 'none' }}>
-              <h2 style={{ fontSize: '1rem', fontWeight: 600, color: '#14442A', marginBottom: '8px', lineHeight: 1.4 }}>{a.title}</h2>
-              {a.excerpt && <p style={{ fontSize: '0.85rem', color: '#717170', lineHeight: 1.5 }}>{a.excerpt.substring(0, 100)}...</p>}
+            <Link key={a.slug} href={'/recipes/' + a.slug} className="article-card">
+              <h2>{a.title}</h2>
+              {a.excerpt && <p>{a.excerpt.substring(0, 100)}...</p>}
             </Link>
           ))}
         </div>

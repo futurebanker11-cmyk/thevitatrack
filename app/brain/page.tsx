@@ -163,14 +163,14 @@ export default function BrainPage() {
 
       <section style={{maxWidth:"840px",margin:"48px auto 60px",padding:"0 20px"}}>
         <div style={{borderTop:"2px solid #E8E6E1",paddingTop:"32px"}}>
-          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px"}}>Related Health Guides</h2>
+          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px",fontFamily:"Fraunces, serif"}}>Related Health Guides</h2>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"4px"}}>
-          <Link href="/conditions/memory-loss-dementia" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Memory Loss & Dementia</Link>
-          <Link href="/conditions/anxiety" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Anxiety</Link>
-          <Link href="/conditions/depression-late-life" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Late-Life Depression</Link>
-          <Link href="/conditions/peripheral-neuropathy" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Peripheral Neuropathy</Link>
-          <Link href="/conditions/insomnia" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Insomnia</Link>
-          <Link href="/symptoms/fatigue-low-energy" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Fatigue & Low Energy</Link>
+          <Link href="/conditions/memory-loss-dementia" className="interlink">Memory Loss & Dementia</Link>
+          <Link href="/conditions/anxiety" className="interlink">Anxiety</Link>
+          <Link href="/conditions/depression-late-life" className="interlink">Late-Life Depression</Link>
+          <Link href="/conditions/peripheral-neuropathy" className="interlink">Peripheral Neuropathy</Link>
+          <Link href="/conditions/insomnia" className="interlink">Insomnia</Link>
+          <Link href="/symptoms/fatigue-low-energy" className="interlink">Fatigue & Low Energy</Link>
           </div>
         </div>
       </section>

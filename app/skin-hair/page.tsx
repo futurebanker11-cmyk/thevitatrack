@@ -145,13 +145,13 @@ export default function SkinHairPage() {
 
       <section style={{maxWidth:"840px",margin:"48px auto 60px",padding:"0 20px"}}>
         <div style={{borderTop:"2px solid #E8E6E1",paddingTop:"32px"}}>
-          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px"}}>Related Health Guides</h2>
+          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px",fontFamily:"Fraunces, serif"}}>Related Health Guides</h2>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"4px"}}>
-          <Link href="/conditions/wounds-skin-tears" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Wounds & Skin Tears</Link>
-          <Link href="/conditions/dry-eyes" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Dry Eyes</Link>
-          <Link href="/conditions/vitamin-d-calcium-basics" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Vitamin D & Calcium</Link>
-          <Link href="/conditions/malnutrition-unintended-weight-loss" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Malnutrition & Weight Loss</Link>
-          <Link href="/conditions/diabetes-type-2" style={{color:"#1A5632",display:"block",padding:"8px 0",textDecoration:"none",fontWeight:500,borderBottom:"1px solid #E8E6E1"}}>Type 2 Diabetes</Link>
+          <Link href="/conditions/wounds-skin-tears" className="interlink">Wounds & Skin Tears</Link>
+          <Link href="/conditions/dry-eyes" className="interlink">Dry Eyes</Link>
+          <Link href="/conditions/vitamin-d-calcium-basics" className="interlink">Vitamin D & Calcium</Link>
+          <Link href="/conditions/malnutrition-unintended-weight-loss" className="interlink">Malnutrition & Weight Loss</Link>
+          <Link href="/conditions/diabetes-type-2" className="interlink">Type 2 Diabetes</Link>
           </div>
         </div>
       </section>
