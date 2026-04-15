@@ -1,14 +1,16 @@
 import Link from 'next/link';
+import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Brain and Memory Supplements for Seniors | VitaTrack',
+  title: '6 Best Brain & Memory Supplements for Seniors (2025) | VitaTrack',
   alternates: { canonical: 'https://thevitatrack.com/brain' },
 };
 
 export default function BrainPage() {
   return (
     <>
+      <Header />
       <style>{`
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root{--hdr:#14442A;--hero:#1E6B3E;--green:#1A5632;--green-hover:#134225;--bg:#F7F6F3;--white:#FFF;--border:#E8E6E1;--text:#2C2C2A;--text2:#555550;--muted:#717170;--badge:#E8F5E9;--shadow:0 4px 12px rgba(0,0,0,.08);--r:12px;--warn-bg:#FFF8E1;--warn-border:#FFE082;--warn-text:#6D4C00}html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,BlinkMacSystemFont,sans-serif;font-size:18px;line-height:1.6;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
 .hdr{background:var(--hdr);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(255,255,255,.1)}.hdr-inner{max-width:1100px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between}.hdr-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}.hdr-logo svg{width:32px;height:32px;flex-shrink:0}.hdr-logo span{font-size:22px;font-weight:700}.hdr-nav{display:flex;gap:6px}.hdr-nav a{color:rgba(255,255,255,.85);text-decoration:none;font-size:15px;font-weight:500;padding:8px 16px;border-radius:8px;transition:background .15s}.hdr-nav a:hover{background:rgba(255,255,255,.1);color:#fff}.hdr-toggle{display:none;background:none;border:none;color:#fff;cursor:pointer;padding:8px;min-height:44px;min-width:44px;align-items:center;justify-content:center}.hdr-toggle svg{width:26px;height:26px}.mob{display:none;position:fixed;inset:0;background:var(--hdr);z-index:9999;flex-direction:column;overflow-y:auto}.mob.open{display:flex}.mob-top{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;border-bottom:1px solid rgba(255,255,255,.1)}.mob-logo{display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none}.mob-logo svg{width:28px;height:28px}.mob-logo span{font-size:20px;font-weight:700}.mob-x{background:rgba(255,255,255,.1);border:none;color:#fff;width:44px;height:44px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px}.mob-links{display:flex;flex-direction:column;padding:8px 0}.mob-links a{color:#fff;text-decoration:none;font-size:18px;font-weight:500;padding:16px 28px;border-bottom:1px solid rgba(255,255,255,.1);transition:background .15s}.mob-links a:first-child{border-top:1px solid rgba(255,255,255,.1)}.mob-links a:hover{background:rgba(255,255,255,.08)}@media(max-width:768px){.hdr-nav{display:none}.hdr-toggle{display:flex}}
@@ -43,8 +45,6 @@ export default function BrainPage() {
 @media(max-width:700px){.page-hero{padding:28px 20px 24px}.page-hero h1{font-size:25px}.p-card{padding:20px 18px}.p-name{font-size:19px}.p-img{width:80px;padding:10px}.p-img svg{width:52px}.r-grid{grid-template-columns:1fr}.ftr-form{flex-direction:column}.ftr-form button{width:100%}.faq-q{font-size:17px;padding:14px 18px}.faq-a{padding:0 18px 14px}}
       `}</style>
 
-<header className="hdr"><div className="hdr-inner"><a href="/" className="hdr-logo"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#1A5632"/><path d="M18 28 L12.5 21.5 C10 18.5 10 15.5 12.5 13.5 C14.5 12 16.5 13 18 15.5 C19.5 13 21.5 12 23.5 13.5 C26 15.5 26 18.5 23.5 21.5Z" fill="#4ADE80" opacity=".85"/><path d="M13 20.5L16 20.5 17 17.5 18.5 23 20 19.5 23 19.5" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg><span>VitaTrack</span></a><nav className="hdr-nav"><a href="/">Home</a><a href="/conditions/">Health Conditions</a><a href="/tools/">Health Tools</a></nav><button className="hdr-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></header>
-<div id="m" className="mob"><div className="mob-top"><a href="/" className="mob-logo"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#1A5632"/><path d="M18 28 L12.5 21.5 C10 18.5 10 15.5 12.5 13.5 C14.5 12 16.5 13 18 15.5 C19.5 13 21.5 12 23.5 13.5 C26 15.5 26 18.5 23.5 21.5Z" fill="#4ADE80" opacity=".85"/><path d="M13 20.5L16 20.5 17 17.5 18.5 23 20 19.5 23 19.5" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg><span>VitaTrack</span></a><button className="mob-x">✕</button></div><nav className="mob-links"><a href="/">Home</a><a href="/conditions/">Health Conditions</a><a href="/tools/">Health Tools</a><a href="/about/">About Us</a><a href="/contact/">Contact Us</a></nav></div>
 
 <section className="page-hero"><div className="page-hero-inner">
 <div className="breadcrumb"><a href="/">← All conditions</a></div>
@@ -126,10 +126,10 @@ export default function BrainPage() {
 <div className="faq-item"><button className="faq-q">What is the best form of omega-3 for brain health?<span className="faq-icon">+</span></button><div className="faq-a">For brain health specifically, look for high-DHA fish oil — DHA makes up 97% of brain omega-3 fats. Aim for at least 600mg DHA per serving. Triglyceride form absorbs better than ethyl ester. Don't just buy "Omega-3" — check the DHA amount on the label.</div></div>
 </div>
 
-<div className="related"><h3>Related Health Conditions</h3><div className="r-grid">
+<div className="related"><h3>Related Supplements</h3><div className="r-grid">
 <a href="/sleep/" className="r-link"><span>🌙</span> Sleep</a>
 <a href="/heart/" className="r-link"><span>❤️</span> Heart health</a>
-<a href="/conditions/macular-degeneration-amd" className="r-link"><span>👁️</span> Eyes &amp; vision</a>
+<a href="/eyes" className="r-link"><span>👁️</span> Eyes &amp; vision</a>
 <a href="/longevity/" className="r-link"><span>🧬</span> Longevity</a>
 </div></div>
 
@@ -156,21 +156,16 @@ export default function BrainPage() {
 </aside>
 </div>
 
-<footer className="ftr"><div className="ftr-inner"><div className="ftr-brand"><a href="/" className="ftr-logo"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="13" fill="#1A5632" opacity=".14"/><path d="M7 16.5l4 4L21 9.5" fill="none" stroke="#1A5632" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/></svg><span>TheVitatrack</span></a><ul className="ftr-social"><li><a href="https://www.facebook.com/profile.php?id=61550903702285" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 5 3.66 9.14 8.44 9.93v-7.03H8.08v-2.9h2.36V9.41c0-2.33 1.38-3.62 3.5-3.62.99 0 2.02.18 2.02.18v2.23h-1.14c-1.12 0-1.47.7-1.47 1.42v1.7h2.5l-.4 2.9h-2.1V22c4.78-.79 8.44-4.93 8.44-9.93z"/></svg></a></li><li><a href="https://www.youtube.com/@healthyhabitat1304" target="_blank" aria-label="YouTube"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.5 6.2a3.1 3.1 0 0 0-2.2-2.2C19.3 3.5 12 3.5 12 3.5s-7.3 0-9.3.5A3.1 3.1 0 0 0 .5 6.2C0 8.3 0 12 0 12s0 3.7.5 5.8a3.1 3.1 0 0 0 2.2 2.2c2 .5 9.3.5 9.3.5s7.3 0 9.3-.5a3.1 3.1 0 0 0 2.2-2.2c.5-2.1.5-5.8.5-5.8s0-3.7-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a></li></ul></div>
-<div className="ftr-news"><h4>Get our wellness newsletter</h4><form className="ftr-form" action="/subscribe" method="post"><input name="email" type="email" placeholder="Enter your email" required /><button type="submit">SIGN UP</button></form><p className="ftr-priv">Your <a href="/privacy-policy/">privacy</a> is important to us</p></div>
-<ul className="ftr-links"><li><a href="/about/">About Us</a></li><li><a href="/contact/">Contact Us</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms-of-use/">Terms of Use</a></li><li><a href="/sitemap/">Sitemap</a></li><li><a href="/conditions/">Health Conditions</a></li><li><a href="/tools/">Health Tools</a></li></ul>
-</div><div className="ftr-btm"><p>&copy; 2026 TheVitatrack. Educational content only &mdash; not a substitute for professional advice.</p><p>As an Amazon Associate, VitaTrack earns from qualifying purchases.</p></div></footer>
+
 
       <section style={{maxWidth:"840px",margin:"48px auto 60px",padding:"0 20px"}}>
         <div style={{borderTop:"2px solid #E8E6E1",paddingTop:"32px"}}>
           <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px",fontFamily:"Fraunces, serif"}}>Related Health Guides</h2>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"4px"}}>
-          <Link href="/conditions/memory-loss-dementia" className="interlink">Memory Loss & Dementia</Link>
-          <Link href="/conditions/anxiety" className="interlink">Anxiety</Link>
-          <Link href="/conditions/depression-late-life" className="interlink">Late-Life Depression</Link>
-          <Link href="/conditions/peripheral-neuropathy" className="interlink">Peripheral Neuropathy</Link>
-          <Link href="/conditions/insomnia" className="interlink">Insomnia</Link>
-          <Link href="/symptoms/fatigue-low-energy" className="interlink">Fatigue & Low Energy</Link>
+          <a href="/conditions/memory-loss-dementia" className="interlink">Memory Loss & Dementia</a>
+          <a href="/conditions/anxiety" className="interlink">Anxiety</a>
+          <a href="/conditions/depression-late-life" className="interlink">Depression</a>
+          <a href="/symptoms/fatigue-low-energy" className="interlink">Fatigue & Low Energy</a>
           </div>
         </div>
       </section>

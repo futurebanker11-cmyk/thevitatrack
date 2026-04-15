@@ -1,14 +1,16 @@
 import Link from 'next/link';
+import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Longevity Supplements for Seniors | VitaTrack',
+  title: '6 Best Longevity & Anti-Aging Supplements for Seniors (2025) | VitaTrack',
   alternates: { canonical: 'https://thevitatrack.com/longevity' },
 };
 
 export default function LongevityPage() {
   return (
     <>
+      <Header />
       <style>{`
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root{--hdr:#14442A;--hero:#1E6B3E;--green:#1A5632;--green-hover:#134225;--bg:#F7F6F3;--white:#FFF;--border:#E8E6E1;--text:#2C2C2A;--text2:#555550;--muted:#717170;--badge:#E8F5E9;--shadow:0 4px 12px rgba(0,0,0,.08);--r:12px}html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,BlinkMacSystemFont,sans-serif;font-size:18px;line-height:1.6;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
 .hdr{background:var(--hdr);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(255,255,255,.1)}.hdr-inner{max-width:1100px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between}.hdr-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}.hdr-logo svg{width:32px;height:32px;flex-shrink:0}.hdr-logo span{font-size:22px;font-weight:700}.hdr-nav{display:flex;gap:6px}.hdr-nav a{color:rgba(255,255,255,.85);text-decoration:none;font-size:15px;font-weight:500;padding:8px 16px;border-radius:8px;transition:background .15s}.hdr-nav a:hover{background:rgba(255,255,255,.1);color:#fff}.hdr-toggle{display:none;background:none;border:none;color:#fff;cursor:pointer;padding:8px;min-height:44px;min-width:44px;align-items:center;justify-content:center}.hdr-toggle svg{width:26px;height:26px}.mob{display:none;position:fixed;inset:0;background:var(--hdr);z-index:9999;flex-direction:column;overflow-y:auto}.mob.open{display:flex}.mob-top{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;border-bottom:1px solid rgba(255,255,255,.1)}.mob-logo{display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none}.mob-logo svg{width:28px;height:28px}.mob-logo span{font-size:20px;font-weight:700}.mob-x{background:rgba(255,255,255,.1);border:none;color:#fff;width:44px;height:44px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px}.mob-links{display:flex;flex-direction:column;padding:8px 0}.mob-links a{color:#fff;text-decoration:none;font-size:18px;font-weight:500;padding:16px 28px;border-bottom:1px solid rgba(255,255,255,.1)}.mob-links a:first-child{border-top:1px solid rgba(255,255,255,.1)}.mob-links a:hover{background:rgba(255,255,255,.08)}@media(max-width:768px){.hdr-nav{display:none}.hdr-toggle{display:flex}}
@@ -29,8 +31,7 @@ export default function LongevityPage() {
 .ftr{border-top:1px solid var(--border);background:linear-gradient(180deg,#FAFDFB,#F7F6F3);padding:36px 20px 20px;text-align:center}.ftr-inner{max-width:700px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:20px}.ftr-brand{display:flex;flex-direction:column;align-items:center;gap:12px}.ftr-logo{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--text)}.ftr-logo svg{width:22px;height:22px}.ftr-logo span{font-size:22px;font-weight:700}.ftr-logo:hover span{color:var(--green)}.ftr-social{display:flex;gap:10px;list-style:none}.ftr-social a{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid var(--border);color:var(--green)}.ftr-social svg{width:18px;height:18px}.ftr-news{background:#FFF8EE;border:1px solid #F0E6D8;border-radius:14px;padding:18px 22px;width:100%;max-width:480px}.ftr-news h4{font-size:20px;font-weight:700;margin-bottom:10px}.ftr-form{display:flex;gap:8px;max-width:420px;margin:0 auto}.ftr-form input{flex:1;padding:12px 14px;border-radius:10px;border:1.5px solid var(--border);background:#fff;font:inherit;font-size:16px;min-width:0}.ftr-form button{padding:12px 20px;border-radius:10px;border:none;background:var(--green);color:#fff;font-weight:700;font-size:15px;cursor:pointer;min-height:48px;white-space:nowrap}.ftr-form button:hover{background:var(--green-hover)}.ftr-priv{margin-top:8px;font-size:14px;color:var(--muted)}.ftr-priv a{color:var(--green);text-decoration:underline}.ftr-links{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 20px;list-style:none}.ftr-links a{display:inline-block;padding:8px 4px;text-decoration:none;color:var(--text);font-weight:600;font-size:15px;min-height:44px;border-bottom:2px solid transparent}.ftr-links a:hover{color:var(--green);border-color:var(--badge)}.ftr-btm{max-width:700px;margin:0 auto;padding:14px 20px 8px;text-align:center;border-top:1px dashed #E0DDD8}.ftr-btm p{margin:0 0 4px;color:var(--muted);font-size:14px}.ftr-btm a{color:var(--green);font-weight:700;text-decoration:none;font-size:15px}
 @media(max-width:700px){.page-hero{padding:28px 20px 24px}.page-hero h1{font-size:25px}.p-card{padding:20px 18px}.p-name{font-size:19px}.p-img{width:80px;padding:10px}.p-img svg{width:52px}.r-grid{grid-template-columns:1fr}.ftr-form{flex-direction:column}.ftr-form button{width:100%}.faq-q{font-size:17px;padding:14px 18px}.faq-a{padding:0 18px 14px}}
       `}</style>
-<header className="hdr"><div className="hdr-inner"><a href="/" className="hdr-logo"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#1A5632"/><path d="M18 28 L12.5 21.5 C10 18.5 10 15.5 12.5 13.5 C14.5 12 16.5 13 18 15.5 C19.5 13 21.5 12 23.5 13.5 C26 15.5 26 18.5 23.5 21.5Z" fill="#4ADE80" opacity=".85"/><path d="M13 20.5L16 20.5 17 17.5 18.5 23 20 19.5 23 19.5" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg><span>VitaTrack</span></a><nav className="hdr-nav"><a href="/">Home</a><a href="/conditions/">Health Conditions</a><a href="/tools/">Health Tools</a></nav><button className="hdr-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></header>
-<div id="m" className="mob"><div className="mob-top"><a href="/" className="mob-logo"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#1A5632"/><path d="M18 28 L12.5 21.5 C10 18.5 10 15.5 12.5 13.5 C14.5 12 16.5 13 18 15.5 C19.5 13 21.5 12 23.5 13.5 C26 15.5 26 18.5 23.5 21.5Z" fill="#4ADE80" opacity=".85"/><path d="M13 20.5L16 20.5 17 17.5 18.5 23 20 19.5 23 19.5" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg><span>VitaTrack</span></a><button className="mob-x">✕</button></div><nav className="mob-links"><a href="/">Home</a><a href="/conditions/">Health Conditions</a><a href="/tools/">Health Tools</a><a href="/about/">About Us</a><a href="/contact/">Contact Us</a></nav></div>
+
 
 <section className="page-hero"><div className="page-hero-inner">
 <div className="breadcrumb"><a href="/">← All conditions</a></div>
@@ -109,10 +110,10 @@ export default function LongevityPage() {
 <div className="faq-item"><button className="faq-q">Can green tea really help you live longer?<span className="faq-icon">+</span></button><div className="faq-a">Large population studies consistently show green tea drinkers live longer. EGCG activates autophagy (cellular cleanup), protects DNA from damage, and reduces inflammation. Japanese centenarian populations drink green tea daily.</div></div>
 </div>
 
-<div className="related"><h3>Related Health Conditions</h3><div className="r-grid">
+<div className="related"><h3>Related Supplements</h3><div className="r-grid">
 <a href="/heart/" className="r-link"><span>❤️</span> Heart health</a>
 <a href="/brain/" className="r-link"><span>🧠</span> Brain &amp; memory</a>
-<a href="/conditions/osteoarthritis" className="r-link"><span>🦴</span> Joints &amp; bones</a>
+<a href="/joints" className="r-link"><span>🦴</span> Joints &amp; bones</a>
 <a href="/skin-hair/" className="r-link"><span>✨</span> Skin &amp; hair</a>
 </div></div>
 
@@ -137,21 +138,15 @@ export default function LongevityPage() {
 </div></aside>
 </div>
 
-<footer className="ftr"><div className="ftr-inner"><div className="ftr-brand"><a href="/" className="ftr-logo"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="13" fill="#1A5632" opacity=".14"/><path d="M7 16.5l4 4L21 9.5" fill="none" stroke="#1A5632" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/></svg><span>TheVitatrack</span></a><ul className="ftr-social"><li><a href="https://www.facebook.com/profile.php?id=61550903702285" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 5 3.66 9.14 8.44 9.93v-7.03H8.08v-2.9h2.36V9.41c0-2.33 1.38-3.62 3.5-3.62.99 0 2.02.18 2.02.18v2.23h-1.14c-1.12 0-1.47.7-1.47 1.42v1.7h2.5l-.4 2.9h-2.1V22c4.78-.79 8.44-4.93 8.44-9.93z"/></svg></a></li><li><a href="https://www.youtube.com/@healthyhabitat1304" target="_blank" aria-label="YouTube"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.5 6.2a3.1 3.1 0 0 0-2.2-2.2C19.3 3.5 12 3.5 12 3.5s-7.3 0-9.3.5A3.1 3.1 0 0 0 .5 6.2C0 8.3 0 12 0 12s0 3.7.5 5.8a3.1 3.1 0 0 0 2.2 2.2c2 .5 9.3.5 9.3.5s7.3 0 9.3-.5a3.1 3.1 0 0 0 2.2-2.2c.5-2.1.5-5.8.5-5.8s0-3.7-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a></li></ul></div>
-<div className="ftr-news"><h4>Get our wellness newsletter</h4><form className="ftr-form" action="/subscribe" method="post"><input name="email" type="email" placeholder="Enter your email" required /><button type="submit">SIGN UP</button></form><p className="ftr-priv">Your <a href="/privacy-policy/">privacy</a> is important to us</p></div>
-<ul className="ftr-links"><li><a href="/about/">About Us</a></li><li><a href="/contact/">Contact Us</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms-of-use/">Terms of Use</a></li><li><a href="/sitemap/">Sitemap</a></li><li><a href="/conditions/">Health Conditions</a></li><li><a href="/tools/">Health Tools</a></li></ul>
-</div><div className="ftr-btm"><p>&copy; 2026 TheVitatrack. Educational content only &mdash; not a substitute for professional advice.</p><p>As an Amazon Associate, VitaTrack earns from qualifying purchases.</p></div></footer>
+
 
       <section style={{maxWidth:"840px",margin:"48px auto 60px",padding:"0 20px"}}>
         <div style={{borderTop:"2px solid #E8E6E1",paddingTop:"32px"}}>
           <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px",fontFamily:"Fraunces, serif"}}>Related Health Guides</h2>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"4px"}}>
-          <Link href="/conditions/osteoporosis" className="interlink">Osteoporosis</Link>
-          <Link href="/conditions/osteoarthritis" className="interlink">Osteoarthritis</Link>
-          <Link href="/conditions/diabetes-type-2" className="interlink">Type 2 Diabetes</Link>
-          <Link href="/conditions/frailty-deconditioning" className="interlink">Frailty & Deconditioning</Link>
-          <Link href="/conditions/weight-management-seniors" className="interlink">Weight Management</Link>
-          <Link href="/conditions/vitamin-d-calcium-basics" className="interlink">Vitamin D & Calcium</Link>
+          <a href="/conditions/osteoporosis" className="interlink">Osteoporosis</a>
+          <a href="/conditions/diabetes-type-2" className="interlink">Type 2 Diabetes</a>
+          <a href="/conditions/frailty-deconditioning" className="interlink">Frailty</a>
           </div>
         </div>
       </section>

@@ -1,14 +1,16 @@
 import Link from 'next/link';
+import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Premium Health Guides for Seniors | VitaTrack',
+  title: 'Premium Senior Health Guides | VitaTrack',
   alternates: { canonical: 'https://thevitatrack.com/guides' },
 };
 
 export default function GuidesPage() {
   return (
     <>
+      <Header />
       <style>{`
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{--hdr:#14442A;--hero:#1E6B3E;--green:#1A5632;--bg:#F7F6F3;--cream:#FDFAF5;--white:#fff;--border:#E8E6E1;--text:#2C2C2A;--text2:#555550;--muted:#717170;--radius:14px}
@@ -26,9 +28,8 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 @media(max-width:768px){.hdr-nav{display:none}.hdr-toggle{display:flex;align-items:center;justify-content:center}.hero{padding:52px 16px 44px}.bundle{margin-top:-20px;padding:0 12px}.bc{flex-direction:column;padding:24px 20px;gap:20px}.bc-books{justify-content:center}.book{width:120px;height:165px}.bf-title{font-size:11px}.bf-icon{font-size:24px}.pgrid{grid-template-columns:1fr}.tg{grid-template-columns:1fr 1fr}.bcta{padding:32px 16px}.main{padding:0 16px}}
 .mob{display:none;position:fixed;inset:0;background:#14442A;z-index:9999;flex-direction:column;overflow-y:auto}.mob.open{display:flex}.mob-top{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;border-bottom:1px solid rgba(255,255,255,.2)}.mob-logo{display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none}.mob-logo svg{width:28px;height:28px}.mob-logo span{font-size:20px;font-weight:700}.mob-x{background:rgba(255,255,255,.1);border:none;color:#fff;width:44px;height:44px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px}.mob-links{display:flex;flex-direction:column;padding:8px 0}.mob-links a{color:#fff;text-decoration:none;font-size:18px;font-weight:500;padding:16px 28px;display:block;border-bottom:1px solid rgba(255,255,255,.2)}.mob-links a:first-child{border-top:1px solid rgba(255,255,255,.2)}.mob-links a:hover{background:rgba(255,255,255,.08)}
       `}</style>
-<header className="hdr"><div className="hdr-inner"><a href="/" className="hdr-logo"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#1A5632"/><path d="M18 28 L12.5 21.5 C10 18.5 10 15.5 12.5 13.5 C14.5 12 16.5 13 18 15.5 C19.5 13 21.5 12 23.5 13.5 C26 15.5 26 18.5 23.5 21.5Z" fill="#4ADE80" opacity=".85"/><path d="M13 20.5L16 20.5 17 17.5 18.5 23 20 19.5 23 19.5" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg><span>VitaTrack</span></a><nav className="hdr-nav"><a href="/">Home</a><a href="/#supplements">Supplements</a><a href="/tools/">Health Tools</a><a href="/guides/" className="active">Guides</a></nav><button className="hdr-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></header>
 
-<div id="m" className="mob"><div className="mob-top"><a href="/" className="mob-logo"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" fill="#1A5632"/><path d="M18 28 L12.5 21.5 C10 18.5 10 15.5 12.5 13.5 C14.5 12 16.5 13 18 15.5 C19.5 13 21.5 12 23.5 13.5 C26 15.5 26 18.5 23.5 21.5Z" fill="#4ADE80" opacity=".85"/><path d="M13 20.5L16 20.5 17 17.5 18.5 23 20 19.5 23 19.5" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg><span>VitaTrack</span></a><button className="mob-x">&#x2715;</button></div><nav className="mob-links"><a href="/">Home</a><a href="/#supplements">Supplements</a><a href="/tools/">Health Tools</a><a href="/guides/">Guides</a></nav></div>
+
 <section className="hero"><div className="hero-ey">VitaTrack Premium Guides</div><h1>The Health Protocols Your <em>Doctor Doesn't Have Time</em> to Explain</h1><p className="hero-sub">Complete supplement protocols, drug interactions, diet plans, and tracking sheets for adults 60+.</p></section>
 <div className="bundle"><div className="bc"><div className="bc-books">
 <div className="book-wrap"><div className="book"><div className="book-front" style={{"padding":"0","overflow":"hidden","background":"none"}}><img src="/assets/covers/heart-bp-protocol.png" alt="Heart After 60" style={{"width":"100%","height":"100%","objectFit":"cover","borderRadius":"0 3px 3px 0"}} loading="lazy" /></div><div className="book-spine" style={{"background":"#7f1d1d"}}></div><div className="book-pages"></div><div className="book-shadow"></div></div></div>
@@ -56,20 +57,8 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 <div className="bcta"><h3>Get Everything for $47</h3><p>All 19 guides. Every protocol. Every tracking sheet. Lifetime access including future updates.</p><a href="https://payhip.com/b/5LPT1" target="_blank" className="btn-w">Get The Complete Vault &rarr;</a></div>
 </div>
-<footer className="ftr"><p><strong><a href="/">VitaTrack</a></strong> &mdash; Evidence-based health guides for seniors</p><p>These guides are for educational purposes only and are not medical advice.</p><p>&copy; 2026 VitaTrack. All rights reserved.</p></footer>
 
-      <section style={{maxWidth:"840px",margin:"48px auto 60px",padding:"0 20px"}}>
-        <div style={{borderTop:"2px solid #E8E6E1",paddingTop:"32px"}}>
-          <h2 style={{color:"#14442A",fontSize:"1.4rem",fontWeight:700,marginBottom:"20px",fontFamily:"Fraunces, serif"}}>Related Health Guides</h2>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(240px,1fr))",gap:"4px"}}>
-          <Link href="/conditions/high-blood-pressure-hypertension" className="interlink">High Blood Pressure</Link>
-          <Link href="/conditions/high-cholesterol" className="interlink">High Cholesterol</Link>
-          <Link href="/conditions/diabetes-type-2" className="interlink">Type 2 Diabetes</Link>
-          <Link href="/conditions/osteoporosis" className="interlink">Osteoporosis</Link>
-          <Link href="/conditions/memory-loss-dementia" className="interlink">Memory Loss & Dementia</Link>
-          </div>
-        </div>
-      </section>
+
     </>
   );
 }
