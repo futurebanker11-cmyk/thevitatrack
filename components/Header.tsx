@@ -5,16 +5,10 @@ import Link from 'next/link';
 const supplements = [
   { href: '/heart', label: 'Heart Health' },
   { href: '/brain', label: 'Brain & Memory' },
-  { href: '/blood-pressure', label: 'Blood Pressure' },
-  { href: '/kidney', label: 'Kidney Health' },
-  { href: '/prostate', label: 'Prostate Health' },
-  { href: '/joints', label: 'Joints & Bones' },
-  { href: '/eyes', label: 'Eyes & Vision' },
-  { href: '/liver', label: 'Liver Support' },
   { href: '/sleep', label: 'Sleep' },
   { href: '/digestion', label: 'Digestion' },
+  { href: '/kidney', label: 'Kidney Health' },
   { href: '/longevity', label: 'Longevity' },
-  { href: '/skin-hair', label: 'Skin & Hair' },
 ];
 
 const library = [
