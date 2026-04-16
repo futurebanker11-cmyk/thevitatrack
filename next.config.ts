@@ -165,7 +165,7 @@ const nextConfig: NextConfig = {
       { source: '/2025/:path*', destination: '/', permanent: true },
       { source: '/sitemap_index.xml', destination: '/sitemap.xml', permanent: true },
       { source: '/wp-sitemap-posts-page-1.xml', destination: '/sitemap.xml', permanent: true },
-      { source: '/wp-sitemap:path*', destination: '/sitemap.xml', permanent: true },
+      { source: '/wp-sitemap/:path*', destination: '/sitemap.xml', permanent: true },
 
       // ── UNCATEGORIZED ──
       { source: '/uncategorized/:path*', destination: '/', permanent: true },
