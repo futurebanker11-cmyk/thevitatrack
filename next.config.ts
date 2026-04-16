@@ -4,44 +4,157 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   async redirects() {
     return [
-      // Old WordPress multi-language pages -> homepage
-      // Spanish
-      { source: '/:path*-es/', destination: '/', permanent: true },
+      // ── LANGUAGE VARIANTS → homepage ──
       { source: '/es/:path*', destination: '/', permanent: true },
-      // French
-      { source: '/:path*-fr/', destination: '/', permanent: true },
       { source: '/fr/:path*', destination: '/', permanent: true },
-      // German
-      { source: '/:path*-de/', destination: '/', permanent: true },
       { source: '/de/:path*', destination: '/', permanent: true },
-      // Italian
-      { source: '/:path*-it/', destination: '/', permanent: true },
       { source: '/it/:path*', destination: '/', permanent: true },
-      // Portuguese
-      { source: '/:path*-pt/', destination: '/', permanent: true },
       { source: '/pt/:path*', destination: '/', permanent: true },
-      { source: '/:path*-pt-br/', destination: '/', permanent: true },
-      // Dutch
-      { source: '/:path*-nl/', destination: '/', permanent: true },
       { source: '/nl/:path*', destination: '/', permanent: true },
-      // Austrian German
-      { source: '/:path*-at/', destination: '/', permanent: true },
       { source: '/at/:path*', destination: '/', permanent: true },
+      { source: '/:path*-es/', destination: '/', permanent: true },
+      { source: '/:path*-fr/', destination: '/', permanent: true },
+      { source: '/:path*-de/', destination: '/', permanent: true },
+      { source: '/:path*-it/', destination: '/', permanent: true },
+      { source: '/:path*-pt/', destination: '/', permanent: true },
+      { source: '/:path*-pt-br/', destination: '/', permanent: true },
+      { source: '/:path*-nl/', destination: '/', permanent: true },
+      { source: '/:path*-at/', destination: '/', permanent: true },
 
-      // Old WordPress category paths
-      { source: '/uncategorized/:path*', destination: '/', permanent: true },
-      { source: '/uncategorized-pt/:path*', destination: '/', permanent: true },
-      { source: '/uncategorized-fr/:path*', destination: '/', permanent: true },
-      { source: '/uncategorized-de/:path*', destination: '/', permanent: true },
-      { source: '/uncategorized-it/:path*', destination: '/', permanent: true },
-      { source: '/uncategorized-at/:path*', destination: '/', permanent: true },
+      // ── OLD GUIDES → matching articles ──
+      { source: '/guides/hypertension', destination: '/conditions/high-blood-pressure-hypertension', permanent: true },
+      { source: '/guides/how-to-measure-blood-pressure', destination: '/conditions/high-blood-pressure-hypertension', permanent: true },
+      { source: '/guides/uti-basics', destination: '/conditions/urinary-tract-infection-uti', permanent: true },
+      { source: '/guides/bph-enlarged-prostate', destination: '/conditions/benign-prostatic-hyperplasia-bph', permanent: true },
+      { source: '/guides/dementia-alzheimers', destination: '/conditions/memory-loss-dementia', permanent: true },
+      { source: '/guides/a1c-testing', destination: '/tools/diabetes-risk', permanent: true },
+      { source: '/guides/depression-support', destination: '/conditions/depression-late-life', permanent: true },
+      { source: '/guides/prediabetes', destination: '/conditions/diabetes-type-2', permanent: true },
+      { source: '/guides/low-blood-sugar-hypoglycemia', destination: '/conditions/diabetes-type-2', permanent: true },
+      { source: '/guides/high-blood-sugar', destination: '/conditions/diabetes-type-2', permanent: true },
+      { source: '/guides/night-urination-nocturia', destination: '/conditions/benign-prostatic-hyperplasia-bph', permanent: true },
+      { source: '/guides/edema-swollen-legs', destination: '/symptoms/edema-swollen-feet', permanent: true },
+      { source: '/guides/fluid-weight-gain', destination: '/symptoms/edema-swollen-feet', permanent: true },
+      { source: '/guides/acid-reflux', destination: '/conditions/gerd-acid-reflux', permanent: true },
+      { source: '/guides/sciatica', destination: '/conditions/back-pain-chronic', permanent: true },
+      { source: '/guides/knee-pain', destination: '/symptoms/joint-pain-stiffness', permanent: true },
+      { source: '/guides/hip-pain', destination: '/symptoms/joint-pain-stiffness', permanent: true },
+      { source: '/guides/shoulder-pain-rotator-cuff', destination: '/symptoms/shoulder-pain', permanent: true },
+      { source: '/guides/nerve-pain', destination: '/conditions/peripheral-neuropathy', permanent: true },
+      { source: '/guides/tingling-hands-feet', destination: '/symptoms/numbness-tingling', permanent: true },
+      { source: '/guides/kidney-pain', destination: '/conditions/chronic-kidney-disease-ckd', permanent: true },
+      { source: '/guides/dehydration', destination: '/daily-living/hydration-through-the-day', permanent: true },
+      { source: '/guides/weight-loss', destination: '/conditions/malnutrition-unintended-weight-loss', permanent: true },
+      { source: '/guides/dysphagia', destination: '/conditions/swallowing-problems-dysphagia', permanent: true },
+      { source: '/guides/bowel-changes', destination: '/conditions/constipation', permanent: true },
+      { source: '/guides/indigestion', destination: '/conditions/gerd-acid-reflux', permanent: true },
+      { source: '/guides/nosebleeds', destination: '/symptoms/nosebleed', permanent: true },
+      { source: '/guides/queasiness', destination: '/symptoms/nausea', permanent: true },
+      { source: '/guides/vision-emergency', destination: '/symptoms/vision-changes-sudden', permanent: true },
+      { source: '/guides/infections', destination: '/conditions/respiratory-infections-common', permanent: true },
+      { source: '/guides/muscle-weakness', destination: '/symptoms/weakness-new-generalized', permanent: true },
+      { source: '/guides/orthostatic', destination: '/symptoms/dizziness-on-standing', permanent: true },
+      { source: '/guides/urinary-retention', destination: '/conditions/urinary-incontinence', permanent: true },
+      { source: '/guides/night-reflux', destination: '/conditions/gerd-acid-reflux', permanent: true },
+      { source: '/guides/exertional-sob', destination: '/symptoms/shortness-of-breath', permanent: true },
+      { source: '/guides/restless-legs', destination: '/symptoms/leg-cramps-night', permanent: true },
+      { source: '/guides/pleuritic-pain', destination: '/symptoms/chest-pain-pressure', permanent: true },
+      // Catch-all remaining guides
+      { source: '/guides/:path*', destination: '/guides', permanent: true },
 
-      // Old WordPress paths -> new paths
-      { source: '/health-conditions', destination: '/conditions', permanent: true },
-      { source: '/health-conditions/:path*', destination: '/conditions', permanent: true },
-      { source: '/seniorshealth/:path*', destination: '/', permanent: true },
+      // ── OLD STANDALONE CONDITION PAGES ──
+      { source: '/parkinsons-disease', destination: '/conditions/memory-loss-dementia', permanent: true },
+      { source: '/parkinsons-disease/', destination: '/conditions/memory-loss-dementia', permanent: true },
+      { source: '/copd', destination: '/conditions/chronic-obstructive-pulmonary-disease-copd', permanent: true },
+      { source: '/bph', destination: '/conditions/benign-prostatic-hyperplasia-bph', permanent: true },
+      { source: '/chf', destination: '/conditions/congestive-heart-failure-chf', permanent: true },
+      { source: '/balance-and-falls', destination: '/conditions/balance-problems-falls', permanent: true },
+      { source: '/influenza-seniors', destination: '/conditions/influenza-flu-in-seniors', permanent: true },
+      { source: '/loneliness-and-social-isolation', destination: '/conditions/loneliness-social-isolation', permanent: true },
+      { source: '/dizziness-vertigo', destination: '/symptoms/dizziness-spinning-vertigo', permanent: true },
+      { source: '/wounds-and-skin-tears', destination: '/conditions/wounds-skin-tears', permanent: true },
 
-      // Old WordPress feed/admin
+      // ── OLD PLAN/RECIPE PAGES ──
+      { source: '/brain-boost-7-day', destination: '/plans/7-day-brain-boost-plan-for-seniors', permanent: true },
+      { source: '/kidney-reset-seniors', destination: '/plans/7-day-kidney-reset-for-seniors', permanent: true },
+      { source: '/recipes/chicken-veg-stir-fry', destination: '/recipes', permanent: true },
+      { source: '/recipes/cabbage-carrot-stir-fry', destination: '/recipes', permanent: true },
+      { source: '/recipes/cucumber-yogurt-raita', destination: '/recipes', permanent: true },
+      { source: '/recipes/chickpea-salad-bowl', destination: '/recipes', permanent: true },
+
+      // ── OLD DAILY LIVING ──
+      { source: '/daily/evening-routines', destination: '/daily-living/evening-wind-down', permanent: true },
+      { source: '/daily/evening-routines/', destination: '/daily-living/evening-wind-down', permanent: true },
+      { source: '/daily/:path*', destination: '/daily-living', permanent: true },
+      { source: '/healthy-living', destination: '/daily-living', permanent: true },
+      { source: '/healthy-living/', destination: '/daily-living', permanent: true },
+
+      // ── OLD TOOLS ──
+      { source: '/tools/a1c-eag', destination: '/tools/diabetes-risk', permanent: true },
+      { source: '/tools/a1c-eag/', destination: '/tools/diabetes-risk', permanent: true },
+
+      // ── OLD SYMPTOM PAGES ──
+      { source: '/symptoms/tingling-hands-feet', destination: '/symptoms/numbness-tingling', permanent: true },
+      { source: '/symptoms/tingling-hands-feet/', destination: '/symptoms/numbness-tingling', permanent: true },
+
+      // ── OLD WORDPRESS JUNK ──
+      { source: '/hello-world', destination: '/', permanent: true },
+      { source: '/hello-world/', destination: '/', permanent: true },
+      { source: '/home-page-test', destination: '/', permanent: true },
+      { source: '/home-page-test/', destination: '/', permanent: true },
+      { source: '/image-resizer', destination: '/tools', permanent: true },
+      { source: '/image-resizer/', destination: '/tools', permanent: true },
+      { source: '/add-name-date', destination: '/', permanent: true },
+      { source: '/add-name-date/', destination: '/', permanent: true },
+      { source: '/add-name-date-to-any-photo', destination: '/', permanent: true },
+      { source: '/add-name-date-to-any-photo/', destination: '/', permanent: true },
+      { source: '/stamp-date-text', destination: '/', permanent: true },
+      { source: '/stamp-date-text/', destination: '/', permanent: true },
+      { source: '/subscribe', destination: '/', permanent: true },
+      { source: '/newsletter', destination: '/', permanent: true },
+      { source: '/newsletter/', destination: '/', permanent: true },
+      { source: '/content-integrity', destination: '/about', permanent: true },
+      { source: '/content-integrity/', destination: '/about', permanent: true },
+      { source: '/sitemap/', destination: '/sitemap.xml', permanent: true },
+
+      // ── NUMBERED JUNK PAGES ──
+      { source: '/10-2', destination: '/', permanent: true },
+      { source: '/10-2/', destination: '/', permanent: true },
+      { source: '/13-2', destination: '/', permanent: true },
+      { source: '/17-2', destination: '/', permanent: true },
+      { source: '/17-2/', destination: '/', permanent: true },
+      { source: '/19-2', destination: '/', permanent: true },
+      { source: '/19-2/', destination: '/', permanent: true },
+      { source: '/23-2', destination: '/', permanent: true },
+      { source: '/23-2/', destination: '/', permanent: true },
+      { source: '/27-2', destination: '/', permanent: true },
+      { source: '/27-2/', destination: '/', permanent: true },
+      { source: '/30-2', destination: '/', permanent: true },
+      { source: '/30-2/', destination: '/', permanent: true },
+      { source: '/39-2', destination: '/', permanent: true },
+      { source: '/39-2/', destination: '/', permanent: true },
+      { source: '/46-2', destination: '/', permanent: true },
+      { source: '/46-2/', destination: '/', permanent: true },
+
+      // ── DIY/CRAFT BLOG POSTS (old content, irrelevant) ──
+      { source: '/11-creative-diy-lighting-ideas-that-you-can-make-at-home', destination: '/', permanent: true },
+      { source: '/11-creative-diy-lighting-ideas-that-you-can-make-at-home/', destination: '/', permanent: true },
+      { source: '/10-easy-upcycling-ideas-for-your-old-things-rustic-crafts-diy', destination: '/', permanent: true },
+      { source: '/10-easy-upcycling-ideas-for-your-old-things-rustic-crafts-diy/', destination: '/', permanent: true },
+      { source: '/handcrafted-decor-ideas-to-add-a-personal-touch-to-your-home', destination: '/', permanent: true },
+      { source: '/handcrafted-decor-ideas-to-add-a-personal-touch-to-your-home/', destination: '/', permanent: true },
+      { source: '/7-easy-sewing-projects-to-warm-your-kitchen-and-table-for-winter', destination: '/', permanent: true },
+      { source: '/7-easy-sewing-projects-to-warm-your-kitchen-and-table-for-winter/', destination: '/', permanent: true },
+      { source: '/vintage-vibes-diy-home-crafts-inspired-by-retro-styles', destination: '/', permanent: true },
+      { source: '/vintage-vibes-diy-home-crafts-inspired-by-retro-styles/', destination: '/', permanent: true },
+      { source: '/easy-christmas-crafts-to-make-your-home-merry-and-bright-in-2025', destination: '/', permanent: true },
+      { source: '/easy-christmas-crafts-to-make-your-home-merry-and-bright-in-2025/', destination: '/', permanent: true },
+      { source: '/eco-friendly-crafting-sustainable-diy-projects-for-your-home', destination: '/', permanent: true },
+      { source: '/eco-friendly-crafting-sustainable-diy-projects-for-your-home/', destination: '/', permanent: true },
+      { source: '/13-diy-wall-art-projects-for-every-style-and-budget', destination: '/', permanent: true },
+      { source: '/13-diy-wall-art-projects-for-every-style-and-budget/', destination: '/', permanent: true },
+
+      // ── OLD WORDPRESS SYSTEM PATHS ──
       { source: '/feed', destination: '/', permanent: true },
       { source: '/feed/:path*', destination: '/', permanent: true },
       { source: '/wp-admin/:path*', destination: '/', permanent: true },
@@ -49,6 +162,23 @@ const nextConfig: NextConfig = {
       { source: '/wp-content/:path*', destination: '/', permanent: true },
       { source: '/wp-includes/:path*', destination: '/', permanent: true },
       { source: '/xmlrpc.php', destination: '/', permanent: true },
+      { source: '/2025/:path*', destination: '/', permanent: true },
+      { source: '/sitemap_index.xml', destination: '/sitemap.xml', permanent: true },
+      { source: '/wp-sitemap-posts-page-1.xml', destination: '/sitemap.xml', permanent: true },
+      { source: '/wp-sitemap:path*', destination: '/sitemap.xml', permanent: true },
+
+      // ── UNCATEGORIZED ──
+      { source: '/uncategorized/:path*', destination: '/', permanent: true },
+      { source: '/uncategorized-pt/:path*', destination: '/', permanent: true },
+      { source: '/uncategorized-fr/:path*', destination: '/', permanent: true },
+      { source: '/uncategorized-de/:path*', destination: '/', permanent: true },
+      { source: '/uncategorized-it/:path*', destination: '/', permanent: true },
+      { source: '/uncategorized-at/:path*', destination: '/', permanent: true },
+
+      // ── OLD CATEGORY PATH ──
+      { source: '/health-conditions', destination: '/conditions', permanent: true },
+      { source: '/health-conditions/:path*', destination: '/conditions', permanent: true },
+      { source: '/seniorshealth/:path*', destination: '/', permanent: true },
     ];
   },
 };
