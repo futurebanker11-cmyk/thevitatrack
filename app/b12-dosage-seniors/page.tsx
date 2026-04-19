@@ -347,6 +347,32 @@ export default function B12DosagePage() {
           </div>
         ))}
 
+        {/* Child guides hub */}
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#14442A', margin: '36px 0 14px' }}>
+          Detailed B12 Guides by Topic
+        </h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '12px', marginBottom: '32px' }}>
+          {[
+            { href: '/b12-dosage-seniors/metformin', label: 'B12 on Metformin', desc: 'Exact dose if you take diabetes medication' },
+            { href: '/b12-dosage-seniors/ppi-users', label: 'B12 on Omeprazole/PPIs', desc: 'Acid-blocker users — sublingual explained' },
+            { href: '/b12-dosage-seniors/age-70', label: 'B12 at Age 70', desc: 'Age-specific dosage for the 70–79 band' },
+            { href: '/b12-dosage-seniors/age-80', label: 'B12 at Age 80+', desc: 'Higher-dose guidance for 80+ adults' },
+            { href: '/b12-dosage-seniors/vegetarian', label: 'B12 for Vegetarian Seniors', desc: 'Plant-based diet — what food cannot provide' },
+            { href: '/b12-dosage-seniors/1000-mcg', label: 'Is 1000 mcg Too Much?', desc: 'Safety science explained simply' },
+            { href: '/b12-dosage-seniors/sublingual', label: 'Sublingual B12 Guide', desc: 'How it works and how to use it correctly' },
+            { href: '/b12-dosage-seniors/methylcobalamin', label: 'Methylcobalamin vs Cyanocobalamin', desc: 'Which form is actually better?' },
+            { href: '/b12-dosage-seniors/memory-loss', label: 'B12 for Memory Loss', desc: 'When cognitive decline is reversible' },
+            { href: '/b12-dosage-seniors/tingling-feet', label: 'B12 for Neuropathy', desc: 'Tingling feet, dosage, and nerve repair' },
+          ].map(({ href, label, desc }) => (
+            <Link key={href} href={href} style={{ display: 'block', padding: '14px 16px', background: '#fff', border: '1px solid #E8E6E1', borderRadius: '10px', textDecoration: 'none', transition: 'box-shadow 150ms, border-color 150ms' }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 16px rgba(0,0,0,0.1)'; (e.currentTarget as HTMLElement).style.borderColor = '#1E6B3E'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = '#E8E6E1'; }}>
+              <strong style={{ color: '#14442A', display: 'block', marginBottom: '4px', fontSize: '0.95rem' }}>{label} →</strong>
+              <span style={{ fontSize: '0.825rem', color: '#717170' }}>{desc}</span>
+            </Link>
+          ))}
+        </div>
+
         {/* Related articles */}
         <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#14442A', margin: '36px 0 14px' }}>
           Related: B12 and Your Health Conditions

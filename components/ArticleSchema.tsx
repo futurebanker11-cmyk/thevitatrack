@@ -52,6 +52,47 @@ export function BreadcrumbJsonLd({ category, title }: { category: string; title:
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: data }} />;
 }
 
+export function ChildPageJsonLd({ headline, description, url }: { headline: string; description: string; url: string }) {
+  const data = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "headline": headline,
+    "description": description,
+    "url": url,
+    "datePublished": "2026-04-18",
+    "dateModified": "2026-04-18",
+    "author": { "@type": "Organization", "name": "VitaTrack", "url": "https://thevitatrack.com" },
+    "isPartOf": { "@type": "WebPage", "@id": "https://thevitatrack.com/b12-dosage-seniors" }
+  });
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: data }} />;
+}
+
+export function ChildBreadcrumbJsonLd({ slug, label }: { slug: string; label: string }) {
+  const data = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thevitatrack.com" },
+      { "@type": "ListItem", "position": 2, "name": "B12 Dosage for Seniors", "item": "https://thevitatrack.com/b12-dosage-seniors" },
+      { "@type": "ListItem", "position": 3, "name": label, "item": `https://thevitatrack.com/b12-dosage-seniors/${slug}` }
+    ]
+  });
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: data }} />;
+}
+
+export function ChildFaqJsonLd({ questions }: { questions: { q: string; a: string }[] }) {
+  const data = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": questions.map(({ q, a }) => ({
+      "@type": "Question",
+      "name": q,
+      "acceptedAnswer": { "@type": "Answer", "text": a }
+    }))
+  });
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: data }} />;
+}
+
 export function B12ArticleJsonLd() {
   const data = JSON.stringify({
     "@context": "https://schema.org",
