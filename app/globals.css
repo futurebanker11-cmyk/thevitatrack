@@ -150,6 +150,9 @@ button { cursor: pointer; }
 }
 .interlink:hover { color: var(--green-hover); padding-left: 6px; }
 
+/* ── B12 hub cards ── */
+.b12-hub-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #1E6B3E !important; }
+
 /* ── Responsive helpers ── */
 @media (max-width: 768px) {
   .hidden-mobile { display: none !important; }

@@ -364,9 +364,7 @@ export default function B12DosagePage() {
             { href: '/b12-dosage-seniors/memory-loss', label: 'B12 for Memory Loss', desc: 'When cognitive decline is reversible' },
             { href: '/b12-dosage-seniors/tingling-feet', label: 'B12 for Neuropathy', desc: 'Tingling feet, dosage, and nerve repair' },
           ].map(({ href, label, desc }) => (
-            <Link key={href} href={href} style={{ display: 'block', padding: '14px 16px', background: '#fff', border: '1px solid #E8E6E1', borderRadius: '10px', textDecoration: 'none', transition: 'box-shadow 150ms, border-color 150ms' }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 16px rgba(0,0,0,0.1)'; (e.currentTarget as HTMLElement).style.borderColor = '#1E6B3E'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; (e.currentTarget as HTMLElement).style.borderColor = '#E8E6E1'; }}>
+            <Link key={href} href={href} className="b12-hub-card" style={{ display: 'block', padding: '14px 16px', background: '#fff', border: '1px solid #E8E6E1', borderRadius: '10px', textDecoration: 'none', transition: 'box-shadow 150ms, border-color 150ms' }}>
               <strong style={{ color: '#14442A', display: 'block', marginBottom: '4px', fontSize: '0.95rem' }}>{label} →</strong>
               <span style={{ fontSize: '0.825rem', color: '#717170' }}>{desc}</span>
             </Link>
