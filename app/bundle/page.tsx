@@ -183,7 +183,7 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
     
     <div className="hero-img-col">
       <div className="hero-img-wrap">
-        <img src="/assets/cover/bundle.png" alt="The Complete Senior Health Vault &mdash; All 19 VitaTrack Senior Health Guides" className="hero-cover" />
+        <img src="/assets/covers/bundle.webp" alt="The Complete Senior Health Vault &mdash; All 19 VitaTrack Senior Health Guides" className="hero-cover" />
         <div className="hero-img-badge">19 Guides Inside</div>
       </div>
     </div>
