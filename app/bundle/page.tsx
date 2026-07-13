@@ -4,9 +4,16 @@ import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'The Complete Senior Health Vault — All 19 VitaTrack Guides | VitaTrack',
+  title: 'The Complete Senior Health Vault — All 19 VitaTrack Guides',
   alternates: { canonical: 'https://thevitatrack.com/bundle' },
 };
+
+// Real reader/viewer quotes only — paste actual YouTube comments or customer
+// feedback here. The testimonial section renders automatically once this list
+// has at least one entry. Do NOT add invented quotes.
+const TESTIMONIALS: { text: string; name: string; sub: string }[] = [
+  // { text: 'Paste the real comment text here.', name: 'First name L.', sub: 'YouTube comment' },
+];
 
 export default function BundlePage() {
   return (
@@ -120,6 +127,14 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
 .test-name{font-size:14px;font-weight:700;color:var(--text)}
 .test-sub{font-size:12px;color:var(--muted)}
 
+/* -- GUARANTEE -- */
+.guarantee-box{max-width:var(--max);margin:0 auto;background:#fff;border:2px solid var(--green);border-radius:20px;padding:36px 40px;display:flex;gap:24px;align-items:center;box-shadow:var(--shadow)}
+.guarantee-shield{flex-shrink:0;width:72px;height:72px;background:var(--green-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px}
+.guarantee-body h3{font-family:var(--serif);font-size:24px;font-weight:800;color:var(--green);margin-bottom:8px}
+.guarantee-body p{font-size:16px;color:var(--text2);line-height:1.55}
+.pay-note{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:12px}
+.pay-note span{display:inline-flex;align-items:center;gap:5px}
+
 /* -- FAQ -- */
 .faq-list{display:flex;flex-direction:column;gap:12px}
 .faq-item{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
@@ -163,6 +178,7 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
   .compare-header div,.compare-row div{padding:10px 12px;font-size:13px}
   .sample-grid{grid-template-columns:1fr}
   .test-grid{grid-template-columns:1fr}
+  .guarantee-box{flex-direction:column;text-align:center;padding:28px 24px;gap:16px}
   .section{padding:48px 0}
   .hdr-cta{font-size:13px;padding:8px 16px}
   .fp-now{font-size:48px}
@@ -208,7 +224,8 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
         <div className="hero-per">less than $2.50 per guide</div>
       </div>
       <a href="https://payhip.com/order?link=5LPT1" className="hero-btn">&#x1F6D2; Get Instant Access &mdash; $47</a>
-      <p className="hero-guarantee">&#x1F512; Instant download &nbsp;&bull;&nbsp; No subscription &nbsp;&bull;&nbsp; Yours forever</p>
+      <p className="hero-guarantee">&#x1F6E1;&#xFE0F; 30-Day Money-Back Guarantee &nbsp;&bull;&nbsp; Instant download &nbsp;&bull;&nbsp; No subscription</p>
+      <p className="hero-guarantee" style={{"marginTop":"4px"}}>&#x1F512; Secure checkout via Payhip &nbsp;&bull;&nbsp; All major cards &amp; PayPal accepted</p>
     </div>
 
   </div>
@@ -449,6 +466,7 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
       <p style={{"fontFamily":"var(--serif)","fontSize":"24px","fontWeight":"800","marginBottom":"8px"}}>All 19 guides. One payment. Yours forever.</p>
       <p style={{"fontSize":"16px","opacity":".8","marginBottom":"20px"}}>Individual total: <span style={{"textDecoration":"line-through","opacity":".7"}}>$232</span> &nbsp;&rarr;&nbsp; Bundle price: <span style={{"fontFamily":"var(--serif)","fontSize":"22px","fontWeight":"800","color":"#86efac"}}>$47</span></p>
       <a href="https://payhip.com/order?link=5LPT1" style={{"display":"inline-flex","alignItems":"center","gap":"8px","background":"#fff","color":"var(--green)","fontFamily":"var(--serif)","fontWeight":"800","fontSize":"18px","padding":"16px 40px","borderRadius":"100px","textDecoration":"none","transition":"transform .2s"}}>&#x1F6D2; Get All 19 &mdash; $47</a>
+      <p style={{"fontSize":"13px","opacity":".7","marginTop":"14px"}}>&#x1F6E1;&#xFE0F; 30-Day Money-Back Guarantee &nbsp;&bull;&nbsp; &#x1F512; Secure checkout &nbsp;&bull;&nbsp; Cards &amp; PayPal</p>
     </div>
   </div>
 </div>
@@ -556,6 +574,44 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
   </div>
 </div>
 
+{TESTIMONIALS.length > 0 && (
+<div className="section">
+  <div className="wrap">
+    <div className="section-title">What Readers Are Saying</div>
+    <div className="section-sub">Real feedback from the VitaTrack community</div>
+    <div className="test-grid">
+      {TESTIMONIALS.map((t, i) => (
+        <div className="test-card" key={i}>
+          <div className="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p className="test-text">&ldquo;{t.text}&rdquo;</p>
+          <div className="test-name">{t.name}</div>
+          <div className="test-sub">{t.sub}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+)}
+
+<div className="section" style={{"paddingTop":TESTIMONIALS.length > 0 ? "0" : undefined}}>
+  <div className="wrap">
+    <div className="guarantee-box">
+      <div className="guarantee-shield">&#x1F6E1;&#xFE0F;</div>
+      <div className="guarantee-body">
+        <h3>30-Day Money-Back Guarantee</h3>
+        <p>Try the Complete Senior Health Vault for a full 30 days. If it isn&rsquo;t everything we promised &mdash; for any reason at all &mdash; reply to your receipt email and we&rsquo;ll refund every penny. No forms, no questions, no hassle. And you keep the guides.</p>
+      </div>
+    </div>
+    <div className="pay-note">
+      <span>&#x1F512; Secure checkout via Payhip</span>
+      <span>&bull;</span>
+      <span>&#x1F4B3; All major cards &amp; PayPal</span>
+      <span>&bull;</span>
+      <span>&#x1F4E7; Instant email delivery</span>
+    </div>
+  </div>
+</div>
+
 <div className="section" style={{"background":"var(--warm)"}}>
   <div className="wrap">
     <div className="section-title">Common Questions</div>
@@ -583,6 +639,11 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
       </div>
 
       <div className="faq-item">
+        <div className="faq-q">What if it&rsquo;s not for me? Can I get a refund?</div>
+        <div className="faq-a">Yes. Every purchase is covered by a 30-day money-back guarantee. If the Vault isn&rsquo;t what you expected &mdash; for any reason &mdash; just reply to your receipt email within 30 days and we&rsquo;ll issue a full refund. No forms to fill out, no questions asked, and you keep the guides.</div>
+      </div>
+
+      <div className="faq-item">
         <div className="faq-q">Is this medical advice?</div>
         <div className="faq-a">No. VitaTrack guides are educational health information &mdash; not medical advice. Every guide encourages readers to discuss supplement and medication decisions with their physician. The guides are designed to help you have better, more informed conversations with your doctor, not to replace those conversations.</div>
       </div>
@@ -601,7 +662,8 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
     </div>
     <br />
     <a href="https://payhip.com/order?link=5LPT1" className="final-btn">&#x1F6D2; Get Instant Access &mdash; $47</a>
-    <p className="final-note">Instant download &bull; No subscription &bull; Open in any browser &bull; Yours forever</p>
+    <p className="final-note">&#x1F6E1;&#xFE0F; 30-Day Money-Back Guarantee &bull; Instant download &bull; No subscription &bull; Yours forever</p>
+    <p className="final-note" style={{"marginTop":"6px"}}>&#x1F512; Secure checkout via Payhip &bull; All major cards &amp; PayPal accepted</p>
   </div>
 </section>
 
