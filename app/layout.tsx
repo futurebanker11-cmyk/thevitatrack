@@ -63,6 +63,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
         />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: orgSchema }} />
+        {/* Cloudflare Web Analytics */}
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "6581cb73f08a4b34b8be2bb9cd3617fa"}'
+        />
       </head>
       <body>{children}<Footer /><FAQActivator /></body>
     </html>
