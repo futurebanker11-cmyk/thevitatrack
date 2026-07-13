@@ -99,7 +99,7 @@ export default function HomePage() {
       `}</style>
 
       {/* YOUTUBE TRAFFIC BANNER */}
-      <a href="/bundle" className="yt-banner">&#x1F44B; Came from our YouTube video? <b>Get the Complete Vault &mdash; all 19 guides for $47 &rarr;</b></a>
+      <a href="/bundle?utm_source=youtube&utm_medium=home-banner" className="yt-banner">&#x1F44B; Came from our YouTube video? <b>Get the Complete Vault &mdash; all 19 guides for $47 &rarr;</b></a>
 
       <Header />
 
