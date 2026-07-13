@@ -190,6 +190,7 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
 @media(max-width:480px){
   .guides-grid{grid-template-columns:1fr}
   .hero-btn{font-size:17px;padding:17px 32px}
+  .final-btn{font-size:16px;padding:16px 26px;white-space:nowrap}
   .compare{font-size:13px}
 }
 @media print{body{background:#fff}}
