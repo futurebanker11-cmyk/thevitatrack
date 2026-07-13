@@ -282,6 +282,25 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
   </div>
 </div>
 
+{TESTIMONIALS.length > 0 && (
+<div className="section" style={{"paddingBottom":"0"}}>
+  <div className="wrap">
+    <div className="section-title">What Readers Are Saying</div>
+    <div className="section-sub">Real feedback from the VitaTrack community</div>
+    <div className="test-grid">
+      {TESTIMONIALS.map((t, i) => (
+        <div className="test-card" key={i}>
+          <div className="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p className="test-text">&ldquo;{t.text}&rdquo;</p>
+          <div className="test-name">{t.name}</div>
+          <div className="test-sub">{t.sub}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+)}
+
 <div className="section">
   <div className="wrap">
     <div className="section-title">All 19 Guides Included</div>
@@ -574,26 +593,7 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
   </div>
 </div>
 
-{TESTIMONIALS.length > 0 && (
 <div className="section">
-  <div className="wrap">
-    <div className="section-title">What Readers Are Saying</div>
-    <div className="section-sub">Real feedback from the VitaTrack community</div>
-    <div className="test-grid">
-      {TESTIMONIALS.map((t, i) => (
-        <div className="test-card" key={i}>
-          <div className="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p className="test-text">&ldquo;{t.text}&rdquo;</p>
-          <div className="test-name">{t.name}</div>
-          <div className="test-sub">{t.sub}</div>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
-)}
-
-<div className="section" style={{"paddingTop":TESTIMONIALS.length > 0 ? "0" : undefined}}>
   <div className="wrap">
     <div className="guarantee-box">
       <div className="guarantee-shield">&#x1F6E1;&#xFE0F;</div>
