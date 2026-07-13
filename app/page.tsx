@@ -110,7 +110,7 @@ export default function HomePage() {
         <p className="hero-sub">Free health tools, evidence-based supplement recommendations, and in-depth health guides designed specifically for adults over 60.</p>
         <div className="hero-btns">
           <Link href="/tools/longevity-score" className="btn-p">Take a Free Health Quiz</Link>
-          <Link href="/guides" className="btn-s">Browse Health Guides</Link>
+          <Link href="/bundle" className="btn-s">See All 19 Health Guides</Link>
         </div>
       </section>
 
