@@ -61,7 +61,8 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
 .hero-per{font-size:13px;opacity:.6}
 .hero-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:var(--green);font-family:var(--serif);font-weight:800;font-size:18px;padding:18px 36px;border-radius:100px;text-decoration:none;transition:transform .2s,box-shadow .2s;margin-bottom:14px;box-shadow:0 4px 24px rgba(0,0,0,.2)}
 .hero-btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(0,0,0,.3)}
-.hero-guarantee{font-size:13px;opacity:.6;text-align:center}
+.hero-guarantee{font-size:13px;opacity:.65;text-align:center;line-height:1.6;margin-top:8px}
+.hero-guarantee-strong{font-size:14px;font-weight:700;opacity:.9;margin-top:6px}
 
 /* -- TRUST BAR -- */
 .trust{background:#fff;border-bottom:1px solid var(--border);padding:18px 24px}
@@ -155,7 +156,9 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
 .fp-now{font-family:var(--serif);font-size:64px;font-weight:900;color:#86efac;line-height:1}
 .final-btn{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--green);font-family:var(--serif);font-weight:800;font-size:22px;padding:22px 52px;border-radius:100px;text-decoration:none;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 24px rgba(0,0,0,.2)}
 .final-btn:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(0,0,0,.3)}
-.final-note{font-size:14px;opacity:.6;margin-top:16px}
+.final-note{font-size:14px;opacity:.65;margin-top:28px;line-height:1.6;max-width:480px;margin-left:auto;margin-right:auto}
+.final-note+.final-note{margin-top:8px}
+.final-note-strong{font-size:15px;font-weight:700;opacity:.9}
 
 /* -- FOOTER -- */
 .ftr{background:#fff;border-top:1px solid var(--border);padding:32px 24px;text-align:center}
@@ -224,8 +227,9 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
         <div className="hero-per">less than $2.50 per guide</div>
       </div>
       <a href="https://payhip.com/order?link=5LPT1" className="hero-btn">&#x1F6D2; Get Instant Access &mdash; $47</a>
-      <p className="hero-guarantee">&#x1F6E1;&#xFE0F; 30-Day Money-Back Guarantee &nbsp;&bull;&nbsp; Instant download &nbsp;&bull;&nbsp; No subscription</p>
-      <p className="hero-guarantee" style={{"marginTop":"4px"}}>&#x1F512; Secure checkout via Payhip &nbsp;&bull;&nbsp; All major cards &amp; PayPal accepted</p>
+      <p className="hero-guarantee hero-guarantee-strong">&#x1F6E1;&#xFE0F; 30-Day Money-Back Guarantee</p>
+      <p className="hero-guarantee">Instant download &bull; No subscription &bull; Yours forever</p>
+      <p className="hero-guarantee">&#x1F512; Secure checkout &bull; Cards &amp; PayPal accepted</p>
     </div>
 
   </div>
@@ -662,8 +666,9 @@ body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--text);b
     </div>
     <br />
     <a href="https://payhip.com/order?link=5LPT1" className="final-btn">&#x1F6D2; Get Instant Access &mdash; $47</a>
-    <p className="final-note">&#x1F6E1;&#xFE0F; 30-Day Money-Back Guarantee &bull; Instant download &bull; No subscription &bull; Yours forever</p>
-    <p className="final-note" style={{"marginTop":"6px"}}>&#x1F512; Secure checkout via Payhip &bull; All major cards &amp; PayPal accepted</p>
+    <p className="final-note final-note-strong">&#x1F6E1;&#xFE0F; 30-Day Money-Back Guarantee</p>
+    <p className="final-note">Instant download &bull; No subscription &bull; Yours forever</p>
+    <p className="final-note">&#x1F512; Secure checkout &bull; Cards &amp; PayPal accepted</p>
   </div>
 </section>
 
