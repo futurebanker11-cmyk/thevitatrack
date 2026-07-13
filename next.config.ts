@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // ── SHORT URL for videos: say "thevitatrack.com/vault" on YouTube ──
-      { source: '/vault', destination: '/bundle', permanent: false },
+      // Tags the visit so typed-in traffic (no referrer) is still attributable.
+      { source: '/vault', destination: '/bundle?utm_source=youtube&utm_medium=spoken', permanent: false },
 
       // ── LANGUAGE VARIANTS → homepage ──
       { source: '/es/:path*', destination: '/', permanent: true },
