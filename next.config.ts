@@ -60,7 +60,7 @@ const nextConfig: NextConfig = {
       { source: '/guides/restless-legs', destination: '/symptoms/leg-cramps-night', permanent: true },
       { source: '/guides/pleuritic-pain', destination: '/symptoms/chest-pain-pressure', permanent: true },
       // Catch-all remaining guides
-      { source: '/guides/:path*', destination: '/guides', permanent: true },
+      { source: '/guides/:path+', destination: '/guides', permanent: true },
 
       // ── OLD STANDALONE CONDITION PAGES ──
       { source: '/parkinsons-disease', destination: '/conditions/memory-loss-dementia', permanent: true },
