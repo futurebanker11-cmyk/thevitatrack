@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   async redirects() {
     return [
+      // ── SHORT URL for videos: say "thevitatrack.com/vault" on YouTube ──
+      { source: '/vault', destination: '/bundle', permanent: false },
+
       // ── LANGUAGE VARIANTS → homepage ──
       { source: '/es/:path*', destination: '/', permanent: true },
       { source: '/fr/:path*', destination: '/', permanent: true },

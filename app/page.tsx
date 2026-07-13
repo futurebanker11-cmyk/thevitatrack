@@ -8,6 +8,9 @@ export default function HomePage() {
     <>
       <style>{`
         /* header styles now in shared Header component */
+        .yt-banner{display:block;background:linear-gradient(90deg,#b45309,#d97706);color:#fff;text-align:center;padding:12px 16px;font-size:16px;font-weight:600;text-decoration:none;line-height:1.4;transition:filter .2s}
+        .yt-banner:hover{filter:brightness(1.08)}
+        .yt-banner b{font-weight:800;text-decoration:underline;text-underline-offset:3px}
         .hero{background:linear-gradient(160deg,#0f3320 0%,#1a5632 40%,#1E6B3E 100%);color:#fff;padding:76px 20px 68px;text-align:center}
         .hero-ey{font-size:14px;letter-spacing:1.5px;text-transform:uppercase;opacity:.5;margin-bottom:16px;font-weight:600}
         .hero h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(32px,6vw,54px);font-weight:800;line-height:1.1;max-width:700px;margin:0 auto 20px}
@@ -94,6 +97,9 @@ export default function HomePage() {
         @media(max-width:768px){body{font-size:20px}.hero{padding:56px 16px 48px}.hero-btns{flex-direction:column;align-items:center}.guides-grid{grid-template-columns:1fr 1fr}.fq{flex-direction:column;padding:24px;text-align:center}.fq-icon{margin:0 auto}.sup-grid{grid-template-columns:1fr}.tool-grid{grid-template-columns:1fr}.how{grid-template-columns:1fr 1fr}.ftr-grid{grid-template-columns:1fr 1fr}.main{padding:0 16px}}
         @media(max-width:400px){.guides-grid{grid-template-columns:1fr}.how{grid-template-columns:1fr}}
       `}</style>
+
+      {/* YOUTUBE TRAFFIC BANNER */}
+      <a href="/bundle" className="yt-banner">&#x1F44B; Came from our YouTube video? <b>Get the Complete Vault &mdash; all 19 guides for $47 &rarr;</b></a>
 
       <Header />
 
