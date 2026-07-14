@@ -4,7 +4,7 @@ import BundleCTA from '@/components/BundleCTA';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '7 Best Kidney Health Supplements for Seniors (2025) | VitaTrack',
+  title: '7 Best Kidney Health Supplements for Seniors (2025)',
   alternates: { canonical: 'https://thevitatrack.com/kidney' },
 };
 

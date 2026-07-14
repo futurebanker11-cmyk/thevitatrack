@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Free Senior Health Tools — 21 Calculators & Quizzes | VitaTrack',
+  title: 'Free Senior Health Tools — 21 Calculators & Quizzes',
   alternates: { canonical: 'https://thevitatrack.com/tools' },
 };
 

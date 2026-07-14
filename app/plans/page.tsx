@@ -2,7 +2,7 @@ import CategoryPage from '@/components/CategoryPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '7-Day Health Plans for Seniors | VitaTrack',
+  title: '7-Day Health Plans for Seniors',
   description: 'Structured 7-day health plans to improve specific areas of senior health. Brain boost, kidney reset, prostate comfort.',
   alternates: { canonical: 'https://thevitatrack.com/plans' },
 };

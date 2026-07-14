@@ -4,7 +4,7 @@ import BundleCTA from '@/components/BundleCTA';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '6 Best Blood Pressure Supplements for Seniors (2025) | VitaTrack',
+  title: '6 Best Blood Pressure Supplements for Seniors (2025)',
   alternates: { canonical: 'https://thevitatrack.com/blood-pressure' },
 };
 

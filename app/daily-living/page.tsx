@@ -2,7 +2,7 @@ import CategoryPage from '@/components/CategoryPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Daily Living Tips for Seniors | VitaTrack',
+  title: 'Daily Living Tips for Seniors',
   description: 'Practical daily routines and safety tips for healthy senior living. Morning routines, medication management, home safety.',
   alternates: { canonical: 'https://thevitatrack.com/daily-living' },
 };

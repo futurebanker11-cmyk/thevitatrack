@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Best Dental & Oral Health Products for Seniors | VitaTrack',
+  title: 'Best Dental & Oral Health Products for Seniors',
   alternates: { canonical: 'https://thevitatrack.com/shop/dental' },
 };
 

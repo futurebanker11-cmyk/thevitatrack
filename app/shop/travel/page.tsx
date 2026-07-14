@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Best Travel Essentials for Seniors | VitaTrack',
+  title: 'Best Travel Essentials for Seniors',
   alternates: { canonical: 'https://thevitatrack.com/shop/travel' },
 };
 

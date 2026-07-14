@@ -2,7 +2,7 @@ import CategoryPage from '@/components/CategoryPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Senior-Friendly Recipes | VitaTrack',
+  title: 'Senior-Friendly Recipes',
   description: 'Nutritious, easy-to-make recipes designed for seniors. Low-sodium, diabetic-friendly, kidney-safe options.',
   alternates: { canonical: 'https://thevitatrack.com/recipes' },
 };

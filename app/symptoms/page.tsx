@@ -2,7 +2,7 @@ import CategoryPage from '@/components/CategoryPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Symptom Guides for Seniors | VitaTrack',
+  title: 'Symptom Guides for Seniors',
   description: 'Clear symptom guides for seniors. Understand what your symptoms mean, when to see a doctor, and what to do at home.',
   alternates: { canonical: 'https://thevitatrack.com/symptoms' },
 };

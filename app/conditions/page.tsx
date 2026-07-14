@@ -2,7 +2,7 @@ import CategoryPage from '@/components/CategoryPage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Health Conditions — Senior Guides | VitaTrack',
+  title: 'Health Conditions — Senior Guides',
   description: 'Evidence-based guides for seniors on managing common health conditions. Diabetes, heart disease, arthritis, kidney health, and more.',
   alternates: { canonical: 'https://thevitatrack.com/conditions' },
 };

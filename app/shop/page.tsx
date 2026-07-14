@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Shop Health Products for Seniors | VitaTrack',
+  title: 'Shop Health Products for Seniors',
   description: 'Curated health products for adults over 60. Blood sugar monitors, dental care, health devices, and travel essentials.',
   alternates: { canonical: 'https://thevitatrack.com/shop' },
 };

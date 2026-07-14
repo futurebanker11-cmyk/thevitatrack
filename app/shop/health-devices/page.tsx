@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Best Home Health Monitoring Devices for Seniors | VitaTrack',
+  title: 'Best Home Health Monitoring Devices for Seniors',
   alternates: { canonical: 'https://thevitatrack.com/shop/health-devices' },
 };
 

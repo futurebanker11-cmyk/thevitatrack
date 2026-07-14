@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Premium Senior Health Guides | VitaTrack',
+  title: 'Premium Senior Health Guides',
   alternates: { canonical: 'https://thevitatrack.com/guides' },
 };
 
