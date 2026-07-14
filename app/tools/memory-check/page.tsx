@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function MemoryCheckPage() {
@@ -181,7 +182,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>Important distinction:</strong> Forgetting where you put your keys is NORMAL aging. Forgetting what keys are for is NOT. This quiz helps you understand where your memory falls on that spectrum. It is NOT a dementia diagnosis — only a neurologist can provide that. But it can help you identify areas to work on and when to talk to your doctor.</p></div>
 
@@ -273,7 +274,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>How memory changes after 60 — what's normal and what's not</h2>
@@ -297,7 +298,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>Related:</strong> <a href="/tools/sleep-score/" style={{"color":"var(--green)","fontWeight":"700"}}>Sleep Quality Quiz →</a> | <a href="/tools/heart-age/" style={{"color":"var(--green)","fontWeight":"700"}}>Heart Age Calculator →</a> | <a href="/tools/hydration/" style={{"color":"var(--green)","fontWeight":"700"}}>Hydration Calculator →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">Is memory loss normal after 60?<span className="faq-icon">+</span></button><div className="faq-a">Some changes are normal: slower name recall, needing more time to learn new things, occasionally misplacing items. What is NOT normal: forgetting entire conversations, getting lost in familiar places, difficulty with routine tasks, or personality changes.</div></div>

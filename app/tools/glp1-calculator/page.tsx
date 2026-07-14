@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function Glp1CalculatorPage() {
@@ -208,7 +209,7 @@ input[type="range"]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;b
 <div className="main">
 
 <div className="ad-slot">
-<ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<AdUnit slot="8981383031" />
 
 </div>
 
@@ -311,7 +312,7 @@ input[type="range"]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;b
 </div>
 
 <div className="ad-slot">
-<ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<AdUnit slot="1775331881" />
 
 </div>
 
@@ -342,7 +343,7 @@ input[type="range"]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;b
 </div>
 
 <div className="ad-slot">
-<ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<AdUnit slot="3333737430" />
 
 </div>
 

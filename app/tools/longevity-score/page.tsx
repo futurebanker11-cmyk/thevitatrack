@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function LongevityScorePage() {
@@ -196,7 +197,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>Biological age is the best predictor of your healthspan.</strong> It reflects how well your cells, organs, and systems are actually functioning — not just how many birthdays you've had. Research shows seniors can lower their biological age by 3-8 years through targeted lifestyle changes. This quiz maps 10 key health domains to show you exactly where to focus.</p></div>
 
@@ -294,7 +295,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 <div className="content-section">
 <h2>What is biological age — and why it matters more than your birthday</h2>
 <p>Your chronological age counts the years since birth. Your biological age measures how well your body is actually functioning. Two people born the same year can have dramatically different biological ages depending on their lifestyle, genetics, and health management. A landmark study in the Proceedings of the National Academy of Sciences tracked 1,000 adults and found their biological ages ranged from 28 to 61 — all at the chronological age of 38. The difference only grows wider after 60.</p>
@@ -340,7 +341,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p style={{"marginTop":"16px","textAlign":"center"}}><strong>See our full supplement guides:</strong> <a href="/longevity/" style={{"color":"var(--green)"}}>Longevity</a> · <a href="/heart/" style={{"color":"var(--green)"}}>Heart</a> · <a href="/brain/" style={{"color":"var(--green)"}}>Brain</a> · <a href="/joints/" style={{"color":"var(--green)"}}>Joints</a> · <a href="/sleep/" style={{"color":"var(--green)"}}>Sleep</a> · <a href="/digestion/" style={{"color":"var(--green)"}}>Digestion</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">What is biological age vs chronological age?<span className="faq-icon">+</span></button><div className="faq-a">Chronological age counts years since birth. Biological age measures how your body actually functions. A healthy 70-year-old may have biology of a 62-year-old. The gap determines your healthspan — years of good health, independence, and quality of life.</div></div>

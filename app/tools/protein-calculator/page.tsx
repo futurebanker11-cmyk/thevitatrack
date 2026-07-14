@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function ProteinCalculatorPage() {
@@ -152,7 +153,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>Why this matters:</strong> The standard protein recommendation (0.8g per kg) was set for healthy young adults. Research from the PROT-AGE Study Group and the European Society for Clinical Nutrition shows seniors over 65 need <strong>1.0-1.2g per kg daily</strong> — and up to 1.5g/kg if recovering from illness or exercising regularly. Most seniors are eating barely half of what they need.</p></div>
 
@@ -238,7 +239,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Why seniors need more protein than younger adults</h2>
@@ -260,7 +261,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>Related:</strong> <a href="/kidney/" style={{"color":"var(--green)","fontWeight":"700"}}>Kidney health supplements for seniors →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">How much protein does a 70 year old need per day?<span className="faq-icon">+</span></button><div className="faq-a">A 70-year-old needs 1.0-1.2g protein per kg body weight daily. For a 150 lb senior, that's 68-82g per day. If recovering from illness or doing resistance training, aim for 1.2-1.5g/kg. This is significantly more than the standard 0.8g/kg RDA.</div></div>

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function ProstateCheckPage() {
@@ -178,7 +179,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>Most men suffer in silence.</strong> Prostate enlargement is the most common health issue in older men, yet many never discuss symptoms with their doctor. Getting up 3-4 times per night to urinate is NOT just "getting older" — it's a treatable condition. This quiz helps you understand whether your symptoms are mild, moderate, or severe, and what to do about them.</p></div>
 
@@ -270,7 +271,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Understanding prostate health after 50</h2>
@@ -295,7 +296,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>See our complete guide:</strong> <a href="/prostate/" style={{"color":"var(--green)","fontWeight":"700"}}>Doctor-reviewed prostate supplements for men →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">What are symptoms of an enlarged prostate?<span className="faq-icon">+</span></button><div className="faq-a">Frequent urination (especially at night), weak stream, difficulty starting, incomplete emptying, urgency, stop-and-start flow, straining, and dribbling. Symptoms range from mild nuisance to severe impact on life and sleep.</div></div>

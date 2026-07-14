@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function EyeCheckPage() {
@@ -175,7 +176,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>Vision loss is not inevitable.</strong> While some age-related eye changes are normal (needing reading glasses, mild glare sensitivity), the major eye diseases — cataracts, glaucoma, macular degeneration, and diabetic retinopathy — are all detectable early and treatable. The tragedy is that millions of seniors lose vision that could have been saved with timely screening.</p></div>
 
@@ -267,7 +268,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Understanding eye health after 60</h2>
@@ -292,7 +293,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>See our guide:</strong> <a href="/eyes/" style={{"color":"var(--green)","fontWeight":"700"}}>Doctor-reviewed eye health supplements →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">What are the most common eye diseases in seniors?<span className="faq-icon">+</span></button><div className="faq-a">The four major ones: cataracts (50% by age 75), macular degeneration (leading cause of severe vision loss), glaucoma (the "silent thief" — no early symptoms), and diabetic retinopathy (affects nearly all diabetics over 20 years). All four are treatable when caught early.</div></div>

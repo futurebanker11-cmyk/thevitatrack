@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function SupplementBudgetPage() {
@@ -153,7 +154,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>The supplement industry wants you to buy everything.</strong> The truth is, most seniors need only 3-5 well-chosen supplements. The right ones depend on YOUR specific health goals. This planner ranks supplements by clinical evidence strength and helps you avoid wasting money on products that won't make a difference for your situation.</p></div>
 
@@ -187,7 +188,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>How to build a smart supplement routine after 60</h2>
@@ -206,7 +207,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p style={{"fontSize":"14px","color":"var(--muted)"}}><em>Sources: USDA Dietary Guidelines for Americans 2020-2025. NIH Office of Dietary Supplements fact sheets. Bauer et al., PROT-AGE Study Group recommendations.</em></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">What supplements should every senior take?<span className="faq-icon">+</span></button><div className="faq-a">The essential foundation: Vitamin D3+K2 (2000-4000 IU), Magnesium Glycinate (400mg), and Omega-3 Fish Oil (2000mg). These address the most common deficiencies and support bone, heart, brain, and muscle health. Total cost: about $30-40/month.</div></div>

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function FallRiskPage() {
@@ -176,7 +177,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>Falls are not accidents — they're preventable.</strong> Every 11 seconds, an older adult is treated in the ER for a fall. Every 19 minutes, an older adult dies from a fall. Yet research proves fall risk can be cut by 30-50% with targeted action. This quiz identifies YOUR specific risk factors so you can address them before a fall happens.</p></div>
 
@@ -268,7 +269,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Understanding fall risk after 60</h2>
@@ -294,7 +295,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>See our guides:</strong> <a href="/joints/" style={{"color":"var(--green)","fontWeight":"700"}}>Joint &amp; bone supplements →</a> | <a href="/longevity/" style={{"color":"var(--green)","fontWeight":"700"}}>Longevity supplements →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">How common are falls in seniors?<span className="faq-icon">+</span></button><div className="faq-a">1 in 4 Americans over 65 falls each year — 36 million falls, 3 million ER visits, 36,000 deaths annually. After one fall, the risk of another doubles. Most falls are preventable.</div></div>

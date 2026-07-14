@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function DiabetesRiskPage() {
@@ -174,7 +175,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>The silent epidemic:</strong> 33% of adults over 65 have Type 2 diabetes and another 50% are pre-diabetic. Pre-diabetes has NO symptoms — it's only found through blood tests. But the Diabetes Prevention Program proved that seniors over 60 who make modest lifestyle changes can reduce their risk by 71%. This quiz helps you understand where you stand so you can act early.</p></div>
 
@@ -266,7 +267,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Understanding diabetes risk after 60</h2>
@@ -292,7 +293,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>See our guide:</strong> <a href="/heart/" style={{"color":"var(--green)","fontWeight":"700"}}>Heart health supplements →</a> | <a href="/longevity/" style={{"color":"var(--green)","fontWeight":"700"}}>Longevity supplements →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">What percentage of seniors have diabetes?<span className="faq-icon">+</span></button><div className="faq-a">About 33% of adults over 65 have Type 2 diabetes (diagnosed or undiagnosed), and another 50% are pre-diabetic. Combined, over 80% of seniors have some degree of abnormal blood sugar. Many don't know until complications appear.</div></div>

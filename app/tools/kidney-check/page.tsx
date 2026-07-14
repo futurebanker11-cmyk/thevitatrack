@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function KidneyCheckPage() {
@@ -171,7 +172,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>The silent organ failure:</strong> Your kidneys can lose up to 75% of their function before you notice ANY symptoms. By that point, the damage is often irreversible. The only way to catch CKD early is through blood tests (GFR and creatinine). This quiz helps you understand whether you should be asking your doctor for kidney screening — which could save your kidneys and your life.</p></div>
 
@@ -263,7 +264,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Understanding kidney health after 60</h2>
@@ -289,7 +290,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>See our guide:</strong> <a href="/kidney/" style={{"color":"var(--green)","fontWeight":"700"}}>Kidney health supplements →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">How common is kidney disease in seniors?<span className="faq-icon">+</span></button><div className="faq-a">CKD affects approximately 40% of adults over 70. Most people in early stages have no symptoms. Diabetes and high blood pressure are the two leading causes, accounting for about 70% of all CKD cases.</div></div>

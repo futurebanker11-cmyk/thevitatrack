@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function SleepScorePage() {
@@ -166,7 +167,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>Poor sleep is not a normal part of aging.</strong> While sleep patterns change after 60, chronic insomnia, frequent waking, and daytime exhaustion are NOT inevitable. They're symptoms of addressable problems — and this quiz helps you identify exactly what's going wrong with your sleep.</p></div>
 
@@ -248,7 +249,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Why sleep changes after 60 — and what to do about it</h2>
@@ -267,7 +268,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>See our full guide:</strong> <a href="/sleep/" style={{"color":"var(--green)","fontWeight":"700"}}>Doctor-reviewed sleep supplements for seniors →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">How much sleep does a 70 year old need?<span className="faq-icon">+</span></button><div className="faq-a">Adults over 65 need 7-8 hours per night. However, seniors get less deep sleep and more light sleep, so you may need 8-9 hours in bed to get 7 hours of actual sleep. Quality matters as much as quantity — waking up refreshed is more important than hours.</div></div>

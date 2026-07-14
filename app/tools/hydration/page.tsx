@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function HydrationPage() {
@@ -186,7 +187,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>Critical for seniors:</strong> Dehydration is one of the most common reasons adults over 65 end up in the emergency room. Confusion caused by dehydration is frequently misdiagnosed as dementia. Your kidneys become less efficient with age, your thirst response weakens, and many common medications increase fluid loss. This calculator accounts for all of these senior-specific factors.</p></div>
 
@@ -255,7 +256,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Why hydration is different after 60</h2>
@@ -280,7 +281,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>Related:</strong> <a href="/tools/glp1-calculator/" style={{"color":"var(--green)","fontWeight":"700"}}>GLP-1 Weight Loss Calculator →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">How much water should a 70 year old drink?<span className="faq-icon">+</span></button><div className="faq-a">Most seniors need 6-8 cups (48-64 oz) daily, but individual needs vary by weight, activity, medications, and climate. A general rule is half your body weight in ounces. A 160 lb senior needs about 80 oz (10 cups). Seniors on diuretics or with heart failure may need different amounts.</div></div>

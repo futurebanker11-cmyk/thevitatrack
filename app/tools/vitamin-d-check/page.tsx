@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function VitaminDCheckPage() {
@@ -169,7 +170,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>The "sunshine vitamin" most seniors don't get enough of.</strong> Vitamin D is essential for bone strength, muscle function, immune defense, and mood regulation. After 60, your skin produces 75% less vitamin D from sunlight, and most diets provide barely 10% of what you need. This quiz identifies whether you're likely deficient — and what to do about it.</p></div>
 
@@ -261,7 +262,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Why vitamin D matters more after 60</h2>
@@ -283,7 +284,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>See our complete guide:</strong> <a href="/longevity/" style={{"color":"var(--green)","fontWeight":"700"}}>Longevity supplements for healthy aging →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">How common is vitamin D deficiency in seniors?<span className="faq-icon">+</span></button><div className="faq-a">40-60% of adults over 65 are deficient. Among homebound seniors, rates exceed 80%. Aging skin produces 75% less vitamin D from sunlight.</div></div>

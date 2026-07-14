@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function MuscleLossRiskPage() {
@@ -178,7 +179,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>Why this matters:</strong> You lose 3-8% of muscle mass per decade after 30. After 60, the rate accelerates. By 70, many adults have lost 30-40% of peak muscle. This isn't just about looking weak — sarcopenia increases fall risk 3x, doubles hospitalization rates, and is one of the strongest predictors of early death in seniors. The good news: it's reversible with the right actions.</p></div>
 
@@ -274,7 +275,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Understanding sarcopenia — the silent muscle thief</h2>
@@ -296,7 +297,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>See supplements that support muscle health:</strong> <a href="/joints/" style={{"color":"var(--green)","fontWeight":"700"}}>Joint &amp; bone supplements →</a> | <a href="/longevity/" style={{"color":"var(--green)","fontWeight":"700"}}>Longevity supplements →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">What is sarcopenia and how common is it?<span className="faq-icon">+</span></button><div className="faq-a">Sarcopenia is age-related muscle loss affecting approximately 1 in 3 adults over 60 and up to 50% over 80. It increases fall risk 3x, doubles hospitalization rates, and reduces independence. Most people don't know they have it until a fall reveals the damage.</div></div>

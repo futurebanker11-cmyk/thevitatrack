@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import AdUnit from '@/components/AdUnit';
 import Header from '@/components/Header';
 
 export default function DigestionCheckPage() {
@@ -171,7 +172,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <div className="main-wrap">
 <div className="main">
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="8981383031" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="8981383031" /></div>
 
 <div className="intro-note"><p><strong>Your gut is your second brain.</strong> The gut microbiome produces 90% of your body's serotonin (the "happiness chemical"), influences immune function, affects nutrient absorption, and communicates directly with your brain via the vagus nerve. When your gut is unhealthy, everything suffers — mood, energy, immunity, and even cognitive function. This quiz identifies exactly what's going wrong.</p></div>
 
@@ -263,7 +264,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 </div>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="1775331881" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="1775331881" /></div>
 
 <div className="content-section">
 <h2>Why digestion changes after 60</h2>
@@ -285,7 +286,7 @@ html{scroll-behavior:smooth}body{font-family:'Source Sans 3',-apple-system,sans-
 <p><strong>See our guide:</strong> <a href="/digestion/" style={{"color":"var(--green)","fontWeight":"700"}}>Doctor-reviewed digestion supplements for seniors →</a></p>
 </div>
 
-<div className="ad-slot"><ins className="adsbygoogle" style={{"display":"block"}} data-ad-client="ca-pub-3496395300151813" data-ad-slot="3333737430" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+<div className="ad-slot"><AdUnit slot="3333737430" /></div>
 
 <div className="faq"><h2>Frequently Asked Questions</h2>
 <div className="faq-item"><button className="faq-q">Why do digestive problems increase after 60?<span className="faq-icon">+</span></button><div className="faq-a">Stomach acid drops up to 40%, intestinal motility slows, microbiome loses diversity, medications disrupt gut function, and reduced activity slows digestion. These compound to make gut issues the #1 complaint in geriatric medicine.</div></div>
