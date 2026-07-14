@@ -66,6 +66,13 @@ Developer Mode ON for the local build step).
 - Free tier: **unlimited static requests/bandwidth** (all prerendered pages +
   assets), **100k dynamic Worker requests/day**. Since every route here is
   prerendered, almost all traffic is free static.
+- **CRITICAL — incremental cache is required** (learned 2026-07-14): the bare
+  `defineCloudflareConfig()` has NO incremental cache, so every prerendered-page
+  lookup misses and the Worker re-renders on demand. `lib/articles.ts` reads
+  `content/` from the filesystem, which doesn't exist at runtime on Workers —
+  result: all category listings rendered empty and every content article 404'd.
+  `open-next.config.ts` must keep `incrementalCache: staticAssetsIncrementalCache`
+  (serves the build-time prerenders from static assets, read-only).
 - ISR is a **no-op** in this setup: prerendered pages stay frozen until the next
   deploy. To enable true background revalidation later, add R2 and switch
   `open-next.config.ts` to the R2 incremental cache (snippet commented in that
